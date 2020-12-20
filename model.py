@@ -39,7 +39,7 @@ class GCNModelTwoDecodersVAE(nn.Module):
     def forward(self, x, adj):
         encoder_layer_2 = self.encode(x, adj)
         feature_decoder_layer_2, structure_decoder_layer_2 = self.decode(encoder_layer_2, adj)
-        return feature_decoder_layer_2, structure_decoder_layer_2
+        return encoder_layer_2, feature_decoder_layer_2, structure_decoder_layer_2
 
 class GCNModelFeatureOnlyVAE(nn.Module):
     def __init__(self, input_feat_dim, hidden_dim1, hidden_dim2, dropout):
@@ -68,7 +68,7 @@ class GCNModelFeatureOnlyVAE(nn.Module):
     def forward(self, x, adj):
         encoder_layer_2 = self.encode(x, adj)
         feature_decoder_layer_2 = self.decode(encoder_layer_2, adj)
-        return feature_decoder_layer_2    
+        return encoder_layer_2, feature_decoder_layer_2
     
 class GCNModelStructureOnlyVAE(nn.Module):
     def __init__(self, input_feat_dim, hidden_dim1, hidden_dim2, dropout):
@@ -97,7 +97,7 @@ class GCNModelStructureOnlyVAE(nn.Module):
     def forward(self, x, adj):
         encoder_layer_2 = self.encode(x, adj)
         structure_decoder_layer_2 = self.decode(encoder_layer_2, adj)
-        return structure_decoder_layer_2
+        return encoder_layer_2, structure_decoder_layer_2
 
 
 class GCNModelRsrTwoDecodersVAE(nn.Module):

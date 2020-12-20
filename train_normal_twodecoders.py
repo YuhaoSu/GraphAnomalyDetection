@@ -106,7 +106,7 @@ def gae_ad(args):
             t = time.time()
             model.train()
             optimizer.zero_grad()
-            feature_decoder_layer_2, structure_decoder_layer_2 = model(origin_features, adj_norm)
+            encoder_layer_2, feature_decoder_layer_2, structure_decoder_layer_2 = model(origin_features, adj_norm)
             error, f_error, s_error, total_loss, feature_reconstruction_loss, structure_reconstruction_loss = \
                 lossFunction.loss(
                 feature_decoder_layer_2,
@@ -151,7 +151,7 @@ def gae_ad(args):
             t = time.time()
             model.train()
             optimizer.zero_grad()
-            feature_decoder_layer_2, structure_decoder_layer_2 = model(origin_features, adj_norm)
+            encoder_layer_2, feature_decoder_layer_2, structure_decoder_layer_2 = model(origin_features, adj_norm)
             error, f_error, s_error, total_loss, feature_reconstruction_loss, structure_reconstruction_loss = \
                 lossFunction.loss(
                 feature_decoder_layer_2,
@@ -211,6 +211,10 @@ def gae_ad(args):
     if not os.path.exists("/home/augus/ad/gae_pytorch/{}_output".format(args.dataset)):
         os.makedirs('{}_output'.format(args.dataset))
     shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+
+    # save the last encoder output
+
+
     print()
     print("accuracy", "{:.5f}".format(accuracy))
     print("accuracy_s", "{:.5f}".format(accuracy_s))
