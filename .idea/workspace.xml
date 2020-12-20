@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d58f567e-64c4-4ceb-b07c-a5348b615dbb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/backup/train.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JupyterTrust" id="20369648-d4e4-43c5-a5aa-5a527e895721" />
+  <component name="ProjectId" id="1hVRtl7I5wrzca0pKz72F6DjqpT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.project" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="gae_pytorch" sdk-home="$USER_HOME$/opt/anaconda3/python.app/Contents/MacOS/python">
+        <option name="mySdkHome" value="$USER_HOME$/opt/anaconda3/python.app/Contents/MacOS/python" />
+        <option name="myModuleName" value="gae_pytorch" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backup" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.analyze">
+    <configuration name="analyze" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gae_pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_normal_onedecoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gae_pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_normal_onedecoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_scat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gae_pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_scat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_scat_onedecoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gae_pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_scat_onedecoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_scat_twodecoders" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gae_pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_scat_twodecoders.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.analyze" />
+        <item itemvalue="Python.train_scat_onedecoder" />
+        <item itemvalue="Python.train_normal_onedecoder" />
+        <item itemvalue="Python.train_scat_twodecoders" />
+        <item itemvalue="Python.train_scat" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d58f567e-64c4-4ceb-b07c-a5348b615dbb" name="Default Changelist" comment="" />
+      <created>1600094489691</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600094489691</updated>
+      <workItem from="1600094493276" duration="487000" />
+      <workItem from="1600095811949" duration="876000" />
+      <workItem from="1600096835309" duration="510000" />
+      <workItem from="1600097532325" duration="46000" />
+      <workItem from="1600098069363" duration="299000" />
+      <workItem from="1600098396227" duration="5000" />
+      <workItem from="1600098414530" duration="57000" />
+      <workItem from="1600105068518" duration="125000" />
+      <workItem from="1600844280009" duration="2041000" />
+      <workItem from="1600928054440" duration="110000" />
+      <workItem from="1600928185112" duration="3000" />
+      <workItem from="1601032877375" duration="5167000" />
+      <workItem from="1601123451719" duration="4568000" />
+      <workItem from="1601135179989" duration="13970000" />
+      <workItem from="1601206588409" duration="6635000" />
+      <workItem from="1601223342185" duration="39000" />
+      <workItem from="1604159495934" duration="2003000" />
+      <workItem from="1604162271260" duration="109000" />
+      <workItem from="1604205497000" duration="245000" />
+      <workItem from="1604568609429" duration="1437000" />
+      <workItem from="1604749299185" duration="5593000" />
+      <workItem from="1605083250027" duration="20694000" />
+      <workItem from="1605275131655" duration="6411000" />
+      <workItem from="1606710053592" duration="24000" />
+      <workItem from="1606722471295" duration="21000" />
+      <workItem from="1608207931205" duration="28211000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="354" y="147" key="#Inspections" timestamp="1600096702237">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="354" y="147" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1600096702237" />
+    <state x="229" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604159824258">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600098368526" />
+    <state x="229" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1604159824258" />
+    <state x="628" y="374" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605094403636">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="628" y="374" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1792.1097@0.23.1792.1097" timestamp="1605094403636" />
+    <state x="547" y="359" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog" timestamp="1601214739497">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="547" y="359" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.23.1440.877@0.23.1440.877" timestamp="1601214739497" />
+    <state x="507" y="223" key="FileChooserDialogImpl" timestamp="1600096524935">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="507" y="223" key="FileChooserDialogImpl/0.23.1440.877@0.23.1440.877" timestamp="1600096524935" />
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1608388440074">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1608388440074" />
+    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1608388440074">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1608388440074" />
+    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1608388440074">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1608388440074" />
+    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1608388440074">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1608388440074" />
+    <state width="1429" height="368" key="GridCell.Tab.1.bottom" timestamp="1604159731693">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1429" height="368" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
+    <state width="1429" height="368" key="GridCell.Tab.1.center" timestamp="1604159731693">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1429" height="368" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
+    <state width="1429" height="368" key="GridCell.Tab.1.left" timestamp="1604159731693">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1429" height="368" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
+    <state width="1429" height="368" key="GridCell.Tab.1.right" timestamp="1604159731693">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state width="1429" height="368" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1600105138200">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600105138200" />
+    <state x="214" y="173" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1601190312723">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="214" y="173" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1440.877@0.23.1440.877" timestamp="1601190312723" />
+    <state x="418" y="94" width="604" height="735" key="find.popup" timestamp="1600098151470">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="418" y="94" width="604" height="735" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1600098151470" />
+    <state x="479" y="273" width="834" height="846" key="search.everywhere.popup" timestamp="1608281995563">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1601125721333" />
+    <state x="479" y="273" width="834" height="846" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1608281995563" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/backup/model.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/gae_pytorch$analyze.coverage" NAME="analyze Coverage Results" MODIFIED="1608349299516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gae_pytorch$train.coverage" NAME="train Coverage Results" MODIFIED="1604159722749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gae_pytorch$train_normal_onedecoder.coverage" NAME="train_normal_onedecoder Coverage Results" MODIFIED="1604752419253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gae_pytorch$train_scat_onedecoder.coverage" NAME="train_scat_onedecoder Coverage Results" MODIFIED="1605094062149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

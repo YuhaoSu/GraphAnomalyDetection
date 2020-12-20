@@ -1,0 +1,1746 @@
+nohup: ignoring input
+rsr and rsr scat on cora, citeseer, cora_full, pubmed, amazon-computer and amazon photo
+Start cora
+
+
+
+Initializing Rsr twodecoders
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, dataset='cora', delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 29
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+Epoch: 0001 train_loss= 10152.44336 feature_loss= 33.11633 structure_loss= 4445.17188 proj_loss= 1230.12451 pca_loss= 4444.03076 accuracy= 0.61004 accuracy_s= 0.77843 accuracy_f= 0.80576 time= 0.04019
+Epoch: 0011 train_loss= 4918.98828 feature_loss= 10.36991 structure_loss= 1964.84009 proj_loss= 1180.40454 pca_loss= 1763.37366 accuracy= 0.60414 accuracy_s= 0.78139 accuracy_f= 0.83456 time= 0.02882
+Epoch: 0021 train_loss= 3443.42407 feature_loss= 6.99965 structure_loss= 1236.29480 proj_loss= 1137.48511 pca_loss= 1062.64453 accuracy= 0.60487 accuracy_s= 0.78139 accuracy_f= 0.83900 time= 0.02864
+Epoch: 0031 train_loss= 2886.34937 feature_loss= 5.71574 structure_loss= 1054.18909 proj_loss= 1098.42480 pca_loss= 728.01971 accuracy= 0.61004 accuracy_s= 0.77991 accuracy_f= 0.84047 time= 0.02843
+Epoch: 0041 train_loss= 2559.38574 feature_loss= 5.35213 structure_loss= 959.37848 proj_loss= 1060.54822 pca_loss= 534.10687 accuracy= 0.61817 accuracy_s= 0.77991 accuracy_f= 0.84269 time= 0.02854
+Epoch: 0051 train_loss= 2337.70435 feature_loss= 5.20014 structure_loss= 901.34753 proj_loss= 1023.46405 pca_loss= 407.69272 accuracy= 0.61817 accuracy_s= 0.77917 accuracy_f= 0.83973 time= 0.02891
+Epoch: 0061 train_loss= 2172.89404 feature_loss= 5.13047 structure_loss= 853.46198 proj_loss= 987.09296 pca_loss= 327.20856 accuracy= 0.64993 accuracy_s= 0.78139 accuracy_f= 0.83900 time= 0.02874
+Epoch: 0071 train_loss= 2052.66455 feature_loss= 5.10306 structure_loss= 816.30151 proj_loss= 952.06445 pca_loss= 279.19550 accuracy= 0.66470 accuracy_s= 0.77843 accuracy_f= 0.83900 time= 0.02865
+Epoch: 0081 train_loss= 1950.87488 feature_loss= 5.09107 structure_loss= 781.26422 proj_loss= 918.94214 pca_loss= 245.57747 accuracy= 0.69572 accuracy_s= 0.79321 accuracy_f= 0.84047 time= 0.02864
+Epoch: 0091 train_loss= 1850.05322 feature_loss= 5.08187 structure_loss= 742.75720 proj_loss= 887.14954 pca_loss= 215.06471 accuracy= 0.67356 accuracy_s= 0.77843 accuracy_f= 0.84195 time= 0.02911
+Epoch: 0101 train_loss= 1739.25488 feature_loss= 5.07328 structure_loss= 685.09833 proj_loss= 856.86108 pca_loss= 192.22217 accuracy= 0.67873 accuracy_s= 0.77843 accuracy_f= 0.84195 time= 0.02867
+Epoch: 0111 train_loss= 1630.49219 feature_loss= 5.06531 structure_loss= 598.89136 proj_loss= 829.16431 pca_loss= 197.37126 accuracy= 0.67947 accuracy_s= 0.77843 accuracy_f= 0.84121 time= 0.02860
+Epoch: 0121 train_loss= 1534.88086 feature_loss= 5.05643 structure_loss= 545.20190 proj_loss= 802.98688 pca_loss= 181.63562 accuracy= 0.69498 accuracy_s= 0.77991 accuracy_f= 0.84121 time= 0.02890
+Epoch: 0131 train_loss= 1421.80908 feature_loss= 5.04755 structure_loss= 469.67120 proj_loss= 778.31329 pca_loss= 168.77710 accuracy= 0.69202 accuracy_s= 0.78065 accuracy_f= 0.84269 time= 0.02901
+Epoch: 0141 train_loss= 1317.72803 feature_loss= 5.03730 structure_loss= 397.71875 proj_loss= 755.04651 pca_loss= 159.92549 accuracy= 0.69350 accuracy_s= 0.78139 accuracy_f= 0.84195 time= 0.02861
+Epoch: 0151 train_loss= 1211.82263 feature_loss= 5.03056 structure_loss= 312.37982 proj_loss= 733.11627 pca_loss= 161.29605 accuracy= 0.70015 accuracy_s= 0.78065 accuracy_f= 0.84121 time= 0.02856
+Epoch: 0161 train_loss= 1148.84180 feature_loss= 5.02073 structure_loss= 281.77161 proj_loss= 712.02252 pca_loss= 150.02702 accuracy= 0.69867 accuracy_s= 0.77991 accuracy_f= 0.84195 time= 0.02893
+Epoch: 0171 train_loss= 1017.32751 feature_loss= 5.01204 structure_loss= 185.32858 proj_loss= 691.73694 pca_loss= 135.24997 accuracy= 0.69202 accuracy_s= 0.78139 accuracy_f= 0.84269 time= 0.02870
+Epoch: 0181 train_loss= 943.83716 feature_loss= 5.00261 structure_loss= 127.65751 proj_loss= 672.83252 pca_loss= 138.34451 accuracy= 0.70458 accuracy_s= 0.77843 accuracy_f= 0.84195 time= 0.02865
+Epoch: 0191 train_loss= 892.12097 feature_loss= 4.99217 structure_loss= 109.30463 proj_loss= 654.60193 pca_loss= 123.22223 accuracy= 0.70162 accuracy_s= 0.77843 accuracy_f= 0.84195 time= 0.03110
+Epoch: 0201 train_loss= 841.55713 feature_loss= 4.98390 structure_loss= 89.11445 proj_loss= 637.01733 pca_loss= 110.44146 accuracy= 0.70310 accuracy_s= 0.77843 accuracy_f= 0.84417 time= 0.02927
+Epoch: 0211 train_loss= 796.59491 feature_loss= 4.97524 structure_loss= 71.07034 proj_loss= 620.06970 pca_loss= 100.47960 accuracy= 0.70236 accuracy_s= 0.77843 accuracy_f= 0.84121 time= 0.02868
+Epoch: 0221 train_loss= 762.19330 feature_loss= 4.96827 structure_loss= 62.39354 proj_loss= 603.71997 pca_loss= 91.11152 accuracy= 0.69793 accuracy_s= 0.77843 accuracy_f= 0.84343 time= 0.02865
+Epoch: 0231 train_loss= 734.74506 feature_loss= 4.95632 structure_loss= 59.42690 proj_loss= 587.94775 pca_loss= 82.41405 accuracy= 0.69941 accuracy_s= 0.77843 accuracy_f= 0.84417 time= 0.02855
+Epoch: 0241 train_loss= 712.02588 feature_loss= 4.95039 structure_loss= 54.76464 proj_loss= 572.75983 pca_loss= 79.55105 accuracy= 0.70015 accuracy_s= 0.77843 accuracy_f= 0.84269 time= 0.02912
+Epoch: 0251 train_loss= 648.98010 feature_loss= 5.21118 structure_loss= 6.08278 proj_loss= 558.29712 pca_loss= 79.38903 accuracy= 0.69055 accuracy_s= 0.77843 accuracy_f= 0.83826 time= 0.02859
+Epoch: 0261 train_loss= 629.74780 feature_loss= 4.94922 structure_loss= 2.12280 proj_loss= 544.44373 pca_loss= 78.23207 accuracy= 0.69719 accuracy_s= 0.77843 accuracy_f= 0.84121 time= 0.02878
+Epoch: 0271 train_loss= 611.35065 feature_loss= 4.94167 structure_loss= 1.79836 proj_loss= 531.00842 pca_loss= 73.60218 accuracy= 0.69572 accuracy_s= 0.77843 accuracy_f= 0.84121 time= 0.02873
+Epoch: 0281 train_loss= 590.78906 feature_loss= 4.93047 structure_loss= 1.31325 proj_loss= 517.95654 pca_loss= 66.58882 accuracy= 0.69055 accuracy_s= 0.77843 accuracy_f= 0.84121 time= 0.02865
+Epoch: 0291 train_loss= 574.71918 feature_loss= 4.92157 structure_loss= 1.17815 proj_loss= 505.36777 pca_loss= 63.25170 accuracy= 0.68759 accuracy_s= 0.77843 accuracy_f= 0.84195 time= 0.02883
+
+accuracy 0.69424
+accuracy_s 0.77843
+accuracy_f 0.84121
+auc 0.60047
+f1_score 0.31000
+Job finished!
+
+
+
+Initializing Rsr twodecoders
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, dataset='cora', delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 121
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+Epoch: 0001 train_loss= 12542.97266 feature_loss= 33.10822 structure_loss= 5701.89258 proj_loss= 5058.09277 pca_loss= 1749.87866 accuracy= 0.59897 accuracy_s= 0.77843 accuracy_f= 0.80724 time= 0.03986
+Epoch: 0011 train_loss= 7647.87646 feature_loss= 7.82822 structure_loss= 2073.77368 proj_loss= 4769.10254 pca_loss= 797.17218 accuracy= 0.62186 accuracy_s= 0.77917 accuracy_f= 0.83752 time= 0.02834
+Epoch: 0021 train_loss= 6143.40527 feature_loss= 6.01258 structure_loss= 1194.04663 proj_loss= 4492.57129 pca_loss= 450.77502 accuracy= 0.60857 accuracy_s= 0.77991 accuracy_f= 0.84047 time= 0.02823
+Epoch: 0031 train_loss= 5613.82666 feature_loss= 5.67913 structure_loss= 1054.30664 proj_loss= 4233.03320 pca_loss= 320.80780 accuracy= 0.60635 accuracy_s= 0.77843 accuracy_f= 0.84047 time= 0.03117
+Epoch: 0041 train_loss= 5202.23145 feature_loss= 5.53879 structure_loss= 949.08655 proj_loss= 3990.02808 pca_loss= 257.57800 accuracy= 0.61004 accuracy_s= 0.77917 accuracy_f= 0.83973 time= 0.02820
+Epoch: 0051 train_loss= 4889.58057 feature_loss= 5.45527 structure_loss= 911.66089 proj_loss= 3763.54834 pca_loss= 208.91620 accuracy= 0.61891 accuracy_s= 0.77917 accuracy_f= 0.83973 time= 0.02816
+Epoch: 0061 train_loss= 4584.96680 feature_loss= 5.35704 structure_loss= 845.19440 proj_loss= 3553.02075 pca_loss= 181.39439 accuracy= 0.63442 accuracy_s= 0.77991 accuracy_f= 0.84121 time= 0.02825
+Epoch: 0071 train_loss= 4321.60303 feature_loss= 5.25724 structure_loss= 798.71478 proj_loss= 3357.44287 pca_loss= 160.18822 accuracy= 0.65140 accuracy_s= 0.77843 accuracy_f= 0.83900 time= 0.02824
+Epoch: 0081 train_loss= 4080.52661 feature_loss= 5.17464 structure_loss= 756.91913 proj_loss= 3175.68433 pca_loss= 142.74844 accuracy= 0.67504 accuracy_s= 0.78434 accuracy_f= 0.83973 time= 0.02799
+Epoch: 0091 train_loss= 3854.33154 feature_loss= 5.11674 structure_loss= 712.60376 proj_loss= 3006.50122 pca_loss= 130.10982 accuracy= 0.68685 accuracy_s= 0.78656 accuracy_f= 0.83973 time= 0.02805
+Epoch: 0101 train_loss= 3657.75879 feature_loss= 5.09285 structure_loss= 677.71692 proj_loss= 2849.14209 pca_loss= 125.80688 accuracy= 0.64771 accuracy_s= 0.77843 accuracy_f= 0.84047 time= 0.02840
+Epoch: 0111 train_loss= 3457.85229 feature_loss= 5.08330 structure_loss= 638.18298 proj_loss= 2702.42920 pca_loss= 112.15670 accuracy= 0.68021 accuracy_s= 0.77843 accuracy_f= 0.84047 time= 0.02836
+Epoch: 0121 train_loss= 3288.29590 feature_loss= 5.07402 structure_loss= 615.65936 proj_loss= 2565.64990 pca_loss= 101.91257 accuracy= 0.68316 accuracy_s= 0.78360 accuracy_f= 0.83973 time= 0.02834
+Epoch: 0131 train_loss= 3125.97119 feature_loss= 5.06477 structure_loss= 591.72369 proj_loss= 2437.78076 pca_loss= 91.40182 accuracy= 0.68612 accuracy_s= 0.77843 accuracy_f= 0.83826 time= 0.02812
+Epoch: 0141 train_loss= 2979.93018 feature_loss= 5.05559 structure_loss= 574.91266 proj_loss= 2318.07544 pca_loss= 81.88649 accuracy= 0.68981 accuracy_s= 0.77991 accuracy_f= 0.83900 time= 0.02828
+Epoch: 0151 train_loss= 2848.86255 feature_loss= 5.04637 structure_loss= 560.80731 proj_loss= 2205.97998 pca_loss= 77.02892 accuracy= 0.68907 accuracy_s= 0.78287 accuracy_f= 0.83900 time= 0.02840
+Epoch: 0161 train_loss= 2714.53809 feature_loss= 5.03724 structure_loss= 538.91339 proj_loss= 2100.96338 pca_loss= 69.62406 accuracy= 0.69055 accuracy_s= 0.78582 accuracy_f= 0.83900 time= 0.02824
+Epoch: 0171 train_loss= 2555.02710 feature_loss= 5.02878 structure_loss= 483.90674 proj_loss= 2002.51306 pca_loss= 63.57872 accuracy= 0.68095 accuracy_s= 0.77917 accuracy_f= 0.83973 time= 0.02816
+Epoch: 0181 train_loss= 2994.47144 feature_loss= 5.01598 structure_loss= 855.03339 proj_loss= 1923.95532 pca_loss= 210.46681 accuracy= 0.63885 accuracy_s= 0.78287 accuracy_f= 0.83973 time= 0.02827
+Epoch: 0191 train_loss= 2722.49609 feature_loss= 4.99669 structure_loss= 654.91937 proj_loss= 1857.97546 pca_loss= 204.60439 accuracy= 0.61521 accuracy_s= 0.77917 accuracy_f= 0.84047 time= 0.02857
+Epoch: 0201 train_loss= 2571.62524 feature_loss= 4.98825 structure_loss= 609.31995 proj_loss= 1793.06311 pca_loss= 164.25388 accuracy= 0.65805 accuracy_s= 0.77917 accuracy_f= 0.84047 time= 0.02853
+Epoch: 0211 train_loss= 2438.64673 feature_loss= 4.97828 structure_loss= 567.33246 proj_loss= 1730.42297 pca_loss= 135.91299 accuracy= 0.66987 accuracy_s= 0.78434 accuracy_f= 0.83973 time= 0.02846
+Epoch: 0221 train_loss= 2329.90796 feature_loss= 4.96904 structure_loss= 537.76044 proj_loss= 1670.43042 pca_loss= 116.74805 accuracy= 0.68095 accuracy_s= 0.79247 accuracy_f= 0.83973 time= 0.02851
+Epoch: 0231 train_loss= 2231.03979 feature_loss= 4.95987 structure_loss= 510.09225 proj_loss= 1612.99292 pca_loss= 102.99480 accuracy= 0.69572 accuracy_s= 0.78730 accuracy_f= 0.84047 time= 0.02848
+Epoch: 0241 train_loss= 2155.75903 feature_loss= 4.95039 structure_loss= 499.85883 proj_loss= 1558.04456 pca_loss= 92.90517 accuracy= 0.69572 accuracy_s= 0.79025 accuracy_f= 0.84047 time= 0.02869
+Epoch: 0251 train_loss= 2076.82544 feature_loss= 4.94094 structure_loss= 481.63211 proj_loss= 1505.43555 pca_loss= 84.81681 accuracy= 0.69202 accuracy_s= 0.79173 accuracy_f= 0.84047 time= 0.02854
+Epoch: 0261 train_loss= 2000.04871 feature_loss= 4.93130 structure_loss= 462.39377 proj_loss= 1455.05005 pca_loss= 77.67360 accuracy= 0.68981 accuracy_s= 0.78877 accuracy_f= 0.84047 time= 0.02853
+Epoch: 0271 train_loss= 1927.89014 feature_loss= 4.92158 structure_loss= 444.90619 proj_loss= 1406.74939 pca_loss= 71.31305 accuracy= 0.70162 accuracy_s= 0.79838 accuracy_f= 0.84047 time= 0.02839
+Epoch: 0281 train_loss= 1858.86890 feature_loss= 4.91189 structure_loss= 427.51273 proj_loss= 1360.45166 pca_loss= 65.99269 accuracy= 0.70015 accuracy_s= 0.78877 accuracy_f= 0.84047 time= 0.02852
+Epoch: 0291 train_loss= 1764.27759 feature_loss= 4.90216 structure_loss= 381.16626 proj_loss= 1316.05408 pca_loss= 62.15504 accuracy= 0.69645 accuracy_s= 0.78730 accuracy_f= 0.84047 time= 0.02844
+
+accuracy 0.70089
+accuracy_s 0.78508
+accuracy_f 0.84121
+auc 0.60796
+f1_score 0.32500
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=0, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 361
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+Epoch: 0001 train_loss= 5777.45605 reconstruction_loss= 33.13038 proj_loss= 1252.63745 pca_loss= 4491.68799 accuracy= 0.60487 time= 0.03023
+Epoch: 0011 train_loss= 2320.58252 reconstruction_loss= 10.10996 proj_loss= 1188.09534 pca_loss= 1122.37732 accuracy= 0.69793 time= 0.02077
+Epoch: 0021 train_loss= 1774.85583 reconstruction_loss= 5.92660 proj_loss= 1136.48706 pca_loss= 632.44214 accuracy= 0.69424 time= 0.02021
+Epoch: 0031 train_loss= 1499.41675 reconstruction_loss= 5.55758 proj_loss= 1089.97522 pca_loss= 403.88394 accuracy= 0.70532 time= 0.02014
+Epoch: 0041 train_loss= 1317.32446 reconstruction_loss= 5.49155 proj_loss= 1045.19104 pca_loss= 266.64188 accuracy= 0.70532 time= 0.02014
+Epoch: 0051 train_loss= 1190.47900 reconstruction_loss= 5.35283 proj_loss= 1001.06207 pca_loss= 184.06404 accuracy= 0.70975 time= 0.02015
+Epoch: 0061 train_loss= 1100.02820 reconstruction_loss= 5.19021 proj_loss= 957.74213 pca_loss= 137.09592 accuracy= 0.71123 time= 0.02015
+Epoch: 0071 train_loss= 1027.59998 reconstruction_loss= 5.09965 proj_loss= 915.72723 pca_loss= 106.77303 accuracy= 0.71418 time= 0.02024
+Epoch: 0081 train_loss= 966.20398 reconstruction_loss= 5.08922 proj_loss= 875.37390 pca_loss= 85.74085 accuracy= 0.71196 time= 0.02017
+Epoch: 0091 train_loss= 914.05872 reconstruction_loss= 5.08132 proj_loss= 837.00464 pca_loss= 71.97278 accuracy= 0.70901 time= 0.02020
+Epoch: 0101 train_loss= 865.00427 reconstruction_loss= 5.07155 proj_loss= 800.72272 pca_loss= 59.21000 accuracy= 0.70901 time= 0.02018
+Epoch: 0111 train_loss= 821.36810 reconstruction_loss= 5.06211 proj_loss= 766.43561 pca_loss= 49.87036 accuracy= 0.70975 time= 0.02020
+Epoch: 0121 train_loss= 781.01373 reconstruction_loss= 5.05128 proj_loss= 734.08215 pca_loss= 41.88033 accuracy= 0.70975 time= 0.02011
+Epoch: 0131 train_loss= 744.63605 reconstruction_loss= 5.04482 proj_loss= 703.59119 pca_loss= 36.00007 accuracy= 0.70975 time= 0.02014
+Epoch: 0141 train_loss= 711.43396 reconstruction_loss= 5.03687 proj_loss= 674.81616 pca_loss= 31.58092 accuracy= 0.71049 time= 0.02022
+Epoch: 0151 train_loss= 680.20813 reconstruction_loss= 5.02626 proj_loss= 647.65143 pca_loss= 27.53044 accuracy= 0.70975 time= 0.02011
+Epoch: 0161 train_loss= 651.67902 reconstruction_loss= 5.01964 proj_loss= 622.03345 pca_loss= 24.62591 accuracy= 0.71049 time= 0.02012
+Epoch: 0171 train_loss= 624.45471 reconstruction_loss= 5.01519 proj_loss= 597.83240 pca_loss= 21.60711 accuracy= 0.70753 time= 0.02022
+Epoch: 0181 train_loss= 599.26300 reconstruction_loss= 5.00352 proj_loss= 574.94653 pca_loss= 19.31293 accuracy= 0.70901 time= 0.02006
+Epoch: 0191 train_loss= 576.07007 reconstruction_loss= 5.13189 proj_loss= 553.29559 pca_loss= 17.64260 accuracy= 0.70901 time= 0.02002
+Epoch: 0201 train_loss= 554.95526 reconstruction_loss= 5.00652 proj_loss= 532.81860 pca_loss= 17.13013 accuracy= 0.71049 time= 0.02012
+Epoch: 0211 train_loss= 532.70648 reconstruction_loss= 4.98617 proj_loss= 513.43042 pca_loss= 14.28991 accuracy= 0.70753 time= 0.02026
+Epoch: 0221 train_loss= 513.36829 reconstruction_loss= 4.97470 proj_loss= 495.05115 pca_loss= 13.34242 accuracy= 0.70827 time= 0.02038
+Epoch: 0231 train_loss= 494.34525 reconstruction_loss= 4.97185 proj_loss= 477.60507 pca_loss= 11.76832 accuracy= 0.70458 time= 0.02003
+Epoch: 0241 train_loss= 476.95322 reconstruction_loss= 4.96034 proj_loss= 461.01190 pca_loss= 10.98095 accuracy= 0.70532 time= 0.02000
+Epoch: 0251 train_loss= 460.46927 reconstruction_loss= 4.99683 proj_loss= 445.22006 pca_loss= 10.25237 accuracy= 0.70089 time= 0.02002
+Epoch: 0261 train_loss= 445.21332 reconstruction_loss= 4.99672 proj_loss= 430.20877 pca_loss= 10.00780 accuracy= 0.70458 time= 0.02004
+Epoch: 0271 train_loss= 430.18988 reconstruction_loss= 4.93498 proj_loss= 415.91003 pca_loss= 9.34488 accuracy= 0.70384 time= 0.02005
+Epoch: 0281 train_loss= 415.73233 reconstruction_loss= 4.92703 proj_loss= 402.29553 pca_loss= 8.50978 accuracy= 0.70458 time= 0.02003
+Epoch: 0291 train_loss= 402.24142 reconstruction_loss= 4.91775 proj_loss= 389.31204 pca_loss= 8.01161 accuracy= 0.70532 time= 0.02004
+
+accuracy 0.66396
+auc 0.56080
+f1_score 0.24167
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=1, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 272
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+Epoch: 0001 train_loss= 10242.21484 reconstruction_loss= 4457.29980 proj_loss= 1268.47510 pca_loss= 4516.43994 accuracy= 0.60340 time= 0.02728
+Epoch: 0011 train_loss= 4819.76660 reconstruction_loss= 1851.70154 proj_loss= 1216.99597 pca_loss= 1751.06934 accuracy= 0.60783 time= 0.02122
+Epoch: 0021 train_loss= 3415.62280 reconstruction_loss= 1195.16809 proj_loss= 1171.92603 pca_loss= 1048.52856 accuracy= 0.61521 time= 0.01756
+Epoch: 0031 train_loss= 2858.29810 reconstruction_loss= 1024.38330 proj_loss= 1130.59119 pca_loss= 703.32355 accuracy= 0.61226 time= 0.01771
+Epoch: 0041 train_loss= 2545.98633 reconstruction_loss= 947.15027 proj_loss= 1090.59119 pca_loss= 508.24478 accuracy= 0.61078 time= 0.01751
+Epoch: 0051 train_loss= 2338.61133 reconstruction_loss= 895.93390 proj_loss= 1051.33179 pca_loss= 391.34573 accuracy= 0.61669 time= 0.01751
+Epoch: 0061 train_loss= 2186.80591 reconstruction_loss= 860.19568 proj_loss= 1012.80438 pca_loss= 313.80597 accuracy= 0.61521 time= 0.01750
+Epoch: 0071 train_loss= 2077.28027 reconstruction_loss= 835.83124 proj_loss= 975.67944 pca_loss= 265.76962 accuracy= 0.61891 time= 0.01751
+Epoch: 0081 train_loss= 1959.67847 reconstruction_loss= 781.68066 proj_loss= 940.56476 pca_loss= 237.43311 accuracy= 0.63959 time= 0.01753
+Epoch: 0091 train_loss= 1829.32349 reconstruction_loss= 700.76697 proj_loss= 907.71912 pca_loss= 220.83746 accuracy= 0.62851 time= 0.01746
+Epoch: 0101 train_loss= 1723.62073 reconstruction_loss= 638.92401 proj_loss= 877.03235 pca_loss= 207.66444 accuracy= 0.63072 time= 0.01747
+Epoch: 0111 train_loss= 1581.33691 reconstruction_loss= 536.72021 proj_loss= 848.45422 pca_loss= 196.16252 accuracy= 0.63146 time= 0.01749
+Epoch: 0121 train_loss= 1431.10815 reconstruction_loss= 408.64682 proj_loss= 822.82275 pca_loss= 199.63852 accuracy= 0.61965 time= 0.01757
+Epoch: 0131 train_loss= 1320.43530 reconstruction_loss= 327.90836 proj_loss= 798.95551 pca_loss= 193.57140 accuracy= 0.64771 time= 0.01747
+Epoch: 0141 train_loss= 1194.60193 reconstruction_loss= 233.56372 proj_loss= 776.34167 pca_loss= 184.69656 accuracy= 0.63294 time= 0.01740
+Epoch: 0151 train_loss= 1041.40381 reconstruction_loss= 114.37054 proj_loss= 754.83643 pca_loss= 172.19682 accuracy= 0.61965 time= 0.01751
+Epoch: 0161 train_loss= 980.83459 reconstruction_loss= 88.38608 proj_loss= 734.09833 pca_loss= 158.35025 accuracy= 0.61448 time= 0.01743
+Epoch: 0171 train_loss= 938.33862 reconstruction_loss= 85.33873 proj_loss= 714.06018 pca_loss= 138.93971 accuracy= 0.61595 time= 0.01750
+Epoch: 0181 train_loss= 897.64288 reconstruction_loss= 78.47839 proj_loss= 694.93884 pca_loss= 124.22565 accuracy= 0.61078 time= 0.01750
+Epoch: 0191 train_loss= 863.63367 reconstruction_loss= 76.07755 proj_loss= 676.64966 pca_loss= 110.90652 accuracy= 0.61669 time= 0.01749
+Epoch: 0201 train_loss= 812.45459 reconstruction_loss= 41.54143 proj_loss= 659.26221 pca_loss= 111.65096 accuracy= 0.61374 time= 0.01752
+Epoch: 0211 train_loss= 755.61841 reconstruction_loss= 2.66827 proj_loss= 642.74988 pca_loss= 110.20029 accuracy= 0.61004 time= 0.01749
+Epoch: 0221 train_loss= 728.61749 reconstruction_loss= 1.86628 proj_loss= 626.74286 pca_loss= 100.00838 accuracy= 0.61226 time= 0.01753
+Epoch: 0231 train_loss= 705.47601 reconstruction_loss= 1.52880 proj_loss= 611.27399 pca_loss= 92.67320 accuracy= 0.61300 time= 0.01831
+Epoch: 0241 train_loss= 679.47192 reconstruction_loss= 1.34217 proj_loss= 596.31085 pca_loss= 81.81894 accuracy= 0.61300 time= 0.01752
+Epoch: 0251 train_loss= 658.41693 reconstruction_loss= 1.57052 proj_loss= 581.88550 pca_loss= 74.96091 accuracy= 0.61226 time= 0.01752
+Epoch: 0261 train_loss= 641.43719 reconstruction_loss= 1.16855 proj_loss= 567.97241 pca_loss= 72.29619 accuracy= 0.61300 time= 0.01753
+Epoch: 0271 train_loss= 622.89697 reconstruction_loss= 1.17873 proj_loss= 554.52362 pca_loss= 67.19464 accuracy= 0.61226 time= 0.01749
+Epoch: 0281 train_loss= 606.27783 reconstruction_loss= 1.11922 proj_loss= 541.51404 pca_loss= 63.64458 accuracy= 0.61374 time= 0.01806
+Epoch: 0291 train_loss= 7874.12402 reconstruction_loss= 7229.31885 proj_loss= 529.43805 pca_loss= 115.36719 accuracy= 0.63072 time= 0.01756
+
+accuracy 0.64032
+auc 0.50880
+f1_score 0.18833
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=0, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 898
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+Epoch: 0001 train_loss= 6741.86377 reconstruction_loss= 32.59285 proj_loss= 4981.58398 pca_loss= 1727.68713 accuracy= 0.60414 time= 0.02962
+Epoch: 0011 train_loss= 4971.81348 reconstruction_loss= 10.80840 proj_loss= 4670.88818 pca_loss= 290.11655 accuracy= 0.69202 time= 0.02186
+Epoch: 0021 train_loss= 4531.15576 reconstruction_loss= 6.56810 proj_loss= 4382.80615 pca_loss= 141.78185 accuracy= 0.69129 time= 0.01974
+Epoch: 0031 train_loss= 4210.05127 reconstruction_loss= 5.44641 proj_loss= 4116.11377 pca_loss= 88.49106 accuracy= 0.69129 time= 0.02040
+Epoch: 0041 train_loss= 3939.34424 reconstruction_loss= 5.35785 proj_loss= 3869.74805 pca_loss= 64.23825 accuracy= 0.69129 time= 0.01974
+Epoch: 0051 train_loss= 3700.01367 reconstruction_loss= 5.36991 proj_loss= 3642.43481 pca_loss= 52.20892 accuracy= 0.69572 time= 0.01975
+Epoch: 0061 train_loss= 3480.40771 reconstruction_loss= 5.38681 proj_loss= 3432.59619 pca_loss= 42.42476 accuracy= 0.69645 time= 0.01971
+Epoch: 0071 train_loss= 3281.90503 reconstruction_loss= 5.19060 proj_loss= 3238.71875 pca_loss= 37.99556 accuracy= 0.70089 time= 0.01974
+Epoch: 0081 train_loss= 3098.26392 reconstruction_loss= 5.37714 proj_loss= 3059.31372 pca_loss= 33.57304 accuracy= 0.70310 time= 0.01970
+Epoch: 0091 train_loss= 2929.76025 reconstruction_loss= 5.11736 proj_loss= 2893.00244 pca_loss= 31.64046 accuracy= 0.70310 time= 0.01975
+Epoch: 0101 train_loss= 2773.04077 reconstruction_loss= 5.13167 proj_loss= 2738.58789 pca_loss= 29.32132 accuracy= 0.70606 time= 0.01971
+Epoch: 0111 train_loss= 2626.77075 reconstruction_loss= 5.06809 proj_loss= 2595.00122 pca_loss= 26.70146 accuracy= 0.70606 time= 0.01975
+Epoch: 0121 train_loss= 2492.69312 reconstruction_loss= 5.51084 proj_loss= 2461.28857 pca_loss= 25.89388 accuracy= 0.75185 time= 0.01970
+Epoch: 0131 train_loss= 2365.56909 reconstruction_loss= 4.73513 proj_loss= 2336.56323 pca_loss= 24.27077 accuracy= 0.70310 time= 0.01967
+Epoch: 0141 train_loss= 2248.41724 reconstruction_loss= 4.68851 proj_loss= 2220.09717 pca_loss= 23.63153 accuracy= 0.69867 time= 0.01966
+Epoch: 0151 train_loss= 2143.97656 reconstruction_loss= 4.50101 proj_loss= 2111.25757 pca_loss= 28.21813 accuracy= 0.70384 time= 0.01969
+Epoch: 0161 train_loss= 2037.63879 reconstruction_loss= 4.44527 proj_loss= 2009.43713 pca_loss= 23.75632 accuracy= 0.70384 time= 0.01970
+Epoch: 0171 train_loss= 1938.76672 reconstruction_loss= 4.42695 proj_loss= 1914.03455 pca_loss= 20.30514 accuracy= 0.70532 time= 0.01970
+Epoch: 0181 train_loss= 1847.66492 reconstruction_loss= 4.39693 proj_loss= 1824.57422 pca_loss= 18.69378 accuracy= 0.70384 time= 0.01965
+Epoch: 0191 train_loss= 1764.03528 reconstruction_loss= 4.36636 proj_loss= 1740.56958 pca_loss= 19.09936 accuracy= 0.70310 time= 0.01968
+Epoch: 0201 train_loss= 1683.25342 reconstruction_loss= 4.40400 proj_loss= 1661.58899 pca_loss= 17.26042 accuracy= 0.70236 time= 0.01971
+Epoch: 0211 train_loss= 1608.41052 reconstruction_loss= 4.30519 proj_loss= 1587.28772 pca_loss= 16.81762 accuracy= 0.70236 time= 0.01966
+Epoch: 0221 train_loss= 1537.09949 reconstruction_loss= 4.32204 proj_loss= 1517.27881 pca_loss= 15.49862 accuracy= 0.70310 time= 0.01971
+Epoch: 0231 train_loss= 1482.98669 reconstruction_loss= 4.29194 proj_loss= 1451.40527 pca_loss= 27.28941 accuracy= 0.70236 time= 0.01965
+Epoch: 0241 train_loss= 1412.57617 reconstruction_loss= 4.27611 proj_loss= 1389.14954 pca_loss= 19.15054 accuracy= 0.70162 time= 0.01970
+Epoch: 0251 train_loss= 1350.42114 reconstruction_loss= 4.27142 proj_loss= 1330.36621 pca_loss= 15.78347 accuracy= 0.70236 time= 0.01965
+Epoch: 0261 train_loss= 1293.21423 reconstruction_loss= 4.26402 proj_loss= 1274.84521 pca_loss= 14.10504 accuracy= 0.70310 time= 0.01968
+Epoch: 0271 train_loss= 1239.73010 reconstruction_loss= 4.27539 proj_loss= 1222.32959 pca_loss= 13.12513 accuracy= 0.70236 time= 0.01969
+Epoch: 0281 train_loss= 1189.30981 reconstruction_loss= 4.27722 proj_loss= 1172.61768 pca_loss= 12.41489 accuracy= 0.70162 time= 0.01967
+Epoch: 0291 train_loss= 1142.46509 reconstruction_loss= 4.34639 proj_loss= 1125.51367 pca_loss= 12.60499 accuracy= 0.70384 time= 0.01966
+
+accuracy 0.70236
+auc 0.61891
+f1_score 0.32833
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=1, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 243
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+Epoch: 0001 train_loss= 12700.58008 reconstruction_loss= 5823.17480 proj_loss= 5126.60205 pca_loss= 1750.80310 accuracy= 0.60709 time= 0.02507
+Epoch: 0011 train_loss= 7820.56738 reconstruction_loss= 2206.54614 proj_loss= 4833.99121 pca_loss= 780.03027 accuracy= 0.62777 time= 0.02050
+Epoch: 0021 train_loss= 6268.48926 reconstruction_loss= 1270.35095 proj_loss= 4554.02686 pca_loss= 444.11151 accuracy= 0.61669 time= 0.01705
+Epoch: 0031 train_loss= 5722.77637 reconstruction_loss= 1113.13684 proj_loss= 4292.06689 pca_loss= 317.57281 accuracy= 0.61448 time= 0.01700
+Epoch: 0041 train_loss= 5278.50586 reconstruction_loss= 975.75885 proj_loss= 4046.65308 pca_loss= 256.09378 accuracy= 0.60561 time= 0.01704
+Epoch: 0051 train_loss= 4941.89111 reconstruction_loss= 909.40912 proj_loss= 3817.49805 pca_loss= 214.98407 accuracy= 0.61300 time= 0.01704
+Epoch: 0061 train_loss= 4658.84473 reconstruction_loss= 872.29761 proj_loss= 3604.27344 pca_loss= 182.27347 accuracy= 0.62925 time= 0.01696
+Epoch: 0071 train_loss= 4394.43652 reconstruction_loss= 827.74011 proj_loss= 3406.17334 pca_loss= 160.52310 accuracy= 0.61300 time= 0.01704
+Epoch: 0081 train_loss= 4150.73047 reconstruction_loss= 782.70862 proj_loss= 3222.06616 pca_loss= 145.95554 accuracy= 0.61817 time= 0.01706
+Epoch: 0091 train_loss= 3930.18848 reconstruction_loss= 746.20477 proj_loss= 3050.75732 pca_loss= 133.22639 accuracy= 0.63811 time= 0.01699
+Epoch: 0101 train_loss= 3719.38599 reconstruction_loss= 703.97540 proj_loss= 2891.20923 pca_loss= 124.20132 accuracy= 0.63220 time= 0.01701
+Epoch: 0111 train_loss= 3537.74683 reconstruction_loss= 685.49066 proj_loss= 2742.36914 pca_loss= 109.88698 accuracy= 0.63737 time= 0.01699
+Epoch: 0121 train_loss= 3366.92407 reconstruction_loss= 664.58203 proj_loss= 2603.40771 pca_loss= 98.93429 accuracy= 0.63368 time= 0.01697
+Epoch: 0131 train_loss= 6025.32373 reconstruction_loss= 3408.97485 proj_loss= 2474.69336 pca_loss= 141.65567 accuracy= 0.67134 time= 0.01699
+Epoch: 0141 train_loss= 3251.31445 reconstruction_loss= 658.59259 proj_loss= 2384.16333 pca_loss= 208.55872 accuracy= 0.61226 time= 0.01713
+Epoch: 0151 train_loss= 3085.84937 reconstruction_loss= 603.58606 proj_loss= 2296.29883 pca_loss= 185.96452 accuracy= 0.61965 time= 0.01696
+Epoch: 0161 train_loss= 2946.67236 reconstruction_loss= 583.18567 proj_loss= 2211.16675 pca_loss= 152.31995 accuracy= 0.64549 time= 0.01697
+Epoch: 0171 train_loss= 2819.29834 reconstruction_loss= 559.18243 proj_loss= 2129.52173 pca_loss= 130.59421 accuracy= 0.63663 time= 0.01698
+Epoch: 0181 train_loss= 2708.70923 reconstruction_loss= 543.62256 proj_loss= 2051.53442 pca_loss= 113.55235 accuracy= 0.63442 time= 0.01717
+Epoch: 0191 train_loss= 2603.96021 reconstruction_loss= 525.44427 proj_loss= 1977.07190 pca_loss= 101.44410 accuracy= 0.62925 time= 0.01732
+Epoch: 0201 train_loss= 2504.16406 reconstruction_loss= 505.99408 proj_loss= 1905.97510 pca_loss= 92.19472 accuracy= 0.63368 time= 0.01712
+Epoch: 0211 train_loss= 2413.47510 reconstruction_loss= 490.51642 proj_loss= 1838.05518 pca_loss= 84.90345 accuracy= 0.64549 time= 0.01720
+Epoch: 0221 train_loss= 2316.23438 reconstruction_loss= 464.11423 proj_loss= 1773.10742 pca_loss= 79.01259 accuracy= 0.62703 time= 0.01734
+Epoch: 0231 train_loss= 2194.30640 reconstruction_loss= 408.32098 proj_loss= 1711.05798 pca_loss= 74.92742 accuracy= 0.62555 time= 0.01707
+Epoch: 0241 train_loss= 2090.81470 reconstruction_loss= 366.08344 proj_loss= 1651.78516 pca_loss= 72.94615 accuracy= 0.61965 time= 0.01720
+Epoch: 0251 train_loss= 1987.57581 reconstruction_loss= 324.30441 proj_loss= 1595.00439 pca_loss= 68.26698 accuracy= 0.62482 time= 0.01736
+Epoch: 0261 train_loss= 1907.92737 reconstruction_loss= 303.21362 proj_loss= 1540.60522 pca_loss= 64.10852 accuracy= 0.62777 time= 0.01720
+Epoch: 0271 train_loss= 1782.29907 reconstruction_loss= 233.83936 proj_loss= 1488.53723 pca_loss= 59.92249 accuracy= 0.61595 time= 0.01718
+Epoch: 0281 train_loss= 1715.10376 reconstruction_loss= 218.97302 proj_loss= 1438.72668 pca_loss= 57.40411 accuracy= 0.61374 time= 0.01735
+Epoch: 0291 train_loss= 1649.80432 reconstruction_loss= 204.34195 proj_loss= 1390.97986 pca_loss= 54.48253 accuracy= 0.63589 time= 0.01723
+
+accuracy 0.61965
+auc 0.33194
+f1_score 0.14167
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 923
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 10674.53125 feature_loss= 36.96180 structure_loss= 4430.88770 proj_loss= 1253.29297 pca_loss= 4953.38818 accuracy= 0.72378 accuracy_s= 0.84638 accuracy_f= 0.79764 time= 0.03561
+Epoch: 0011 train_loss= 9052.95117 feature_loss= 20.89146 structure_loss= 3093.04761 proj_loss= 1182.01672 pca_loss= 4756.99609 accuracy= 0.61965 accuracy_s= 0.77991 accuracy_f= 0.80798 time= 0.02452
+Epoch: 0021 train_loss= 8405.25391 feature_loss= 14.18404 structure_loss= 2708.19116 proj_loss= 1112.37537 pca_loss= 4570.50391 accuracy= 0.60857 accuracy_s= 0.77991 accuracy_f= 0.81315 time= 0.02415
+Epoch: 0031 train_loss= 7885.71143 feature_loss= 10.03053 structure_loss= 2435.38989 proj_loss= 1046.39307 pca_loss= 4393.89795 accuracy= 0.60783 accuracy_s= 0.77917 accuracy_f= 0.80650 time= 0.02402
+Epoch: 0041 train_loss= 7427.96777 feature_loss= 6.67510 structure_loss= 2209.97925 proj_loss= 984.38147 pca_loss= 4226.93213 accuracy= 0.60635 accuracy_s= 0.77917 accuracy_f= 0.81536 time= 0.02408
+Epoch: 0051 train_loss= 7005.88379 feature_loss= 6.22514 structure_loss= 2004.05603 proj_loss= 926.46783 pca_loss= 4069.13477 accuracy= 0.60857 accuracy_s= 0.77917 accuracy_f= 0.85081 time= 0.02400
+Epoch: 0061 train_loss= 6597.76270 feature_loss= 6.12156 structure_loss= 1798.98816 proj_loss= 872.52551 pca_loss= 3920.12769 accuracy= 0.60857 accuracy_s= 0.77843 accuracy_f= 0.85672 time= 0.02398
+Epoch: 0071 train_loss= 6202.21484 feature_loss= 6.05231 structure_loss= 1594.46191 proj_loss= 822.29010 pca_loss= 3779.41064 accuracy= 0.60709 accuracy_s= 0.77843 accuracy_f= 0.85968 time= 0.02413
+Epoch: 0081 train_loss= 5821.55273 feature_loss= 6.00384 structure_loss= 1394.02234 proj_loss= 775.42645 pca_loss= 3646.10034 accuracy= 0.60561 accuracy_s= 0.77843 accuracy_f= 0.86115 time= 0.02417
+Epoch: 0091 train_loss= 5451.48633 feature_loss= 5.96650 structure_loss= 1194.81506 proj_loss= 731.56696 pca_loss= 3519.13770 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.86484 time= 0.02403
+Epoch: 0101 train_loss= 5089.70166 feature_loss= 5.93547 structure_loss= 995.59998 proj_loss= 690.40411 pca_loss= 3397.76221 accuracy= 0.61521 accuracy_s= 0.77843 accuracy_f= 0.86337 time= 0.02373
+Epoch: 0111 train_loss= 4677.95215 feature_loss= 5.90374 structure_loss= 738.50220 proj_loss= 651.68542 pca_loss= 3281.86060 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.86484 time= 0.02376
+Epoch: 0121 train_loss= 4274.00781 feature_loss= 5.87168 structure_loss= 481.31277 proj_loss= 615.28534 pca_loss= 3171.53809 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.86706 time= 0.02373
+Epoch: 0131 train_loss= 3942.96191 feature_loss= 5.83917 structure_loss= 289.56064 proj_loss= 581.21625 pca_loss= 3066.34595 accuracy= 0.70458 accuracy_s= 0.77843 accuracy_f= 0.86928 time= 0.02446
+Epoch: 0141 train_loss= 3667.51855 feature_loss= 5.80246 structure_loss= 146.46188 proj_loss= 549.41766 pca_loss= 2965.83667 accuracy= 0.73043 accuracy_s= 0.78213 accuracy_f= 0.86780 time= 0.02365
+Epoch: 0151 train_loss= 3467.31323 feature_loss= 5.76666 structure_loss= 72.69079 proj_loss= 519.86023 pca_loss= 2868.99561 accuracy= 0.74003 accuracy_s= 0.77843 accuracy_f= 0.87223 time= 0.02373
+Epoch: 0161 train_loss= 3310.42236 feature_loss= 5.73310 structure_loss= 37.05598 proj_loss= 492.30453 pca_loss= 2775.32861 accuracy= 0.74446 accuracy_s= 0.77843 accuracy_f= 0.87445 time= 0.02369
+Epoch: 0171 train_loss= 3182.72681 feature_loss= 5.69578 structure_loss= 25.57460 proj_loss= 466.51520 pca_loss= 2684.94116 accuracy= 0.74298 accuracy_s= 0.77843 accuracy_f= 0.87592 time= 0.02370
+Epoch: 0181 train_loss= 3060.35229 feature_loss= 5.66151 structure_loss= 14.38826 proj_loss= 442.28497 pca_loss= 2598.01758 accuracy= 0.74742 accuracy_s= 0.77843 accuracy_f= 0.87666 time= 0.02373
+Epoch: 0191 train_loss= 2950.74951 feature_loss= 5.62762 structure_loss= 11.04891 proj_loss= 419.48065 pca_loss= 2514.59229 accuracy= 0.74077 accuracy_s= 0.77843 accuracy_f= 0.87814 time= 0.02368
+Epoch: 0201 train_loss= 2848.14185 feature_loss= 5.59484 structure_loss= 9.98808 proj_loss= 397.99536 pca_loss= 2434.56348 accuracy= 0.73781 accuracy_s= 0.77843 accuracy_f= 0.87592 time= 0.02404
+Epoch: 0211 train_loss= 2749.54248 feature_loss= 5.57006 structure_loss= 8.45374 proj_loss= 377.72891 pca_loss= 2357.78979 accuracy= 0.73855 accuracy_s= 0.77843 accuracy_f= 0.87666 time= 0.02401
+Epoch: 0221 train_loss= 2655.43091 feature_loss= 5.54334 structure_loss= 7.17854 proj_loss= 358.59802 pca_loss= 2284.11108 accuracy= 0.73929 accuracy_s= 0.77843 accuracy_f= 0.87371 time= 0.02379
+Epoch: 0231 train_loss= 2565.52368 feature_loss= 5.51979 structure_loss= 6.12013 proj_loss= 340.53073 pca_loss= 2213.35303 accuracy= 0.73929 accuracy_s= 0.77843 accuracy_f= 0.87149 time= 0.02409
+Epoch: 0241 train_loss= 2478.87012 feature_loss= 5.50860 structure_loss= 4.54621 proj_loss= 323.45944 pca_loss= 2145.35596 accuracy= 0.74077 accuracy_s= 0.77843 accuracy_f= 0.87149 time= 0.02399
+Epoch: 0251 train_loss= 2395.45679 feature_loss= 5.47519 structure_loss= 2.66339 proj_loss= 307.32025 pca_loss= 2079.99805 accuracy= 0.74003 accuracy_s= 0.77843 accuracy_f= 0.87592 time= 0.02371
+Epoch: 0261 train_loss= 2317.52100 feature_loss= 5.44102 structure_loss= 2.90470 proj_loss= 292.06458 pca_loss= 2017.11072 accuracy= 0.74077 accuracy_s= 0.77843 accuracy_f= 0.87592 time= 0.02741
+Epoch: 0271 train_loss= 2241.60571 feature_loss= 5.42851 structure_loss= 1.97009 proj_loss= 277.63824 pca_loss= 1956.56897 accuracy= 0.73855 accuracy_s= 0.77843 accuracy_f= 0.87666 time= 0.02440
+Epoch: 0281 train_loss= 2169.55127 feature_loss= 5.40189 structure_loss= 1.92134 proj_loss= 263.99011 pca_loss= 1898.23779 accuracy= 0.74003 accuracy_s= 0.77843 accuracy_f= 0.87592 time= 0.02414
+Epoch: 0291 train_loss= 2100.30493 feature_loss= 5.37713 structure_loss= 1.83616 proj_loss= 251.07317 pca_loss= 1842.01855 accuracy= 0.73855 accuracy_s= 0.77843 accuracy_f= 0.87518 time= 0.02398
+
+accuracy 0.73708
+accuracy_s 0.77843
+accuracy_f 0.87223
+auc 0.68489
+f1_score 0.40667
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 114
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+18629
+y_features shape after NoReduction torch.Size([2708, 18629]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 2449030.50000 feature_loss= 34.80209 structure_loss= 4882.82373 proj_loss= 2438849.25000 pca_loss= 5263.49609 accuracy= 0.61669 accuracy_s= 0.77843 accuracy_f= 0.80428 time= 0.06393
+Epoch: 0011 train_loss= 2295592.00000 feature_loss= 17.79539 structure_loss= 3366.66089 proj_loss= 2287254.25000 pca_loss= 4953.27930 accuracy= 0.60709 accuracy_s= 0.77917 accuracy_f= 0.80945 time= 0.03577
+Epoch: 0021 train_loss= 2153123.75000 feature_loss= 11.76584 structure_loss= 2901.13794 proj_loss= 2145542.50000 pca_loss= 4668.28564 accuracy= 0.60709 accuracy_s= 0.77917 accuracy_f= 0.82349 time= 0.03476
+Epoch: 0031 train_loss= 2021011.87500 feature_loss= 8.35868 structure_loss= 2607.49390 proj_loss= 2013987.75000 pca_loss= 4408.26074 accuracy= 0.60783 accuracy_s= 0.77917 accuracy_f= 0.83309 time= 0.03585
+Epoch: 0041 train_loss= 1898921.62500 feature_loss= 6.93511 structure_loss= 2397.47412 proj_loss= 1892345.62500 pca_loss= 4171.62256 accuracy= 0.60709 accuracy_s= 0.77917 accuracy_f= 0.83752 time= 0.03509
+Epoch: 0051 train_loss= 1786226.00000 feature_loss= 6.17162 structure_loss= 2226.48657 proj_loss= 1780036.00000 pca_loss= 3957.35107 accuracy= 0.60931 accuracy_s= 0.77917 accuracy_f= 0.84269 time= 0.03595
+Epoch: 0061 train_loss= 1682185.12500 feature_loss= 5.81535 structure_loss= 2084.48950 proj_loss= 1676331.12500 pca_loss= 3763.70166 accuracy= 0.60857 accuracy_s= 0.77917 accuracy_f= 0.85746 time= 0.03517
+Epoch: 0071 train_loss= 1586026.25000 feature_loss= 5.57694 structure_loss= 1953.25403 proj_loss= 1580478.37500 pca_loss= 3588.99243 accuracy= 0.61152 accuracy_s= 0.77917 accuracy_f= 0.86263 time= 0.03587
+Epoch: 0081 train_loss= 1497037.62500 feature_loss= 5.45894 structure_loss= 1837.62512 proj_loss= 1491763.62500 pca_loss= 3430.90210 accuracy= 0.61078 accuracy_s= 0.77917 accuracy_f= 0.86263 time= 0.03516
+Epoch: 0091 train_loss= 1414549.87500 feature_loss= 5.33977 structure_loss= 1722.25867 proj_loss= 1409534.37500 pca_loss= 3287.84473 accuracy= 0.61374 accuracy_s= 0.77917 accuracy_f= 0.86337 time= 0.03577
+Epoch: 0101 train_loss= 1337972.62500 feature_loss= 5.11803 structure_loss= 1605.36523 proj_loss= 1333204.62500 pca_loss= 3157.53906 accuracy= 0.61226 accuracy_s= 0.77843 accuracy_f= 0.86115 time= 0.03502
+Epoch: 0111 train_loss= 1266765.75000 feature_loss= 5.05492 structure_loss= 1473.20349 proj_loss= 1262249.12500 pca_loss= 3038.43457 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.86115 time= 0.03484
+Epoch: 0121 train_loss= 1200476.00000 feature_loss= 5.02104 structure_loss= 1342.65247 proj_loss= 1196200.00000 pca_loss= 2928.31372 accuracy= 0.61152 accuracy_s= 0.77843 accuracy_f= 0.86263 time= 0.03602
+Epoch: 0131 train_loss= 1138684.00000 feature_loss= 4.99213 structure_loss= 1215.75610 proj_loss= 1134636.87500 pca_loss= 2826.43604 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.86411 time= 0.03613
+Epoch: 0141 train_loss= 1081015.87500 feature_loss= 4.96472 structure_loss= 1095.49402 proj_loss= 1077183.75000 pca_loss= 2731.67798 accuracy= 0.61521 accuracy_s= 0.77843 accuracy_f= 0.86484 time= 0.03605
+Epoch: 0151 train_loss= 1027145.00000 feature_loss= 4.94262 structure_loss= 995.36591 proj_loss= 1023501.37500 pca_loss= 2643.33667 accuracy= 0.61743 accuracy_s= 0.77843 accuracy_f= 0.86484 time= 0.03622
+Epoch: 0161 train_loss= 976756.81250 feature_loss= 4.92409 structure_loss= 906.21619 proj_loss= 973285.06250 pca_loss= 2560.63550 accuracy= 0.61669 accuracy_s= 0.77843 accuracy_f= 0.86411 time= 0.03583
+Epoch: 0171 train_loss= 929570.62500 feature_loss= 4.90537 structure_loss= 823.50958 proj_loss= 926259.06250 pca_loss= 2483.10083 accuracy= 0.61891 accuracy_s= 0.77843 accuracy_f= 0.86558 time= 0.03505
+Epoch: 0181 train_loss= 885341.18750 feature_loss= 4.89168 structure_loss= 752.28326 proj_loss= 882173.75000 pca_loss= 2410.24951 accuracy= 0.61891 accuracy_s= 0.77843 accuracy_f= 0.86263 time= 0.03487
+Epoch: 0191 train_loss= 843829.00000 feature_loss= 4.88658 structure_loss= 679.48370 proj_loss= 840803.00000 pca_loss= 2341.63135 accuracy= 0.61891 accuracy_s= 0.77843 accuracy_f= 0.86484 time= 0.03545
+Epoch: 0201 train_loss= 804836.12500 feature_loss= 4.86614 structure_loss= 613.30566 proj_loss= 801941.31250 pca_loss= 2276.61987 accuracy= 0.61743 accuracy_s= 0.77843 accuracy_f= 0.86411 time= 0.03505
+Epoch: 0211 train_loss= 768174.12500 feature_loss= 4.83974 structure_loss= 552.74548 proj_loss= 765401.50000 pca_loss= 2215.03296 accuracy= 0.61448 accuracy_s= 0.77843 accuracy_f= 0.86484 time= 0.03548
+Epoch: 0221 train_loss= 733666.37500 feature_loss= 4.91685 structure_loss= 491.68250 proj_loss= 731013.31250 pca_loss= 2156.45850 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.85303 time= 0.03519
+Epoch: 0231 train_loss= 701163.68750 feature_loss= 4.81801 structure_loss= 437.17130 proj_loss= 698621.18750 pca_loss= 2100.51514 accuracy= 0.61448 accuracy_s= 0.77843 accuracy_f= 0.86928 time= 0.03510
+Epoch: 0241 train_loss= 670517.87500 feature_loss= 4.82787 structure_loss= 383.15967 proj_loss= 668082.87500 pca_loss= 2047.01880 accuracy= 0.61448 accuracy_s= 0.77843 accuracy_f= 0.87001 time= 0.03642
+Epoch: 0251 train_loss= 641592.43750 feature_loss= 4.79100 structure_loss= 323.85556 proj_loss= 639267.81250 pca_loss= 1995.97388 accuracy= 0.61817 accuracy_s= 0.77843 accuracy_f= 0.87001 time= 0.03834
+Epoch: 0261 train_loss= 614276.25000 feature_loss= 4.78941 structure_loss= 267.57907 proj_loss= 612056.81250 pca_loss= 1947.04468 accuracy= 0.61669 accuracy_s= 0.77843 accuracy_f= 0.86854 time= 0.03616
+Epoch: 0271 train_loss= 588471.43750 feature_loss= 4.77547 structure_loss= 226.25545 proj_loss= 586340.25000 pca_loss= 1900.21191 accuracy= 0.69350 accuracy_s= 0.77843 accuracy_f= 0.86780 time= 0.03524
+Epoch: 0281 train_loss= 564071.25000 feature_loss= 4.75692 structure_loss= 193.82368 proj_loss= 562017.62500 pca_loss= 1855.03760 accuracy= 0.70827 accuracy_s= 0.77843 accuracy_f= 0.86854 time= 0.03536
+Epoch: 0291 train_loss= 540978.81250 feature_loss= 4.76986 structure_loss= 166.50990 proj_loss= 538996.00000 pca_loss= 1811.56970 accuracy= 0.71566 accuracy_s= 0.77843 accuracy_f= 0.86484 time= 0.03691
+
+accuracy 0.72378
+accuracy_s 0.77843
+accuracy_f 0.86558
+auc 0.66539
+f1_score 0.37667
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 806
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12985.70020 feature_loss= 36.71383 structure_loss= 6301.07617 proj_loss= 4763.72070 pca_loss= 1884.18958 accuracy= 0.70310 accuracy_s= 0.84712 accuracy_f= 0.79173 time= 0.03650
+Epoch: 0011 train_loss= 11405.54492 feature_loss= 23.88778 structure_loss= 5093.67188 proj_loss= 4466.74365 pca_loss= 1821.24182 accuracy= 0.64771 accuracy_s= 0.79542 accuracy_f= 0.80576 time= 0.02542
+Epoch: 0021 train_loss= 10657.38965 feature_loss= 18.88972 structure_loss= 4691.74951 proj_loss= 4184.99121 pca_loss= 1761.75879 accuracy= 0.62112 accuracy_s= 0.78213 accuracy_f= 0.80059 time= 0.02371
+Epoch: 0031 train_loss= 10033.00879 feature_loss= 14.32179 structure_loss= 4391.00098 proj_loss= 3922.68066 pca_loss= 1705.00464 accuracy= 0.61669 accuracy_s= 0.78287 accuracy_f= 0.80059 time= 0.02368
+Epoch: 0041 train_loss= 9471.24414 feature_loss= 10.22755 structure_loss= 4130.27832 proj_loss= 3679.99316 pca_loss= 1650.74463 accuracy= 0.61965 accuracy_s= 0.78139 accuracy_f= 0.80724 time= 0.02366
+Epoch: 0051 train_loss= 8950.48633 feature_loss= 7.73082 structure_loss= 3887.83740 proj_loss= 3456.08862 pca_loss= 1598.82935 accuracy= 0.61743 accuracy_s= 0.78139 accuracy_f= 0.83161 time= 0.02397
+Epoch: 0061 train_loss= 8450.94727 feature_loss= 6.20836 structure_loss= 3645.76807 proj_loss= 3249.68140 pca_loss= 1549.28906 accuracy= 0.61521 accuracy_s= 0.78139 accuracy_f= 0.83161 time= 0.02379
+Epoch: 0071 train_loss= 7966.85352 feature_loss= 5.57925 structure_loss= 3399.62769 proj_loss= 3059.42871 pca_loss= 1502.21802 accuracy= 0.61891 accuracy_s= 0.78065 accuracy_f= 0.84490 time= 0.02453
+Epoch: 0081 train_loss= 7472.72266 feature_loss= 5.27347 structure_loss= 3125.40771 proj_loss= 2884.27197 pca_loss= 1457.76978 accuracy= 0.61669 accuracy_s= 0.78065 accuracy_f= 0.84269 time= 0.02441
+Epoch: 0091 train_loss= 6913.90283 feature_loss= 5.10645 structure_loss= 2769.23584 proj_loss= 2723.27344 pca_loss= 1416.28723 accuracy= 0.61226 accuracy_s= 0.77991 accuracy_f= 0.84343 time= 0.02408
+Epoch: 0101 train_loss= 6244.93799 feature_loss= 5.04067 structure_loss= 2286.48853 proj_loss= 2575.43335 pca_loss= 1377.97522 accuracy= 0.61078 accuracy_s= 0.77917 accuracy_f= 0.84269 time= 0.02426
+Epoch: 0111 train_loss= 5392.80371 feature_loss= 5.02402 structure_loss= 1605.98523 proj_loss= 2439.09326 pca_loss= 1342.70142 accuracy= 0.61004 accuracy_s= 0.77843 accuracy_f= 0.84269 time= 0.02560
+Epoch: 0121 train_loss= 4487.28955 feature_loss= 5.01540 structure_loss= 860.89624 proj_loss= 2311.81055 pca_loss= 1309.56750 accuracy= 0.60635 accuracy_s= 0.77843 accuracy_f= 0.84564 time= 0.02412
+Epoch: 0131 train_loss= 3852.98975 feature_loss= 5.00997 structure_loss= 380.98849 proj_loss= 2190.51733 pca_loss= 1276.47400 accuracy= 0.61078 accuracy_s= 0.77843 accuracy_f= 0.84564 time= 0.02396
+Epoch: 0141 train_loss= 3504.00073 feature_loss= 5.00632 structure_loss= 182.56656 proj_loss= 2074.36597 pca_loss= 1242.06177 accuracy= 0.61965 accuracy_s= 0.77843 accuracy_f= 0.84638 time= 0.02395
+Epoch: 0151 train_loss= 3278.60938 feature_loss= 5.00323 structure_loss= 102.44811 proj_loss= 1964.32581 pca_loss= 1206.83215 accuracy= 0.62112 accuracy_s= 0.77843 accuracy_f= 0.84490 time= 0.02413
+Epoch: 0161 train_loss= 3096.76221 feature_loss= 5.00262 structure_loss= 58.48072 proj_loss= 1861.25830 pca_loss= 1172.02051 accuracy= 0.63072 accuracy_s= 0.78139 accuracy_f= 0.84638 time= 0.02418
+Epoch: 0171 train_loss= 2945.61914 feature_loss= 4.99181 structure_loss= 37.17268 proj_loss= 1765.12524 pca_loss= 1138.32959 accuracy= 0.63294 accuracy_s= 0.79099 accuracy_f= 0.84564 time= 0.02348
+Epoch: 0181 train_loss= 2813.13037 feature_loss= 4.98677 structure_loss= 26.74483 proj_loss= 1675.51404 pca_loss= 1105.88464 accuracy= 0.63146 accuracy_s= 0.78287 accuracy_f= 0.84564 time= 0.02362
+Epoch: 0191 train_loss= 2691.83667 feature_loss= 4.98691 structure_loss= 20.24231 proj_loss= 1591.85461 pca_loss= 1074.75281 accuracy= 0.63737 accuracy_s= 0.78582 accuracy_f= 0.84786 time= 0.02367
+Epoch: 0201 train_loss= 2578.64209 feature_loss= 4.97815 structure_loss= 15.13052 proj_loss= 1513.61768 pca_loss= 1044.91565 accuracy= 0.62925 accuracy_s= 0.78360 accuracy_f= 0.84786 time= 0.02350
+Epoch: 0211 train_loss= 2472.84961 feature_loss= 4.97131 structure_loss= 11.27886 proj_loss= 1440.31433 pca_loss= 1016.28503 accuracy= 0.62038 accuracy_s= 0.78065 accuracy_f= 0.84712 time= 0.02364
+Epoch: 0221 train_loss= 2374.38403 feature_loss= 4.96569 structure_loss= 9.09359 proj_loss= 1371.52454 pca_loss= 988.80023 accuracy= 0.61965 accuracy_s= 0.78065 accuracy_f= 0.84712 time= 0.02466
+Epoch: 0231 train_loss= 2281.77393 feature_loss= 4.96451 structure_loss= 7.53509 proj_loss= 1306.88306 pca_loss= 962.39124 accuracy= 0.62260 accuracy_s= 0.78139 accuracy_f= 0.84786 time= 0.02410
+Epoch: 0241 train_loss= 2194.59009 feature_loss= 4.95593 structure_loss= 6.56548 proj_loss= 1246.07129 pca_loss= 936.99738 accuracy= 0.61965 accuracy_s= 0.78139 accuracy_f= 0.84860 time= 0.02419
+Epoch: 0251 train_loss= 2111.84766 feature_loss= 4.95021 structure_loss= 5.55404 proj_loss= 1188.79431 pca_loss= 912.54901 accuracy= 0.62112 accuracy_s= 0.78065 accuracy_f= 0.84712 time= 0.02366
+Epoch: 0261 train_loss= 2033.66931 feature_loss= 4.94716 structure_loss= 4.94394 proj_loss= 1134.79297 pca_loss= 888.98523 accuracy= 0.62482 accuracy_s= 0.78213 accuracy_f= 0.84712 time= 0.02372
+Epoch: 0271 train_loss= 1959.46997 feature_loss= 4.95326 structure_loss= 4.43151 proj_loss= 1083.83362 pca_loss= 866.25153 accuracy= 0.63072 accuracy_s= 0.78213 accuracy_f= 0.84417 time= 0.02377
+Epoch: 0281 train_loss= 1888.89795 feature_loss= 4.97576 structure_loss= 3.89767 proj_loss= 1035.69800 pca_loss= 844.32654 accuracy= 0.63072 accuracy_s= 0.78213 accuracy_f= 0.84417 time= 0.02364
+Epoch: 0291 train_loss= 1821.71973 feature_loss= 4.94237 structure_loss= 3.40514 proj_loss= 990.20105 pca_loss= 823.17114 accuracy= 0.63368 accuracy_s= 0.78139 accuracy_f= 0.84564 time= 0.02371
+
+accuracy 0.63368
+accuracy_s 0.78139
+accuracy_f 0.84343
+auc 0.45398
+f1_score 0.17333
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 794
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+18629
+y_features shape after NoReduction torch.Size([2708, 18629]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12415502.00000 feature_loss= 34.58049 structure_loss= 6281.45996 proj_loss= 12406853.00000 pca_loss= 2332.62939 accuracy= 0.62186 accuracy_s= 0.77843 accuracy_f= 0.80871 time= 0.04069
+Epoch: 0011 train_loss= 11645640.00000 feature_loss= 21.23429 structure_loss= 5295.93896 proj_loss= 11638068.00000 pca_loss= 2254.69849 accuracy= 0.61226 accuracy_s= 0.77843 accuracy_f= 0.80945 time= 0.02977
+Epoch: 0021 train_loss= 10926200.00000 feature_loss= 14.88369 structure_loss= 4892.67480 proj_loss= 10919112.00000 pca_loss= 2179.82300 accuracy= 0.61004 accuracy_s= 0.77843 accuracy_f= 0.80871 time= 0.02937
+Epoch: 0031 train_loss= 10258130.00000 feature_loss= 11.04718 structure_loss= 4586.02881 proj_loss= 10251426.00000 pca_loss= 2107.40161 accuracy= 0.61078 accuracy_s= 0.77843 accuracy_f= 0.81019 time= 0.02908
+Epoch: 0041 train_loss= 9640195.00000 feature_loss= 7.74998 structure_loss= 4330.32178 proj_loss= 9633819.00000 pca_loss= 2037.82544 accuracy= 0.61004 accuracy_s= 0.77843 accuracy_f= 0.80945 time= 0.02954
+Epoch: 0051 train_loss= 9069480.00000 feature_loss= 6.18107 structure_loss= 4099.57617 proj_loss= 9063403.00000 pca_loss= 1971.34045 accuracy= 0.61004 accuracy_s= 0.77843 accuracy_f= 0.83161 time= 0.02903
+Epoch: 0061 train_loss= 8542322.00000 feature_loss= 5.84108 structure_loss= 3881.18530 proj_loss= 8536527.00000 pca_loss= 1907.76880 accuracy= 0.61152 accuracy_s= 0.77843 accuracy_f= 0.84638 time= 0.02927
+Epoch: 0071 train_loss= 8054929.00000 feature_loss= 5.62457 structure_loss= 3663.21851 proj_loss= 8049413.00000 pca_loss= 1847.06165 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.84417 time= 0.02921
+Epoch: 0081 train_loss= 7603702.50000 feature_loss= 5.32138 structure_loss= 3441.51465 proj_loss= 7598466.50000 pca_loss= 1789.20972 accuracy= 0.61152 accuracy_s= 0.77843 accuracy_f= 0.84564 time= 0.02888
+Epoch: 0091 train_loss= 7185334.00000 feature_loss= 5.25097 structure_loss= 3197.82788 proj_loss= 7180397.00000 pca_loss= 1734.02283 accuracy= 0.61448 accuracy_s= 0.77843 accuracy_f= 0.84490 time= 0.02914
+Epoch: 0101 train_loss= 6796843.50000 feature_loss= 5.22155 structure_loss= 2912.96436 proj_loss= 6792244.00000 pca_loss= 1681.31567 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.84564 time= 0.02913
+Epoch: 0111 train_loss= 6435577.50000 feature_loss= 5.20925 structure_loss= 2582.47046 proj_loss= 6431359.00000 pca_loss= 1631.00232 accuracy= 0.61226 accuracy_s= 0.77843 accuracy_f= 0.84860 time= 0.02983
+Epoch: 0121 train_loss= 6099150.50000 feature_loss= 5.20123 structure_loss= 2191.75244 proj_loss= 6095370.50000 pca_loss= 1582.93127 accuracy= 0.61226 accuracy_s= 0.77843 accuracy_f= 0.84786 time= 0.02913
+Epoch: 0131 train_loss= 5785470.00000 feature_loss= 5.19163 structure_loss= 1774.83008 proj_loss= 5782153.50000 pca_loss= 1536.70105 accuracy= 0.61374 accuracy_s= 0.77843 accuracy_f= 0.84860 time= 0.02898
+Epoch: 0141 train_loss= 5492680.50000 feature_loss= 5.18345 structure_loss= 1379.11499 proj_loss= 5489803.50000 pca_loss= 1492.26086 accuracy= 0.61078 accuracy_s= 0.77843 accuracy_f= 0.84934 time= 0.02927
+Epoch: 0151 train_loss= 5219019.00000 feature_loss= 5.17481 structure_loss= 958.39868 proj_loss= 5216605.50000 pca_loss= 1449.75159 accuracy= 0.61300 accuracy_s= 0.77843 accuracy_f= 0.84934 time= 0.02900
+Epoch: 0161 train_loss= 4963018.50000 feature_loss= 5.17083 structure_loss= 592.61273 proj_loss= 4961012.00000 pca_loss= 1408.66711 accuracy= 0.61152 accuracy_s= 0.77843 accuracy_f= 0.84860 time= 0.03459
+Epoch: 0171 train_loss= 4723370.50000 feature_loss= 5.15929 structure_loss= 368.13766 proj_loss= 4721628.00000 pca_loss= 1368.80847 accuracy= 0.61669 accuracy_s= 0.77843 accuracy_f= 0.85081 time= 0.02905
+Epoch: 0181 train_loss= 4498763.50000 feature_loss= 5.15568 structure_loss= 239.05403 proj_loss= 4497189.00000 pca_loss= 1330.39233 accuracy= 0.60783 accuracy_s= 0.77843 accuracy_f= 0.84860 time= 0.02925
+Epoch: 0191 train_loss= 4288005.00000 feature_loss= 5.20833 structure_loss= 159.29219 proj_loss= 4286547.00000 pca_loss= 1293.58667 accuracy= 0.61226 accuracy_s= 0.77843 accuracy_f= 0.84417 time= 0.02895
+Epoch: 0201 train_loss= 4090036.50000 feature_loss= 5.13451 structure_loss= 113.55904 proj_loss= 4088659.50000 pca_loss= 1258.26111 accuracy= 0.61521 accuracy_s= 0.77843 accuracy_f= 0.85081 time= 0.02889
+Epoch: 0211 train_loss= 3903889.00000 feature_loss= 5.12541 structure_loss= 80.88890 proj_loss= 3902578.75000 pca_loss= 1224.32532 accuracy= 0.61374 accuracy_s= 0.77917 accuracy_f= 0.85081 time= 0.02914
+Epoch: 0221 train_loss= 3728701.50000 feature_loss= 5.11519 structure_loss= 65.40394 proj_loss= 3727439.25000 pca_loss= 1191.78894 accuracy= 0.61448 accuracy_s= 0.77843 accuracy_f= 0.85155 time= 0.02908
+Epoch: 0231 train_loss= 3563662.25000 feature_loss= 5.10599 structure_loss= 45.96944 proj_loss= 3562450.75000 pca_loss= 1160.47168 accuracy= 0.61226 accuracy_s= 0.77843 accuracy_f= 0.85303 time= 0.02895
+Epoch: 0241 train_loss= 3408052.50000 feature_loss= 5.09808 structure_loss= 26.04676 proj_loss= 3406891.00000 pca_loss= 1130.36597 accuracy= 0.62112 accuracy_s= 0.77843 accuracy_f= 0.85155 time= 0.02902
+Epoch: 0251 train_loss= 3261215.50000 feature_loss= 5.09129 structure_loss= 9.77531 proj_loss= 3260099.25000 pca_loss= 1101.39294 accuracy= 0.70606 accuracy_s= 0.77843 accuracy_f= 0.85229 time= 0.02893
+Epoch: 0261 train_loss= 3122551.50000 feature_loss= 5.09195 structure_loss= 3.88084 proj_loss= 3121469.00000 pca_loss= 1073.47559 accuracy= 0.70679 accuracy_s= 0.77843 accuracy_f= 0.84786 time= 0.02960
+Epoch: 0271 train_loss= 2991495.00000 feature_loss= 5.08788 structure_loss= 0.48232 proj_loss= 2990443.00000 pca_loss= 1046.58997 accuracy= 0.69941 accuracy_s= 0.77843 accuracy_f= 0.84860 time= 0.02941
+Epoch: 0281 train_loss= 2867536.00000 feature_loss= 5.06441 structure_loss= 0.44954 proj_loss= 2866509.75000 pca_loss= 1020.64520 accuracy= 0.70310 accuracy_s= 0.77843 accuracy_f= 0.85081 time= 0.02955
+Epoch: 0291 train_loss= 2750200.25000 feature_loss= 5.06490 structure_loss= 0.44033 proj_loss= 2749199.00000 pca_loss= 995.62665 accuracy= 0.70310 accuracy_s= 0.77843 accuracy_f= 0.85081 time= 0.02929
+
+accuracy 0.70310
+accuracy_s 0.77843
+accuracy_f 0.84934
+auc 0.60277
+f1_score 0.33000
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 260
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 6270.70410 reconstruction_loss= 37.03341 proj_loss= 1231.58313 pca_loss= 5002.08740 accuracy= 0.66691 time= 0.02569
+Epoch: 0011 train_loss= 5969.16797 reconstruction_loss= 19.00758 proj_loss= 1155.80383 pca_loss= 4794.35645 accuracy= 0.66100 time= 0.01582
+Epoch: 0021 train_loss= 5695.70898 reconstruction_loss= 13.43493 proj_loss= 1084.97949 pca_loss= 4597.29443 accuracy= 0.67504 time= 0.01573
+Epoch: 0031 train_loss= 5440.64453 reconstruction_loss= 10.38982 proj_loss= 1018.91315 pca_loss= 4411.34131 accuracy= 0.68316 time= 0.01547
+Epoch: 0041 train_loss= 5202.04199 reconstruction_loss= 8.46016 proj_loss= 957.37756 pca_loss= 4236.20410 accuracy= 0.71049 time= 0.01557
+Epoch: 0051 train_loss= 4978.58691 reconstruction_loss= 7.28080 proj_loss= 900.11584 pca_loss= 4071.19043 accuracy= 0.70901 time= 0.01545
+Epoch: 0061 train_loss= 4768.79297 reconstruction_loss= 6.46837 proj_loss= 846.82703 pca_loss= 3915.49780 accuracy= 0.71640 time= 0.01544
+Epoch: 0071 train_loss= 4571.43848 reconstruction_loss= 5.88836 proj_loss= 797.23071 pca_loss= 3768.31934 accuracy= 0.73708 time= 0.01543
+Epoch: 0081 train_loss= 4385.54932 reconstruction_loss= 5.57182 proj_loss= 751.03693 pca_loss= 3628.94043 accuracy= 0.74151 time= 0.01542
+Epoch: 0091 train_loss= 4209.73047 reconstruction_loss= 5.02082 proj_loss= 707.97089 pca_loss= 3496.73853 accuracy= 0.74003 time= 0.01610
+Epoch: 0101 train_loss= 4043.80688 reconstruction_loss= 4.86546 proj_loss= 667.78998 pca_loss= 3371.15137 accuracy= 0.74963 time= 0.01546
+Epoch: 0111 train_loss= 3886.74463 reconstruction_loss= 4.78574 proj_loss= 630.25940 pca_loss= 3251.69946 accuracy= 0.75037 time= 0.01544
+Epoch: 0121 train_loss= 3737.87402 reconstruction_loss= 4.75296 proj_loss= 595.17151 pca_loss= 3137.94971 accuracy= 0.74520 time= 0.01549
+Epoch: 0131 train_loss= 3596.58057 reconstruction_loss= 4.72684 proj_loss= 562.33862 pca_loss= 3029.51514 accuracy= 0.74446 time= 0.01542
+Epoch: 0141 train_loss= 3462.34253 reconstruction_loss= 4.70578 proj_loss= 531.59039 pca_loss= 2926.04639 accuracy= 0.74742 time= 0.01548
+Epoch: 0151 train_loss= 3334.69678 reconstruction_loss= 4.69752 proj_loss= 502.77042 pca_loss= 2827.22876 accuracy= 0.74963 time= 0.01542
+Epoch: 0161 train_loss= 3213.19141 reconstruction_loss= 4.67955 proj_loss= 475.73651 pca_loss= 2732.77539 accuracy= 0.74668 time= 0.01547
+Epoch: 0171 train_loss= 3097.45532 reconstruction_loss= 4.67153 proj_loss= 450.35953 pca_loss= 2642.42432 accuracy= 0.75111 time= 0.01553
+Epoch: 0181 train_loss= 2987.12500 reconstruction_loss= 4.66981 proj_loss= 426.52097 pca_loss= 2555.93433 accuracy= 0.74742 time= 0.01549
+Epoch: 0191 train_loss= 2881.85132 reconstruction_loss= 4.65490 proj_loss= 404.11267 pca_loss= 2473.08374 accuracy= 0.74372 time= 0.01542
+Epoch: 0201 train_loss= 2781.33472 reconstruction_loss= 4.63122 proj_loss= 383.03482 pca_loss= 2393.66870 accuracy= 0.74151 time= 0.01540
+Epoch: 0211 train_loss= 2685.31714 reconstruction_loss= 4.62126 proj_loss= 363.19690 pca_loss= 2317.49902 accuracy= 0.74225 time= 0.01545
+Epoch: 0221 train_loss= 2593.58936 reconstruction_loss= 4.67531 proj_loss= 344.51498 pca_loss= 2244.39917 accuracy= 0.74003 time= 0.01547
+Epoch: 0231 train_loss= 2505.72070 reconstruction_loss= 4.60338 proj_loss= 326.91122 pca_loss= 2174.20605 accuracy= 0.74815 time= 0.01542
+Epoch: 0241 train_loss= 2421.67065 reconstruction_loss= 4.58854 proj_loss= 310.31409 pca_loss= 2106.76807 accuracy= 0.74298 time= 0.01542
+Epoch: 0251 train_loss= 2341.19385 reconstruction_loss= 4.59272 proj_loss= 294.65814 pca_loss= 2041.94312 accuracy= 0.74225 time= 0.01543
+Epoch: 0261 train_loss= 2264.05469 reconstruction_loss= 4.57301 proj_loss= 279.88269 pca_loss= 1979.59888 accuracy= 0.74520 time= 0.01557
+Epoch: 0271 train_loss= 2190.11084 reconstruction_loss= 4.56849 proj_loss= 265.93066 pca_loss= 1919.61169 accuracy= 0.74742 time= 0.01545
+Epoch: 0281 train_loss= 2119.18579 reconstruction_loss= 4.56984 proj_loss= 252.75066 pca_loss= 1861.86523 accuracy= 0.74815 time= 0.01544
+Epoch: 0291 train_loss= 2051.08960 reconstruction_loss= 4.54476 proj_loss= 240.29366 pca_loss= 1806.25110 accuracy= 0.74668 time= 0.01547
+
+accuracy 0.74815
+auc 0.70648
+f1_score 0.43167
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 120
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+18629
+y_features shape after NoReduction torch.Size([2708, 18629]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 2448719.00000 reconstruction_loss= 34.83085 proj_loss= 2443104.75000 pca_loss= 5579.42041 accuracy= 0.61226 time= 0.03581
+Epoch: 0011 train_loss= 2296542.50000 reconstruction_loss= 18.17493 proj_loss= 2291274.50000 pca_loss= 5249.62939 accuracy= 0.64180 time= 0.02648
+Epoch: 0021 train_loss= 2154294.75000 reconstruction_loss= 10.68657 proj_loss= 2149343.00000 pca_loss= 4941.05322 accuracy= 0.65214 time= 0.02679
+Epoch: 0031 train_loss= 2022247.50000 reconstruction_loss= 7.27905 proj_loss= 2017584.37500 pca_loss= 4655.83154 accuracy= 0.69498 time= 0.02695
+Epoch: 0041 train_loss= 1900152.62500 reconstruction_loss= 6.23627 proj_loss= 1895751.62500 pca_loss= 4394.74121 accuracy= 0.71713 time= 0.02646
+Epoch: 0051 train_loss= 1787426.62500 reconstruction_loss= 5.76237 proj_loss= 1783263.75000 pca_loss= 4157.07715 accuracy= 0.72452 time= 0.02651
+Epoch: 0061 train_loss= 1683338.50000 reconstruction_loss= 5.57561 proj_loss= 1679391.50000 pca_loss= 3941.42603 accuracy= 0.72821 time= 0.02651
+Epoch: 0071 train_loss= 1587133.12500 reconstruction_loss= 5.44157 proj_loss= 1583381.50000 pca_loss= 3746.10693 accuracy= 0.73855 time= 0.02634
+Epoch: 0081 train_loss= 1498093.87500 reconstruction_loss= 5.32111 proj_loss= 1494519.25000 pca_loss= 3569.29102 accuracy= 0.74225 time= 0.02633
+Epoch: 0091 train_loss= 1415565.50000 reconstruction_loss= 5.14421 proj_loss= 1412151.12500 pca_loss= 3409.19849 accuracy= 0.74742 time= 0.02621
+Epoch: 0101 train_loss= 1338959.37500 reconstruction_loss= 5.10000 proj_loss= 1335690.25000 pca_loss= 3264.03906 accuracy= 0.74742 time= 0.02620
+Epoch: 0111 train_loss= 1267748.50000 reconstruction_loss= 5.06745 proj_loss= 1264611.37500 pca_loss= 3132.06079 accuracy= 0.75185 time= 0.02689
+Epoch: 0121 train_loss= 1201461.87500 reconstruction_loss= 5.03666 proj_loss= 1198445.25000 pca_loss= 3011.63818 accuracy= 0.75406 time= 0.02618
+Epoch: 0131 train_loss= 1139678.00000 reconstruction_loss= 5.00949 proj_loss= 1136771.75000 pca_loss= 2901.29272 accuracy= 0.75554 time= 0.02620
+Epoch: 0141 train_loss= 1082018.62500 reconstruction_loss= 4.98344 proj_loss= 1079213.87500 pca_loss= 2799.70483 accuracy= 0.75923 time= 0.02629
+Epoch: 0151 train_loss= 1028143.68750 reconstruction_loss= 4.95678 proj_loss= 1025433.00000 pca_loss= 2705.72559 accuracy= 0.76145 time= 0.02639
+Epoch: 0161 train_loss= 977746.93750 reconstruction_loss= 4.93520 proj_loss= 975123.62500 pca_loss= 2618.37329 accuracy= 0.75997 time= 0.02652
+Epoch: 0171 train_loss= 930551.37500 reconstruction_loss= 4.91799 proj_loss= 928009.62500 pca_loss= 2536.81689 accuracy= 0.76071 time= 0.02637
+Epoch: 0181 train_loss= 886306.87500 reconstruction_loss= 4.90767 proj_loss= 883841.56250 pca_loss= 2460.35938 accuracy= 0.76366 time= 0.02669
+Epoch: 0191 train_loss= 844786.06250 reconstruction_loss= 4.89242 proj_loss= 842392.75000 pca_loss= 2388.41528 accuracy= 0.76957 time= 0.02668
+Epoch: 0201 train_loss= 805782.56250 reconstruction_loss= 4.87655 proj_loss= 803457.18750 pca_loss= 2320.49438 accuracy= 0.75923 time= 0.02705
+Epoch: 0211 train_loss= 769109.06250 reconstruction_loss= 4.85959 proj_loss= 766848.00000 pca_loss= 2256.18384 accuracy= 0.76736 time= 0.02674
+Epoch: 0221 train_loss= 734594.18750 reconstruction_loss= 4.86831 proj_loss= 732394.18750 pca_loss= 2195.13403 accuracy= 0.75849 time= 0.02658
+Epoch: 0231 train_loss= 702081.87500 reconstruction_loss= 4.82807 proj_loss= 699940.00000 pca_loss= 2137.04712 accuracy= 0.76957 time= 0.02659
+Epoch: 0241 train_loss= 671429.43750 reconstruction_loss= 4.83622 proj_loss= 669342.93750 pca_loss= 2081.66772 accuracy= 0.75554 time= 0.02649
+Epoch: 0251 train_loss= 642506.12500 reconstruction_loss= 4.80310 proj_loss= 640472.56250 pca_loss= 2028.77417 accuracy= 0.76366 time= 0.02637
+Epoch: 0261 train_loss= 615192.18750 reconstruction_loss= 4.83569 proj_loss= 613209.18750 pca_loss= 1978.17383 accuracy= 0.76292 time= 0.02639
+Epoch: 0271 train_loss= 589377.68750 reconstruction_loss= 4.79787 proj_loss= 587443.18750 pca_loss= 1929.69568 accuracy= 0.75849 time= 0.02633
+Epoch: 0281 train_loss= 564961.43750 reconstruction_loss= 4.77554 proj_loss= 563073.50000 pca_loss= 1883.19275 accuracy= 0.75849 time= 0.02639
+Epoch: 0291 train_loss= 541850.75000 reconstruction_loss= 4.78759 proj_loss= 540007.37500 pca_loss= 1838.53137 accuracy= 0.75775 time= 0.02642
+
+accuracy 0.75849
+auc 0.71928
+f1_score 0.45500
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 699
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 10942.01953 reconstruction_loss= 4575.83936 proj_loss= 1271.13599 pca_loss= 5095.04443 accuracy= 0.69719 time= 0.02368
+Epoch: 0011 train_loss= 9228.04883 reconstruction_loss= 3133.52100 proj_loss= 1199.24377 pca_loss= 4895.28418 accuracy= 0.61669 time= 0.01650
+Epoch: 0021 train_loss= 8579.57422 reconstruction_loss= 2745.70923 proj_loss= 1128.97510 pca_loss= 4704.88965 accuracy= 0.61152 time= 0.01882
+Epoch: 0031 train_loss= 8059.36328 reconstruction_loss= 2472.56201 proj_loss= 1062.34033 pca_loss= 4524.46094 accuracy= 0.61595 time= 0.01855
+Epoch: 0041 train_loss= 7600.82227 reconstruction_loss= 2247.28271 proj_loss= 999.75470 pca_loss= 4353.78516 accuracy= 0.61743 time= 0.01939
+Epoch: 0051 train_loss= 7177.87012 reconstruction_loss= 2044.15674 proj_loss= 941.28387 pca_loss= 4192.42920 accuracy= 0.61448 time= 0.01965
+Epoch: 0061 train_loss= 6773.09863 reconstruction_loss= 1846.39600 proj_loss= 886.77570 pca_loss= 4039.92676 accuracy= 0.61595 time= 0.01262
+Epoch: 0071 train_loss= 6375.19434 reconstruction_loss= 1643.39453 proj_loss= 835.99530 pca_loss= 3895.80420 accuracy= 0.61817 time= 0.01876
+Epoch: 0081 train_loss= 5988.26758 reconstruction_loss= 1440.33789 proj_loss= 788.60785 pca_loss= 3759.32153 accuracy= 0.61374 time= 0.01950
+Epoch: 0091 train_loss= 5615.36719 reconstruction_loss= 1241.67407 proj_loss= 744.24396 pca_loss= 3629.44897 accuracy= 0.61595 time= 0.01640
+Epoch: 0101 train_loss= 5264.33008 reconstruction_loss= 1056.39514 proj_loss= 702.61353 pca_loss= 3505.32129 accuracy= 0.61521 time= 0.01910
+Epoch: 0111 train_loss= 4900.38770 reconstruction_loss= 850.24756 proj_loss= 663.49597 pca_loss= 3386.64404 accuracy= 0.61448 time= 0.01537
+Epoch: 0121 train_loss= 4494.97656 reconstruction_loss= 594.65802 proj_loss= 626.69910 pca_loss= 3273.61963 accuracy= 0.61595 time= 0.01344
+Epoch: 0131 train_loss= 4131.32812 reconstruction_loss= 373.29660 proj_loss= 592.15021 pca_loss= 3165.88110 accuracy= 0.62629 time= 0.01370
+Epoch: 0141 train_loss= 3812.34521 reconstruction_loss= 189.35796 proj_loss= 559.82922 pca_loss= 3063.15796 accuracy= 0.62260 time= 0.01900
+Epoch: 0151 train_loss= 3574.70679 reconstruction_loss= 80.37669 proj_loss= 529.73871 pca_loss= 2964.59131 accuracy= 0.61595 time= 0.01824
+Epoch: 0161 train_loss= 3407.04077 reconstruction_loss= 36.25178 proj_loss= 501.73553 pca_loss= 2869.05347 accuracy= 0.61817 time= 0.01951
+Epoch: 0171 train_loss= 3268.38867 reconstruction_loss= 16.27481 proj_loss= 475.56067 pca_loss= 2776.55322 accuracy= 0.61300 time= 0.01995
+Epoch: 0181 train_loss= 3145.86572 reconstruction_loss= 7.49465 proj_loss= 451.01413 pca_loss= 2687.35693 accuracy= 0.61226 time= 0.01286
+Epoch: 0191 train_loss= 3034.95947 reconstruction_loss= 5.38769 proj_loss= 427.91809 pca_loss= 2601.65356 accuracy= 0.61226 time= 0.01373
+Epoch: 0201 train_loss= 2930.17676 reconstruction_loss= 4.57434 proj_loss= 406.14780 pca_loss= 2519.45459 accuracy= 0.61226 time= 0.01560
+Epoch: 0211 train_loss= 2829.11157 reconstruction_loss= 2.88019 proj_loss= 385.60318 pca_loss= 2440.62817 accuracy= 0.61300 time= 0.02681
+Epoch: 0221 train_loss= 2733.18628 reconstruction_loss= 2.02106 proj_loss= 366.20303 pca_loss= 2364.96216 accuracy= 0.61226 time= 0.01334
+Epoch: 0231 train_loss= 2640.60474 reconstruction_loss= 0.43880 proj_loss= 347.87369 pca_loss= 2292.29224 accuracy= 0.61226 time= 0.01619
+Epoch: 0241 train_loss= 2553.42358 reconstruction_loss= 0.43327 proj_loss= 330.55164 pca_loss= 2222.43872 accuracy= 0.61226 time= 0.01330
+Epoch: 0251 train_loss= 2469.86914 reconstruction_loss= 0.44432 proj_loss= 314.17557 pca_loss= 2155.24927 accuracy= 0.61226 time= 0.02374
+Epoch: 0261 train_loss= 2389.70947 reconstruction_loss= 0.43226 proj_loss= 298.68869 pca_loss= 2090.58862 accuracy= 0.61226 time= 0.01847
+Epoch: 0271 train_loss= 2312.79785 reconstruction_loss= 0.43213 proj_loss= 284.03772 pca_loss= 2028.32788 accuracy= 0.61226 time= 0.02734
+Epoch: 0281 train_loss= 2238.95239 reconstruction_loss= 0.43208 proj_loss= 270.17328 pca_loss= 1968.34705 accuracy= 0.61226 time= 0.02829
+Epoch: 0291 train_loss= 2168.01514 reconstruction_loss= 0.43205 proj_loss= 257.04803 pca_loss= 1910.53503 accuracy= 0.61226 time= 0.02127
+
+accuracy 0.61226
+auc 0.25608
+f1_score 0.12500
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 502
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 143 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+18629
+y_features shape after NoReduction torch.Size([2708, 18629]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 2455621.50000 reconstruction_loss= 4839.43066 proj_loss= 2445432.25000 pca_loss= 5349.69824 accuracy= 0.60709 time= 0.03607
+Epoch: 0011 train_loss= 2301948.50000 reconstruction_loss= 3370.53271 proj_loss= 2293543.75000 pca_loss= 5034.36475 accuracy= 0.61226 time= 0.02455
+Epoch: 0021 train_loss= 2159189.25000 reconstruction_loss= 2897.18018 proj_loss= 2151549.25000 pca_loss= 4742.64209 accuracy= 0.61448 time= 0.02514
+Epoch: 0031 train_loss= 2026814.37500 reconstruction_loss= 2618.27295 proj_loss= 2019720.87500 pca_loss= 4475.19873 accuracy= 0.61669 time= 0.02490
+Epoch: 0041 train_loss= 1904456.50000 reconstruction_loss= 2409.43579 proj_loss= 1897814.75000 pca_loss= 4232.41016 accuracy= 0.61448 time= 0.02863
+Epoch: 0051 train_loss= 1791501.25000 reconstruction_loss= 2236.67798 proj_loss= 1785251.87500 pca_loss= 4012.72705 accuracy= 0.61300 time= 0.02403
+Epoch: 0061 train_loss= 1687218.25000 reconstruction_loss= 2098.44019 proj_loss= 1681305.37500 pca_loss= 3814.32788 accuracy= 0.61374 time= 0.02374
+Epoch: 0071 train_loss= 1590828.87500 reconstruction_loss= 1971.51196 proj_loss= 1585222.12500 pca_loss= 3635.20410 accuracy= 0.61226 time= 0.02869
+Epoch: 0081 train_loss= 1501626.62500 reconstruction_loss= 1864.93054 proj_loss= 1496288.37500 pca_loss= 3473.34180 accuracy= 0.61374 time= 0.02356
+Epoch: 0091 train_loss= 1418929.12500 reconstruction_loss= 1751.48376 proj_loss= 1413850.75000 pca_loss= 3326.89722 accuracy= 0.61448 time= 0.02359
+Epoch: 0101 train_loss= 1342165.87500 reconstruction_loss= 1649.20618 proj_loss= 1337322.87500 pca_loss= 3193.70703 accuracy= 0.61595 time= 0.02391
+Epoch: 0111 train_loss= 1270792.75000 reconstruction_loss= 1541.16663 proj_loss= 1266179.87500 pca_loss= 3071.74316 accuracy= 0.61521 time= 0.02364
+Epoch: 0121 train_loss= 1204330.12500 reconstruction_loss= 1418.33337 proj_loss= 1199952.12500 pca_loss= 2959.61084 accuracy= 0.61743 time= 0.02366
+Epoch: 0131 train_loss= 1142367.75000 reconstruction_loss= 1292.35461 proj_loss= 1138219.75000 pca_loss= 2855.59009 accuracy= 0.61891 time= 0.02386
+Epoch: 0141 train_loss= 1084532.75000 reconstruction_loss= 1168.28625 proj_loss= 1080605.37500 pca_loss= 2759.06860 accuracy= 0.62038 time= 0.02356
+Epoch: 0151 train_loss= 1030496.87500 reconstruction_loss= 1057.71350 proj_loss= 1026770.43750 pca_loss= 2668.76416 accuracy= 0.62112 time= 0.02368
+Epoch: 0161 train_loss= 979954.56250 reconstruction_loss= 961.13867 proj_loss= 976409.18750 pca_loss= 2584.23950 accuracy= 0.62112 time= 0.02396
+Epoch: 0171 train_loss= 932627.18750 reconstruction_loss= 876.58289 proj_loss= 929245.50000 pca_loss= 2505.13965 accuracy= 0.62260 time= 0.02380
+Epoch: 0181 train_loss= 888262.75000 reconstruction_loss= 802.22211 proj_loss= 885029.56250 pca_loss= 2430.93091 accuracy= 0.62038 time= 0.02374
+Epoch: 0191 train_loss= 846628.87500 reconstruction_loss= 732.98328 proj_loss= 843535.06250 pca_loss= 2360.82251 accuracy= 0.61965 time= 0.02389
+Epoch: 0201 train_loss= 807515.81250 reconstruction_loss= 665.39252 proj_loss= 804556.06250 pca_loss= 2294.40015 accuracy= 0.62112 time= 0.02361
+Epoch: 0211 train_loss= 770737.18750 reconstruction_loss= 600.62061 proj_loss= 767905.00000 pca_loss= 2231.57666 accuracy= 0.62038 time= 0.02544
+Epoch: 0221 train_loss= 736120.06250 reconstruction_loss= 537.05304 proj_loss= 733411.18750 pca_loss= 2171.83423 accuracy= 0.62260 time= 0.02367
+Epoch: 0231 train_loss= 703511.87500 reconstruction_loss= 478.28381 proj_loss= 700918.75000 pca_loss= 2114.79956 accuracy= 0.62260 time= 0.02402
+Epoch: 0241 train_loss= 672772.75000 reconstruction_loss= 427.17169 proj_loss= 670285.18750 pca_loss= 2060.38208 accuracy= 0.61965 time= 0.02355
+Epoch: 0251 train_loss= 643763.56250 reconstruction_loss= 375.38809 proj_loss= 641379.75000 pca_loss= 2008.41980 accuracy= 0.62334 time= 0.02366
+Epoch: 0261 train_loss= 616369.62500 reconstruction_loss= 328.04532 proj_loss= 614082.81250 pca_loss= 1958.76453 accuracy= 0.62777 time= 0.02388
+Epoch: 0271 train_loss= 590474.31250 reconstruction_loss= 278.55380 proj_loss= 588284.62500 pca_loss= 1911.14929 accuracy= 0.62629 time= 0.02345
+Epoch: 0281 train_loss= 565997.68750 reconstruction_loss= 247.94920 proj_loss= 563884.31250 pca_loss= 1865.43164 accuracy= 0.62629 time= 0.02350
+Epoch: 0291 train_loss= 542832.18750 reconstruction_loss= 221.93962 proj_loss= 540788.81250 pca_loss= 1821.46448 accuracy= 0.61965 time= 0.02374
+
+accuracy 0.61891
+auc 0.26441
+f1_score 0.14000
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 211
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 7144.26660 reconstruction_loss= 36.86696 proj_loss= 5071.03760 pca_loss= 2036.36182 accuracy= 0.66913 time= 0.02374
+Epoch: 0011 train_loss= 6742.16211 reconstruction_loss= 23.48182 proj_loss= 4750.54639 pca_loss= 1968.13379 accuracy= 0.63220 time= 0.01788
+Epoch: 0021 train_loss= 6372.21484 reconstruction_loss= 18.16017 proj_loss= 4451.60791 pca_loss= 1902.44666 accuracy= 0.65436 time= 0.01520
+Epoch: 0031 train_loss= 6028.03223 reconstruction_loss= 13.93529 proj_loss= 4174.49365 pca_loss= 1839.60352 accuracy= 0.66470 time= 0.01511
+Epoch: 0041 train_loss= 5707.66504 reconstruction_loss= 9.54184 proj_loss= 3918.49194 pca_loss= 1779.63110 accuracy= 0.69129 time= 0.01512
+Epoch: 0051 train_loss= 5411.49756 reconstruction_loss= 6.80517 proj_loss= 3682.18750 pca_loss= 1722.50476 accuracy= 0.71049 time= 0.01519
+Epoch: 0061 train_loss= 5138.01953 reconstruction_loss= 5.95431 proj_loss= 3463.98584 pca_loss= 1668.07922 accuracy= 0.71787 time= 0.01510
+Epoch: 0071 train_loss= 4884.11816 reconstruction_loss= 5.66015 proj_loss= 3262.25122 pca_loss= 1616.20654 accuracy= 0.72083 time= 0.01514
+Epoch: 0081 train_loss= 4647.66260 reconstruction_loss= 5.47563 proj_loss= 3075.48486 pca_loss= 1566.70215 accuracy= 0.72674 time= 0.01512
+Epoch: 0091 train_loss= 4427.10303 reconstruction_loss= 5.38220 proj_loss= 2902.30444 pca_loss= 1519.41650 accuracy= 0.72157 time= 0.01507
+Epoch: 0101 train_loss= 4221.02930 reconstruction_loss= 5.34535 proj_loss= 2741.48340 pca_loss= 1474.20044 accuracy= 0.72304 time= 0.01512
+Epoch: 0111 train_loss= 4028.17969 reconstruction_loss= 5.33216 proj_loss= 2591.92334 pca_loss= 1430.92395 accuracy= 0.72009 time= 0.01511
+Epoch: 0121 train_loss= 3847.43335 reconstruction_loss= 5.32143 proj_loss= 2452.64624 pca_loss= 1389.46558 accuracy= 0.71935 time= 0.01509
+Epoch: 0131 train_loss= 3677.80200 reconstruction_loss= 5.30838 proj_loss= 2322.77710 pca_loss= 1349.71655 accuracy= 0.72452 time= 0.01507
+Epoch: 0141 train_loss= 3518.40625 reconstruction_loss= 5.29793 proj_loss= 2201.53125 pca_loss= 1311.57703 accuracy= 0.72083 time= 0.01507
+Epoch: 0151 train_loss= 3368.44971 reconstruction_loss= 5.29068 proj_loss= 2088.20337 pca_loss= 1274.95544 accuracy= 0.72452 time= 0.01508
+Epoch: 0161 train_loss= 3227.20605 reconstruction_loss= 5.28024 proj_loss= 1982.15881 pca_loss= 1239.76709 accuracy= 0.72378 time= 0.01512
+Epoch: 0171 train_loss= 3094.03003 reconstruction_loss= 5.27264 proj_loss= 1882.82336 pca_loss= 1205.93408 accuracy= 0.72452 time= 0.01508
+Epoch: 0181 train_loss= 2968.32373 reconstruction_loss= 5.26217 proj_loss= 1789.67737 pca_loss= 1173.38403 accuracy= 0.72674 time= 0.01518
+Epoch: 0191 train_loss= 2849.55518 reconstruction_loss= 5.25474 proj_loss= 1702.25098 pca_loss= 1142.04944 accuracy= 0.72452 time= 0.01515
+Epoch: 0201 train_loss= 2737.22998 reconstruction_loss= 5.24668 proj_loss= 1620.11511 pca_loss= 1111.86816 accuracy= 0.72304 time= 0.01514
+Epoch: 0211 train_loss= 2630.89941 reconstruction_loss= 5.23745 proj_loss= 1542.88013 pca_loss= 1082.78186 accuracy= 0.72526 time= 0.01507
+Epoch: 0221 train_loss= 2530.15771 reconstruction_loss= 5.23042 proj_loss= 1470.19067 pca_loss= 1054.73669 accuracy= 0.72674 time= 0.01507
+Epoch: 0231 train_loss= 2434.62500 reconstruction_loss= 5.22162 proj_loss= 1401.72205 pca_loss= 1027.68115 accuracy= 0.72526 time= 0.01507
+Epoch: 0241 train_loss= 2343.95801 reconstruction_loss= 5.21341 proj_loss= 1337.17651 pca_loss= 1001.56812 accuracy= 0.72821 time= 0.01507
+Epoch: 0251 train_loss= 2257.83887 reconstruction_loss= 5.20372 proj_loss= 1276.28223 pca_loss= 976.35284 accuracy= 0.72895 time= 0.01507
+Epoch: 0261 train_loss= 2175.97827 reconstruction_loss= 5.19581 proj_loss= 1218.78882 pca_loss= 951.99371 accuracy= 0.72747 time= 0.01509
+Epoch: 0271 train_loss= 2098.11548 reconstruction_loss= 5.19735 proj_loss= 1164.46692 pca_loss= 928.45123 accuracy= 0.72600 time= 0.01508
+Epoch: 0281 train_loss= 2023.97070 reconstruction_loss= 5.17659 proj_loss= 1113.10547 pca_loss= 905.68860 accuracy= 0.72747 time= 0.01506
+Epoch: 0291 train_loss= 1953.34814 reconstruction_loss= 5.16761 proj_loss= 1064.50940 pca_loss= 883.67114 accuracy= 0.73264 time= 0.01512
+
+accuracy 0.72674
+auc 0.66686
+f1_score 0.38333
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 56
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+18629
+y_features shape after NoReduction torch.Size([2708, 18629]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12364440.00000 reconstruction_loss= 34.62121 proj_loss= 12362157.00000 pca_loss= 2247.70654 accuracy= 0.61521 time= 0.03078
+Epoch: 0011 train_loss= 11597802.00000 reconstruction_loss= 20.50853 proj_loss= 11595614.00000 pca_loss= 2166.97900 accuracy= 0.62925 time= 0.02362
+Epoch: 0021 train_loss= 10880898.00000 reconstruction_loss= 14.16038 proj_loss= 10878794.00000 pca_loss= 2089.59277 accuracy= 0.64106 time= 0.02063
+Epoch: 0031 train_loss= 10215157.00000 reconstruction_loss= 10.11887 proj_loss= 10213131.00000 pca_loss= 2016.00256 accuracy= 0.66765 time= 0.02524
+Epoch: 0041 train_loss= 9599389.00000 reconstruction_loss= 7.64301 proj_loss= 9597435.00000 pca_loss= 1946.26196 accuracy= 0.71935 time= 0.02436
+Epoch: 0051 train_loss= 9030710.00000 reconstruction_loss= 6.57776 proj_loss= 9028823.00000 pca_loss= 1880.18311 accuracy= 0.70901 time= 0.02488
+Epoch: 0061 train_loss= 8505475.00000 reconstruction_loss= 6.09417 proj_loss= 8503652.00000 pca_loss= 1817.43201 accuracy= 0.71861 time= 0.02169
+Epoch: 0071 train_loss= 8019910.00000 reconstruction_loss= 5.85960 proj_loss= 8018146.00000 pca_loss= 1757.84888 accuracy= 0.71418 time= 0.02135
+Epoch: 0081 train_loss= 7570422.50000 reconstruction_loss= 5.80137 proj_loss= 7568715.50000 pca_loss= 1701.24707 accuracy= 0.70606 time= 0.02212
+Epoch: 0091 train_loss= 7153731.50000 reconstruction_loss= 6.08184 proj_loss= 7152078.00000 pca_loss= 1647.36963 accuracy= 0.71787 time= 0.02482
+Epoch: 0101 train_loss= 6766878.00000 reconstruction_loss= 6.09627 proj_loss= 6765276.00000 pca_loss= 1596.03979 accuracy= 0.68095 time= 0.02057
+Epoch: 0111 train_loss= 6407217.50000 reconstruction_loss= 5.59662 proj_loss= 6405665.00000 pca_loss= 1547.11853 accuracy= 0.69202 time= 0.02057
+Epoch: 0121 train_loss= 6072384.50000 reconstruction_loss= 5.15435 proj_loss= 6070879.00000 pca_loss= 1500.45154 accuracy= 0.69941 time= 0.02083
+Epoch: 0131 train_loss= 5760259.50000 reconstruction_loss= 4.69282 proj_loss= 5758799.00000 pca_loss= 1455.89307 accuracy= 0.70015 time= 0.02057
+Epoch: 0141 train_loss= 5468940.50000 reconstruction_loss= 4.42064 proj_loss= 5467522.50000 pca_loss= 1413.30615 accuracy= 0.70606 time= 0.02061
+Epoch: 0151 train_loss= 5196716.00000 reconstruction_loss= 4.31773 proj_loss= 5195339.00000 pca_loss= 1372.56787 accuracy= 0.70827 time= 0.02149
+Epoch: 0161 train_loss= 4942044.00000 reconstruction_loss= 4.21585 proj_loss= 4940706.50000 pca_loss= 1333.56909 accuracy= 0.70975 time= 0.02053
+Epoch: 0171 train_loss= 4703531.50000 reconstruction_loss= 4.19275 proj_loss= 4702231.50000 pca_loss= 1296.20752 accuracy= 0.70827 time= 0.02095
+Epoch: 0181 train_loss= 4479916.50000 reconstruction_loss= 4.18789 proj_loss= 4478652.00000 pca_loss= 1260.39209 accuracy= 0.70827 time= 0.02156
+Epoch: 0191 train_loss= 4270053.50000 reconstruction_loss= 4.17274 proj_loss= 4268823.50000 pca_loss= 1226.03503 accuracy= 0.70827 time= 0.02087
+Epoch: 0201 train_loss= 4072904.50000 reconstruction_loss= 4.16556 proj_loss= 4071707.25000 pca_loss= 1193.05835 accuracy= 0.70753 time= 0.02101
+Epoch: 0211 train_loss= 3887522.50000 reconstruction_loss= 4.16962 proj_loss= 3886356.75000 pca_loss= 1161.38794 accuracy= 0.70827 time= 0.02151
+Epoch: 0221 train_loss= 3713044.50000 reconstruction_loss= 4.15577 proj_loss= 3711909.25000 pca_loss= 1130.95435 accuracy= 0.70901 time= 0.02076
+Epoch: 0231 train_loss= 3548683.50000 reconstruction_loss= 4.15097 proj_loss= 3547577.50000 pca_loss= 1101.69446 accuracy= 0.71049 time= 0.02076
+Epoch: 0241 train_loss= 3393718.25000 reconstruction_loss= 4.14668 proj_loss= 3392640.50000 pca_loss= 1073.54846 accuracy= 0.71123 time= 0.02145
+Epoch: 0251 train_loss= 3247491.25000 reconstruction_loss= 4.14384 proj_loss= 3246440.50000 pca_loss= 1046.46082 accuracy= 0.70901 time= 0.02087
+Epoch: 0261 train_loss= 3109396.50000 reconstruction_loss= 4.13944 proj_loss= 3108371.75000 pca_loss= 1020.37976 accuracy= 0.70901 time= 0.02078
+Epoch: 0271 train_loss= 2978879.00000 reconstruction_loss= 4.13638 proj_loss= 2977879.50000 pca_loss= 995.25604 accuracy= 0.70827 time= 0.02144
+Epoch: 0281 train_loss= 2855429.00000 reconstruction_loss= 4.13270 proj_loss= 2854453.75000 pca_loss= 971.04431 accuracy= 0.70827 time= 0.02074
+Epoch: 0291 train_loss= 2738577.25000 reconstruction_loss= 4.12999 proj_loss= 2737625.25000 pca_loss= 947.70105 accuracy= 0.70975 time= 0.02086
+
+accuracy 0.70901
+auc 0.62836
+f1_score 0.34333
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 16
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12950.70996 reconstruction_loss= 6288.83984 proj_loss= 4750.39893 pca_loss= 1911.47205 accuracy= 0.69719 time= 0.02006
+Epoch: 0011 train_loss= 11368.29785 reconstruction_loss= 5063.17529 proj_loss= 4457.44775 pca_loss= 1847.67468 accuracy= 0.64623 time= 0.01405
+Epoch: 0021 train_loss= 10644.20508 reconstruction_loss= 4677.15039 proj_loss= 4179.38232 pca_loss= 1787.67236 accuracy= 0.62482 time= 0.01407
+Epoch: 0031 train_loss= 10027.12988 reconstruction_loss= 4376.33740 proj_loss= 3920.10449 pca_loss= 1730.68848 accuracy= 0.62186 time= 0.01232
+Epoch: 0041 train_loss= 9469.00195 reconstruction_loss= 4112.75781 proj_loss= 3680.07861 pca_loss= 1676.16541 accuracy= 0.61817 time= 0.01233
+Epoch: 0051 train_loss= 8946.02148 reconstruction_loss= 3863.66895 proj_loss= 3458.36963 pca_loss= 1623.98242 accuracy= 0.61300 time= 0.01226
+Epoch: 0061 train_loss= 8443.97461 reconstruction_loss= 3616.02881 proj_loss= 3253.73169 pca_loss= 1574.21436 accuracy= 0.61152 time= 0.01227
+Epoch: 0071 train_loss= 7943.66309 reconstruction_loss= 3351.75586 proj_loss= 3064.88379 pca_loss= 1527.02356 accuracy= 0.61078 time= 0.01237
+Epoch: 0081 train_loss= 7419.84277 reconstruction_loss= 3046.28662 proj_loss= 2890.87939 pca_loss= 1482.67651 accuracy= 0.61374 time= 0.01226
+Epoch: 0091 train_loss= 6816.95459 reconstruction_loss= 2644.39502 proj_loss= 2731.04590 pca_loss= 1441.51379 accuracy= 0.60635 time= 0.01220
+Epoch: 0101 train_loss= 6076.76562 reconstruction_loss= 2088.41333 proj_loss= 2584.53979 pca_loss= 1403.81274 accuracy= 0.60561 time= 0.01221
+Epoch: 0111 train_loss= 5134.09082 reconstruction_loss= 1315.25146 proj_loss= 2449.57275 pca_loss= 1369.26672 accuracy= 0.61226 time= 0.01220
+Epoch: 0121 train_loss= 4274.90674 reconstruction_loss= 616.00574 proj_loss= 2322.51123 pca_loss= 1336.38977 accuracy= 0.60931 time= 0.01222
+Epoch: 0131 train_loss= 3760.30225 reconstruction_loss= 257.54352 proj_loss= 2200.44604 pca_loss= 1302.31262 accuracy= 0.61374 time= 0.01221
+Epoch: 0141 train_loss= 3472.51367 reconstruction_loss= 121.76565 proj_loss= 2084.01538 pca_loss= 1266.73267 accuracy= 0.62999 time= 0.01223
+Epoch: 0151 train_loss= 3279.24609 reconstruction_loss= 74.17931 proj_loss= 1974.41333 pca_loss= 1230.65369 accuracy= 0.61078 time= 0.01220
+Epoch: 0161 train_loss= 3117.70776 reconstruction_loss= 50.46510 proj_loss= 1872.02295 pca_loss= 1195.21973 accuracy= 0.62186 time= 0.01217
+Epoch: 0171 train_loss= 2962.40576 reconstruction_loss= 24.84052 proj_loss= 1776.57581 pca_loss= 1160.98926 accuracy= 0.64032 time= 0.01218
+Epoch: 0181 train_loss= 2830.06396 reconstruction_loss= 14.33939 proj_loss= 1687.53381 pca_loss= 1128.19080 accuracy= 0.63885 time= 0.01220
+Epoch: 0191 train_loss= 2712.55347 reconstruction_loss= 11.48810 proj_loss= 1604.31506 pca_loss= 1096.75024 accuracy= 0.63146 time= 0.01220
+Epoch: 0201 train_loss= 2603.02979 reconstruction_loss= 10.04395 proj_loss= 1526.38696 pca_loss= 1066.59888 accuracy= 0.63146 time= 0.01225
+Epoch: 0211 train_loss= 2499.79395 reconstruction_loss= 8.83050 proj_loss= 1453.29712 pca_loss= 1037.66638 accuracy= 0.63589 time= 0.01218
+Epoch: 0221 train_loss= 2402.18750 reconstruction_loss= 7.65755 proj_loss= 1384.64087 pca_loss= 1009.88904 accuracy= 0.63589 time= 0.01220
+Epoch: 0231 train_loss= 2310.17407 reconstruction_loss= 6.90768 proj_loss= 1320.06567 pca_loss= 983.20068 accuracy= 0.63220 time= 0.01218
+Epoch: 0241 train_loss= 2222.73218 reconstruction_loss= 5.95597 proj_loss= 1259.25232 pca_loss= 957.52386 accuracy= 0.63146 time= 0.01216
+Epoch: 0251 train_loss= 2140.08765 reconstruction_loss= 5.35106 proj_loss= 1201.92871 pca_loss= 932.80780 accuracy= 0.62925 time= 0.01222
+Epoch: 0261 train_loss= 2061.57642 reconstruction_loss= 4.75879 proj_loss= 1147.84131 pca_loss= 908.97626 accuracy= 0.62777 time= 0.01217
+Epoch: 0271 train_loss= 1987.06702 reconstruction_loss= 4.33123 proj_loss= 1096.75781 pca_loss= 885.97803 accuracy= 0.63368 time= 0.01221
+Epoch: 0281 train_loss= 1916.07764 reconstruction_loss= 3.83202 proj_loss= 1048.47156 pca_loss= 863.77399 accuracy= 0.63368 time= 0.01217
+Epoch: 0291 train_loss= 1848.55005 reconstruction_loss= 3.39663 proj_loss= 1002.79736 pca_loss= 842.35614 accuracy= 0.63146 time= 0.01219
+
+accuracy 0.63220
+auc 0.40599
+f1_score 0.17000
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, dataset='cora', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 856
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 rsr_dim: 28 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+18629
+y_features shape after NoReduction torch.Size([2708, 18629]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12398533.00000 reconstruction_loss= 6239.75195 proj_loss= 12389864.00000 pca_loss= 2428.64331 accuracy= 0.61448 time= 0.02921
+Epoch: 0011 train_loss= 11629501.00000 reconstruction_loss= 5300.03613 proj_loss= 11621851.00000 pca_loss= 2350.20020 accuracy= 0.61226 time= 0.02032
+Epoch: 0021 train_loss= 10910808.00000 reconstruction_loss= 4896.03125 proj_loss= 10903638.00000 pca_loss= 2274.41357 accuracy= 0.60931 time= 0.01787
+Epoch: 0031 train_loss= 10243461.00000 reconstruction_loss= 4598.56592 proj_loss= 10236661.00000 pca_loss= 2201.18286 accuracy= 0.61374 time= 0.01781
+Epoch: 0041 train_loss= 9626205.00000 reconstruction_loss= 4347.61914 proj_loss= 9619726.00000 pca_loss= 2130.56689 accuracy= 0.61448 time= 0.01788
+Epoch: 0051 train_loss= 9056123.00000 reconstruction_loss= 4115.21338 proj_loss= 9049945.00000 pca_loss= 2062.69556 accuracy= 0.61374 time= 0.01784
+Epoch: 0061 train_loss= 8529571.00000 reconstruction_loss= 3901.88403 proj_loss= 8523671.00000 pca_loss= 1997.65613 accuracy= 0.61226 time= 0.01782
+Epoch: 0071 train_loss= 8042735.50000 reconstruction_loss= 3673.68604 proj_loss= 8037126.50000 pca_loss= 1935.54688 accuracy= 0.61595 time= 0.01786
+Epoch: 0081 train_loss= 7592045.00000 reconstruction_loss= 3450.57227 proj_loss= 7586718.50000 pca_loss= 1876.24695 accuracy= 0.61521 time= 0.01812
+Epoch: 0091 train_loss= 7174184.00000 reconstruction_loss= 3203.74487 proj_loss= 7169161.00000 pca_loss= 1819.51562 accuracy= 0.61595 time= 0.01781
+Epoch: 0101 train_loss= 6786172.00000 reconstruction_loss= 2911.11401 proj_loss= 6781495.50000 pca_loss= 1765.30737 accuracy= 0.61891 time= 0.01779
+Epoch: 0111 train_loss= 6425345.50000 reconstruction_loss= 2558.41235 proj_loss= 6421073.50000 pca_loss= 1713.53113 accuracy= 0.61891 time= 0.01778
+Epoch: 0121 train_loss= 6089348.00000 reconstruction_loss= 2157.80542 proj_loss= 6085526.00000 pca_loss= 1663.91357 accuracy= 0.61965 time= 0.01774
+Epoch: 0131 train_loss= 5776063.50000 reconstruction_loss= 1717.18262 proj_loss= 5772730.50000 pca_loss= 1616.22119 accuracy= 0.62186 time= 0.01779
+Epoch: 0141 train_loss= 5483629.00000 reconstruction_loss= 1278.06812 proj_loss= 5480781.00000 pca_loss= 1570.16760 accuracy= 0.62112 time= 0.01776
+Epoch: 0151 train_loss= 5210329.00000 reconstruction_loss= 838.65173 proj_loss= 5207964.50000 pca_loss= 1525.98718 accuracy= 0.61817 time= 0.01845
+Epoch: 0161 train_loss= 4954724.00000 reconstruction_loss= 504.94736 proj_loss= 4952736.00000 pca_loss= 1483.16638 accuracy= 0.61595 time= 0.01775
+Epoch: 0171 train_loss= 4715451.50000 reconstruction_loss= 311.06842 proj_loss= 4713699.00000 pca_loss= 1441.50732 accuracy= 0.61300 time= 0.01776
+Epoch: 0181 train_loss= 4491199.00000 reconstruction_loss= 206.31563 proj_loss= 4489591.50000 pca_loss= 1401.19482 accuracy= 0.61300 time= 0.01781
+Epoch: 0191 train_loss= 4280773.50000 reconstruction_loss= 146.15417 proj_loss= 4279265.00000 pca_loss= 1362.46472 accuracy= 0.61448 time= 0.01777
+Epoch: 0201 train_loss= 4083115.00000 reconstruction_loss= 108.63236 proj_loss= 4081681.00000 pca_loss= 1325.28113 accuracy= 0.61595 time= 0.01775
+Epoch: 0211 train_loss= 3897262.50000 reconstruction_loss= 83.93894 proj_loss= 3895889.00000 pca_loss= 1289.53894 accuracy= 0.61817 time= 0.01778
+Epoch: 0221 train_loss= 3722344.25000 reconstruction_loss= 64.40209 proj_loss= 3721024.50000 pca_loss= 1255.18872 accuracy= 0.60783 time= 0.01777
+Epoch: 0231 train_loss= 3557571.00000 reconstruction_loss= 48.82343 proj_loss= 3556300.00000 pca_loss= 1222.14087 accuracy= 0.61300 time= 0.01776
+Epoch: 0241 train_loss= 3402213.00000 reconstruction_loss= 30.45063 proj_loss= 3400992.25000 pca_loss= 1190.33972 accuracy= 0.60857 time= 0.01774
+Epoch: 0251 train_loss= 3255611.50000 reconstruction_loss= 10.83759 proj_loss= 3254441.00000 pca_loss= 1159.71265 accuracy= 0.61374 time= 0.01773
+Epoch: 0261 train_loss= 3117175.00000 reconstruction_loss= 3.87094 proj_loss= 3116041.00000 pca_loss= 1130.17126 accuracy= 0.61078 time= 0.01773
+Epoch: 0271 train_loss= 2986338.50000 reconstruction_loss= 1.78259 proj_loss= 2985235.00000 pca_loss= 1101.69324 accuracy= 0.61300 time= 0.01798
+Epoch: 0281 train_loss= 2862587.00000 reconstruction_loss= 1.00707 proj_loss= 2861511.75000 pca_loss= 1074.18933 accuracy= 0.61226 time= 0.01773
+Epoch: 0291 train_loss= 2745450.75000 reconstruction_loss= 0.94846 proj_loss= 2744402.00000 pca_loss= 1047.64624 accuracy= 0.61226 time= 0.01772
+
+accuracy 0.61226
+auc 0.25617
+f1_score 0.12500
+Job finished!
+cora job finished!
+Start amazon_electronics_photo
+
+
+
+Initializing Rsr twodecoders
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 266
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 6552.71484 feature_loss= 23.83415 structure_loss= 4596.04492 proj_loss= 647.49261 pca_loss= 1285.34302 accuracy= 0.60444 accuracy_s= 0.77490 accuracy_f= 0.81673 time= 0.09964
+Epoch: 0011 train_loss= 2352.84521 feature_loss= 16.60978 structure_loss= 1031.17944 proj_loss= 637.30298 pca_loss= 667.75293 accuracy= 0.62824 accuracy_s= 0.77882 accuracy_f= 0.82980 time= 0.08774
+Epoch: 0021 train_loss= 1814.21509 feature_loss= 15.44161 structure_loss= 638.17212 proj_loss= 624.08099 pca_loss= 536.52032 accuracy= 0.60915 accuracy_s= 0.77098 accuracy_f= 0.83085 time= 0.07902
+Epoch: 0031 train_loss= 1570.89429 feature_loss= 14.79901 structure_loss= 509.73157 proj_loss= 608.85168 pca_loss= 437.51190 accuracy= 0.60941 accuracy_s= 0.76732 accuracy_f= 0.83373 time= 0.07983
+Epoch: 0041 train_loss= 1388.69067 feature_loss= 14.36361 structure_loss= 426.96680 proj_loss= 593.01874 pca_loss= 354.34155 accuracy= 0.62536 accuracy_s= 0.77333 accuracy_f= 0.83582 time= 0.07929
+Epoch: 0051 train_loss= 1263.74170 feature_loss= 14.04109 structure_loss= 388.46814 proj_loss= 576.86322 pca_loss= 284.36920 accuracy= 0.63869 accuracy_s= 0.77150 accuracy_f= 0.83634 time= 0.08121
+Epoch: 0061 train_loss= 1171.23450 feature_loss= 13.79199 structure_loss= 366.47037 proj_loss= 560.61096 pca_loss= 230.36121 accuracy= 0.64732 accuracy_s= 0.76810 accuracy_f= 0.83686 time= 0.08119
+Epoch: 0071 train_loss= 1097.14978 feature_loss= 13.57514 structure_loss= 354.38861 proj_loss= 544.46051 pca_loss= 184.72549 accuracy= 0.65595 accuracy_s= 0.76863 accuracy_f= 0.83634 time= 0.07928
+Epoch: 0081 train_loss= 1030.61804 feature_loss= 13.38637 structure_loss= 338.63580 proj_loss= 528.57269 pca_loss= 150.02322 accuracy= 0.65542 accuracy_s= 0.77307 accuracy_f= 0.83686 time= 0.08578
+Epoch: 0091 train_loss= 966.53717 feature_loss= 13.21537 structure_loss= 319.18314 proj_loss= 513.00092 pca_loss= 121.13778 accuracy= 0.65804 accuracy_s= 0.77961 accuracy_f= 0.83739 time= 0.09191
+Epoch: 0101 train_loss= 919.13934 feature_loss= 13.05956 structure_loss= 309.35257 proj_loss= 497.92355 pca_loss= 98.80364 accuracy= 0.65647 accuracy_s= 0.77176 accuracy_f= 0.83869 time= 0.09870
+Epoch: 0111 train_loss= 874.61810 feature_loss= 12.92657 structure_loss= 295.71002 proj_loss= 483.34433 pca_loss= 82.63715 accuracy= 0.65935 accuracy_s= 0.78118 accuracy_f= 0.83843 time= 0.12358
+Epoch: 0121 train_loss= 846.42352 feature_loss= 12.79732 structure_loss= 295.51404 proj_loss= 469.17865 pca_loss= 68.93353 accuracy= 0.66301 accuracy_s= 0.78431 accuracy_f= 0.84000 time= 0.08974
+Epoch: 0131 train_loss= 814.06250 feature_loss= 12.69338 structure_loss= 287.02911 proj_loss= 455.38287 pca_loss= 58.95714 accuracy= 0.66196 accuracy_s= 0.78693 accuracy_f= 0.83974 time= 0.09411
+Epoch: 0141 train_loss= 783.93024 feature_loss= 12.59649 structure_loss= 277.51239 proj_loss= 442.00003 pca_loss= 51.82137 accuracy= 0.66275 accuracy_s= 0.79190 accuracy_f= 0.83974 time= 0.09486
+Epoch: 0151 train_loss= 754.87103 feature_loss= 12.55210 structure_loss= 266.84729 proj_loss= 428.95670 pca_loss= 46.51495 accuracy= 0.66353 accuracy_s= 0.78667 accuracy_f= 0.83974 time= 0.07936
+Epoch: 0161 train_loss= 732.60352 feature_loss= 12.52164 structure_loss= 259.40070 proj_loss= 416.42642 pca_loss= 44.25474 accuracy= 0.65987 accuracy_s= 0.78850 accuracy_f= 0.83895 time= 0.07948
+Epoch: 0171 train_loss= 706.81042 feature_loss= 12.39423 structure_loss= 247.15448 proj_loss= 404.35858 pca_loss= 42.90316 accuracy= 0.66118 accuracy_s= 0.78980 accuracy_f= 0.84444 time= 0.07966
+Epoch: 0181 train_loss= 680.82959 feature_loss= 12.30530 structure_loss= 234.75011 proj_loss= 392.71326 pca_loss= 41.06089 accuracy= 0.66301 accuracy_s= 0.78902 accuracy_f= 0.84340 time= 0.08012
+Epoch: 0191 train_loss= 659.75629 feature_loss= 12.22314 structure_loss= 226.13797 proj_loss= 381.59650 pca_loss= 39.79863 accuracy= 0.66196 accuracy_s= 0.78588 accuracy_f= 0.84471 time= 0.08045
+Epoch: 0201 train_loss= 641.49445 feature_loss= 12.17890 structure_loss= 220.74599 proj_loss= 370.86752 pca_loss= 37.70202 accuracy= 0.66353 accuracy_s= 0.78641 accuracy_f= 0.84471 time= 0.08097
+Epoch: 0211 train_loss= 623.48267 feature_loss= 12.12947 structure_loss= 214.57820 proj_loss= 360.47998 pca_loss= 36.29503 accuracy= 0.66641 accuracy_s= 0.78458 accuracy_f= 0.84549 time= 0.08132
+Epoch: 0221 train_loss= 607.25177 feature_loss= 12.07428 structure_loss= 209.92566 proj_loss= 350.43323 pca_loss= 34.81860 accuracy= 0.66719 accuracy_s= 0.78771 accuracy_f= 0.84549 time= 0.08045
+Epoch: 0231 train_loss= 586.90527 feature_loss= 12.03683 structure_loss= 200.30373 proj_loss= 340.77231 pca_loss= 33.79239 accuracy= 0.66667 accuracy_s= 0.78536 accuracy_f= 0.84654 time= 0.08079
+Epoch: 0241 train_loss= 569.01996 feature_loss= 11.98696 structure_loss= 192.71722 proj_loss= 331.45688 pca_loss= 32.85889 accuracy= 0.67111 accuracy_s= 0.78431 accuracy_f= 0.84627 time= 0.08127
+Epoch: 0251 train_loss= 557.18274 feature_loss= 11.96213 structure_loss= 190.79626 proj_loss= 322.48093 pca_loss= 31.94341 accuracy= 0.67007 accuracy_s= 0.78824 accuracy_f= 0.84680 time= 0.09867
+Epoch: 0261 train_loss= 541.31732 feature_loss= 11.96123 structure_loss= 184.28888 proj_loss= 313.85428 pca_loss= 31.21295 accuracy= 0.66745 accuracy_s= 0.78458 accuracy_f= 0.84732 time= 0.08178
+Epoch: 0271 train_loss= 522.71051 feature_loss= 11.93562 structure_loss= 174.42085 proj_loss= 305.56653 pca_loss= 30.78749 accuracy= 0.67163 accuracy_s= 0.78588 accuracy_f= 0.84837 time= 0.08098
+Epoch: 0281 train_loss= 509.13388 feature_loss= 11.88558 structure_loss= 169.64049 proj_loss= 297.57599 pca_loss= 30.03184 accuracy= 0.67033 accuracy_s= 0.78588 accuracy_f= 0.84680 time= 0.08038
+Epoch: 0291 train_loss= 494.99963 feature_loss= 11.86720 structure_loss= 163.74597 proj_loss= 289.82684 pca_loss= 29.55962 accuracy= 0.67242 accuracy_s= 0.78431 accuracy_f= 0.84889 time= 0.08149
+
+accuracy 0.67268
+accuracy_s 0.78405
+accuracy_f 0.84863
+auc 0.57807
+f1_score 0.30444
+Job finished!
+
+
+
+Initializing Rsr twodecoders
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 208
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 8712.80371 feature_loss= 24.37337 structure_loss= 5554.73877 proj_loss= 2626.43091 pca_loss= 507.26053 accuracy= 0.61046 accuracy_s= 0.77359 accuracy_f= 0.81359 time= 0.09765
+Epoch: 0011 train_loss= 3974.18286 feature_loss= 16.44115 structure_loss= 1218.40027 proj_loss= 2528.78345 pca_loss= 210.55788 accuracy= 0.61961 accuracy_s= 0.77438 accuracy_f= 0.82353 time= 0.08003
+Epoch: 0021 train_loss= 3317.37109 feature_loss= 15.50699 structure_loss= 716.80640 proj_loss= 2423.36060 pca_loss= 161.69691 accuracy= 0.60732 accuracy_s= 0.77046 accuracy_f= 0.82222 time= 0.07932
+Epoch: 0031 train_loss= 3015.13940 feature_loss= 14.97296 structure_loss= 555.00323 proj_loss= 2313.84302 pca_loss= 131.32013 accuracy= 0.60261 accuracy_s= 0.77046 accuracy_f= 0.82667 time= 0.07897
+Epoch: 0041 train_loss= 2807.81299 feature_loss= 14.53135 structure_loss= 481.73975 proj_loss= 2207.16992 pca_loss= 104.37214 accuracy= 0.62431 accuracy_s= 0.77255 accuracy_f= 0.82641 time= 0.07903
+Epoch: 0051 train_loss= 2628.65234 feature_loss= 14.21353 structure_loss= 429.99896 proj_loss= 2104.25098 pca_loss= 80.18891 accuracy= 0.61255 accuracy_s= 0.77072 accuracy_f= 0.82719 time= 0.07916
+Epoch: 0061 train_loss= 2474.45483 feature_loss= 13.98099 structure_loss= 394.92941 proj_loss= 2006.02100 pca_loss= 59.52355 accuracy= 0.62641 accuracy_s= 0.76810 accuracy_f= 0.82824 time= 0.07971
+Epoch: 0071 train_loss= 2329.94775 feature_loss= 13.82164 structure_loss= 361.69940 proj_loss= 1912.46790 pca_loss= 41.95866 accuracy= 0.63608 accuracy_s= 0.77046 accuracy_f= 0.82641 time= 0.07986
+Epoch: 0081 train_loss= 2219.34033 feature_loss= 13.69224 structure_loss= 349.92310 proj_loss= 1823.10498 pca_loss= 32.62010 accuracy= 0.64209 accuracy_s= 0.77046 accuracy_f= 0.82614 time= 0.07959
+Epoch: 0091 train_loss= 2113.56226 feature_loss= 13.53437 structure_loss= 332.13522 proj_loss= 1737.12720 pca_loss= 30.76545 accuracy= 0.64601 accuracy_s= 0.77490 accuracy_f= 0.82641 time= 0.07962
+Epoch: 0101 train_loss= 2026.66980 feature_loss= 13.39550 structure_loss= 328.64523 proj_loss= 1655.16455 pca_loss= 29.46452 accuracy= 0.65333 accuracy_s= 0.77255 accuracy_f= 0.82824 time= 0.07958
+Epoch: 0111 train_loss= 1933.83923 feature_loss= 13.28693 structure_loss= 314.30942 proj_loss= 1577.97253 pca_loss= 28.27033 accuracy= 0.64732 accuracy_s= 0.76523 accuracy_f= 0.82719 time= 0.07957
+Epoch: 0121 train_loss= 1853.66040 feature_loss= 13.17963 structure_loss= 307.81674 proj_loss= 1505.31055 pca_loss= 27.35353 accuracy= 0.65359 accuracy_s= 0.78431 accuracy_f= 0.82771 time= 0.07894
+Epoch: 0131 train_loss= 1777.13708 feature_loss= 13.08864 structure_loss= 300.97928 proj_loss= 1436.63818 pca_loss= 26.43101 accuracy= 0.65020 accuracy_s= 0.76810 accuracy_f= 0.82797 time= 0.07889
+Epoch: 0141 train_loss= 1707.54150 feature_loss= 13.00703 structure_loss= 297.16327 proj_loss= 1371.67871 pca_loss= 25.69246 accuracy= 0.65072 accuracy_s= 0.76758 accuracy_f= 0.82850 time= 0.07909
+Epoch: 0151 train_loss= 1635.23608 feature_loss= 12.93600 structure_loss= 286.82776 proj_loss= 1310.27832 pca_loss= 25.19393 accuracy= 0.65386 accuracy_s= 0.77725 accuracy_f= 0.82850 time= 0.07882
+Epoch: 0161 train_loss= 1570.45898 feature_loss= 12.86937 structure_loss= 281.08057 proj_loss= 1252.23120 pca_loss= 24.27780 accuracy= 0.65438 accuracy_s= 0.79712 accuracy_f= 0.82876 time= 0.07881
+Epoch: 0171 train_loss= 1510.76538 feature_loss= 12.77601 structure_loss= 277.04639 proj_loss= 1197.30200 pca_loss= 23.64095 accuracy= 0.65516 accuracy_s= 0.78092 accuracy_f= 0.83242 time= 0.07884
+Epoch: 0181 train_loss= 1443.35132 feature_loss= 12.68290 structure_loss= 262.75143 proj_loss= 1145.32507 pca_loss= 22.59192 accuracy= 0.64967 accuracy_s= 0.78118 accuracy_f= 0.83373 time= 0.07871
+Epoch: 0191 train_loss= 1379.78979 feature_loss= 12.52548 structure_loss= 249.34923 proj_loss= 1096.10156 pca_loss= 21.81354 accuracy= 0.65908 accuracy_s= 0.78458 accuracy_f= 0.83739 time= 0.07884
+Epoch: 0201 train_loss= 1336.66101 feature_loss= 12.44703 structure_loss= 253.67990 proj_loss= 1049.49451 pca_loss= 21.03953 accuracy= 0.66301 accuracy_s= 0.78588 accuracy_f= 0.83765 time= 0.07865
+Epoch: 0211 train_loss= 1278.06030 feature_loss= 12.36991 structure_loss= 239.86366 proj_loss= 1005.34296 pca_loss= 20.48376 accuracy= 0.66797 accuracy_s= 0.78431 accuracy_f= 0.83660 time= 0.07890
+Epoch: 0221 train_loss= 1233.75403 feature_loss= 12.32055 structure_loss= 237.66635 proj_loss= 963.48907 pca_loss= 20.27811 accuracy= 0.66719 accuracy_s= 0.78641 accuracy_f= 0.83895 time= 0.07903
+Epoch: 0231 train_loss= 1182.07410 feature_loss= 12.29169 structure_loss= 226.40540 proj_loss= 923.78088 pca_loss= 19.59601 accuracy= 0.66824 accuracy_s= 0.78275 accuracy_f= 0.83843 time= 0.07922
+Epoch: 0241 train_loss= 1138.78015 feature_loss= 12.24727 structure_loss= 221.26794 proj_loss= 886.08911 pca_loss= 19.17576 accuracy= 0.66719 accuracy_s= 0.78458 accuracy_f= 0.83817 time= 0.08016
+Epoch: 0251 train_loss= 1098.44385 feature_loss= 12.22372 structure_loss= 217.40637 proj_loss= 850.30768 pca_loss= 18.50612 accuracy= 0.66379 accuracy_s= 0.78719 accuracy_f= 0.83895 time= 0.08089
+Epoch: 0261 train_loss= 1057.34229 feature_loss= 12.22638 structure_loss= 210.69653 proj_loss= 816.30896 pca_loss= 18.11036 accuracy= 0.66719 accuracy_s= 0.78327 accuracy_f= 0.84131 time= 0.10121
+Epoch: 0271 train_loss= 1027.38025 feature_loss= 12.10207 structure_loss= 213.54556 proj_loss= 784.00165 pca_loss= 17.73092 accuracy= 0.66797 accuracy_s= 0.78745 accuracy_f= 0.84288 time= 0.09045
+Epoch: 0281 train_loss= 985.70813 feature_loss= 12.03808 structure_loss= 202.99156 proj_loss= 753.28680 pca_loss= 17.39165 accuracy= 0.66693 accuracy_s= 0.78562 accuracy_f= 0.84497 time= 0.08084
+Epoch: 0291 train_loss= 951.84344 feature_loss= 12.01251 structure_loss= 198.60666 proj_loss= 724.06873 pca_loss= 17.15556 accuracy= 0.67007 accuracy_s= 0.78693 accuracy_f= 0.84497 time= 0.09361
+
+accuracy 0.66562
+accuracy_s 0.78510
+accuracy_f 0.84314
+auc 0.55673
+f1_score 0.28944
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=0, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 45
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 1943.30920 reconstruction_loss= 24.84159 proj_loss= 667.63141 pca_loss= 1250.83618 accuracy= 0.65464 time= 0.06610
+Epoch: 0011 train_loss= 1069.34570 reconstruction_loss= 17.99334 proj_loss= 643.94183 pca_loss= 407.41052 accuracy= 0.67399 time= 0.05082
+Epoch: 0021 train_loss= 919.72620 reconstruction_loss= 15.05489 proj_loss= 622.66327 pca_loss= 282.00803 accuracy= 0.67059 time= 0.05067
+Epoch: 0031 train_loss= 812.43378 reconstruction_loss= 14.50363 proj_loss= 600.69269 pca_loss= 197.23750 accuracy= 0.67007 time= 0.05058
+Epoch: 0041 train_loss= 729.01135 reconstruction_loss= 14.22836 proj_loss= 578.25836 pca_loss= 136.52467 accuracy= 0.67137 time= 0.05277
+Epoch: 0051 train_loss= 661.10956 reconstruction_loss= 13.91114 proj_loss= 555.81250 pca_loss= 91.38594 accuracy= 0.67137 time= 0.05090
+Epoch: 0061 train_loss= 605.05756 reconstruction_loss= 13.66104 proj_loss= 533.64380 pca_loss= 57.75270 accuracy= 0.66928 time= 0.05088
+Epoch: 0071 train_loss= 558.55621 reconstruction_loss= 13.45847 proj_loss= 511.85712 pca_loss= 33.24061 accuracy= 0.66850 time= 0.05137
+Epoch: 0081 train_loss= 525.13074 reconstruction_loss= 16.01982 proj_loss= 490.82361 pca_loss= 18.28730 accuracy= 0.65725 time= 0.05061
+Epoch: 0091 train_loss= 500.64920 reconstruction_loss= 15.55487 proj_loss= 470.75403 pca_loss= 14.34029 accuracy= 0.65961 time= 0.05067
+Epoch: 0101 train_loss= 479.13556 reconstruction_loss= 14.19090 proj_loss= 451.70419 pca_loss= 13.24049 accuracy= 0.67033 time= 0.05051
+Epoch: 0111 train_loss= 459.54193 reconstruction_loss= 13.82351 proj_loss= 433.73669 pca_loss= 11.98172 accuracy= 0.67059 time= 0.05072
+Epoch: 0121 train_loss= 441.96338 reconstruction_loss= 13.90800 proj_loss= 416.86365 pca_loss= 11.19173 accuracy= 0.66248 time= 0.05014
+Epoch: 0131 train_loss= 424.93967 reconstruction_loss= 13.19554 proj_loss= 400.97256 pca_loss= 10.77154 accuracy= 0.67294 time= 0.05019
+Epoch: 0141 train_loss= 409.37411 reconstruction_loss= 13.25255 proj_loss= 385.96823 pca_loss= 10.15331 accuracy= 0.66980 time= 0.05056
+Epoch: 0151 train_loss= 394.93283 reconstruction_loss= 13.29842 proj_loss= 371.84396 pca_loss= 9.79043 accuracy= 0.66458 time= 0.05036
+Epoch: 0161 train_loss= 381.02985 reconstruction_loss= 12.87082 proj_loss= 358.47470 pca_loss= 9.68433 accuracy= 0.67608 time= 0.05072
+Epoch: 0171 train_loss= 367.86005 reconstruction_loss= 12.84600 proj_loss= 345.79013 pca_loss= 9.22390 accuracy= 0.67163 time= 0.05050
+Epoch: 0181 train_loss= 355.51224 reconstruction_loss= 12.69326 proj_loss= 333.74176 pca_loss= 9.07720 accuracy= 0.67529 time= 0.05091
+Epoch: 0191 train_loss= 343.52997 reconstruction_loss= 12.43883 proj_loss= 322.29498 pca_loss= 8.79613 accuracy= 0.67660 time= 0.05126
+Epoch: 0201 train_loss= 332.34070 reconstruction_loss= 12.35080 proj_loss= 311.37601 pca_loss= 8.61391 accuracy= 0.67608 time= 0.05143
+Epoch: 0211 train_loss= 321.68533 reconstruction_loss= 12.29902 proj_loss= 300.95825 pca_loss= 8.42807 accuracy= 0.67451 time= 0.05137
+Epoch: 0221 train_loss= 311.49451 reconstruction_loss= 12.17222 proj_loss= 291.00787 pca_loss= 8.31441 accuracy= 0.67791 time= 0.05165
+Epoch: 0231 train_loss= 301.75623 reconstruction_loss= 12.10077 proj_loss= 281.49066 pca_loss= 8.16478 accuracy= 0.67712 time= 0.05105
+Epoch: 0241 train_loss= 292.61273 reconstruction_loss= 12.04551 proj_loss= 272.38806 pca_loss= 8.17918 accuracy= 0.67373 time= 0.05090
+Epoch: 0251 train_loss= 283.63998 reconstruction_loss= 11.97438 proj_loss= 263.69748 pca_loss= 7.96815 accuracy= 0.67843 time= 0.05150
+Epoch: 0261 train_loss= 275.18887 reconstruction_loss= 11.94341 proj_loss= 255.37175 pca_loss= 7.87373 accuracy= 0.67974 time= 0.05122
+Epoch: 0271 train_loss= 267.19962 reconstruction_loss= 11.99063 proj_loss= 247.39389 pca_loss= 7.81510 accuracy= 0.67948 time= 0.05137
+Epoch: 0281 train_loss= 259.37140 reconstruction_loss= 11.85885 proj_loss= 239.75572 pca_loss= 7.75682 accuracy= 0.68078 time= 0.05101
+Epoch: 0291 train_loss= 251.92671 reconstruction_loss= 11.81955 proj_loss= 232.42975 pca_loss= 7.67741 accuracy= 0.67974 time= 0.05125
+
+accuracy 0.67843
+auc 0.57836
+f1_score 0.31667
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=1, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 647
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 7203.21924 reconstruction_loss= 5051.85986 proj_loss= 635.00641 pca_loss= 1516.35291 accuracy= 0.61412 time= 0.06069
+Epoch: 0011 train_loss= 2311.98193 reconstruction_loss= 1049.02673 proj_loss= 625.48846 pca_loss= 637.46692 accuracy= 0.63137 time= 0.04770
+Epoch: 0021 train_loss= 1787.99768 reconstruction_loss= 666.16754 proj_loss= 613.56128 pca_loss= 508.26895 accuracy= 0.61150 time= 0.04764
+Epoch: 0031 train_loss= 1537.27356 reconstruction_loss= 526.23773 proj_loss= 599.59113 pca_loss= 411.44470 accuracy= 0.60444 time= 0.05470
+Epoch: 0041 train_loss= 1351.91528 reconstruction_loss= 435.43732 proj_loss= 584.84888 pca_loss= 331.62915 accuracy= 0.59922 time= 0.04758
+Epoch: 0051 train_loss= 1235.97009 reconstruction_loss= 399.01163 proj_loss= 569.61395 pca_loss= 267.34445 accuracy= 0.59922 time= 0.04741
+Epoch: 0061 train_loss= 1140.97852 reconstruction_loss= 372.46451 proj_loss= 554.20325 pca_loss= 214.31085 accuracy= 0.60314 time= 0.04857
+Epoch: 0071 train_loss= 1056.59888 reconstruction_loss= 348.32632 proj_loss= 538.84033 pca_loss= 169.43231 accuracy= 0.59817 time= 0.04831
+Epoch: 0081 train_loss= 993.94159 reconstruction_loss= 335.16168 proj_loss= 523.78296 pca_loss= 134.99695 accuracy= 0.62850 time= 0.04798
+Epoch: 0091 train_loss= 939.92163 reconstruction_loss= 323.36462 proj_loss= 509.03799 pca_loss= 107.51905 accuracy= 0.63791 time= 0.04771
+Epoch: 0101 train_loss= 893.95197 reconstruction_loss= 311.95340 proj_loss= 494.65305 pca_loss= 87.34551 accuracy= 0.64288 time= 0.04788
+Epoch: 0111 train_loss= 853.33508 reconstruction_loss= 299.83463 proj_loss= 480.75693 pca_loss= 72.74356 accuracy= 0.62980 time= 0.04936
+Epoch: 0121 train_loss= 825.53668 reconstruction_loss= 296.84543 proj_loss= 467.12015 pca_loss= 61.57109 accuracy= 0.64209 time= 0.04661
+Epoch: 0131 train_loss= 793.22528 reconstruction_loss= 285.53461 proj_loss= 453.76434 pca_loss= 53.92630 accuracy= 0.63712 time= 0.04726
+Epoch: 0141 train_loss= 774.77869 reconstruction_loss= 285.30176 proj_loss= 440.73752 pca_loss= 48.73935 accuracy= 0.62876 time= 0.04734
+Epoch: 0151 train_loss= 750.02325 reconstruction_loss= 275.63910 proj_loss= 428.10931 pca_loss= 46.27481 accuracy= 0.63974 time= 0.04706
+Epoch: 0161 train_loss= 728.50269 reconstruction_loss= 268.30432 proj_loss= 415.85648 pca_loss= 44.34190 accuracy= 0.63451 time= 0.04921
+Epoch: 0171 train_loss= 708.10822 reconstruction_loss= 261.54654 proj_loss= 403.97025 pca_loss= 42.59143 accuracy= 0.63346 time= 0.05336
+Epoch: 0181 train_loss= 689.33801 reconstruction_loss= 255.79326 proj_loss= 392.46747 pca_loss= 41.07729 accuracy= 0.63216 time= 0.05557
+Epoch: 0191 train_loss= 671.57172 reconstruction_loss= 250.64748 proj_loss= 381.35358 pca_loss= 39.57066 accuracy= 0.62902 time= 0.05505
+Epoch: 0201 train_loss= 650.88446 reconstruction_loss= 244.27136 proj_loss= 370.61273 pca_loss= 36.00035 accuracy= 0.63137 time= 0.05829
+Epoch: 0211 train_loss= 630.31726 reconstruction_loss= 234.98999 proj_loss= 360.35175 pca_loss= 34.97554 accuracy= 0.63791 time= 0.05787
+Epoch: 0221 train_loss= 612.89801 reconstruction_loss= 228.62996 proj_loss= 350.47220 pca_loss= 33.79584 accuracy= 0.63320 time= 0.04984
+Epoch: 0231 train_loss= 594.25653 reconstruction_loss= 220.37495 proj_loss= 340.94580 pca_loss= 32.93579 accuracy= 0.63556 time= 0.06842
+Epoch: 0241 train_loss= 579.57257 reconstruction_loss= 215.73549 proj_loss= 331.73059 pca_loss= 32.10651 accuracy= 0.63529 time= 0.06276
+Epoch: 0251 train_loss= 561.65826 reconstruction_loss= 207.56752 proj_loss= 322.82294 pca_loss= 31.26784 accuracy= 0.63163 time= 0.06727
+Epoch: 0261 train_loss= 547.97589 reconstruction_loss= 203.39906 proj_loss= 314.21362 pca_loss= 30.36320 accuracy= 0.62588 time= 0.06421
+Epoch: 0271 train_loss= 529.70605 reconstruction_loss= 194.23903 proj_loss= 305.89789 pca_loss= 29.56915 accuracy= 0.63346 time= 0.04815
+Epoch: 0281 train_loss= 518.20520 reconstruction_loss= 191.91786 proj_loss= 297.90262 pca_loss= 28.38470 accuracy= 0.64157 time= 0.04656
+Epoch: 0291 train_loss= 506.11200 reconstruction_loss= 188.11284 proj_loss= 290.17844 pca_loss= 27.82075 accuracy= 0.63059 time= 0.05153
+
+accuracy 0.63425
+auc 0.48257
+f1_score 0.22278
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=0, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 670
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 2898.78809 reconstruction_loss= 23.96663 proj_loss= 2419.83667 pca_loss= 454.98483 accuracy= 0.65752 time= 0.06499
+Epoch: 0011 train_loss= 2344.26440 reconstruction_loss= 16.64708 proj_loss= 2269.49487 pca_loss= 58.12246 accuracy= 0.66928 time= 0.06005
+Epoch: 0021 train_loss= 2176.82397 reconstruction_loss= 15.02787 proj_loss= 2131.75269 pca_loss= 30.04345 accuracy= 0.67085 time= 0.05049
+Epoch: 0031 train_loss= 2029.53882 reconstruction_loss= 14.71961 proj_loss= 2002.73242 pca_loss= 12.08684 accuracy= 0.66928 time= 0.05152
+Epoch: 0041 train_loss= 1905.08215 reconstruction_loss= 14.50757 proj_loss= 1879.86401 pca_loss= 10.71057 accuracy= 0.66510 time= 0.05969
+Epoch: 0051 train_loss= 1788.97290 reconstruction_loss= 14.10303 proj_loss= 1765.14856 pca_loss= 9.72132 accuracy= 0.66667 time= 0.05983
+Epoch: 0061 train_loss= 1682.81287 reconstruction_loss= 13.80199 proj_loss= 1659.97681 pca_loss= 9.03404 accuracy= 0.66667 time= 0.05052
+Epoch: 0071 train_loss= 1585.03955 reconstruction_loss= 13.53438 proj_loss= 1563.03430 pca_loss= 8.47079 accuracy= 0.66771 time= 0.05170
+Epoch: 0081 train_loss= 1494.89209 reconstruction_loss= 13.48260 proj_loss= 1473.14209 pca_loss= 8.26744 accuracy= 0.66327 time= 0.05288
+Epoch: 0091 train_loss= 1411.18530 reconstruction_loss= 13.12981 proj_loss= 1390.05835 pca_loss= 7.99714 accuracy= 0.66327 time= 0.05088
+Epoch: 0101 train_loss= 1333.80933 reconstruction_loss= 12.95701 proj_loss= 1313.00110 pca_loss= 7.85119 accuracy= 0.66667 time= 0.05077
+Epoch: 0111 train_loss= 1261.95898 reconstruction_loss= 12.80499 proj_loss= 1241.46826 pca_loss= 7.68581 accuracy= 0.66405 time= 0.05035
+Epoch: 0121 train_loss= 1195.26965 reconstruction_loss= 12.67810 proj_loss= 1174.98718 pca_loss= 7.60443 accuracy= 0.66588 time= 0.05163
+Epoch: 0131 train_loss= 1133.19934 reconstruction_loss= 12.57650 proj_loss= 1113.15735 pca_loss= 7.46545 accuracy= 0.66797 time= 0.05196
+Epoch: 0141 train_loss= 1075.33313 reconstruction_loss= 12.46494 proj_loss= 1055.53845 pca_loss= 7.32966 accuracy= 0.66771 time= 0.05119
+Epoch: 0151 train_loss= 1021.39868 reconstruction_loss= 12.36369 proj_loss= 1001.77142 pca_loss= 7.26353 accuracy= 0.66510 time= 0.05101
+Epoch: 0161 train_loss= 971.03369 reconstruction_loss= 12.30398 proj_loss= 951.54272 pca_loss= 7.18702 accuracy= 0.66614 time= 0.05067
+Epoch: 0171 train_loss= 923.90796 reconstruction_loss= 12.21088 proj_loss= 904.57977 pca_loss= 7.11731 accuracy= 0.66745 time= 0.05084
+Epoch: 0181 train_loss= 879.78064 reconstruction_loss= 12.12569 proj_loss= 860.61377 pca_loss= 7.04123 accuracy= 0.66876 time= 0.05064
+Epoch: 0191 train_loss= 838.48279 reconstruction_loss= 12.08649 proj_loss= 819.40479 pca_loss= 6.99150 accuracy= 0.66902 time= 0.05059
+Epoch: 0201 train_loss= 799.72528 reconstruction_loss= 12.03394 proj_loss= 780.75909 pca_loss= 6.93228 accuracy= 0.67163 time= 0.05045
+Epoch: 0211 train_loss= 763.35309 reconstruction_loss= 11.99536 proj_loss= 744.47638 pca_loss= 6.88134 accuracy= 0.67268 time= 0.05064
+Epoch: 0221 train_loss= 729.12854 reconstruction_loss= 11.92248 proj_loss= 710.37219 pca_loss= 6.83387 accuracy= 0.67346 time= 0.05047
+Epoch: 0231 train_loss= 696.97687 reconstruction_loss= 11.87984 proj_loss= 678.28729 pca_loss= 6.80974 accuracy= 0.67294 time= 0.05053
+Epoch: 0241 train_loss= 666.70422 reconstruction_loss= 11.86418 proj_loss= 648.07990 pca_loss= 6.76011 accuracy= 0.67268 time= 0.05069
+Epoch: 0251 train_loss= 638.14294 reconstruction_loss= 11.79578 proj_loss= 619.61066 pca_loss= 6.73649 accuracy= 0.67660 time= 0.05059
+Epoch: 0261 train_loss= 611.22491 reconstruction_loss= 11.76136 proj_loss= 592.75555 pca_loss= 6.70799 accuracy= 0.67660 time= 0.05057
+Epoch: 0271 train_loss= 585.83307 reconstruction_loss= 11.74312 proj_loss= 567.41125 pca_loss= 6.67873 accuracy= 0.68157 time= 0.05055
+Epoch: 0281 train_loss= 561.82928 reconstruction_loss= 11.71610 proj_loss= 543.46478 pca_loss= 6.64838 accuracy= 0.67948 time= 0.05061
+Epoch: 0291 train_loss= 539.17560 reconstruction_loss= 11.71251 proj_loss= 520.83301 pca_loss= 6.63006 accuracy= 0.68261 time= 0.05057
+
+accuracy 0.68157
+auc 0.58057
+f1_score 0.32333
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=1, delta=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 70
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 8460.02148 reconstruction_loss= 5489.68555 proj_loss= 2536.48682 pca_loss= 433.84888 accuracy= 0.61333 time= 0.06122
+Epoch: 0011 train_loss= 3869.60669 reconstruction_loss= 1204.63757 proj_loss= 2444.35107 pca_loss= 220.61786 accuracy= 0.61882 time= 0.04722
+Epoch: 0021 train_loss= 3269.05933 reconstruction_loss= 751.96362 proj_loss= 2341.02856 pca_loss= 176.06720 accuracy= 0.61725 time= 0.04714
+Epoch: 0031 train_loss= 2972.12964 reconstruction_loss= 594.71686 proj_loss= 2232.78369 pca_loss= 144.62915 accuracy= 0.60549 time= 0.05090
+Epoch: 0041 train_loss= 2742.95972 reconstruction_loss= 500.77045 proj_loss= 2126.64160 pca_loss= 115.54763 accuracy= 0.63451 time= 0.04650
+Epoch: 0051 train_loss= 2556.72339 reconstruction_loss= 441.67444 proj_loss= 2024.36572 pca_loss= 90.68343 accuracy= 0.60026 time= 0.04684
+Epoch: 0061 train_loss= 2402.71338 reconstruction_loss= 406.11719 proj_loss= 1926.77991 pca_loss= 69.81633 accuracy= 0.59608 time= 0.04692
+Epoch: 0071 train_loss= 2265.81152 reconstruction_loss= 381.03986 proj_loss= 1834.25122 pca_loss= 50.52051 accuracy= 0.63137 time= 0.04708
+Epoch: 0081 train_loss= 2148.47217 reconstruction_loss= 366.27045 proj_loss= 1746.49353 pca_loss= 35.70815 accuracy= 0.62745 time= 0.04863
+Epoch: 0091 train_loss= 2040.20361 reconstruction_loss= 346.66098 proj_loss= 1662.64746 pca_loss= 30.89518 accuracy= 0.61752 time= 0.05793
+Epoch: 0101 train_loss= 1951.58606 reconstruction_loss= 340.75006 proj_loss= 1582.22986 pca_loss= 28.60609 accuracy= 0.64758 time= 0.04677
+Epoch: 0111 train_loss= 1864.55872 reconstruction_loss= 330.69733 proj_loss= 1506.24951 pca_loss= 27.61195 accuracy= 0.65935 time= 0.06634
+Epoch: 0121 train_loss= 1790.10803 reconstruction_loss= 328.47281 proj_loss= 1435.06567 pca_loss= 26.56964 accuracy= 0.64810 time= 0.06979
+Epoch: 0131 train_loss= 1709.80237 reconstruction_loss= 316.10226 proj_loss= 1368.05933 pca_loss= 25.64080 accuracy= 0.62614 time= 0.06255
+Epoch: 0141 train_loss= 1641.24048 reconstruction_loss= 311.59338 proj_loss= 1304.75720 pca_loss= 24.88991 accuracy= 0.63712 time= 0.04911
+Epoch: 0151 train_loss= 1570.56580 reconstruction_loss= 301.34113 proj_loss= 1244.97864 pca_loss= 24.24592 accuracy= 0.61098 time= 0.05616
+Epoch: 0161 train_loss= 1508.12036 reconstruction_loss= 296.33026 proj_loss= 1188.58313 pca_loss= 23.20708 accuracy= 0.60915 time= 0.04678
+Epoch: 0171 train_loss= 1451.48987 reconstruction_loss= 293.80881 proj_loss= 1135.34155 pca_loss= 22.33946 accuracy= 0.64837 time= 0.05473
+Epoch: 0181 train_loss= 1388.87317 reconstruction_loss= 282.20572 proj_loss= 1085.03174 pca_loss= 21.63571 accuracy= 0.63739 time= 0.05640
+Epoch: 0191 train_loss= 1329.97388 reconstruction_loss= 271.81317 proj_loss= 1037.45740 pca_loss= 20.70334 accuracy= 0.62536 time= 0.04840
+Epoch: 0201 train_loss= 1275.17175 reconstruction_loss= 262.43726 proj_loss= 992.53217 pca_loss= 20.20229 accuracy= 0.63111 time= 0.05637
+Epoch: 0211 train_loss= 1225.52026 reconstruction_loss= 255.68495 proj_loss= 950.03491 pca_loss= 19.80041 accuracy= 0.63948 time= 0.04729
+Epoch: 0221 train_loss= 1174.39844 reconstruction_loss= 245.31673 proj_loss= 909.76929 pca_loss= 19.31241 accuracy= 0.62902 time= 0.04660
+Epoch: 0231 train_loss= 1131.43750 reconstruction_loss= 240.80165 proj_loss= 871.60651 pca_loss= 19.02926 accuracy= 0.63529 time= 0.04624
+Epoch: 0241 train_loss= 1090.80530 reconstruction_loss= 236.92354 proj_loss= 835.41675 pca_loss= 18.46498 accuracy= 0.64078 time= 0.04617
+Epoch: 0251 train_loss= 1049.03406 reconstruction_loss= 229.86615 proj_loss= 801.09387 pca_loss= 18.07407 accuracy= 0.63451 time= 0.04617
+Epoch: 0261 train_loss= 1008.68457 reconstruction_loss= 222.42928 proj_loss= 768.51849 pca_loss= 17.73684 accuracy= 0.63477 time= 0.04620
+Epoch: 0271 train_loss= 970.37988 reconstruction_loss= 215.36041 proj_loss= 737.60321 pca_loss= 17.41623 accuracy= 0.63425 time= 0.04632
+Epoch: 0281 train_loss= 939.61053 reconstruction_loss= 214.38197 proj_loss= 708.26227 pca_loss= 16.96631 accuracy= 0.63582 time= 0.04632
+Epoch: 0291 train_loss= 906.94952 reconstruction_loss= 209.88248 proj_loss= 680.35626 pca_loss= 16.71075 accuracy= 0.62431 time= 0.04672
+
+accuracy 0.62876
+auc 0.48032
+f1_score 0.21111
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 782
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12848.19727 feature_loss= 29.11650 structure_loss= 10326.89453 proj_loss= 660.73962 pca_loss= 1831.44678 accuracy= 0.61229 accuracy_s= 0.77595 accuracy_f= 0.79268 time= 0.10506
+Epoch: 0011 train_loss= 8230.93164 feature_loss= 22.51583 structure_loss= 5850.32422 proj_loss= 647.15167 pca_loss= 1710.93982 accuracy= 0.61908 accuracy_s= 0.77752 accuracy_f= 0.80993 time= 0.06716
+Epoch: 0021 train_loss= 6907.93555 feature_loss= 19.95468 structure_loss= 4658.38818 proj_loss= 632.19202 pca_loss= 1597.40076 accuracy= 0.63922 accuracy_s= 0.77804 accuracy_f= 0.81752 time= 0.07055
+Epoch: 0031 train_loss= 6025.18945 feature_loss= 17.91974 structure_loss= 3896.92651 proj_loss= 616.07874 pca_loss= 1494.26453 accuracy= 0.65203 accuracy_s= 0.78301 accuracy_f= 0.82405 time= 0.07234
+Epoch: 0041 train_loss= 5305.47754 feature_loss= 16.51938 structure_loss= 3289.71802 proj_loss= 598.81586 pca_loss= 1400.42456 accuracy= 0.66980 accuracy_s= 0.78797 accuracy_f= 0.82876 time= 0.06821
+Epoch: 0051 train_loss= 4659.31494 feature_loss= 15.20982 structure_loss= 2748.31641 proj_loss= 580.56665 pca_loss= 1315.22217 accuracy= 0.68392 accuracy_s= 0.79399 accuracy_f= 0.82928 time= 0.07796
+Epoch: 0061 train_loss= 4084.23657 feature_loss= 14.49836 structure_loss= 2269.29175 proj_loss= 561.70020 pca_loss= 1238.74634 accuracy= 0.69098 accuracy_s= 0.79765 accuracy_f= 0.82719 time= 0.07909
+Epoch: 0071 train_loss= 3561.90356 feature_loss= 13.96906 structure_loss= 1835.41980 proj_loss= 542.52118 pca_loss= 1169.99341 accuracy= 0.69699 accuracy_s= 0.80314 accuracy_f= 0.82797 time= 0.08472
+Epoch: 0081 train_loss= 3122.82593 feature_loss= 13.45890 structure_loss= 1478.28333 proj_loss= 523.26471 pca_loss= 1107.81909 accuracy= 0.70118 accuracy_s= 0.80575 accuracy_f= 0.82588 time= 0.09364
+Epoch: 0091 train_loss= 2738.95654 feature_loss= 13.21929 structure_loss= 1170.04590 proj_loss= 504.27567 pca_loss= 1051.41565 accuracy= 0.69961 accuracy_s= 0.80784 accuracy_f= 0.82641 time= 0.06951
+Epoch: 0101 train_loss= 2439.42725 feature_loss= 13.01765 structure_loss= 940.44739 proj_loss= 485.75705 pca_loss= 1000.20514 accuracy= 0.69333 accuracy_s= 0.80889 accuracy_f= 0.82928 time= 0.06704
+Epoch: 0111 train_loss= 2197.36475 feature_loss= 12.86874 structure_loss= 763.24573 proj_loss= 467.83762 pca_loss= 953.41266 accuracy= 0.69464 accuracy_s= 0.80758 accuracy_f= 0.83216 time= 0.06769
+Epoch: 0121 train_loss= 2008.26392 feature_loss= 12.72774 structure_loss= 634.64667 proj_loss= 450.60553 pca_loss= 910.28394 accuracy= 0.68915 accuracy_s= 0.80627 accuracy_f= 0.83294 time= 0.06586
+Epoch: 0131 train_loss= 1846.60571 feature_loss= 12.62288 structure_loss= 529.35266 proj_loss= 434.03391 pca_loss= 870.59625 accuracy= 0.70431 accuracy_s= 0.80392 accuracy_f= 0.83320 time= 0.06663
+Epoch: 0141 train_loss= 1726.03235 feature_loss= 12.51734 structure_loss= 461.58279 proj_loss= 418.07794 pca_loss= 833.85425 accuracy= 0.70458 accuracy_s= 0.80235 accuracy_f= 0.83503 time= 0.06763
+Epoch: 0151 train_loss= 1619.92407 feature_loss= 12.43497 structure_loss= 404.95416 proj_loss= 402.73853 pca_loss= 799.79633 accuracy= 0.69386 accuracy_s= 0.80288 accuracy_f= 0.83582 time= 0.07477
+Epoch: 0161 train_loss= 1523.19336 feature_loss= 12.35496 structure_loss= 354.66098 proj_loss= 387.99646 pca_loss= 768.18091 accuracy= 0.68706 accuracy_s= 0.80131 accuracy_f= 0.83608 time= 0.08612
+Epoch: 0171 train_loss= 1440.98804 feature_loss= 12.30744 structure_loss= 315.92950 proj_loss= 373.78073 pca_loss= 738.97028 accuracy= 0.68288 accuracy_s= 0.79817 accuracy_f= 0.83660 time= 0.06850
+Epoch: 0181 train_loss= 1360.71387 feature_loss= 12.23281 structure_loss= 276.56033 proj_loss= 360.11740 pca_loss= 711.80328 accuracy= 0.68471 accuracy_s= 0.80549 accuracy_f= 0.83556 time= 0.06918
+Epoch: 0191 train_loss= 1288.37207 feature_loss= 12.20543 structure_loss= 242.71700 proj_loss= 347.00409 pca_loss= 686.44550 accuracy= 0.68209 accuracy_s= 0.79425 accuracy_f= 0.83503 time= 0.07076
+Epoch: 0201 train_loss= 1217.65112 feature_loss= 12.14250 structure_loss= 208.24709 proj_loss= 334.38321 pca_loss= 662.87836 accuracy= 0.68314 accuracy_s= 0.79529 accuracy_f= 0.83634 time= 0.06691
+Epoch: 0211 train_loss= 1159.98755 feature_loss= 12.09869 structure_loss= 184.98714 proj_loss= 322.28378 pca_loss= 640.61786 accuracy= 0.68340 accuracy_s= 0.79111 accuracy_f= 0.83922 time= 0.06534
+Epoch: 0221 train_loss= 1097.58325 feature_loss= 12.08457 structure_loss= 155.19069 proj_loss= 310.66937 pca_loss= 619.63855 accuracy= 0.68026 accuracy_s= 0.79163 accuracy_f= 0.83974 time= 0.06580
+Epoch: 0231 train_loss= 1042.30542 feature_loss= 12.03879 structure_loss= 130.99312 proj_loss= 299.56577 pca_loss= 599.70782 accuracy= 0.68340 accuracy_s= 0.79137 accuracy_f= 0.84131 time= 0.07195
+Epoch: 0241 train_loss= 993.39990 feature_loss= 12.02313 structure_loss= 111.82345 proj_loss= 288.98715 pca_loss= 580.56616 accuracy= 0.68340 accuracy_s= 0.79137 accuracy_f= 0.84105 time= 0.06589
+Epoch: 0251 train_loss= 951.26514 feature_loss= 12.00829 structure_loss= 98.23470 proj_loss= 278.93515 pca_loss= 562.08704 accuracy= 0.68026 accuracy_s= 0.78745 accuracy_f= 0.84105 time= 0.06726
+Epoch: 0261 train_loss= 913.77832 feature_loss= 11.96013 structure_loss= 88.18781 proj_loss= 269.33881 pca_loss= 544.29156 accuracy= 0.68131 accuracy_s= 0.78458 accuracy_f= 0.84183 time= 0.08272
+Epoch: 0271 train_loss= 874.84503 feature_loss= 11.93734 structure_loss= 75.45008 proj_loss= 260.14670 pca_loss= 527.31091 accuracy= 0.68288 accuracy_s= 0.78065 accuracy_f= 0.84183 time= 0.06904
+Epoch: 0281 train_loss= 838.48566 feature_loss= 11.92207 structure_loss= 64.16586 proj_loss= 251.35127 pca_loss= 511.04645 accuracy= 0.68340 accuracy_s= 0.77647 accuracy_f= 0.84131 time= 0.06740
+Epoch: 0291 train_loss= 807.17352 feature_loss= 11.92042 structure_loss= 56.94854 proj_loss= 242.92947 pca_loss= 495.37509 accuracy= 0.68444 accuracy_s= 0.77647 accuracy_f= 0.84052 time= 0.06633
+
+accuracy 0.68078
+accuracy_s 0.77359
+accuracy_f 0.84209
+auc 0.56162
+f1_score 0.32167
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 414
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+9685
+y_features shape after NoReduction torch.Size([7650, 9685]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 1294549.87500 feature_loss= 22.68595 structure_loss= 4922.65283 proj_loss= 1278912.12500 pca_loss= 10692.37402 accuracy= 0.59843 accuracy_s= 0.77020 accuracy_f= 0.81621 time= 0.12574
+Epoch: 0011 train_loss= 1211706.87500 feature_loss= 17.53163 structure_loss= 2998.21118 proj_loss= 1200426.50000 pca_loss= 8264.61328 accuracy= 0.60706 accuracy_s= 0.77412 accuracy_f= 0.82667 time= 0.11294
+Epoch: 0021 train_loss= 1135241.75000 feature_loss= 15.98740 structure_loss= 2213.76587 proj_loss= 1126992.12500 pca_loss= 6019.93408 accuracy= 0.61072 accuracy_s= 0.77490 accuracy_f= 0.82824 time= 0.10489
+Epoch: 0031 train_loss= 1064407.50000 feature_loss= 15.03242 structure_loss= 1671.59094 proj_loss= 1058747.37500 pca_loss= 3973.48901 accuracy= 0.62248 accuracy_s= 0.78092 accuracy_f= 0.82850 time= 0.11252
+Epoch: 0041 train_loss= 998996.25000 feature_loss= 14.46138 structure_loss= 1267.66821 proj_loss= 995529.31250 pca_loss= 2184.83276 accuracy= 0.63869 accuracy_s= 0.77778 accuracy_f= 0.82641 time= 0.11246
+Epoch: 0051 train_loss= 938964.31250 feature_loss= 14.18600 structure_loss= 1215.79553 proj_loss= 937041.18750 pca_loss= 693.11908 accuracy= 0.61438 accuracy_s= 0.77647 accuracy_f= 0.82693 time= 0.08448
+Epoch: 0061 train_loss= 884142.93750 feature_loss= 13.90547 structure_loss= 1069.00146 proj_loss= 882450.56250 pca_loss= 609.45636 accuracy= 0.65176 accuracy_s= 0.77542 accuracy_f= 0.82771 time= 0.08325
+Epoch: 0071 train_loss= 833595.18750 feature_loss= 13.66190 structure_loss= 975.89905 proj_loss= 832076.31250 pca_loss= 529.33002 accuracy= 0.65621 accuracy_s= 0.77542 accuracy_f= 0.83033 time= 0.09137
+Epoch: 0081 train_loss= 786853.18750 feature_loss= 13.41836 structure_loss= 881.92902 proj_loss= 785445.81250 pca_loss= 512.01727 accuracy= 0.66275 accuracy_s= 0.77699 accuracy_f= 0.83190 time= 0.08886
+Epoch: 0091 train_loss= 743549.43750 feature_loss= 13.20452 structure_loss= 812.98041 proj_loss= 742241.18750 pca_loss= 482.05173 accuracy= 0.66248 accuracy_s= 0.77569 accuracy_f= 0.83373 time= 0.08420
+Epoch: 0101 train_loss= 703362.25000 feature_loss= 13.03364 structure_loss= 753.01923 proj_loss= 702135.06250 pca_loss= 461.15469 accuracy= 0.66405 accuracy_s= 0.77961 accuracy_f= 0.83425 time= 0.08524
+Epoch: 0111 train_loss= 666012.06250 feature_loss= 12.89008 structure_loss= 703.55200 proj_loss= 664842.93750 pca_loss= 452.67889 accuracy= 0.66510 accuracy_s= 0.78170 accuracy_f= 0.83477 time= 0.10118
+Epoch: 0121 train_loss= 631234.12500 feature_loss= 12.76606 structure_loss= 655.73352 proj_loss= 630129.43750 pca_loss= 436.17947 accuracy= 0.66614 accuracy_s= 0.77935 accuracy_f= 0.83660 time= 0.07976
+Epoch: 0131 train_loss= 598819.18750 feature_loss= 12.65135 structure_loss= 616.06122 proj_loss= 597768.18750 pca_loss= 422.28854 accuracy= 0.66719 accuracy_s= 0.78196 accuracy_f= 0.83582 time= 0.07893
+Epoch: 0141 train_loss= 568561.93750 feature_loss= 12.55734 structure_loss= 577.43451 proj_loss= 567562.06250 pca_loss= 409.87903 accuracy= 0.66667 accuracy_s= 0.78065 accuracy_f= 0.83843 time= 0.08277
+Epoch: 0151 train_loss= 540287.06250 feature_loss= 12.45474 structure_loss= 542.40808 proj_loss= 539330.68750 pca_loss= 401.48123 accuracy= 0.66954 accuracy_s= 0.78092 accuracy_f= 0.83869 time= 0.07828
+Epoch: 0161 train_loss= 513832.46875 feature_loss= 12.37141 structure_loss= 510.13379 proj_loss= 512919.78125 pca_loss= 390.19550 accuracy= 0.66980 accuracy_s= 0.78039 accuracy_f= 0.83895 time= 0.07861
+Epoch: 0171 train_loss= 489052.12500 feature_loss= 12.31009 structure_loss= 478.37686 proj_loss= 488181.81250 pca_loss= 379.63303 accuracy= 0.67346 accuracy_s= 0.78458 accuracy_f= 0.83922 time= 0.07819
+Epoch: 0181 train_loss= 465826.65625 feature_loss= 12.23304 structure_loss= 456.93564 proj_loss= 464986.93750 pca_loss= 370.57547 accuracy= 0.67111 accuracy_s= 0.78327 accuracy_f= 0.84026 time= 0.07827
+Epoch: 0191 train_loss= 444024.81250 feature_loss= 12.18650 structure_loss= 434.22379 proj_loss= 443218.46875 pca_loss= 359.95288 accuracy= 0.67294 accuracy_s= 0.77908 accuracy_f= 0.84000 time= 0.08008
+Epoch: 0201 train_loss= 423541.65625 feature_loss= 12.12821 structure_loss= 412.09692 proj_loss= 422765.68750 pca_loss= 351.75113 accuracy= 0.67294 accuracy_s= 0.78431 accuracy_f= 0.84026 time= 0.08592
+Epoch: 0211 train_loss= 404275.93750 feature_loss= 12.09556 structure_loss= 388.07925 proj_loss= 403532.96875 pca_loss= 342.76984 accuracy= 0.67477 accuracy_s= 0.77882 accuracy_f= 0.84105 time= 0.08225
+Epoch: 0221 train_loss= 386150.62500 feature_loss= 12.04395 structure_loss= 373.46719 proj_loss= 385430.46875 pca_loss= 334.65417 accuracy= 0.67634 accuracy_s= 0.78222 accuracy_f= 0.84157 time= 0.08545
+Epoch: 0231 train_loss= 369070.68750 feature_loss= 12.04366 structure_loss= 355.46805 proj_loss= 368376.40625 pca_loss= 326.78635 accuracy= 0.67320 accuracy_s= 0.78144 accuracy_f= 0.84314 time= 0.09101
+Epoch: 0241 train_loss= 352965.96875 feature_loss= 12.00494 structure_loss= 338.66653 proj_loss= 352296.43750 pca_loss= 318.88702 accuracy= 0.67503 accuracy_s= 0.78248 accuracy_f= 0.84078 time= 0.09415
+Epoch: 0251 train_loss= 337765.53125 feature_loss= 11.98774 structure_loss= 320.02713 proj_loss= 337122.50000 pca_loss= 311.03000 accuracy= 0.67686 accuracy_s= 0.78196 accuracy_f= 0.84183 time= 0.08074
+Epoch: 0261 train_loss= 323419.53125 feature_loss= 11.93277 structure_loss= 312.40457 proj_loss= 322791.25000 pca_loss= 303.95007 accuracy= 0.67765 accuracy_s= 0.78039 accuracy_f= 0.84392 time= 0.08812
+Epoch: 0271 train_loss= 309851.25000 feature_loss= 11.90481 structure_loss= 296.48892 proj_loss= 309246.00000 pca_loss= 296.85486 accuracy= 0.68026 accuracy_s= 0.77830 accuracy_f= 0.84471 time= 0.07917
+Epoch: 0281 train_loss= 297018.81250 feature_loss= 11.87253 structure_loss= 282.76938 proj_loss= 296433.53125 pca_loss= 290.61798 accuracy= 0.68000 accuracy_s= 0.78144 accuracy_f= 0.84497 time= 0.07835
+Epoch: 0291 train_loss= 284873.65625 feature_loss= 11.90587 structure_loss= 272.82932 proj_loss= 284305.31250 pca_loss= 283.60327 accuracy= 0.68052 accuracy_s= 0.78013 accuracy_f= 0.84418 time= 0.07902
+
+accuracy 0.67869
+accuracy_s 0.78222
+accuracy_f 0.84418
+auc 0.55629
+f1_score 0.31722
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 762
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 13996.49316 feature_loss= 29.03220 structure_loss= 10951.51953 proj_loss= 2377.55396 pca_loss= 638.38727 accuracy= 0.61046 accuracy_s= 0.77621 accuracy_f= 0.79477 time= 0.13240
+Epoch: 0011 train_loss= 10395.57227 feature_loss= 22.32381 structure_loss= 7507.89648 proj_loss= 2252.55811 pca_loss= 612.79352 accuracy= 0.61908 accuracy_s= 0.77595 accuracy_f= 0.81020 time= 0.07031
+Epoch: 0021 train_loss= 8984.37988 feature_loss= 20.30187 structure_loss= 6246.73975 proj_loss= 2130.35034 pca_loss= 586.98840 accuracy= 0.63373 accuracy_s= 0.77804 accuracy_f= 0.81856 time= 0.06983
+Epoch: 0031 train_loss= 8040.02148 feature_loss= 18.86738 structure_loss= 5444.39844 proj_loss= 2013.89343 pca_loss= 562.86249 accuracy= 0.64706 accuracy_s= 0.77961 accuracy_f= 0.81935 time= 0.06967
+Epoch: 0041 train_loss= 7294.13916 feature_loss= 17.13168 structure_loss= 4832.91846 proj_loss= 1903.30591 pca_loss= 540.78253 accuracy= 0.65725 accuracy_s= 0.78275 accuracy_f= 0.82353 time= 0.09219
+Epoch: 0051 train_loss= 6669.64844 feature_loss= 16.11096 structure_loss= 4334.18115 proj_loss= 1798.61194 pca_loss= 520.74487 accuracy= 0.65621 accuracy_s= 0.78588 accuracy_f= 0.82562 time= 0.09758
+Epoch: 0061 train_loss= 6111.93848 feature_loss= 15.31720 structure_loss= 3894.36011 proj_loss= 1699.70593 pca_loss= 502.55515 accuracy= 0.66092 accuracy_s= 0.78902 accuracy_f= 0.82588 time= 0.11211
+Epoch: 0071 train_loss= 5583.59766 feature_loss= 14.65353 structure_loss= 3476.04639 proj_loss= 1606.76843 pca_loss= 486.12915 accuracy= 0.66196 accuracy_s= 0.79216 accuracy_f= 0.82484 time= 0.11126
+Epoch: 0081 train_loss= 5059.99316 feature_loss= 14.18109 structure_loss= 3054.70142 proj_loss= 1519.72681 pca_loss= 471.38379 accuracy= 0.66405 accuracy_s= 0.79608 accuracy_f= 0.82562 time= 0.08810
+Epoch: 0091 train_loss= 4538.70752 feature_loss= 13.64386 structure_loss= 2629.17798 proj_loss= 1437.77966 pca_loss= 458.10614 accuracy= 0.66588 accuracy_s= 0.79895 accuracy_f= 0.81804 time= 0.08681
+Epoch: 0101 train_loss= 4025.16528 feature_loss= 13.38012 structure_loss= 2205.26099 proj_loss= 1360.36096 pca_loss= 446.16339 accuracy= 0.66693 accuracy_s= 0.79974 accuracy_f= 0.81856 time= 0.10890
+Epoch: 0111 train_loss= 3513.32373 feature_loss= 13.28581 structure_loss= 1776.95068 proj_loss= 1287.38965 pca_loss= 435.69778 accuracy= 0.66641 accuracy_s= 0.79974 accuracy_f= 0.81804 time= 0.06705
+Epoch: 0121 train_loss= 3064.59106 feature_loss= 13.30310 structure_loss= 1406.27966 proj_loss= 1218.35876 pca_loss= 426.64966 accuracy= 0.66667 accuracy_s= 0.79869 accuracy_f= 0.81699 time= 0.10296
+Epoch: 0131 train_loss= 2671.30908 feature_loss= 13.16826 structure_loss= 1086.26721 proj_loss= 1153.15576 pca_loss= 418.71780 accuracy= 0.66928 accuracy_s= 0.80026 accuracy_f= 0.81752 time= 0.08062
+Epoch: 0141 train_loss= 2309.39966 feature_loss= 13.10961 structure_loss= 793.25879 proj_loss= 1091.55823 pca_loss= 411.47305 accuracy= 0.66824 accuracy_s= 0.79974 accuracy_f= 0.81752 time= 0.08022
+Epoch: 0151 train_loss= 2019.75342 feature_loss= 13.07082 structure_loss= 568.42242 proj_loss= 1033.52588 pca_loss= 404.73444 accuracy= 0.66405 accuracy_s= 0.79686 accuracy_f= 0.81752 time= 0.10081
+Epoch: 0161 train_loss= 1787.19128 feature_loss= 12.82275 structure_loss= 397.23544 proj_loss= 979.09564 pca_loss= 398.03751 accuracy= 0.65229 accuracy_s= 0.78980 accuracy_f= 0.81856 time= 0.09339
+Epoch: 0171 train_loss= 1601.93518 feature_loss= 12.83960 structure_loss= 270.11151 proj_loss= 928.29700 pca_loss= 390.68710 accuracy= 0.64732 accuracy_s= 0.79320 accuracy_f= 0.81673 time= 0.09822
+Epoch: 0181 train_loss= 1470.77710 feature_loss= 12.77489 structure_loss= 194.46117 proj_loss= 881.13885 pca_loss= 382.40216 accuracy= 0.64131 accuracy_s= 0.78641 accuracy_f= 0.81673 time= 0.06839
+Epoch: 0191 train_loss= 1366.77283 feature_loss= 12.73110 structure_loss= 143.38141 proj_loss= 837.34772 pca_loss= 373.31262 accuracy= 0.63346 accuracy_s= 0.78013 accuracy_f= 0.81673 time= 0.09787
+Epoch: 0201 train_loss= 1270.07593 feature_loss= 12.68239 structure_loss= 97.17265 proj_loss= 796.63422 pca_loss= 363.58673 accuracy= 0.63137 accuracy_s= 0.77856 accuracy_f= 0.81699 time= 0.09146
+Epoch: 0211 train_loss= 1192.04590 feature_loss= 12.69714 structure_loss= 67.20908 proj_loss= 758.70740 pca_loss= 353.43228 accuracy= 0.63399 accuracy_s= 0.77804 accuracy_f= 0.81699 time= 0.08772
+Epoch: 0221 train_loss= 1130.09033 feature_loss= 12.67178 structure_loss= 51.08050 proj_loss= 723.32239 pca_loss= 343.01569 accuracy= 0.64131 accuracy_s= 0.77438 accuracy_f= 0.81699 time= 0.08248
+Epoch: 0231 train_loss= 1074.07703 feature_loss= 12.65193 structure_loss= 38.58764 proj_loss= 690.21600 pca_loss= 332.62149 accuracy= 0.65804 accuracy_s= 0.78876 accuracy_f= 0.81699 time= 0.08224
+Epoch: 0241 train_loss= 1022.91809 feature_loss= 12.61268 structure_loss= 28.65857 proj_loss= 659.14282 pca_loss= 322.50406 accuracy= 0.66065 accuracy_s= 0.78405 accuracy_f= 0.81699 time= 0.06458
+Epoch: 0251 train_loss= 974.62048 feature_loss= 12.59512 structure_loss= 19.41084 proj_loss= 629.92078 pca_loss= 312.69373 accuracy= 0.66144 accuracy_s= 0.78850 accuracy_f= 0.81699 time= 0.06496
+Epoch: 0261 train_loss= 932.52222 feature_loss= 12.57925 structure_loss= 14.39745 proj_loss= 602.44037 pca_loss= 303.10516 accuracy= 0.65908 accuracy_s= 0.77856 accuracy_f= 0.81699 time= 0.06570
+Epoch: 0271 train_loss= 894.92847 feature_loss= 12.56617 structure_loss= 11.93681 proj_loss= 576.55518 pca_loss= 293.87033 accuracy= 0.66039 accuracy_s= 0.77229 accuracy_f= 0.81699 time= 0.10294
+Epoch: 0281 train_loss= 869.75629 feature_loss= 12.55860 structure_loss= 20.11219 proj_loss= 552.11285 pca_loss= 284.97266 accuracy= 0.66013 accuracy_s= 0.78510 accuracy_f= 0.81699 time= 0.06481
+Epoch: 0291 train_loss= 828.03284 feature_loss= 12.56229 structure_loss= 10.07417 proj_loss= 528.95502 pca_loss= 276.44131 accuracy= 0.66222 accuracy_s= 0.77438 accuracy_f= 0.81699 time= 0.10694
+
+accuracy 0.66275
+accuracy_s 0.77804
+accuracy_f 0.81699
+auc 0.50297
+f1_score 0.28333
+Job finished!
+
+
+
+Initializing rsr scat twodecoders training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 676
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+9685
+y_features shape after NoReduction torch.Size([7650, 9685]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 6793069.00000 feature_loss= 22.76539 structure_loss= 5053.52686 proj_loss= 6783660.50000 pca_loss= 4331.78125 accuracy= 0.59477 accuracy_s= 0.77020 accuracy_f= 0.81176 time= 0.09463
+Epoch: 0011 train_loss= 6372507.50000 feature_loss= 18.24179 structure_loss= 3801.08325 proj_loss= 6364590.00000 pca_loss= 4098.06836 accuracy= 0.59739 accuracy_s= 0.77098 accuracy_f= 0.82614 time= 0.07434
+Epoch: 0021 train_loss= 5979617.50000 feature_loss= 16.50719 structure_loss= 3140.49048 proj_loss= 5972584.50000 pca_loss= 3875.99219 accuracy= 0.59974 accuracy_s= 0.77333 accuracy_f= 0.82850 time= 0.07379
+Epoch: 0031 train_loss= 5614781.50000 feature_loss= 15.50060 structure_loss= 2668.79224 proj_loss= 5608430.50000 pca_loss= 3666.31348 accuracy= 0.60183 accuracy_s= 0.77621 accuracy_f= 0.82536 time= 0.08975
+Epoch: 0041 train_loss= 5277241.50000 feature_loss= 14.65999 structure_loss= 2263.05786 proj_loss= 5271498.50000 pca_loss= 3465.68115 accuracy= 0.60837 accuracy_s= 0.77778 accuracy_f= 0.82379 time= 0.08059
+Epoch: 0051 train_loss= 4965489.00000 feature_loss= 14.16355 structure_loss= 1975.00208 proj_loss= 4960226.50000 pca_loss= 3273.30054 accuracy= 0.61830 accuracy_s= 0.77856 accuracy_f= 0.82431 time= 0.07516
+Epoch: 0061 train_loss= 4677575.50000 feature_loss= 13.89423 structure_loss= 1832.35303 proj_loss= 4672641.00000 pca_loss= 3088.39087 accuracy= 0.62405 accuracy_s= 0.77725 accuracy_f= 0.82431 time= 0.07328
+Epoch: 0071 train_loss= 4411302.50000 feature_loss= 13.83705 structure_loss= 1685.88623 proj_loss= 4406693.00000 pca_loss= 2910.13428 accuracy= 0.61725 accuracy_s= 0.77673 accuracy_f= 0.82379 time= 0.07423
+Epoch: 0081 train_loss= 4164758.50000 feature_loss= 13.51976 structure_loss= 1569.32678 proj_loss= 4160433.50000 pca_loss= 2742.23169 accuracy= 0.62118 accuracy_s= 0.77595 accuracy_f= 0.82510 time= 0.07312
+Epoch: 0091 train_loss= 3936155.75000 feature_loss= 13.33400 structure_loss= 1483.61487 proj_loss= 3932080.00000 pca_loss= 2578.76831 accuracy= 0.62118 accuracy_s= 0.77490 accuracy_f= 0.82641 time= 0.07374
+Epoch: 0101 train_loss= 3723850.50000 feature_loss= 13.17188 structure_loss= 1391.15369 proj_loss= 3720023.50000 pca_loss= 2422.68286 accuracy= 0.62980 accuracy_s= 0.77490 accuracy_f= 0.82771 time= 0.07399
+Epoch: 0111 train_loss= 3526441.25000 feature_loss= 13.04677 structure_loss= 1330.57617 proj_loss= 3522824.50000 pca_loss= 2273.16504 accuracy= 0.64993 accuracy_s= 0.77569 accuracy_f= 0.82850 time= 0.07330
+Epoch: 0121 train_loss= 3342601.50000 feature_loss= 12.98943 structure_loss= 1262.93933 proj_loss= 3339195.00000 pca_loss= 2130.55933 accuracy= 0.65255 accuracy_s= 0.77647 accuracy_f= 0.83111 time= 0.07433
+Epoch: 0131 train_loss= 3171188.25000 feature_loss= 12.99760 structure_loss= 1200.07568 proj_loss= 3167981.75000 pca_loss= 1993.62036 accuracy= 0.64549 accuracy_s= 0.77621 accuracy_f= 0.82588 time= 0.08357
+Epoch: 0141 train_loss= 3011173.00000 feature_loss= 12.85927 structure_loss= 1150.15393 proj_loss= 3008148.25000 pca_loss= 1861.81091 accuracy= 0.66588 accuracy_s= 0.77542 accuracy_f= 0.83216 time= 0.08609
+Epoch: 0151 train_loss= 2861606.25000 feature_loss= 12.65943 structure_loss= 1096.67883 proj_loss= 2858760.50000 pca_loss= 1736.51477 accuracy= 0.65935 accuracy_s= 0.77438 accuracy_f= 0.83085 time= 0.07909
+Epoch: 0161 train_loss= 2721649.25000 feature_loss= 12.57065 structure_loss= 1042.48352 proj_loss= 2718979.00000 pca_loss= 1615.17383 accuracy= 0.66013 accuracy_s= 0.77516 accuracy_f= 0.83346 time= 0.07370
+Epoch: 0171 train_loss= 2590566.75000 feature_loss= 12.49757 structure_loss= 1011.87683 proj_loss= 2588043.00000 pca_loss= 1499.54529 accuracy= 0.66170 accuracy_s= 0.77804 accuracy_f= 0.83503 time= 0.07314
+Epoch: 0181 train_loss= 2467627.50000 feature_loss= 12.42708 structure_loss= 962.80731 proj_loss= 2465263.50000 pca_loss= 1388.86560 accuracy= 0.66170 accuracy_s= 0.77490 accuracy_f= 0.83608 time= 0.07290
+Epoch: 0191 train_loss= 2352231.00000 feature_loss= 12.37761 structure_loss= 920.32385 proj_loss= 2350016.50000 pca_loss= 1281.77441 accuracy= 0.66379 accuracy_s= 0.77647 accuracy_f= 0.83556 time= 0.08363
+Epoch: 0201 train_loss= 2243809.75000 feature_loss= 12.32708 structure_loss= 884.09412 proj_loss= 2241733.00000 pca_loss= 1180.28186 accuracy= 0.66431 accuracy_s= 0.78013 accuracy_f= 0.83765 time= 0.08491
+Epoch: 0211 train_loss= 2141850.75000 feature_loss= 12.28266 structure_loss= 858.20264 proj_loss= 2139897.75000 pca_loss= 1082.55750 accuracy= 0.66719 accuracy_s= 0.78327 accuracy_f= 0.83686 time= 0.07533
+Epoch: 0221 train_loss= 2045842.00000 feature_loss= 12.24782 structure_loss= 802.33539 proj_loss= 2044037.50000 pca_loss= 989.87036 accuracy= 0.66614 accuracy_s= 0.78275 accuracy_f= 0.83686 time= 0.08707
+Epoch: 0231 train_loss= 1955405.62500 feature_loss= 12.22340 structure_loss= 769.08533 proj_loss= 1953723.00000 pca_loss= 901.40485 accuracy= 0.66954 accuracy_s= 0.78092 accuracy_f= 0.83712 time= 0.07350
+Epoch: 0241 train_loss= 1870128.50000 feature_loss= 12.18557 structure_loss= 738.75507 proj_loss= 1868560.62500 pca_loss= 816.90430 accuracy= 0.66928 accuracy_s= 0.78065 accuracy_f= 0.83712 time= 0.11526
+Epoch: 0251 train_loss= 1789641.37500 feature_loss= 12.16914 structure_loss= 703.47278 proj_loss= 1788189.37500 pca_loss= 736.38641 accuracy= 0.67085 accuracy_s= 0.78065 accuracy_f= 0.83895 time= 0.11627
+Epoch: 0261 train_loss= 1713623.12500 feature_loss= 12.24200 structure_loss= 673.17065 proj_loss= 1712277.62500 pca_loss= 660.12048 accuracy= 0.66876 accuracy_s= 0.78170 accuracy_f= 0.83582 time= 0.10356
+Epoch: 0271 train_loss= 1641770.50000 feature_loss= 12.33695 structure_loss= 648.60406 proj_loss= 1640524.25000 pca_loss= 585.19666 accuracy= 0.66510 accuracy_s= 0.78222 accuracy_f= 0.83111 time= 0.08409
+Epoch: 0281 train_loss= 1573780.50000 feature_loss= 12.18773 structure_loss= 606.03632 proj_loss= 1572646.87500 pca_loss= 515.39600 accuracy= 0.66928 accuracy_s= 0.78039 accuracy_f= 0.83712 time= 0.09965
+Epoch: 0291 train_loss= 1509428.50000 feature_loss= 12.13038 structure_loss= 576.60455 proj_loss= 1508389.87500 pca_loss= 449.86850 accuracy= 0.67033 accuracy_s= 0.78170 accuracy_f= 0.83843 time= 0.08957
+
+accuracy 0.67137
+accuracy_s 0.78222
+accuracy_f 0.83895
+auc 0.54311
+f1_score 0.30167
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 851
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 2443.88550 reconstruction_loss= 29.17790 proj_loss= 654.54456 pca_loss= 1760.16296 accuracy= 0.62379 time= 0.07461
+Epoch: 0011 train_loss= 2268.64893 reconstruction_loss= 22.34517 proj_loss= 626.63135 pca_loss= 1619.67249 accuracy= 0.65830 time= 0.03737
+Epoch: 0021 train_loss= 2112.48193 reconstruction_loss= 20.12799 proj_loss= 600.25940 pca_loss= 1492.09460 accuracy= 0.66797 time= 0.03782
+Epoch: 0031 train_loss= 1970.39368 reconstruction_loss= 18.02200 proj_loss= 575.08093 pca_loss= 1377.29077 accuracy= 0.67033 time= 0.03828
+Epoch: 0041 train_loss= 1841.45093 reconstruction_loss= 16.28320 proj_loss= 550.96051 pca_loss= 1274.20728 accuracy= 0.66614 time= 0.03749
+Epoch: 0051 train_loss= 1724.44873 reconstruction_loss= 15.05354 proj_loss= 527.85565 pca_loss= 1181.53955 accuracy= 0.67085 time= 0.03818
+Epoch: 0061 train_loss= 1618.10718 reconstruction_loss= 14.27735 proj_loss= 505.74313 pca_loss= 1098.08667 accuracy= 0.67399 time= 0.03616
+Epoch: 0071 train_loss= 1521.32031 reconstruction_loss= 13.89262 proj_loss= 484.59717 pca_loss= 1022.83057 accuracy= 0.67503 time= 0.03696
+Epoch: 0081 train_loss= 1432.91968 reconstruction_loss= 13.60649 proj_loss= 464.37009 pca_loss= 954.94312 accuracy= 0.67634 time= 0.04014
+Epoch: 0091 train_loss= 1352.08179 reconstruction_loss= 13.34633 proj_loss= 445.00174 pca_loss= 893.73364 accuracy= 0.67817 time= 0.03918
+Epoch: 0101 train_loss= 1278.19299 reconstruction_loss= 13.17512 proj_loss= 426.44077 pca_loss= 838.57709 accuracy= 0.68000 time= 0.03937
+Epoch: 0111 train_loss= 1210.53101 reconstruction_loss= 13.01086 proj_loss= 408.64474 pca_loss= 788.87543 accuracy= 0.68052 time= 0.03930
+Epoch: 0121 train_loss= 1148.49915 reconstruction_loss= 12.88345 proj_loss= 391.57962 pca_loss= 744.03607 accuracy= 0.68052 time= 0.03911
+Epoch: 0131 train_loss= 1091.45642 reconstruction_loss= 12.76052 proj_loss= 375.22372 pca_loss= 703.47217 accuracy= 0.67974 time= 0.03634
+Epoch: 0141 train_loss= 1038.85437 reconstruction_loss= 12.66445 proj_loss= 359.56613 pca_loss= 666.62378 accuracy= 0.68183 time= 0.03928
+Epoch: 0151 train_loss= 990.15137 reconstruction_loss= 12.56600 proj_loss= 344.59985 pca_loss= 632.98547 accuracy= 0.68209 time= 0.03983
+Epoch: 0161 train_loss= 944.93250 reconstruction_loss= 12.49508 proj_loss= 330.31653 pca_loss= 602.12091 accuracy= 0.68235 time= 0.03967
+Epoch: 0171 train_loss= 902.79370 reconstruction_loss= 12.42598 proj_loss= 316.70343 pca_loss= 573.66431 accuracy= 0.68261 time= 0.03765
+Epoch: 0181 train_loss= 863.41864 reconstruction_loss= 12.36170 proj_loss= 303.74261 pca_loss= 547.31433 accuracy= 0.68366 time= 0.03654
+Epoch: 0191 train_loss= 826.55042 reconstruction_loss= 12.31622 proj_loss= 291.41068 pca_loss= 522.82355 accuracy= 0.68314 time= 0.03664
+Epoch: 0201 train_loss= 791.97925 reconstruction_loss= 12.31102 proj_loss= 279.68158 pca_loss= 499.98666 accuracy= 0.68183 time= 0.03665
+Epoch: 0211 train_loss= 759.38049 reconstruction_loss= 12.22030 proj_loss= 268.52670 pca_loss= 478.63345 accuracy= 0.68340 time= 0.03775
+Epoch: 0221 train_loss= 728.72076 reconstruction_loss= 12.18406 proj_loss= 257.91705 pca_loss= 458.61966 accuracy= 0.68261 time= 0.04124
+Epoch: 0231 train_loss= 699.81439 reconstruction_loss= 12.16871 proj_loss= 247.82372 pca_loss= 439.82196 accuracy= 0.68418 time= 0.04283
+Epoch: 0241 train_loss= 672.48535 reconstruction_loss= 12.13307 proj_loss= 238.21867 pca_loss= 422.13358 accuracy= 0.68314 time= 0.04552
+Epoch: 0251 train_loss= 646.66412 reconstruction_loss= 12.12799 proj_loss= 229.07478 pca_loss= 405.46136 accuracy= 0.68157 time= 0.04402
+Epoch: 0261 train_loss= 622.16217 reconstruction_loss= 12.07283 proj_loss= 220.36711 pca_loss= 389.72223 accuracy= 0.68471 time= 0.04412
+Epoch: 0271 train_loss= 598.96381 reconstruction_loss= 12.04930 proj_loss= 212.07137 pca_loss= 374.84314 accuracy= 0.68288 time= 0.04424
+Epoch: 0281 train_loss= 576.96143 reconstruction_loss= 12.03829 proj_loss= 204.16483 pca_loss= 360.75833 accuracy= 0.68471 time= 0.03713
+Epoch: 0291 train_loss= 556.04865 reconstruction_loss= 12.01398 proj_loss= 196.62624 pca_loss= 347.40842 accuracy= 0.68549 time= 0.03652
+
+accuracy 0.68288
+auc 0.56618
+f1_score 0.32611
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 491
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+9685
+y_features shape after NoReduction torch.Size([7650, 9685]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 1291961.50000 reconstruction_loss= 22.68078 proj_loss= 1282058.87500 pca_loss= 9879.95410 accuracy= 0.65046 time= 0.06383
+Epoch: 0011 train_loss= 1210900.00000 reconstruction_loss= 17.38058 proj_loss= 1203388.50000 pca_loss= 7494.07812 accuracy= 0.65595 time= 0.04930
+Epoch: 0021 train_loss= 1135085.25000 reconstruction_loss= 16.02267 proj_loss= 1129807.37500 pca_loss= 5261.88232 accuracy= 0.65961 time= 0.04861
+Epoch: 0031 train_loss= 1064661.12500 reconstruction_loss= 15.08755 proj_loss= 1061448.75000 pca_loss= 3197.28882 accuracy= 0.66039 time= 0.04874
+Epoch: 0041 train_loss= 999514.68750 reconstruction_loss= 14.39058 proj_loss= 998168.93750 pca_loss= 1331.37805 accuracy= 0.66431 time= 0.04877
+Epoch: 0051 train_loss= 940009.50000 reconstruction_loss= 13.98546 proj_loss= 939354.06250 pca_loss= 641.45874 accuracy= 0.66667 time= 0.04875
+Epoch: 0061 train_loss= 885305.56250 reconstruction_loss= 13.75545 proj_loss= 884683.12500 pca_loss= 608.71722 accuracy= 0.66667 time= 0.04881
+Epoch: 0071 train_loss= 834817.50000 reconstruction_loss= 13.54695 proj_loss= 834279.56250 pca_loss= 524.35822 accuracy= 0.66693 time= 0.04872
+Epoch: 0081 train_loss= 788124.93750 reconstruction_loss= 13.35462 proj_loss= 787622.06250 pca_loss= 489.53027 accuracy= 0.66797 time= 0.04876
+Epoch: 0091 train_loss= 744848.12500 reconstruction_loss= 13.17679 proj_loss= 744362.93750 pca_loss= 472.02612 accuracy= 0.66719 time= 0.04865
+Epoch: 0101 train_loss= 704667.00000 reconstruction_loss= 13.01906 proj_loss= 704197.56250 pca_loss= 456.45331 accuracy= 0.66719 time= 0.04866
+Epoch: 0111 train_loss= 667303.00000 reconstruction_loss= 12.88614 proj_loss= 666846.56250 pca_loss= 443.55371 accuracy= 0.66928 time= 0.04864
+Epoch: 0121 train_loss= 632509.50000 reconstruction_loss= 12.75950 proj_loss= 632065.12500 pca_loss= 431.59644 accuracy= 0.66902 time= 0.04874
+Epoch: 0131 train_loss= 600067.75000 reconstruction_loss= 12.64409 proj_loss= 599634.87500 pca_loss= 420.26697 accuracy= 0.67059 time= 0.04875
+Epoch: 0141 train_loss= 569781.50000 reconstruction_loss= 12.54818 proj_loss= 569359.62500 pca_loss= 409.33319 accuracy= 0.67033 time= 0.04874
+Epoch: 0151 train_loss= 541474.37500 reconstruction_loss= 12.47599 proj_loss= 541063.00000 pca_loss= 398.90543 accuracy= 0.67111 time= 0.04866
+Epoch: 0161 train_loss= 514987.18750 reconstruction_loss= 12.40128 proj_loss= 514585.96875 pca_loss= 388.80576 accuracy= 0.67346 time= 0.04872
+Epoch: 0171 train_loss= 490175.96875 reconstruction_loss= 12.33848 proj_loss= 489784.50000 pca_loss= 379.13947 accuracy= 0.67320 time= 0.04865
+Epoch: 0181 train_loss= 466910.59375 reconstruction_loss= 12.25079 proj_loss= 466528.50000 pca_loss= 369.83353 accuracy= 0.67346 time= 0.04885
+Epoch: 0191 train_loss= 445072.78125 reconstruction_loss= 12.18645 proj_loss= 444699.75000 pca_loss= 360.82892 accuracy= 0.67529 time= 0.04902
+Epoch: 0201 train_loss= 424554.93750 reconstruction_loss= 12.16227 proj_loss= 424190.65625 pca_loss= 352.12543 accuracy= 0.67608 time= 0.04902
+Epoch: 0211 train_loss= 405259.06250 reconstruction_loss= 12.10251 proj_loss= 404903.18750 pca_loss= 343.78467 accuracy= 0.67556 time= 0.04882
+Epoch: 0221 train_loss= 387096.06250 reconstruction_loss= 12.05802 proj_loss= 386748.31250 pca_loss= 335.69046 accuracy= 0.67712 time= 0.04876
+Epoch: 0231 train_loss= 369984.12500 reconstruction_loss= 12.02343 proj_loss= 369644.25000 pca_loss= 327.83130 accuracy= 0.67922 time= 0.04881
+Epoch: 0241 train_loss= 353848.78125 reconstruction_loss= 12.01073 proj_loss= 353516.53125 pca_loss= 320.23874 accuracy= 0.67765 time= 0.04870
+Epoch: 0251 train_loss= 338621.59375 reconstruction_loss= 11.98531 proj_loss= 338296.68750 pca_loss= 312.89188 accuracy= 0.67791 time= 0.04880
+Epoch: 0261 train_loss= 324239.90625 reconstruction_loss= 11.94950 proj_loss= 323922.15625 pca_loss= 305.82419 accuracy= 0.67895 time= 0.04884
+Epoch: 0271 train_loss= 310646.18750 reconstruction_loss= 11.91881 proj_loss= 310335.28125 pca_loss= 299.00803 accuracy= 0.67974 time= 0.04879
+Epoch: 0281 train_loss= 297787.50000 reconstruction_loss= 11.89571 proj_loss= 297483.21875 pca_loss= 292.36203 accuracy= 0.68131 time= 0.04858
+Epoch: 0291 train_loss= 285615.06250 reconstruction_loss= 11.88666 proj_loss= 285317.28125 pca_loss= 285.91208 accuracy= 0.68078 time= 0.04835
+
+accuracy 0.68052
+auc 0.57669
+f1_score 0.32111
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 113
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12941.64453 reconstruction_loss= 10415.94336 proj_loss= 644.80634 pca_loss= 1880.89417 accuracy= 0.61359 time= 0.06619
+Epoch: 0011 train_loss= 8393.69336 reconstruction_loss= 6003.93018 proj_loss= 632.26849 pca_loss= 1757.49451 accuracy= 0.62588 time= 0.03359
+Epoch: 0021 train_loss= 7020.40625 reconstruction_loss= 4760.26465 proj_loss= 618.53766 pca_loss= 1641.60413 accuracy= 0.63451 time= 0.03306
+Epoch: 0031 train_loss= 6083.23242 reconstruction_loss= 3943.67407 proj_loss= 603.25397 pca_loss= 1536.30444 accuracy= 0.65072 time= 0.03338
+Epoch: 0041 train_loss= 5371.24561 reconstruction_loss= 3343.71973 proj_loss= 586.41748 pca_loss= 1441.10852 accuracy= 0.66850 time= 0.03330
+Epoch: 0051 train_loss= 4752.03223 reconstruction_loss= 2827.88013 proj_loss= 568.61108 pca_loss= 1355.54114 accuracy= 0.67974 time= 0.03315
+Epoch: 0061 train_loss= 4172.91992 reconstruction_loss= 2343.52808 proj_loss= 550.17596 pca_loss= 1279.21594 accuracy= 0.68627 time= 0.03386
+Epoch: 0071 train_loss= 3639.95825 reconstruction_loss= 1897.23901 proj_loss= 531.36597 pca_loss= 1211.35327 accuracy= 0.68967 time= 0.03304
+Epoch: 0081 train_loss= 3184.39355 reconstruction_loss= 1521.39087 proj_loss= 512.32135 pca_loss= 1150.68152 accuracy= 0.69438 time= 0.03336
+Epoch: 0091 train_loss= 2796.50830 reconstruction_loss= 1207.13318 proj_loss= 493.38379 pca_loss= 1095.99121 accuracy= 0.69150 time= 0.03326
+Epoch: 0101 train_loss= 2489.25049 reconstruction_loss= 967.74731 proj_loss= 474.83923 pca_loss= 1046.66382 accuracy= 0.68654 time= 0.03305
+Epoch: 0111 train_loss= 2246.16968 reconstruction_loss= 787.44043 proj_loss= 456.88474 pca_loss= 1001.84448 accuracy= 0.68915 time= 0.03357
+Epoch: 0121 train_loss= 2053.91040 reconstruction_loss= 653.63269 proj_loss= 439.64612 pca_loss= 960.63153 accuracy= 0.68261 time= 0.03325
+Epoch: 0131 train_loss= 1903.70898 reconstruction_loss= 558.13983 proj_loss= 423.12701 pca_loss= 922.44220 accuracy= 0.68915 time= 0.03308
+Epoch: 0141 train_loss= 1777.44824 reconstruction_loss= 483.22540 proj_loss= 407.27954 pca_loss= 886.94324 accuracy= 0.69464 time= 0.03354
+Epoch: 0151 train_loss= 1664.96375 reconstruction_loss= 419.13171 proj_loss= 392.09232 pca_loss= 853.73975 accuracy= 0.70850 time= 0.03283
+Epoch: 0161 train_loss= 1556.08081 reconstruction_loss= 355.77280 proj_loss= 377.52081 pca_loss= 822.78717 accuracy= 0.71346 time= 0.03301
+Epoch: 0171 train_loss= 1454.65527 reconstruction_loss= 297.32843 proj_loss= 363.47971 pca_loss= 793.84717 accuracy= 0.68105 time= 0.03361
+Epoch: 0181 train_loss= 1364.91370 reconstruction_loss= 248.17755 proj_loss= 349.98175 pca_loss= 766.75439 accuracy= 0.65673 time= 0.03291
+Epoch: 0191 train_loss= 1278.41260 reconstruction_loss= 200.29401 proj_loss= 337.09338 pca_loss= 741.02527 accuracy= 0.65725 time= 0.03302
+Epoch: 0201 train_loss= 1208.76172 reconstruction_loss= 167.55429 proj_loss= 324.80951 pca_loss= 716.39789 accuracy= 0.63817 time= 0.03345
+Epoch: 0211 train_loss= 1145.47803 reconstruction_loss= 139.81129 proj_loss= 313.13989 pca_loss= 692.52679 accuracy= 0.63111 time= 0.03294
+Epoch: 0221 train_loss= 1089.97168 reconstruction_loss= 118.45137 proj_loss= 302.05646 pca_loss= 669.46381 accuracy= 0.62771 time= 0.03282
+Epoch: 0231 train_loss= 1034.15161 reconstruction_loss= 95.45997 proj_loss= 291.50632 pca_loss= 647.18536 accuracy= 0.62458 time= 0.03313
+Epoch: 0241 train_loss= 986.87842 reconstruction_loss= 79.71389 proj_loss= 281.43634 pca_loss= 625.72821 accuracy= 0.62510 time= 0.03343
+Epoch: 0251 train_loss= 941.72693 reconstruction_loss= 64.82928 proj_loss= 271.81967 pca_loss= 605.07800 accuracy= 0.61046 time= 0.03280
+Epoch: 0261 train_loss= 905.00592 reconstruction_loss= 57.31419 proj_loss= 262.65933 pca_loss= 585.03241 accuracy= 0.61072 time= 0.03302
+Epoch: 0271 train_loss= 869.16046 reconstruction_loss= 49.51706 proj_loss= 253.90242 pca_loss= 565.74097 accuracy= 0.60889 time= 0.03362
+Epoch: 0281 train_loss= 830.52191 reconstruction_loss= 37.66592 proj_loss= 245.48434 pca_loss= 547.37164 accuracy= 0.60810 time= 0.03279
+Epoch: 0291 train_loss= 798.38513 reconstruction_loss= 31.25628 proj_loss= 237.42381 pca_loss= 529.70502 accuracy= 0.60314 time= 0.03291
+
+accuracy 0.60209
+auc 0.42058
+f1_score 0.15444
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.1, weight_decay=0.0005)
+random seed: 678
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 74 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+9685
+y_features shape after NoReduction torch.Size([7650, 9685]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 1286851.37500 reconstruction_loss= 4792.83447 proj_loss= 1272448.37500 pca_loss= 9610.06836 accuracy= 0.59922 time= 0.05833
+Epoch: 0011 train_loss= 1204475.50000 reconstruction_loss= 2950.57568 proj_loss= 1194187.75000 pca_loss= 7337.09473 accuracy= 0.60497 time= 0.04580
+Epoch: 0021 train_loss= 1128401.37500 reconstruction_loss= 2187.24170 proj_loss= 1120961.75000 pca_loss= 5252.38770 accuracy= 0.60627 time= 0.04619
+Epoch: 0031 train_loss= 1057922.75000 reconstruction_loss= 1640.19250 proj_loss= 1052913.62500 pca_loss= 3368.83765 accuracy= 0.62196 time= 0.04591
+Epoch: 0041 train_loss= 992907.68750 reconstruction_loss= 1270.92578 proj_loss= 989866.18750 pca_loss= 1770.56995 accuracy= 0.64261 time= 0.04603
+Epoch: 0051 train_loss= 933310.50000 reconstruction_loss= 1249.16968 proj_loss= 931508.68750 pca_loss= 552.63281 accuracy= 0.62797 time= 0.04638
+Epoch: 0061 train_loss= 878831.37500 reconstruction_loss= 1086.11914 proj_loss= 877127.43750 pca_loss= 617.83630 accuracy= 0.65229 time= 0.04605
+Epoch: 0071 train_loss= 828515.62500 reconstruction_loss= 975.70483 proj_loss= 827024.37500 pca_loss= 515.55762 accuracy= 0.61725 time= 0.04556
+Epoch: 0081 train_loss= 782016.31250 reconstruction_loss= 883.55005 proj_loss= 780617.81250 pca_loss= 514.91901 accuracy= 0.62458 time= 0.04679
+Epoch: 0091 train_loss= 738935.00000 reconstruction_loss= 811.35101 proj_loss= 737631.56250 pca_loss= 492.06335 accuracy= 0.62536 time= 0.04729
+Epoch: 0101 train_loss= 698952.75000 reconstruction_loss= 750.36707 proj_loss= 697732.12500 pca_loss= 470.25833 accuracy= 0.63399 time= 0.04569
+Epoch: 0111 train_loss= 661792.31250 reconstruction_loss= 699.07043 proj_loss= 660641.31250 pca_loss= 451.95749 accuracy= 0.63007 time= 0.04561
+Epoch: 0121 train_loss= 627196.06250 reconstruction_loss= 646.71240 proj_loss= 626108.50000 pca_loss= 440.87323 accuracy= 0.63712 time= 0.04588
+Epoch: 0131 train_loss= 594953.93750 reconstruction_loss= 606.72809 proj_loss= 593919.37500 pca_loss= 427.79242 accuracy= 0.62980 time= 0.04563
+Epoch: 0141 train_loss= 564865.81250 reconstruction_loss= 571.65320 proj_loss= 563875.56250 pca_loss= 418.60071 accuracy= 0.63216 time= 0.04557
+Epoch: 0151 train_loss= 536743.31250 reconstruction_loss= 532.51587 proj_loss= 535802.62500 pca_loss= 408.18967 accuracy= 0.63216 time= 0.04569
+Epoch: 0161 train_loss= 510444.31250 reconstruction_loss= 509.36029 proj_loss= 509541.09375 pca_loss= 393.82928 accuracy= 0.63529 time= 0.04578
+Epoch: 0171 train_loss= 485803.71875 reconstruction_loss= 474.07877 proj_loss= 484944.93750 pca_loss= 384.67416 accuracy= 0.63111 time= 0.04801
+Epoch: 0181 train_loss= 462712.00000 reconstruction_loss= 452.30347 proj_loss= 461885.03125 pca_loss= 374.64230 accuracy= 0.62693 time= 0.04554
+Epoch: 0191 train_loss= 441031.59375 reconstruction_loss= 422.78128 proj_loss= 440243.78125 pca_loss= 365.01660 accuracy= 0.62980 time= 0.04568
+Epoch: 0201 train_loss= 420671.09375 reconstruction_loss= 402.09137 proj_loss= 419913.40625 pca_loss= 355.59882 accuracy= 0.63111 time= 0.04561
+Epoch: 0211 train_loss= 401527.43750 reconstruction_loss= 383.36124 proj_loss= 400796.43750 pca_loss= 347.61935 accuracy= 0.62980 time= 0.04588
+Epoch: 0221 train_loss= 383504.06250 reconstruction_loss= 360.46890 proj_loss= 382804.75000 pca_loss= 338.83112 accuracy= 0.63294 time= 0.04559
+Epoch: 0231 train_loss= 366532.59375 reconstruction_loss= 346.03879 proj_loss= 365856.40625 pca_loss= 330.15836 accuracy= 0.63895 time= 0.04606
+Epoch: 0241 train_loss= 350530.34375 reconstruction_loss= 330.98032 proj_loss= 349877.06250 pca_loss= 322.31796 accuracy= 0.62954 time= 0.04542
+Epoch: 0251 train_loss= 335425.50000 reconstruction_loss= 312.19287 proj_loss= 334798.43750 pca_loss= 314.87201 accuracy= 0.63399 time= 0.04579
+Epoch: 0261 train_loss= 321165.96875 reconstruction_loss= 299.77438 proj_loss= 320558.84375 pca_loss= 307.33896 accuracy= 0.63634 time= 0.04551
+Epoch: 0271 train_loss= 307686.34375 reconstruction_loss= 285.62967 proj_loss= 307100.46875 pca_loss= 300.26318 accuracy= 0.63529 time= 0.04574
+Epoch: 0281 train_loss= 294942.12500 reconstruction_loss= 277.45898 proj_loss= 294371.00000 pca_loss= 293.64740 accuracy= 0.63399 time= 0.04562
+Epoch: 0291 train_loss= 282872.75000 reconstruction_loss= 263.69614 proj_loss= 282322.12500 pca_loss= 286.94778 accuracy= 0.63216 time= 0.04565
+
+accuracy 0.63163
+auc 0.47947
+f1_score 0.21722
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 763
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 3040.93481 reconstruction_loss= 29.13739 proj_loss= 2449.26099 pca_loss= 562.53644 accuracy= 0.62824 time= 0.07271
+Epoch: 0011 train_loss= 2850.84180 reconstruction_loss= 23.08904 proj_loss= 2292.33569 pca_loss= 535.41699 accuracy= 0.66484 time= 0.03750
+Epoch: 0021 train_loss= 2677.04443 reconstruction_loss= 21.28812 proj_loss= 2146.21753 pca_loss= 509.53882 accuracy= 0.67007 time= 0.03679
+Epoch: 0031 train_loss= 2516.05640 reconstruction_loss= 19.97282 proj_loss= 2011.02966 pca_loss= 485.05399 accuracy= 0.67085 time= 0.03710
+Epoch: 0041 train_loss= 2367.24390 reconstruction_loss= 18.87621 proj_loss= 1886.36536 pca_loss= 462.00238 accuracy= 0.66980 time= 0.03763
+Epoch: 0051 train_loss= 2229.76123 reconstruction_loss= 17.89981 proj_loss= 1771.54651 pca_loss= 440.31506 accuracy= 0.67111 time= 0.03723
+Epoch: 0061 train_loss= 2102.70923 reconstruction_loss= 17.05323 proj_loss= 1665.76172 pca_loss= 419.89438 accuracy= 0.67268 time= 0.03596
+Epoch: 0071 train_loss= 1984.94019 reconstruction_loss= 16.11157 proj_loss= 1568.18811 pca_loss= 400.64056 accuracy= 0.67373 time= 0.03651
+Epoch: 0081 train_loss= 1875.83350 reconstruction_loss= 15.32155 proj_loss= 1478.04541 pca_loss= 382.46655 accuracy= 0.67111 time= 0.03660
+Epoch: 0091 train_loss= 1774.66760 reconstruction_loss= 14.74661 proj_loss= 1394.61987 pca_loss= 365.30112 accuracy= 0.66902 time= 0.03606
+Epoch: 0101 train_loss= 1680.68945 reconstruction_loss= 14.33613 proj_loss= 1317.28357 pca_loss= 349.06973 accuracy= 0.66824 time= 0.03774
+Epoch: 0111 train_loss= 1593.28467 reconstruction_loss= 14.10184 proj_loss= 1245.48022 pca_loss= 333.70258 accuracy= 0.66850 time= 0.03778
+Epoch: 0121 train_loss= 1511.80383 reconstruction_loss= 13.95150 proj_loss= 1178.72864 pca_loss= 319.12363 accuracy= 0.66876 time= 0.04109
+Epoch: 0131 train_loss= 1435.62268 reconstruction_loss= 13.75768 proj_loss= 1116.59424 pca_loss= 305.27078 accuracy= 0.66876 time= 0.03759
+Epoch: 0141 train_loss= 1364.38452 reconstruction_loss= 13.60796 proj_loss= 1058.66931 pca_loss= 292.10733 accuracy= 0.66771 time= 0.03954
+Epoch: 0151 train_loss= 1297.62939 reconstruction_loss= 13.44032 proj_loss= 1004.61279 pca_loss= 279.57626 accuracy= 0.66667 time= 0.03730
+Epoch: 0161 train_loss= 1235.05615 reconstruction_loss= 13.31170 proj_loss= 954.10938 pca_loss= 267.63513 accuracy= 0.66693 time= 0.03593
+Epoch: 0171 train_loss= 1176.35620 reconstruction_loss= 13.23526 proj_loss= 906.86987 pca_loss= 256.25107 accuracy= 0.66614 time= 0.03800
+Epoch: 0181 train_loss= 1121.16663 reconstruction_loss= 13.13808 proj_loss= 862.63647 pca_loss= 245.39206 accuracy= 0.66719 time= 0.04226
+Epoch: 0191 train_loss= 1069.28113 reconstruction_loss= 13.07631 proj_loss= 821.17792 pca_loss= 235.02689 accuracy= 0.66745 time= 0.04618
+Epoch: 0201 train_loss= 1020.42462 reconstruction_loss= 13.01225 proj_loss= 782.28284 pca_loss= 225.12952 accuracy= 0.66745 time= 0.04417
+Epoch: 0211 train_loss= 974.38666 reconstruction_loss= 12.94996 proj_loss= 745.75647 pca_loss= 215.68022 accuracy= 0.66797 time= 0.04329
+Epoch: 0221 train_loss= 930.96997 reconstruction_loss= 12.88704 proj_loss= 711.42511 pca_loss= 206.65781 accuracy= 0.66876 time= 0.03606
+Epoch: 0231 train_loss= 890.00079 reconstruction_loss= 12.82612 proj_loss= 679.12878 pca_loss= 198.04588 accuracy= 0.66719 time= 0.04511
+Epoch: 0241 train_loss= 851.30652 reconstruction_loss= 12.75444 proj_loss= 648.72003 pca_loss= 189.83206 accuracy= 0.66771 time= 0.04471
+Epoch: 0251 train_loss= 814.76721 reconstruction_loss= 12.69797 proj_loss= 620.06464 pca_loss= 182.00455 accuracy= 0.66771 time= 0.03805
+Epoch: 0261 train_loss= 780.24774 reconstruction_loss= 12.65316 proj_loss= 593.03876 pca_loss= 174.55585 accuracy= 0.66719 time= 0.03603
+Epoch: 0271 train_loss= 747.62299 reconstruction_loss= 12.61448 proj_loss= 567.52844 pca_loss= 167.48004 accuracy= 0.66667 time= 0.03565
+Epoch: 0281 train_loss= 716.78217 reconstruction_loss= 12.58104 proj_loss= 543.42804 pca_loss= 160.77307 accuracy= 0.66641 time= 0.03617
+Epoch: 0291 train_loss= 687.62720 reconstruction_loss= 12.55482 proj_loss= 520.63995 pca_loss= 154.43242 accuracy= 0.66614 time= 0.03608
+
+accuracy 0.66614
+auc 0.51843
+f1_score 0.29056
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=0, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 979
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+9685
+y_features shape after NoReduction torch.Size([7650, 9685]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 6769986.50000 reconstruction_loss= 22.62783 proj_loss= 6765660.50000 pca_loss= 4303.57959 accuracy= 0.64837 time= 0.05998
+Epoch: 0011 train_loss= 6351124.00000 reconstruction_loss= 18.01954 proj_loss= 6347015.50000 pca_loss= 4090.70996 accuracy= 0.65333 time= 0.04430
+Epoch: 0021 train_loss= 5959340.00000 reconstruction_loss= 16.54293 proj_loss= 5955443.50000 pca_loss= 3880.24316 accuracy= 0.65516 time= 0.04469
+Epoch: 0031 train_loss= 5595411.00000 reconstruction_loss= 15.66618 proj_loss= 5591721.00000 pca_loss= 3674.68994 accuracy= 0.65935 time= 0.04476
+Epoch: 0041 train_loss= 5258699.50000 reconstruction_loss= 14.94454 proj_loss= 5255209.50000 pca_loss= 3475.07349 accuracy= 0.66222 time= 0.04488
+Epoch: 0051 train_loss= 4947645.00000 reconstruction_loss= 14.54404 proj_loss= 4944349.50000 pca_loss= 3281.15601 accuracy= 0.66405 time= 0.04523
+Epoch: 0061 train_loss= 4660270.50000 reconstruction_loss= 14.03617 proj_loss= 4657163.50000 pca_loss= 3093.12256 accuracy= 0.66484 time= 0.04532
+Epoch: 0071 train_loss= 4394534.00000 reconstruction_loss= 13.86327 proj_loss= 4391609.00000 pca_loss= 2911.12891 accuracy= 0.66536 time= 0.04512
+Epoch: 0081 train_loss= 4148483.25000 reconstruction_loss= 13.62089 proj_loss= 4145734.50000 pca_loss= 2735.27222 accuracy= 0.66510 time= 0.04512
+Epoch: 0091 train_loss= 3920335.75000 reconstruction_loss= 13.43382 proj_loss= 3917756.75000 pca_loss= 2565.46777 accuracy= 0.66536 time= 0.04544
+Epoch: 0101 train_loss= 3708483.25000 reconstruction_loss= 13.27820 proj_loss= 3706068.25000 pca_loss= 2401.67798 accuracy= 0.66588 time= 0.04421
+Epoch: 0111 train_loss= 3511488.00000 reconstruction_loss= 13.13815 proj_loss= 3509231.00000 pca_loss= 2243.74121 accuracy= 0.66693 time= 0.04528
+Epoch: 0121 train_loss= 3328061.25000 reconstruction_loss= 13.01298 proj_loss= 3325956.75000 pca_loss= 2091.47876 accuracy= 0.66745 time= 0.04540
+Epoch: 0131 train_loss= 3157049.00000 reconstruction_loss= 12.90329 proj_loss= 3155091.25000 pca_loss= 1944.72314 accuracy= 0.66980 time= 0.04510
+Epoch: 0141 train_loss= 2997415.00000 reconstruction_loss= 12.81678 proj_loss= 2995599.00000 pca_loss= 1803.29248 accuracy= 0.66980 time= 0.04500
+Epoch: 0151 train_loss= 2848226.00000 reconstruction_loss= 12.71420 proj_loss= 2846546.25000 pca_loss= 1667.00452 accuracy= 0.66954 time= 0.04473
+Epoch: 0161 train_loss= 2708641.50000 reconstruction_loss= 12.61964 proj_loss= 2707093.25000 pca_loss= 1535.67261 accuracy= 0.67137 time= 0.04553
+Epoch: 0171 train_loss= 2577900.50000 reconstruction_loss= 12.54005 proj_loss= 2576478.75000 pca_loss= 1409.13098 accuracy= 0.67163 time= 0.04530
+Epoch: 0181 train_loss= 2455314.50000 reconstruction_loss= 12.47394 proj_loss= 2454014.75000 pca_loss= 1287.21460 accuracy= 0.67163 time= 0.04634
+Epoch: 0191 train_loss= 2340259.00000 reconstruction_loss= 13.07536 proj_loss= 2339076.25000 pca_loss= 1169.76062 accuracy= 0.66719 time= 0.04475
+Epoch: 0201 train_loss= 2232165.00000 reconstruction_loss= 12.82160 proj_loss= 2231095.50000 pca_loss= 1056.70300 accuracy= 0.66562 time= 0.04522
+Epoch: 0211 train_loss= 2130515.50000 reconstruction_loss= 12.51149 proj_loss= 2129555.25000 pca_loss= 947.83453 accuracy= 0.66745 time= 0.04513
+Epoch: 0221 train_loss= 2034840.00000 reconstruction_loss= 12.39164 proj_loss= 2033984.50000 pca_loss= 843.10468 accuracy= 0.66954 time= 0.04453
+Epoch: 0231 train_loss= 1944706.87500 reconstruction_loss= 12.29710 proj_loss= 1943952.25000 pca_loss= 742.40771 accuracy= 0.67059 time= 0.04776
+Epoch: 0241 train_loss= 1859722.75000 reconstruction_loss= 12.24160 proj_loss= 1859064.75000 pca_loss= 645.78186 accuracy= 0.67190 time= 0.04724
+Epoch: 0251 train_loss= 1779526.87500 reconstruction_loss= 12.33565 proj_loss= 1778961.25000 pca_loss= 553.30762 accuracy= 0.67373 time= 0.04764
+Epoch: 0261 train_loss= 1703788.50000 reconstruction_loss= 12.16239 proj_loss= 1703311.12500 pca_loss= 465.23462 accuracy= 0.67425 time= 0.04733
+Epoch: 0271 train_loss= 1632204.12500 reconstruction_loss= 12.13831 proj_loss= 1631809.87500 pca_loss= 382.12515 accuracy= 0.67451 time= 0.04715
+Epoch: 0281 train_loss= 1564494.75000 reconstruction_loss= 12.11719 proj_loss= 1564177.37500 pca_loss= 305.25882 accuracy= 0.67686 time= 0.04744
+Epoch: 0291 train_loss= 1500404.75000 reconstruction_loss= 12.10705 proj_loss= 1500155.12500 pca_loss= 237.48141 accuracy= 0.67739 time= 0.04705
+
+accuracy 0.67843
+auc 0.56263
+f1_score 0.31667
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 816
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 14236.48828 reconstruction_loss= 10829.81836 proj_loss= 2599.53320 pca_loss= 807.13647 accuracy= 0.61333 time= 0.08020
+Epoch: 0011 train_loss= 10846.21289 reconstruction_loss= 7614.71777 proj_loss= 2458.75928 pca_loss= 772.73596 accuracy= 0.62275 time= 0.06783
+Epoch: 0021 train_loss= 9383.81055 reconstruction_loss= 6320.76416 proj_loss= 2322.35938 pca_loss= 740.68768 accuracy= 0.63399 time= 0.05631
+Epoch: 0031 train_loss= 8352.16602 reconstruction_loss= 5448.65674 proj_loss= 2192.68896 pca_loss= 710.82025 accuracy= 0.64026 time= 0.03571
+Epoch: 0041 train_loss= 7560.04297 reconstruction_loss= 4805.16504 proj_loss= 2070.52515 pca_loss= 684.35266 accuracy= 0.64915 time= 0.04674
+Epoch: 0051 train_loss= 6884.15576 reconstruction_loss= 4268.21191 proj_loss= 1955.66797 pca_loss= 660.27594 accuracy= 0.65307 time= 0.03519
+Epoch: 0061 train_loss= 6275.75439 reconstruction_loss= 3790.05518 proj_loss= 1847.22522 pca_loss= 638.47412 accuracy= 0.65542 time= 0.06212
+Epoch: 0071 train_loss= 5712.58154 reconstruction_loss= 3348.86694 proj_loss= 1745.12195 pca_loss= 618.59290 accuracy= 0.65542 time= 0.06131
+Epoch: 0081 train_loss= 5176.17627 reconstruction_loss= 2926.55493 proj_loss= 1649.16101 pca_loss= 600.46039 accuracy= 0.65307 time= 0.03488
+Epoch: 0091 train_loss= 4653.05127 reconstruction_loss= 2510.15674 proj_loss= 1559.03809 pca_loss= 583.85651 accuracy= 0.65464 time= 0.04827
+Epoch: 0101 train_loss= 4161.35254 reconstruction_loss= 2118.25562 proj_loss= 1474.33923 pca_loss= 568.75775 accuracy= 0.65098 time= 0.05882
+Epoch: 0111 train_loss= 3670.02930 reconstruction_loss= 1720.23389 proj_loss= 1394.60645 pca_loss= 555.18903 accuracy= 0.65020 time= 0.06134
+Epoch: 0121 train_loss= 3234.95508 reconstruction_loss= 1372.47742 proj_loss= 1319.58203 pca_loss= 542.89551 accuracy= 0.64915 time= 0.05877
+Epoch: 0131 train_loss= 2846.50244 reconstruction_loss= 1065.96033 proj_loss= 1248.87964 pca_loss= 531.66272 accuracy= 0.64523 time= 0.09290
+Epoch: 0141 train_loss= 2501.39868 reconstruction_loss= 797.97461 proj_loss= 1182.48499 pca_loss= 520.93903 accuracy= 0.64078 time= 0.03484
+Epoch: 0151 train_loss= 2211.09253 reconstruction_loss= 580.27924 proj_loss= 1120.50928 pca_loss= 510.30402 accuracy= 0.63660 time= 0.06137
+Epoch: 0161 train_loss= 1971.08105 reconstruction_loss= 408.97879 proj_loss= 1062.78870 pca_loss= 499.31366 accuracy= 0.62588 time= 0.03410
+Epoch: 0171 train_loss= 1794.66284 reconstruction_loss= 297.61090 proj_loss= 1009.09637 pca_loss= 487.95557 accuracy= 0.62379 time= 0.08279
+Epoch: 0181 train_loss= 1640.13794 reconstruction_loss= 205.08842 proj_loss= 959.17249 pca_loss= 475.87714 accuracy= 0.62170 time= 0.03487
+Epoch: 0191 train_loss= 1520.47388 reconstruction_loss= 144.52193 proj_loss= 912.73682 pca_loss= 463.21509 accuracy= 0.62379 time= 0.06360
+Epoch: 0201 train_loss= 1421.69995 reconstruction_loss= 102.05971 proj_loss= 869.53320 pca_loss= 450.10699 accuracy= 0.61961 time= 0.05318
+Epoch: 0211 train_loss= 1340.06738 reconstruction_loss= 74.06503 proj_loss= 829.22760 pca_loss= 436.77481 accuracy= 0.62301 time= 0.04472
+Epoch: 0221 train_loss= 1267.57959 reconstruction_loss= 52.59477 proj_loss= 791.52893 pca_loss= 423.45581 accuracy= 0.65412 time= 0.05103
+Epoch: 0231 train_loss= 1207.26965 reconstruction_loss= 40.78444 proj_loss= 756.18658 pca_loss= 410.29868 accuracy= 0.66431 time= 0.04876
+Epoch: 0241 train_loss= 1152.04150 reconstruction_loss= 31.63912 proj_loss= 722.95160 pca_loss= 397.45078 accuracy= 0.66458 time= 0.04182
+Epoch: 0251 train_loss= 1104.43311 reconstruction_loss= 27.77612 proj_loss= 691.67096 pca_loss= 384.98599 accuracy= 0.64680 time= 0.06054
+Epoch: 0261 train_loss= 1059.13171 reconstruction_loss= 23.91339 proj_loss= 662.19379 pca_loss= 373.02457 accuracy= 0.64261 time= 0.09468
+Epoch: 0271 train_loss= 1013.98560 reconstruction_loss= 18.15654 proj_loss= 634.36719 pca_loss= 361.46182 accuracy= 0.63033 time= 0.05995
+Epoch: 0281 train_loss= 976.08423 reconstruction_loss= 17.65818 proj_loss= 608.07239 pca_loss= 350.35361 accuracy= 0.62536 time= 0.05158
+Epoch: 0291 train_loss= 939.31018 reconstruction_loss= 16.43468 proj_loss= 583.21796 pca_loss= 339.65750 accuracy= 0.61935 time= 0.03449
+
+accuracy 0.61699
+auc 0.42172
+f1_score 0.18611
+Job finished!
+
+
+
+Initializing rsr scat onedecoder training
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, dataset='amazon_electronics_photo', decoder=1, delta=1, device=device(type='cuda'), dim_reduce=2, dropout=0.01, epochs=300, gamma=1, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, rsr_dim=0.02, weight_decay=0.0005)
+random seed: 177
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 rsr_dim: 14 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+9685
+y_features shape after NoReduction torch.Size([7650, 9685]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 6681533.00000 reconstruction_loss= 5059.80469 proj_loss= 6672166.50000 pca_loss= 4306.27002 accuracy= 0.60784 time= 0.05401
+Epoch: 0011 train_loss= 6266137.00000 reconstruction_loss= 3770.15674 proj_loss= 6258293.00000 pca_loss= 4074.23096 accuracy= 0.60680 time= 0.04039
+Epoch: 0021 train_loss= 5878213.00000 reconstruction_loss= 3092.71582 proj_loss= 5871266.00000 pca_loss= 3854.67969 accuracy= 0.60863 time= 0.04048
+Epoch: 0031 train_loss= 5518093.50000 reconstruction_loss= 2586.02295 proj_loss= 5511866.50000 pca_loss= 3640.94019 accuracy= 0.61621 time= 0.04069
+Epoch: 0041 train_loss= 5185072.00000 reconstruction_loss= 2183.32593 proj_loss= 5179452.50000 pca_loss= 3435.99170 accuracy= 0.62275 time= 0.04092
+Epoch: 0051 train_loss= 4877603.50000 reconstruction_loss= 1897.77039 proj_loss= 4872468.00000 pca_loss= 3237.50854 accuracy= 0.61333 time= 0.04079
+Epoch: 0061 train_loss= 4593749.50000 reconstruction_loss= 1754.61072 proj_loss= 4588949.50000 pca_loss= 3045.35376 accuracy= 0.61464 time= 0.04113
+Epoch: 0071 train_loss= 4331338.00000 reconstruction_loss= 1621.71582 proj_loss= 4326855.50000 pca_loss= 2860.86304 accuracy= 0.61281 time= 0.04057
+Epoch: 0081 train_loss= 4088438.25000 reconstruction_loss= 1505.15491 proj_loss= 4084248.50000 pca_loss= 2684.51294 accuracy= 0.61438 time= 0.04248
+Epoch: 0091 train_loss= 3863292.00000 reconstruction_loss= 1424.22424 proj_loss= 3859354.00000 pca_loss= 2513.75952 accuracy= 0.61438 time= 0.04184
+Epoch: 0101 train_loss= 3654265.00000 reconstruction_loss= 1341.41028 proj_loss= 3650574.25000 pca_loss= 2349.27710 accuracy= 0.61098 time= 0.04152
+Epoch: 0111 train_loss= 3459946.25000 reconstruction_loss= 1275.99219 proj_loss= 3456478.50000 pca_loss= 2191.69116 accuracy= 0.60967 time= 0.04048
+Epoch: 0121 train_loss= 3279043.75000 reconstruction_loss= 1214.01416 proj_loss= 3275790.25000 pca_loss= 2039.51282 accuracy= 0.61281 time= 0.04045
+Epoch: 0131 train_loss= 3110421.50000 reconstruction_loss= 1165.15576 proj_loss= 3107362.50000 pca_loss= 1893.71423 accuracy= 0.63608 time= 0.04075
+Epoch: 0141 train_loss= 2953032.25000 reconstruction_loss= 1110.93774 proj_loss= 2950167.50000 pca_loss= 1753.63562 accuracy= 0.62954 time= 0.04098
+Epoch: 0151 train_loss= 2805955.75000 reconstruction_loss= 1053.99634 proj_loss= 2803281.50000 pca_loss= 1620.36682 accuracy= 0.60967 time= 0.04035
+Epoch: 0161 train_loss= 2668369.75000 reconstruction_loss= 1006.39929 proj_loss= 2665871.50000 pca_loss= 1491.67004 accuracy= 0.61203 time= 0.04363
+Epoch: 0171 train_loss= 2539514.50000 reconstruction_loss= 961.35437 proj_loss= 2537184.00000 pca_loss= 1369.31567 accuracy= 0.62039 time= 0.04077
+Epoch: 0181 train_loss= 2418707.25000 reconstruction_loss= 916.75238 proj_loss= 2416539.25000 pca_loss= 1251.32434 accuracy= 0.62353 time= 0.04041
+Epoch: 0191 train_loss= 2305333.25000 reconstruction_loss= 877.30743 proj_loss= 2303316.75000 pca_loss= 1139.18823 accuracy= 0.63085 time= 0.04082
+Epoch: 0201 train_loss= 2198844.25000 reconstruction_loss= 855.21161 proj_loss= 2196956.25000 pca_loss= 1032.79700 accuracy= 0.63634 time= 0.04039
+Epoch: 0211 train_loss= 2098690.75000 reconstruction_loss= 812.68964 proj_loss= 2096947.50000 pca_loss= 930.60236 accuracy= 0.62693 time= 0.04060
+Epoch: 0221 train_loss= 2004436.87500 reconstruction_loss= 779.79102 proj_loss= 2002822.50000 pca_loss= 834.61511 accuracy= 0.63007 time= 0.04355
+Epoch: 0231 train_loss= 1915637.00000 reconstruction_loss= 736.00208 proj_loss= 1914158.00000 pca_loss= 742.94287 accuracy= 0.62824 time= 0.04053
+Epoch: 0241 train_loss= 1831935.62500 reconstruction_loss= 714.50848 proj_loss= 1830562.25000 pca_loss= 658.81543 accuracy= 0.63163 time= 0.04026
+Epoch: 0251 train_loss= 1752939.12500 reconstruction_loss= 679.75916 proj_loss= 1751684.50000 pca_loss= 574.81512 accuracy= 0.63242 time= 0.04026
+Epoch: 0261 train_loss= 1678354.12500 reconstruction_loss= 661.19122 proj_loss= 1677190.50000 pca_loss= 502.33536 accuracy= 0.62562 time= 0.04053
+Epoch: 0271 train_loss= 1607842.62500 reconstruction_loss= 623.79736 proj_loss= 1606786.87500 pca_loss= 432.02823 accuracy= 0.63503 time= 0.04073
+Epoch: 0281 train_loss= 1541151.50000 reconstruction_loss= 590.09802 proj_loss= 1540197.62500 pca_loss= 363.80600 accuracy= 0.63190 time= 0.04095
+Epoch: 0291 train_loss= 1478031.50000 reconstruction_loss= 562.05438 proj_loss= 1477166.50000 pca_loss= 303.00330 accuracy= 0.62824 time= 0.04051
+
+accuracy 0.63346
+auc 0.48718
+f1_score 0.22111
+Job finished!
+amazon_electronics_photo job finished!
