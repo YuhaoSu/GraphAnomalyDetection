@@ -265,9 +265,9 @@ def gae_ad(args):
               'auc score': auc_plot,
               'f1 score': f1_plot}
     result_df = pd.DataFrame(data=result)
-    result_df.csv_path = 'scat_onedecoder'+\
+    result_df.csv_path = 'scat_onedecoder'+ \
+                         '_{}'.format(anomaly_type[args.data_type]) + \
                          '_{}'.format(args.dataset) + \
-                         '_{}'.format(args.data_type) + \
                          '_hidden1_' + '{}'.format(args.hidden1) + \
                          '_hidden2_' + '{}'.format(args.hidden2) + \
                          '_{}'.format(decoder_name[args.decoder]) + \

@@ -246,7 +246,7 @@ def gae_ad(args):
               'f1 score': f1_plot}
     result_df = pd.DataFrame(data=result)
     result_df.csv_path = 'scat_twodecoders' + \
-                         '_{}'.format(args.data_type) + \
+                         '_{}'.format(anomaly_type[args.data_type]) + \
                          '_{}'.format(args.dataset) + \
                          '_hidden1_' + '{}'.format(args.hidden1) + \
                          '_hidden2_' + '{}'.format(args.hidden2) + \

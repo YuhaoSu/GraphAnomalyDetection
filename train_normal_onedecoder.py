@@ -22,7 +22,7 @@ from optimizer import FeatureOnlyVAELoss, StructureOnlyVAELoss
 parser = argparse.ArgumentParser()
 parser.add_argument('--data_type', type=int, default=0, help='0 for feature anomaly only, \
                                                     1 for structure only, 2 for all anomaly.')
-parser.add_argument('--epochs', type=int, default=20, help='Number of epochs to train.')
+parser.add_argument('--epochs', type=int, default=10, help='Number of epochs to train.')
 parser.add_argument('--hidden1', type=float, default=0.5, help='Number of units in hidden layer 1.')
 parser.add_argument('--hidden2', type=float, default=0.25, help='Number of units in hidden layer 2.')
 parser.add_argument('--decoder', type=int, default=0, help='0 for feature only, 1 for structure only.')
@@ -32,7 +32,7 @@ parser.add_argument('--dropout', type=float, default=0.01, help='Dropout rate (1
 parser.add_argument('--clique_size', type=int, default=20, help='create anomaly')
 parser.add_argument('--num_clique', type=int, default=15, help='create anomaly')
 parser.add_argument('--k', type=int, default=10, help='compare for feature anomaly')
-parser.add_argument('--dataset', type=str, default='citeseer', help='type of dataset.')
+parser.add_argument('--dataset', type=str, default='cora', help='type of dataset.')
 parser.add_argument('--alpha', type=float, default=1, help='weight parameter for feature error')
 parser.add_argument('--beta', type=float, default=1, help='weight parameter for structure error')
 parser.add_argument('--gamma', type=float, default=0.2, help='Gamma for the leaky_relu.')
@@ -179,6 +179,8 @@ def gae_ad(args):
                       "train_loss=", "{:.5f}".format(cur_loss),
                       "accuracy=", "{:.5f}".format(accuracy),
                       "time=", "{:.5f}".format(time.time() - t))
+        encoder_layer_2 = encoder_layer_2.cpu().detach().numpy()
+
     else:
         # CPU case
         for epoch in range(args.epochs):
@@ -206,6 +208,9 @@ def gae_ad(args):
                       "train_loss=", "{:.5f}".format(cur_loss),
                       "accuracy=", "{:.5f}".format(accuracy),
                       "time=", "{:.5f}".format(time.time() - t))
+        encoder_layer_2 = encoder_layer_2.detach().numpy()
+        print(type(encoder_layer_2))
+        print(encoder_layer_2.shape)
 
     # save the results
     result = {'total_loss': loss_plot,
@@ -214,7 +219,7 @@ def gae_ad(args):
               'f1 score': f1_plot}
     result_df = pd.DataFrame(data=result)
     result_df.csv_path = 'normal_onedecoder' + \
-                         '_{}'.format(args.data_type) + \
+                         '_{}'.format(anomaly_type[args.data_type]) + \
                          '_{}'.format(args.dataset) + \
                          '_hidden1_' + '{}'.format(args.hidden1) + \
                          '_hidden2_' + '{}'.format(args.hidden2) + \
@@ -224,6 +229,15 @@ def gae_ad(args):
     if not os.path.exists("/home/augus/ad/gae_pytorch/{}_output".format(args.dataset)):
         os.makedirs('{}_output'.format(args.dataset))
     shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+
+    # save the last encoder output
+    encoder_layer_output = "normal_onedecoder"+\
+                           "{}_".format(anomaly_type[args.data_type])+\
+                           "{}_".format(args.dataset)+\
+                           "clique_size_{}_".format(args.clique_size) +\
+                           "num_clique_{}".format(args.num_clique)+".npy"
+    np.save(encoder_layer_output, encoder_layer_2)
+
     print()
     print("accuracy", "{:.5f}".format(accuracy))
     print("auc", "{:.5f}".format(auc))

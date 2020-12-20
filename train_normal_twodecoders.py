@@ -22,9 +22,9 @@ from optimizer import TwoDecodersVAELoss
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_type', type=int, default=0, help='0 for feature anomaly only, \
+parser.add_argument('--data_type', type=int, default=2, help='0 for feature anomaly only, \
                                                     1 for structure only, 2 for all anomaly.')
-parser.add_argument('--epochs', type=int, default=300, help='Number of epochs to train.')
+parser.add_argument('--epochs', type=int, default=10, help='Number of epochs to train.')
 parser.add_argument('--hidden1', type=float, default=0.5, help='Number of units in hidden layer 1.')
 parser.add_argument('--hidden2', type=float, default=0.25, help='Number of units in hidden layer 2.')
 parser.add_argument('--lr', type=float, default=0.002, help='Initial learning rate.')
@@ -145,6 +145,8 @@ def gae_ad(args):
                       "accuracy_s=", "{:.5f}".format(accuracy_s),
                       "accuracy_f=", "{:.5f}".format(accuracy_f),
                       "time=", "{:.5f}".format(time.time() - t))
+        encoder_layer_2 = encoder_layer_2.cpu().detach().numpy()
+
     else:
         # CPU case
         for epoch in range(args.epochs):
@@ -165,6 +167,7 @@ def gae_ad(args):
             loss_plot.append(cur_loss)
             feature_reconstruction_loss_plot.append(feature_reconstruction_loss)
             structure_reconstruction_loss_plot.append(structure_reconstruction_loss)
+
 
             auc = roc_auc_score(gnd.detach().numpy(), error.detach().numpy())
             pred_gnd = pred_anomaly(error.detach().numpy(), args.clique_size, args.num_clique, mode=0)
@@ -190,6 +193,9 @@ def gae_ad(args):
                       "accuracy_s=", "{:.5f}".format(accuracy_s),
                       "accuracy_f=", "{:.5f}".format(accuracy_f),
                       "time=", "{:.5f}".format(time.time() - t))
+        encoder_layer_2 = encoder_layer_2.detach().numpy()
+        print(type(encoder_layer_2))
+        print(encoder_layer_2.shape)
 
     # save the results
     result = {'total_loss': loss_plot,
@@ -202,7 +208,7 @@ def gae_ad(args):
               'f1 score': f1_plot}
     result_df = pd.DataFrame(data=result)
     result_df.csv_path = 'normal_twodecoders' + \
-                         '_{}'.format(args.data_type) + \
+                         '_{}'.format(anomaly_type[args.data_type]) + \
                          '_{}'.format(args.dataset) + \
                          '_hidden1_' + '{}'.format(args.hidden1) + \
                          '_hidden2_' + '{}'.format(args.hidden2) + \
@@ -213,6 +219,12 @@ def gae_ad(args):
     shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
 
     # save the last encoder output
+    encoder_layer_output = "normal_twodecoders"+\
+                           "{}_".format(anomaly_type[args.data_type])+\
+                           "{}_".format(args.dataset)+\
+                           "clique_size_{}_".format(args.clique_size) +\
+                           "num_clique_{}".format(args.num_clique)+".npy"
+    np.save(encoder_layer_output, encoder_layer_2)
 
 
     print()
