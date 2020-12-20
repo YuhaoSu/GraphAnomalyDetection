@@ -117,6 +117,14 @@ def anomaly_injection_features(features, str_anomaly_nodes_set, str_normal_nodes
 
 # final_anomaly, final_normal, features, gnd = anomaly_injection_features(features, str_anomaly_nodes_set, str_normal_nodes_set, 20, 10, 10)
 
+def make_ad_dataset_no_anomaly(dataset):
+    if dataset == "citeseer" or dataset == "cora":
+        adj, features = load_data(dataset)
+    else:
+        adj, features = load_other_data(dataset)
+    gnd = np.zeros(features.shape[0])
+    return adj, features, gnd
+
 
 def make_ad_dataset_both_anomaly(dataset, clique_size, num_clique, k):
     if dataset == "citeseer" or dataset == "cora":

@@ -16,15 +16,16 @@ import pandas as pd
 import numpy as np
 from torch import optim
 from model import GCNModelTwoDecodersVAE
-from utils import preprocess_graph, make_ad_dataset_both_anomaly, pred_anomaly, precision
+from utils import preprocess_graph, make_ad_dataset_both_anomaly, pred_anomaly, precision, make_ad_dataset_no_anomaly, \
+    make_ad_dataset_feature_anomaly, make_ad_dataset_structure_anomaly
 from sklearn.metrics import roc_auc_score, f1_score
 from optimizer import TwoDecodersVAELoss
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_type', type=int, default=2, help='0 for feature anomaly only, \
-                                                    1 for structure only, 2 for all anomaly.')
-parser.add_argument('--epochs', type=int, default=10, help='Number of epochs to train.')
+parser.add_argument('--data_type', type=int, default=3, help='0 for feature anomaly only, \
+                                                    1 for structure only, 2 for all anomaly, 3 for no anomaly')
+parser.add_argument('--epochs', type=int, default=20, help='Number of epochs to train.')
 parser.add_argument('--hidden1', type=float, default=0.5, help='Number of units in hidden layer 1.')
 parser.add_argument('--hidden2', type=float, default=0.25, help='Number of units in hidden layer 2.')
 parser.add_argument('--lr', type=float, default=0.002, help='Initial learning rate.')
@@ -51,7 +52,7 @@ else:
 
 def gae_ad(args):
     # initialize
-    anomaly_type = ["FeatureAnomaly", "StructureAnomaly", "BothAnomaly"]
+    anomaly_type = ["FeatureAnomaly", "StructureAnomaly", "BothAnomaly", "NoAnomaly"]
     print()
     print()
     print()
@@ -74,16 +75,59 @@ def gae_ad(args):
         args.num_clique)+".npy"
     if not os.path.exists(ad_data_name):
         print("no existing ad data found, create new data with anomaly!")
-        adj, features, gnd, gnd_f, gnd_s = make_ad_dataset_both_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
-        ad_data_list = [adj, features, gnd, gnd_f, gnd_s]
-        np.save(ad_data_name, ad_data_list)
+        if args.data_type == 0:
+            adj, features, gnd = make_ad_dataset_feature_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
+            ad_data_list = [adj, features, gnd]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 1:
+            adj, features, gnd = make_ad_dataset_structure_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
+            ad_data_list = [adj, features, gnd]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 2:
+            adj, features, gnd, gnd_f, gnd_s = make_ad_dataset_both_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
+            ad_data_list = [adj, features, gnd, gnd_f, gnd_s]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+            gnd_f = torch.Tensor(gnd_f).to(args.device)
+            gnd_s = torch.Tensor(gnd_s).to(args.device)
+        elif args.data_type == 3:
+            adj, features, gnd = make_ad_dataset_no_anomaly(args.dataset)
+            ad_data_list = [adj, features, gnd]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        else:
+            raise Exception("No valid data! Try to create another different data type!")
     else:
-        print("Found existing ad data, loading...")
-        adj, features, gnd, gnd_f, gnd_s = np.load(ad_data_name, allow_pickle=True)
-    origin_features = torch.FloatTensor(features).to(args.device)
-    gnd = torch.Tensor(gnd).to(args.device)
-    gnd_f = torch.Tensor(gnd_f).to(args.device)
-    gnd_s = torch.Tensor(gnd_s).to(args.device)
+        if args.data_type == 0:
+            print("Found existing ad data, loading...")
+            adj, features, gnd = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 1:
+            print("Found existing ad data, loading...")
+            adj, features, gnd = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 2:
+            print("Found existing ad data, loading...")
+            adj, features, gnd, gnd_f, gnd_s = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+            gnd_f = torch.Tensor(gnd_f).to(args.device)
+            gnd_s = torch.Tensor(gnd_s).to(args.device)
+        elif args.data_type == 3:
+            print("Found existing ad data, loading...")
+            adj, features, gnd = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        else:
+            raise Exception("No valid data! Try to load another different data type!")
     feat_dim = features.shape[1]
     hidden1 = int(feat_dim * args.hidden1)
     hidden2 = int(feat_dim * args.hidden2)
@@ -121,30 +165,31 @@ def gae_ad(args):
             feature_reconstruction_loss_plot.append(feature_reconstruction_loss)
             structure_reconstruction_loss_plot.append(structure_reconstruction_loss)
 
-            auc = roc_auc_score(gnd.cpu().detach().numpy(), error.cpu().detach().numpy())
+            if args.data_type == 2:
+                auc = roc_auc_score(gnd.cpu().detach().numpy(), error.cpu().detach().numpy())
 
-            pred_gnd = pred_anomaly(error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=0)
-            pred_gnd_s = pred_anomaly(s_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
-            pred_gnd_f = pred_anomaly(f_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
-            accuracy = precision(pred_gnd, gnd.cpu().detach().numpy())
-            accuracy_f = precision(pred_gnd_f, gnd_f.cpu().detach().numpy())
-            accuracy_s = precision(pred_gnd_s, gnd_s.cpu().detach().numpy())
+                pred_gnd = pred_anomaly(error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=0)
+                pred_gnd_s = pred_anomaly(s_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
+                pred_gnd_f = pred_anomaly(f_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
+                accuracy = precision(pred_gnd, gnd.cpu().detach().numpy())
+                accuracy_f = precision(pred_gnd_f, gnd_f.cpu().detach().numpy())
+                accuracy_s = precision(pred_gnd_s, gnd_s.cpu().detach().numpy())
 
-            f1 = f1_score(gnd.cpu().detach().numpy(), pred_gnd)
-            accuracy_plot.append(accuracy)
-            accuracy_f_plot.append(accuracy_f)
-            accuracy_s_plot.append(accuracy_s)
-            auc_plot.append(auc)
-            f1_plot.append(f1)
-            if epoch % 10 == 0:
-                print("Epoch:", '%04d' % (epoch + 1),
-                      "train_loss=", "{:.5f}".format(cur_loss),
-                      "feature_loss=", "{:.5f}".format(feature_reconstruction_loss),
-                      "structure_loss=", "{:.5f}".format(structure_reconstruction_loss),
-                      "accuracy=", "{:.5f}".format(accuracy),
-                      "accuracy_s=", "{:.5f}".format(accuracy_s),
-                      "accuracy_f=", "{:.5f}".format(accuracy_f),
-                      "time=", "{:.5f}".format(time.time() - t))
+                f1 = f1_score(gnd.cpu().detach().numpy(), pred_gnd)
+                accuracy_plot.append(accuracy)
+                accuracy_f_plot.append(accuracy_f)
+                accuracy_s_plot.append(accuracy_s)
+                auc_plot.append(auc)
+                f1_plot.append(f1)
+                if epoch % 10 == 0:
+                    print("Epoch:", '%04d' % (epoch + 1),
+                          "train_loss=", "{:.5f}".format(cur_loss),
+                          "feature_loss=", "{:.5f}".format(feature_reconstruction_loss),
+                          "structure_loss=", "{:.5f}".format(structure_reconstruction_loss),
+                          "accuracy=", "{:.5f}".format(accuracy),
+                          "accuracy_s=", "{:.5f}".format(accuracy_s),
+                          "accuracy_f=", "{:.5f}".format(accuracy_f),
+                          "time=", "{:.5f}".format(time.time() - t))
         encoder_layer_2 = encoder_layer_2.cpu().detach().numpy()
 
     else:
@@ -168,24 +213,25 @@ def gae_ad(args):
             feature_reconstruction_loss_plot.append(feature_reconstruction_loss)
             structure_reconstruction_loss_plot.append(structure_reconstruction_loss)
 
+            if args.data_type == 2:
 
-            auc = roc_auc_score(gnd.detach().numpy(), error.detach().numpy())
-            pred_gnd = pred_anomaly(error.detach().numpy(), args.clique_size, args.num_clique, mode=0)
-            pred_gnd_s = pred_anomaly(s_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
-            pred_gnd_f = pred_anomaly(f_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
-            accuracy = precision(pred_gnd, gnd.detach().numpy())
-            accuracy_f = precision(pred_gnd_f, gnd_f.detach().numpy())
-            accuracy_s = precision(pred_gnd_s, gnd_s.detach().numpy())
+                auc = roc_auc_score(gnd.detach().numpy(), error.detach().numpy())
+                pred_gnd = pred_anomaly(error.detach().numpy(), args.clique_size, args.num_clique, mode=0)
+                pred_gnd_s = pred_anomaly(s_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
+                pred_gnd_f = pred_anomaly(f_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
+                accuracy = precision(pred_gnd, gnd.detach().numpy())
+                accuracy_f = precision(pred_gnd_f, gnd_f.detach().numpy())
+                accuracy_s = precision(pred_gnd_s, gnd_s.detach().numpy())
 
-            f1 = f1_score(gnd.detach().numpy(), pred_gnd)
+                f1 = f1_score(gnd.detach().numpy(), pred_gnd)
 
-            accuracy_plot.append(accuracy)
-            accuracy_f_plot.append(accuracy_f)
-            accuracy_s_plot.append(accuracy_s)
-            auc_plot.append(auc)
-            f1_plot.append(f1)
-            if epoch % 10 == 0:
-                print("Epoch:", '%04d' % (epoch + 1),
+                accuracy_plot.append(accuracy)
+                accuracy_f_plot.append(accuracy_f)
+                accuracy_s_plot.append(accuracy_s)
+                auc_plot.append(auc)
+                f1_plot.append(f1)
+                if epoch % 10 == 0:
+                    print("Epoch:", '%04d' % (epoch + 1),
                       "train_loss=", "{:.5f}".format(cur_loss),
                       "feature_loss=", "{:.5f}".format(feature_reconstruction_loss),
                       "structure_loss=", "{:.5f}".format(structure_reconstruction_loss),
@@ -197,8 +243,18 @@ def gae_ad(args):
         print(type(encoder_layer_2))
         print(encoder_layer_2.shape)
 
+    # save the last encoder output
+    encoder_layer_output = "normal_twodecoders"+\
+                           "{}_".format(anomaly_type[args.data_type])+\
+                           "{}_".format(args.dataset)+\
+                           "clique_size_{}_".format(args.clique_size) +\
+                           "num_clique_{}".format(args.num_clique)+".npy"
+    np.save(encoder_layer_output, encoder_layer_2)
+
+
     # save the results
-    result = {'total_loss': loss_plot,
+    if args.data_type == 2:
+        result = {'total_loss': loss_plot,
               'feature_reconstruction_loss': feature_reconstruction_loss_plot,
               'structure_reconstruction_loss': structure_reconstruction_loss_plot,
               'accuracy': accuracy_plot,
@@ -206,6 +262,11 @@ def gae_ad(args):
               'accuracy_f': accuracy_f_plot,
               'auc score': auc_plot,
               'f1 score': f1_plot}
+
+    elif args.data_type != 2:
+        result = {'total_loss': loss_plot,
+              'feature_reconstruction_loss': feature_reconstruction_loss_plot,
+              'structure_reconstruction_loss': structure_reconstruction_loss_plot}
     result_df = pd.DataFrame(data=result)
     result_df.csv_path = 'normal_twodecoders' + \
                          '_{}'.format(anomaly_type[args.data_type]) + \
@@ -217,25 +278,18 @@ def gae_ad(args):
     if not os.path.exists("/home/augus/ad/gae_pytorch/{}_output".format(args.dataset)):
         os.makedirs('{}_output'.format(args.dataset))
     shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+    shutil.move(encoder_layer_output,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
 
-    # save the last encoder output
-    encoder_layer_output = "normal_twodecoders"+\
-                           "{}_".format(anomaly_type[args.data_type])+\
-                           "{}_".format(args.dataset)+\
-                           "clique_size_{}_".format(args.clique_size) +\
-                           "num_clique_{}".format(args.num_clique)+".npy"
-    np.save(encoder_layer_output, encoder_layer_2)
-
-
-    print()
-    print("accuracy", "{:.5f}".format(accuracy))
-    print("accuracy_s", "{:.5f}".format(accuracy_s))
-    print("accuracy_f", "{:.5f}".format(accuracy_f))
-    print("auc", "{:.5f}".format(auc))
-    print("f1_score", "{:.5f}".format(f1))
-    print("Job finished!")
-
-
+    if args.data_type == 2:
+        print()
+        print("accuracy", "{:.5f}".format(accuracy))
+        print("accuracy_s", "{:.5f}".format(accuracy_s))
+        print("accuracy_f", "{:.5f}".format(accuracy_f))
+        print("auc", "{:.5f}".format(auc))
+        print("f1_score", "{:.5f}".format(f1))
+        print("Job finished!")
+    elif args.data_type != 2:
+        print("Non all anomaly job finished!")
 
 if __name__ == '__main__':
     gae_ad(args)

@@ -16,7 +16,8 @@ import pandas as pd
 import numpy as np
 from torch import optim
 from model import GCNModelRsrTwoDecodersVAE
-from utils import preprocess_graph, make_ad_dataset_both_anomaly, pred_anomaly, precision
+from utils import preprocess_graph, make_ad_dataset_both_anomaly, pred_anomaly, precision, make_ad_dataset_no_anomaly, \
+    make_ad_dataset_feature_anomaly, make_ad_dataset_structure_anomaly
 from sklearn.metrics import roc_auc_score, f1_score
 from optimizer import RsrTwoDecodersVAELoss
 
@@ -53,7 +54,7 @@ else:
 
 def gae_ad(args):
     # initialize
-    anomaly_type = ["FeatureAnomaly", "StructureAnomaly", "BothAnomaly"]
+    anomaly_type = ["FeatureAnomaly", "StructureAnomaly", "BothAnomaly", "NoAnomaly"]
     print()
     print()
     print()
@@ -73,23 +74,68 @@ def gae_ad(args):
     proj_loss_plot = []
     pca_loss_plot = []
 
-
-
     # obtain basic info
-    ad_data_name = "{}_".format(anomaly_type[args.data_type])+"{}_".format(args.dataset) + "clique_size_{}_".format(args.clique_size) + "num_clique_{}".format(
-        args.num_clique)+".npy"
+    ad_data_name = "{}_".format(anomaly_type[args.data_type]) + "{}_".format(args.dataset) + "clique_size_{}_".format(
+        args.clique_size) + "num_clique_{}".format(
+        args.num_clique) + ".npy"
     if not os.path.exists(ad_data_name):
         print("no existing ad data found, create new data with anomaly!")
-        adj, features, gnd, gnd_f, gnd_s = make_ad_dataset_both_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
-        ad_data_list = [adj, features, gnd, gnd_f, gnd_s]
-        np.save(ad_data_name, ad_data_list)
+        if args.data_type == 0:
+            adj, features, gnd = make_ad_dataset_feature_anomaly(args.dataset, args.clique_size, args.num_clique,
+                                                                 args.k)
+            ad_data_list = [adj, features, gnd]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 1:
+            adj, features, gnd = make_ad_dataset_structure_anomaly(args.dataset, args.clique_size, args.num_clique,
+                                                                   args.k)
+            ad_data_list = [adj, features, gnd]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 2:
+            adj, features, gnd, gnd_f, gnd_s = make_ad_dataset_both_anomaly(args.dataset, args.clique_size,
+                                                                            args.num_clique, args.k)
+            ad_data_list = [adj, features, gnd, gnd_f, gnd_s]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+            gnd_f = torch.Tensor(gnd_f).to(args.device)
+            gnd_s = torch.Tensor(gnd_s).to(args.device)
+        elif args.data_type == 3:
+            adj, features, gnd = make_ad_dataset_no_anomaly(args.dataset)
+            ad_data_list = [adj, features, gnd]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        else:
+            raise Exception("No valid data! Try to create another different data type!")
     else:
-        print("Found existing ad data, loading...")
-        adj, features, gnd, gnd_f, gnd_s = np.load(ad_data_name, allow_pickle=True)
-    origin_features = torch.FloatTensor(features).to(args.device)
-    gnd = torch.Tensor(gnd).to(args.device)
-    gnd_f = torch.Tensor(gnd_f).to(args.device)
-    gnd_s = torch.Tensor(gnd_s).to(args.device)
+        if args.data_type == 0:
+            print("Found existing ad data, loading...")
+            adj, features, gnd = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 1:
+            print("Found existing ad data, loading...")
+            adj, features, gnd = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        elif args.data_type == 2:
+            print("Found existing ad data, loading...")
+            adj, features, gnd, gnd_f, gnd_s = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+            gnd_f = torch.Tensor(gnd_f).to(args.device)
+            gnd_s = torch.Tensor(gnd_s).to(args.device)
+        elif args.data_type == 3:
+            print("Found existing ad data, loading...")
+            adj, features, gnd = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
+        else:
+            raise Exception("No valid data! Try to load another different data type!")
     feat_dim = features.shape[1]
     hidden1 = int(feat_dim * args.hidden1)
     hidden2 = int(feat_dim * args.hidden2)

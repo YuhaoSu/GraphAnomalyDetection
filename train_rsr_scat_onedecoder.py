@@ -16,8 +16,8 @@ import pandas as pd
 import numpy as np
 from torch import optim
 from model import GCNModelRsrScatFeatureOnlyVAE, GCNModelRsrScatStructureOnlyVAE
-from utils import preprocess_graph, make_ad_dataset_both_anomaly, make_ad_dataset_structure_anomaly,\
-    make_ad_dataset_feature_anomaly, pred_anomaly, precision, dim_reduction
+from utils import preprocess_graph, make_ad_dataset_both_anomaly, make_ad_dataset_structure_anomaly, \
+    make_ad_dataset_feature_anomaly, pred_anomaly, precision, dim_reduction, make_ad_dataset_no_anomaly
 from sklearn.metrics import roc_auc_score, f1_score
 from optimizer import RsrFeatureOnlyVAELoss, RsrStructureOnlyVAELoss
 from fms import FMS
@@ -57,7 +57,7 @@ else:
 
 def gae_ad(args):
     # initialize
-    anomaly_type = ["FeatureAnomaly", "StructureAnomaly", "BothAnomaly"]
+    anomaly_type = ["FeatureAnomaly", "StructureAnomaly", "BothAnomaly", "NoAnomaly"]
     decoder_name = ["FeatureDecoder", "StructureDecoder"]
     arg_dim = ['PCA', 'FMS', 'NoReduction']
     att = ["NoAtt", "DoubleAtt", "FeaatureAtt", "StructureAtt"]
@@ -76,7 +76,6 @@ def gae_ad(args):
     auc_plot = []
     f1_plot = []
     accuracy_plot = []
-
 
     # obtain basic info
     ad_data_name = "{}_".format(anomaly_type[args.data_type]) + "{}_".format(args.dataset) + "clique_size_{}_".format(
@@ -100,13 +99,19 @@ def gae_ad(args):
             gnd = torch.Tensor(gnd).to(args.device)
         elif args.data_type == 2:
             adj, features, gnd, gnd_f, gnd_s = make_ad_dataset_both_anomaly(args.dataset, args.clique_size,
-                                                                           args.num_clique, args.k)
+                                                                            args.num_clique, args.k)
             ad_data_list = [adj, features, gnd, gnd_f, gnd_s]
             np.save(ad_data_name, ad_data_list)
             origin_features = torch.FloatTensor(features).to(args.device)
             gnd = torch.Tensor(gnd).to(args.device)
             gnd_f = torch.Tensor(gnd_f).to(args.device)
             gnd_s = torch.Tensor(gnd_s).to(args.device)
+        elif args.data_type == 3:
+            adj, features, gnd = make_ad_dataset_no_anomaly(args.dataset)
+            ad_data_list = [adj, features, gnd]
+            np.save(ad_data_name, ad_data_list)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
         else:
             raise Exception("No valid data! Try to create another different data type!")
     else:
@@ -127,10 +132,13 @@ def gae_ad(args):
             gnd = torch.Tensor(gnd).to(args.device)
             gnd_f = torch.Tensor(gnd_f).to(args.device)
             gnd_s = torch.Tensor(gnd_s).to(args.device)
+        elif args.data_type == 3:
+            print("Found existing ad data, loading...")
+            adj, features, gnd = np.load(ad_data_name, allow_pickle=True)
+            origin_features = torch.FloatTensor(features).to(args.device)
+            gnd = torch.Tensor(gnd).to(args.device)
         else:
             raise Exception("No valid data! Try to load another different data type!")
-
-
     feat_dim = features.shape[1]
     hidden1 = int(feat_dim * args.hidden1)
     hidden2 = int(feat_dim * args.hidden2)
