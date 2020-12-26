@@ -32,7 +32,7 @@ from fms import FMS
 parser = argparse.ArgumentParser()
 parser.add_argument('--data_type', type=int, default=2, help='0 for feature anomaly only, \
                                                     1 for structure only, 2 for all anomaly, 3 for no anomaly')
-parser.add_argument('--epochs', type=int, default=20, help='Number of epochs to train.')
+parser.add_argument('--epochs', type=int, default=300, help='Number of epochs to train.')
 parser.add_argument('--hidden1', type=float, default=0.5, help='Number of units in hidden layer 1.')
 parser.add_argument('--hidden2', type=float, default=0.25, help='Number of units in hidden layer 2.')
 parser.add_argument('--decoder', type=int, default=0, help='0 for feature only, 1 for structure only.')
@@ -156,18 +156,30 @@ def gae_ad(args):
     # Start wavelet transform
     print("using wavelet scattering transform")
 
-    A = adj
-    L = nx.linalg.laplacianmatrix.laplacian_matrix(nx.from_scipy_sparse_matrix(A))
-    lamb, V = np.linalg.eigh(L.toarray())
-    y_features = scat.getRep(features, lamb, V, layer=3)
-    print("y_features shape after scatting", y_features.shape, type(y_features))
-    y_features_name = "scat_output_onedecoder"+ \
-                      '_{}'.format(decoder_name[args.decoder]) + \
+    # A = adj
+    # L = nx.linalg.laplacianmatrix.laplacian_matrix(nx.from_scipy_sparse_matrix(A))
+    # lamb, V = np.linalg.eigh(L.toarray())
+    # y_features = scat.getRep(features, lamb, V, layer=3)
+    # print("y_features shape after scatting", y_features.shape, type(y_features))
+    y_features_name = "scat_output_onedecoder_"+ \
+                      '{}_'.format(decoder_name[args.decoder]) + \
                       "{}_".format(anomaly_type[args.data_type]) + \
                       "{}_".format(args.dataset) + \
                       "clique_size_{}_".format(args.clique_size) +\
                       "num_clique_{}".format(args.num_clique) + ".npy"
-    np.save(y_features_name, y_features)
+
+    if not os.path.exists(y_features_name):
+        A = adj
+        L = nx.linalg.laplacianmatrix.laplacian_matrix(nx.from_scipy_sparse_matrix(A))
+        lamb, V = np.linalg.eigh(L.toarray())
+        y_features = scat.getRep(features, lamb, V, layer=3)
+        np.save(y_features_name, y_features)
+    else:
+        y_features = np.load(y_features_name, allow_pickle=True)
+    print("y_features shape after scatting", y_features.shape, type(y_features))
+
+    # print("y_features_name", y_features_name)
+    # np.save(y_features_name, y_features)
 
 
     # y_features = np.load('y_features_cora.npy')
@@ -185,17 +197,17 @@ def gae_ad(args):
     else:
         raise Exception("No valid option in arg_dim, check input!")
     reduced_y_features_name = "reduced_scat_output_onedecoder"+ \
-                      '_{}'.format(decoder_name[args.decoder]) + \
+                      '_{}_'.format(decoder_name[args.decoder]) + \
                       "{}_".format(anomaly_type[args.data_type]) + \
                       "{}_".format(args.dataset) + \
                               '_{}'.format(arg_dim[args.dim_reduce]) + \
                               "clique_size_{}_".format(args.clique_size) +\
                       "num_clique_{}".format(args.num_clique) + ".npy"
     np.save(reduced_y_features_name, features)
+    print("reduced_y_features_name", reduced_y_features_name)
     print()
     features = torch.FloatTensor(features).to(args.device)
     print("y_features shape after " + '{}'.format(arg_dim[args.dim_reduce]), features.shape, type(features))
-
 
     # Start training
     if args.decoder == 0: # feature decoder only
@@ -303,7 +315,7 @@ def gae_ad(args):
         os.makedirs('{}_output'.format(args.dataset))
     shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
     # shutil.move(y_features_name,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
-    # shutil.move(y_features_name,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+    shutil.move(reduced_y_features_name,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
 
 
     # save the last encoder output

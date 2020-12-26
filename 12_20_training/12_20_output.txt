@@ -1,0 +1,3709 @@
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 162
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.22577 accuracy= 0.70901 time= 0.03211
+Epoch: 0011 train_loss= 19.65675 accuracy= 0.71344 time= 0.02884
+
+accuracy 0.74077
+auc 0.65449
+f1_score 0.22000
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 270
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.02016 accuracy= 0.74298 time= 0.03726
+Epoch: 0011 train_loss= 17.51899 accuracy= 0.71492 time= 0.02815
+
+accuracy 0.70679
+auc 0.48109
+f1_score 0.11778
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 500
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.10774 accuracy= 0.66913 time= 0.03700
+Epoch: 0011 train_loss= 18.32398 accuracy= 0.67504 time= 0.02849
+
+accuracy 0.67651
+auc 0.55764
+f1_score 0.27000
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 605
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 28
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 55 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.19095 accuracy= 0.71196 time= 0.03701
+Epoch: 0011 train_loss= 19.04836 accuracy= 0.71640 time= 0.02854
+
+accuracy 0.75037
+auc 0.64553
+f1_score 0.24889
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 246
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 48 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.04449 accuracy= 0.75406 time= 0.03775
+Epoch: 0011 train_loss= 19.15618 accuracy= 0.73191 time= 0.02803
+
+accuracy 0.73708
+auc 0.59344
+f1_score 0.20889
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 395
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 34 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.09404 accuracy= 0.68464 time= 0.03770
+Epoch: 0011 train_loss= 15.56322 accuracy= 0.67356 time= 0.02867
+
+accuracy 0.69645
+auc 0.60018
+f1_score 0.31500
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 132
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 59 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+scat structure decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 347
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.19322 accuracy= 0.70901 time= 0.03965
+Epoch: 0011 train_loss= 18.15718 accuracy= 0.72230 time= 0.02816
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/cora_output/scat_onedecoder_FeatureAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 398
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.02959 accuracy= 0.74815 time= 0.03765
+Epoch: 0011 train_loss= 18.05009 accuracy= 0.73486 time= 0.02848
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/cora_output/scat_onedecoder_StructureAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 970
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 37.09287 accuracy= 0.66470 time= 0.03653
+Epoch: 0011 train_loss= 17.31800 accuracy= 0.65879 time= 0.02807
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/cora_output/scat_onedecoder_BothAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='cora', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 468
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([2708, 358]) <class 'torch.Tensor'>
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/cora_output/scat_onedecoder_NoAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='cora', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 880
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 47 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 3859.94556 accuracy= 0.71787 time= 0.02643
+Epoch: 0011 train_loss= 2406.56689 accuracy= 0.71713 time= 0.02287
+
+accuracy 0.71344
+auc 0.49083
+f1_score 0.13778
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='cora', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 660
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 23 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 4176.68018 accuracy= 0.81536 time= 0.02639
+Epoch: 0011 train_loss= 2554.14062 accuracy= 0.68316 time= 0.02287
+
+accuracy 0.67061
+auc 0.22169
+f1_score 0.00889
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='cora', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 601
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 63 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 3980.29834 accuracy= 0.77179 time= 0.02605
+Epoch: 0011 train_loss= 2498.63623 accuracy= 0.62186 time= 0.02268
+
+accuracy 0.61300
+auc 0.34700
+f1_score 0.12667
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='cora', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=15, weight_decay=0.0005)
+random seed: 319
+Found existing ad data, loading...
+feature_dim: 1433 hidden1_dim: 716 hidden2_dim: 358 nodes_num: 2708 anomaly_num: 600
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (2708, 18629) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 54 steps!
+
+y_features shape after FMS torch.Size([2708, 358]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+cora finished!
+citeseer!
+feature decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=0, dataset='citeseer', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 600
+no existing ad data found, create new data with anomaly!
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+Epoch: 0001 train_loss= 56.42718 accuracy= 0.68139 time= 0.14830
+Epoch: 0011 train_loss= 8.14752 accuracy= 0.75834 time= 0.13960
+Epoch: 0021 train_loss= 7.39052 accuracy= 0.76495 time= 0.14038
+Epoch: 0031 train_loss= 7.01589 accuracy= 0.76375 time= 0.14893
+Epoch: 0041 train_loss= 6.94194 accuracy= 0.76976 time= 0.12468
+Epoch: 0051 train_loss= 6.89254 accuracy= 0.77457 time= 0.11487
+Epoch: 0061 train_loss= 6.84630 accuracy= 0.78239 time= 0.14582
+Epoch: 0071 train_loss= 6.81491 accuracy= 0.78359 time= 0.14568
+Epoch: 0081 train_loss= 6.74561 accuracy= 0.77938 time= 0.14470
+Epoch: 0091 train_loss= 6.69631 accuracy= 0.78299 time= 0.14023
+Epoch: 0101 train_loss= 6.65344 accuracy= 0.78179 time= 0.14020
+Epoch: 0111 train_loss= 6.61584 accuracy= 0.78058 time= 0.12877
+Epoch: 0121 train_loss= 6.58346 accuracy= 0.78359 time= 0.10225
+Epoch: 0131 train_loss= 6.58850 accuracy= 0.78058 time= 0.14947
+Epoch: 0141 train_loss= 6.54442 accuracy= 0.78539 time= 0.14503
+Epoch: 0151 train_loss= 6.57857 accuracy= 0.77998 time= 0.13756
+Epoch: 0161 train_loss= 6.66918 accuracy= 0.78118 time= 0.14821
+Epoch: 0171 train_loss= 6.62591 accuracy= 0.78599 time= 0.14972
+Epoch: 0181 train_loss= 6.61473 accuracy= 0.77998 time= 0.14480
+Epoch: 0191 train_loss= 6.68963 accuracy= 0.77698 time= 0.14928
+Epoch: 0201 train_loss= 6.52788 accuracy= 0.78299 time= 0.14572
+Epoch: 0211 train_loss= 6.56796 accuracy= 0.78299 time= 0.14509
+Epoch: 0221 train_loss= 6.46387 accuracy= 0.78419 time= 0.12947
+Epoch: 0231 train_loss= 6.40840 accuracy= 0.78720 time= 0.14930
+Epoch: 0241 train_loss= 6.34962 accuracy= 0.78780 time= 0.14428
+Epoch: 0251 train_loss= 6.30125 accuracy= 0.78659 time= 0.14419
+Epoch: 0261 train_loss= 6.24739 accuracy= 0.78539 time= 0.14855
+Epoch: 0271 train_loss= 6.22050 accuracy= 0.78900 time= 0.14702
+Epoch: 0281 train_loss= 6.17672 accuracy= 0.78900 time= 0.11658
+Epoch: 0291 train_loss= 6.16665 accuracy= 0.78599 time= 0.10216
+
+accuracy 0.78239
+auc 0.77800
+f1_score 0.39667
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=1, dataset='citeseer', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 457
+no existing ad data found, create new data with anomaly!
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+Epoch: 0001 train_loss= 54.87971 accuracy= 0.63992 time= 0.14911
+Epoch: 0011 train_loss= 7.66152 accuracy= 0.69402 time= 0.14521
+Epoch: 0021 train_loss= 7.29698 accuracy= 0.69522 time= 0.11888
+Epoch: 0031 train_loss= 7.18800 accuracy= 0.69883 time= 0.10424
+Epoch: 0041 train_loss= 6.94674 accuracy= 0.70123 time= 0.15050
+Epoch: 0051 train_loss= 6.84255 accuracy= 0.70063 time= 0.14549
+Epoch: 0061 train_loss= 6.79100 accuracy= 0.70364 time= 0.14692
+Epoch: 0071 train_loss= 6.74355 accuracy= 0.70664 time= 0.14815
+Epoch: 0081 train_loss= 6.70016 accuracy= 0.71085 time= 0.14845
+Epoch: 0091 train_loss= 6.66617 accuracy= 0.71386 time= 0.14934
+Epoch: 0101 train_loss= 6.61932 accuracy= 0.71927 time= 0.14435
+Epoch: 0111 train_loss= 6.59037 accuracy= 0.72047 time= 0.14952
+Epoch: 0121 train_loss= 6.55999 accuracy= 0.72047 time= 0.14105
+Epoch: 0131 train_loss= 6.53201 accuracy= 0.72287 time= 0.13122
+Epoch: 0141 train_loss= 6.53171 accuracy= 0.72408 time= 0.15025
+Epoch: 0151 train_loss= 6.51308 accuracy= 0.72347 time= 0.14872
+Epoch: 0161 train_loss= 6.55696 accuracy= 0.76435 time= 0.14490
+Epoch: 0171 train_loss= 6.51529 accuracy= 0.72047 time= 0.14041
+Epoch: 0181 train_loss= 6.48420 accuracy= 0.72468 time= 0.14422
+Epoch: 0191 train_loss= 6.52787 accuracy= 0.72949 time= 0.11584
+Epoch: 0201 train_loss= 6.58595 accuracy= 0.71205 time= 0.10117
+Epoch: 0211 train_loss= 6.49801 accuracy= 0.72287 time= 0.14369
+Epoch: 0221 train_loss= 6.55730 accuracy= 0.71326 time= 0.14402
+Epoch: 0231 train_loss= 6.45076 accuracy= 0.71806 time= 0.13663
+Epoch: 0241 train_loss= 6.41625 accuracy= 0.71806 time= 0.14825
+Epoch: 0251 train_loss= 6.36102 accuracy= 0.71686 time= 0.14470
+Epoch: 0261 train_loss= 6.30852 accuracy= 0.72107 time= 0.14619
+Epoch: 0271 train_loss= 6.26099 accuracy= 0.72347 time= 0.14090
+Epoch: 0281 train_loss= 6.20960 accuracy= 0.72468 time= 0.15080
+Epoch: 0291 train_loss= 6.16896 accuracy= 0.72708 time= 0.13207
+
+accuracy 0.73189
+auc 0.63592
+f1_score 0.25667
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=2, dataset='citeseer', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 494
+no existing ad data found, create new data with anomaly!
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+Epoch: 0001 train_loss= 54.49156 accuracy= 0.57379 time= 0.14720
+Epoch: 0011 train_loss= 7.99119 accuracy= 0.68680 time= 0.13992
+Epoch: 0021 train_loss= 6.72152 accuracy= 0.68741 time= 0.14511
+Epoch: 0031 train_loss= 6.59395 accuracy= 0.69161 time= 0.14029
+Epoch: 0041 train_loss= 6.54156 accuracy= 0.68981 time= 0.13989
+Epoch: 0051 train_loss= 6.50792 accuracy= 0.69582 time= 0.14542
+Epoch: 0061 train_loss= 6.48530 accuracy= 0.69702 time= 0.14032
+Epoch: 0071 train_loss= 6.46768 accuracy= 0.69702 time= 0.14373
+Epoch: 0081 train_loss= 6.44495 accuracy= 0.70183 time= 0.13246
+Epoch: 0091 train_loss= 6.42535 accuracy= 0.70304 time= 0.14430
+Epoch: 0101 train_loss= 6.40119 accuracy= 0.70484 time= 0.14872
+Epoch: 0111 train_loss= 6.38199 accuracy= 0.70664 time= 0.14615
+Epoch: 0121 train_loss= 6.35337 accuracy= 0.70364 time= 0.14549
+Epoch: 0131 train_loss= 6.33576 accuracy= 0.70965 time= 0.14002
+Epoch: 0141 train_loss= 6.33110 accuracy= 0.70784 time= 0.12786
+Epoch: 0151 train_loss= 6.35122 accuracy= 0.70664 time= 0.10714
+Epoch: 0161 train_loss= 6.38999 accuracy= 0.70604 time= 0.14859
+Epoch: 0171 train_loss= 6.53291 accuracy= 0.69282 time= 0.14561
+Epoch: 0181 train_loss= 6.38308 accuracy= 0.69642 time= 0.14163
+Epoch: 0191 train_loss= 6.37974 accuracy= 0.69462 time= 0.14626
+Epoch: 0201 train_loss= 6.37449 accuracy= 0.69222 time= 0.14544
+Epoch: 0211 train_loss= 6.37980 accuracy= 0.68921 time= 0.14484
+Epoch: 0221 train_loss= 6.34320 accuracy= 0.69161 time= 0.14002
+Epoch: 0231 train_loss= 6.32125 accuracy= 0.69582 time= 0.14551
+Epoch: 0241 train_loss= 6.30616 accuracy= 0.69462 time= 0.11586
+Epoch: 0251 train_loss= 6.29927 accuracy= 0.69342 time= 0.10790
+Epoch: 0261 train_loss= 6.26543 accuracy= 0.69161 time= 0.14403
+Epoch: 0271 train_loss= 6.25445 accuracy= 0.69101 time= 0.14431
+Epoch: 0281 train_loss= 6.21863 accuracy= 0.69342 time= 0.14330
+Epoch: 0291 train_loss= 6.20476 accuracy= 0.69462 time= 0.14033
+
+accuracy 0.69402
+auc 0.62663
+f1_score 0.36375
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=3, dataset='citeseer', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 46
+no existing ad data found, create new data with anomaly!
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+
+Reconstruction job finished!
+structure decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=0, dataset='citeseer', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 935
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+Epoch: 0001 train_loss= 8930.60938 accuracy= 0.68801 time= 0.11295
+Epoch: 0011 train_loss= 4814.06982 accuracy= 0.68500 time= 0.10409
+Epoch: 0021 train_loss= 3972.36157 accuracy= 0.68380 time= 0.07117
+Epoch: 0031 train_loss= 3423.56592 accuracy= 0.68380 time= 0.10203
+Epoch: 0041 train_loss= 2876.92847 accuracy= 0.68079 time= 0.10453
+Epoch: 0051 train_loss= 2375.45752 accuracy= 0.68440 time= 0.10595
+Epoch: 0061 train_loss= 1965.04907 accuracy= 0.69041 time= 0.10515
+Epoch: 0071 train_loss= 1693.29395 accuracy= 0.68500 time= 0.10996
+Epoch: 0081 train_loss= 1565.56946 accuracy= 0.69161 time= 0.10908
+Epoch: 0091 train_loss= 1499.09351 accuracy= 0.69101 time= 0.08057
+Epoch: 0101 train_loss= 1459.40051 accuracy= 0.69222 time= 0.11031
+Epoch: 0111 train_loss= 1422.34839 accuracy= 0.69462 time= 0.09206
+Epoch: 0121 train_loss= 1384.85217 accuracy= 0.68620 time= 0.11041
+Epoch: 0131 train_loss= 1350.50073 accuracy= 0.68861 time= 0.09927
+Epoch: 0141 train_loss= 1308.14868 accuracy= 0.69943 time= 0.10717
+Epoch: 0151 train_loss= 1271.16772 accuracy= 0.68981 time= 0.10227
+Epoch: 0161 train_loss= 1242.32068 accuracy= 0.69101 time= 0.10932
+Epoch: 0171 train_loss= 1209.88477 accuracy= 0.68921 time= 0.10500
+Epoch: 0181 train_loss= 1177.00708 accuracy= 0.70123 time= 0.10610
+Epoch: 0191 train_loss= 1145.49084 accuracy= 0.69342 time= 0.10586
+Epoch: 0201 train_loss= 1108.75049 accuracy= 0.69282 time= 0.10556
+Epoch: 0211 train_loss= 1085.10742 accuracy= 0.68981 time= 0.07162
+Epoch: 0221 train_loss= 1047.80676 accuracy= 0.68921 time= 0.10498
+Epoch: 0231 train_loss= 1017.00751 accuracy= 0.69402 time= 0.10475
+Epoch: 0241 train_loss= 986.66150 accuracy= 0.69041 time= 0.10586
+Epoch: 0251 train_loss= 955.43262 accuracy= 0.69462 time= 0.11030
+Epoch: 0261 train_loss= 928.89136 accuracy= 0.68440 time= 0.10141
+Epoch: 0271 train_loss= 893.67169 accuracy= 0.69342 time= 0.10199
+Epoch: 0281 train_loss= 872.96710 accuracy= 0.69282 time= 0.08734
+Epoch: 0291 train_loss= 839.49280 accuracy= 0.69582 time= 0.10626
+
+accuracy 0.69041
+auc 0.48407
+f1_score 0.14167
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=1, dataset='citeseer', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 62
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+Epoch: 0001 train_loss= 11174.13379 accuracy= 0.67238 time= 0.11306
+Epoch: 0011 train_loss= 4703.85156 accuracy= 0.64472 time= 0.11030
+Epoch: 0021 train_loss= 3694.91260 accuracy= 0.64112 time= 0.10610
+Epoch: 0031 train_loss= 2908.03882 accuracy= 0.64352 time= 0.11005
+Epoch: 0041 train_loss= 2237.59570 accuracy= 0.64653 time= 0.10941
+Epoch: 0051 train_loss= 1847.14172 accuracy= 0.64773 time= 0.07800
+Epoch: 0061 train_loss= 1696.16919 accuracy= 0.64653 time= 0.10640
+Epoch: 0071 train_loss= 1625.34009 accuracy= 0.65675 time= 0.09434
+Epoch: 0081 train_loss= 1568.45630 accuracy= 0.66937 time= 0.10494
+Epoch: 0091 train_loss= 1522.51575 accuracy= 0.68380 time= 0.09728
+Epoch: 0101 train_loss= 1491.71497 accuracy= 0.68260 time= 0.10950
+Epoch: 0111 train_loss= 1443.40845 accuracy= 0.67118 time= 0.10695
+Epoch: 0121 train_loss= 1407.15479 accuracy= 0.67538 time= 0.10526
+Epoch: 0131 train_loss= 1371.89905 accuracy= 0.67057 time= 0.10613
+Epoch: 0141 train_loss= 1325.71338 accuracy= 0.67719 time= 0.10619
+Epoch: 0151 train_loss= 1292.98120 accuracy= 0.66336 time= 0.10583
+Epoch: 0161 train_loss= 1253.73706 accuracy= 0.66997 time= 0.11001
+Epoch: 0171 train_loss= 1221.61609 accuracy= 0.66396 time= 0.07967
+Epoch: 0181 train_loss= 1182.10986 accuracy= 0.67118 time= 0.10116
+Epoch: 0191 train_loss= 1149.33020 accuracy= 0.65915 time= 0.10935
+Epoch: 0201 train_loss= 1110.78625 accuracy= 0.66516 time= 0.11057
+Epoch: 0211 train_loss= 1075.72876 accuracy= 0.65735 time= 0.10589
+Epoch: 0221 train_loss= 1046.31079 accuracy= 0.66757 time= 0.10575
+Epoch: 0231 train_loss= 1015.34528 accuracy= 0.65014 time= 0.10650
+Epoch: 0241 train_loss= 975.18921 accuracy= 0.65314 time= 0.09529
+Epoch: 0251 train_loss= 944.89209 accuracy= 0.65795 time= 0.10925
+Epoch: 0261 train_loss= 914.86407 accuracy= 0.65134 time= 0.08555
+Epoch: 0271 train_loss= 885.59607 accuracy= 0.64713 time= 0.10554
+Epoch: 0281 train_loss= 856.79340 accuracy= 0.65374 time= 0.09758
+Epoch: 0291 train_loss= 827.38269 accuracy= 0.64893 time= 0.10170
+
+accuracy 0.65134
+auc 0.25663
+f1_score 0.03333
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=2, dataset='citeseer', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 278
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+Epoch: 0001 train_loss= 11013.85547 accuracy= 0.59663 time= 0.11048
+Epoch: 0011 train_loss= 4926.93652 accuracy= 0.58461 time= 0.10964
+Epoch: 0021 train_loss= 3748.91919 accuracy= 0.58100 time= 0.10625
+Epoch: 0031 train_loss= 2886.01782 accuracy= 0.58221 time= 0.10953
+Epoch: 0041 train_loss= 2179.95605 accuracy= 0.58641 time= 0.10621
+Epoch: 0051 train_loss= 1809.40515 accuracy= 0.57680 time= 0.09085
+Epoch: 0061 train_loss= 1691.63989 accuracy= 0.57980 time= 0.11068
+Epoch: 0071 train_loss= 1623.10693 accuracy= 0.58281 time= 0.08509
+Epoch: 0081 train_loss= 1568.34961 accuracy= 0.59964 time= 0.10194
+Epoch: 0091 train_loss= 1533.18726 accuracy= 0.61467 time= 0.09750
+Epoch: 0101 train_loss= 1486.37720 accuracy= 0.61166 time= 0.10629
+Epoch: 0111 train_loss= 1440.82361 accuracy= 0.61467 time= 0.10070
+Epoch: 0121 train_loss= 1403.65527 accuracy= 0.60986 time= 0.10173
+Epoch: 0131 train_loss= 1361.65198 accuracy= 0.61286 time= 0.10458
+Epoch: 0141 train_loss= 1331.28198 accuracy= 0.60625 time= 0.10548
+Epoch: 0151 train_loss= 1286.86597 accuracy= 0.61407 time= 0.10526
+Epoch: 0161 train_loss= 1250.54297 accuracy= 0.60745 time= 0.10997
+Epoch: 0171 train_loss= 1215.85449 accuracy= 0.60445 time= 0.07987
+Epoch: 0181 train_loss= 1184.18091 accuracy= 0.59663 time= 0.10162
+Epoch: 0191 train_loss= 1150.02441 accuracy= 0.61647 time= 0.10476
+Epoch: 0201 train_loss= 1117.74548 accuracy= 0.60806 time= 0.11023
+Epoch: 0211 train_loss= 1081.88477 accuracy= 0.60385 time= 0.10483
+Epoch: 0221 train_loss= 1049.60486 accuracy= 0.59423 time= 0.10999
+Epoch: 0231 train_loss= 1020.16205 accuracy= 0.60866 time= 0.10526
+Epoch: 0241 train_loss= 983.69397 accuracy= 0.60745 time= 0.09072
+Epoch: 0251 train_loss= 953.88348 accuracy= 0.58822 time= 0.10614
+Epoch: 0261 train_loss= 922.52795 accuracy= 0.59904 time= 0.08336
+Epoch: 0271 train_loss= 895.19147 accuracy= 0.58641 time= 0.11037
+Epoch: 0281 train_loss= 861.38660 accuracy= 0.59723 time= 0.09765
+Epoch: 0291 train_loss= 833.58630 accuracy= 0.59784 time= 0.10533
+
+accuracy 0.58521
+auc 0.33603
+f1_score 0.13750
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=20, cuda=False, data_type=3, dataset='citeseer', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 945
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+
+Reconstruction job finished!
+scat feature decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 603
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 60.13764 accuracy= 0.68981 time= 0.09782
+Epoch: 0011 train_loss= 22.40597 accuracy= 0.72528 time= 0.08339
+
+accuracy 0.73610
+auc 0.64500
+f1_score 0.26833
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 51
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 59.66212 accuracy= 0.66336 time= 0.05843
+Epoch: 0011 train_loss= 22.45866 accuracy= 0.64773 time= 0.08675
+
+accuracy 0.67839
+auc 0.42101
+f1_score 0.10833
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 783
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 59.70166 accuracy= 0.61286 time= 0.07520
+Epoch: 0011 train_loss= 24.52115 accuracy= 0.63030 time= 0.08745
+
+accuracy 0.63871
+auc 0.47797
+f1_score 0.24875
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 569
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 712
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 26 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 60.10563 accuracy= 0.69161 time= 0.09161
+Epoch: 0011 train_loss= 27.29595 accuracy= 0.72528 time= 0.08771
+
+accuracy 0.73730
+auc 0.58393
+f1_score 0.27167
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 167
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 42 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 59.65214 accuracy= 0.68320 time= 0.09888
+Epoch: 0011 train_loss= 28.43260 accuracy= 0.66757 time= 0.08358
+
+accuracy 0.69642
+auc 0.48721
+f1_score 0.15833
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 266
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 102 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 59.67233 accuracy= 0.62910 time= 0.07459
+Epoch: 0011 train_loss= 29.31769 accuracy= 0.62970 time= 0.08824
+
+accuracy 0.64953
+auc 0.51401
+f1_score 0.27125
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 713
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 36 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+scat structure decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 609
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 60.12899 accuracy= 0.69161 time= 0.06103
+Epoch: 0011 train_loss= 24.31886 accuracy= 0.72408 time= 0.08663
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/citeseer_output/scat_onedecoder_FeatureAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 201
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 59.66071 accuracy= 0.66637 time= 0.05983
+Epoch: 0011 train_loss= 23.46068 accuracy= 0.64352 time= 0.08779
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/citeseer_output/scat_onedecoder_StructureAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 947
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 59.72733 accuracy= 0.61707 time= 0.09685
+Epoch: 0011 train_loss= 23.34027 accuracy= 0.63330 time= 0.09110
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/citeseer_output/scat_onedecoder_BothAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='citeseer', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 117
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([3327, 925]) <class 'torch.Tensor'>
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/citeseer_output/scat_onedecoder_NoAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=0, dataset='citeseer', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 488
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 28 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 6842.67871 accuracy= 0.69763 time= 0.06435
+Epoch: 0011 train_loss= 4309.24512 accuracy= 0.70364 time= 0.05135
+
+accuracy 0.69582
+auc 0.49119
+f1_score 0.15667
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=1, dataset='citeseer', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 543
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 41 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 7809.29248 accuracy= 0.87917 time= 0.06082
+Epoch: 0011 train_loss= 4554.36084 accuracy= 0.65314 time= 0.05470
+
+accuracy 0.64172
+auc 0.04749
+f1_score 0.00667
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=2, dataset='citeseer', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 328
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 90 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 7686.03418 accuracy= 0.79441 time= 0.05820
+Epoch: 0011 train_loss= 4544.31934 accuracy= 0.62068 time= 0.05399
+
+accuracy 0.58341
+auc 0.27051
+f1_score 0.13375
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=20, cuda=False, data_type=3, dataset='citeseer', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=20, weight_decay=0.0005)
+random seed: 61
+Found existing ad data, loading...
+feature_dim: 3703 hidden1_dim: 1851 hidden2_dim: 925 nodes_num: 3327 anomaly_num: 800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (3327, 48139) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 39 steps!
+
+y_features shape after FMS torch.Size([3327, 925]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+citeseer finished!
+pubmed!
+feature decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=0, dataset='pubmed', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 235
+no existing ad data found, create new data with anomaly!
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 20.13691 accuracy= 0.73150 time= 0.40288
+Epoch: 0011 train_loss= 3.51309 accuracy= 0.74104 time= 0.38402
+Epoch: 0021 train_loss= 1.56272 accuracy= 0.73749 time= 0.38682
+Epoch: 0031 train_loss= 1.19904 accuracy= 0.74682 time= 0.38024
+Epoch: 0041 train_loss= 0.84562 accuracy= 0.79023 time= 0.39619
+Epoch: 0051 train_loss= 0.78428 accuracy= 0.79246 time= 0.37911
+Epoch: 0061 train_loss= 0.76837 accuracy= 0.79256 time= 0.39094
+Epoch: 0071 train_loss= 0.76282 accuracy= 0.79226 time= 0.38424
+Epoch: 0081 train_loss= 0.75799 accuracy= 0.79226 time= 0.39727
+Epoch: 0091 train_loss= 0.75575 accuracy= 0.79236 time= 0.38455
+Epoch: 0101 train_loss= 0.75318 accuracy= 0.79236 time= 0.38731
+Epoch: 0111 train_loss= 0.75057 accuracy= 0.79216 time= 0.38859
+Epoch: 0121 train_loss= 0.74826 accuracy= 0.79216 time= 0.39505
+Epoch: 0131 train_loss= 0.74614 accuracy= 0.79226 time= 0.38904
+Epoch: 0141 train_loss= 0.74416 accuracy= 0.79226 time= 0.38342
+Epoch: 0151 train_loss= 0.74207 accuracy= 0.79226 time= 0.38881
+Epoch: 0161 train_loss= 0.73822 accuracy= 0.79236 time= 0.37549
+Epoch: 0171 train_loss= 0.73547 accuracy= 0.79236 time= 0.38803
+Epoch: 0181 train_loss= 0.72994 accuracy= 0.79226 time= 0.38362
+Epoch: 0191 train_loss= 0.71532 accuracy= 0.79226 time= 0.38780
+Epoch: 0201 train_loss= 0.63655 accuracy= 0.79226 time= 0.38673
+Epoch: 0211 train_loss= 0.56423 accuracy= 0.79246 time= 0.37425
+Epoch: 0221 train_loss= 0.75124 accuracy= 0.79155 time= 0.39138
+Epoch: 0231 train_loss= 0.74618 accuracy= 0.79196 time= 0.38348
+Epoch: 0241 train_loss= 0.73494 accuracy= 0.79226 time= 0.38836
+Epoch: 0251 train_loss= 0.72730 accuracy= 0.79216 time= 0.38937
+Epoch: 0261 train_loss= 0.72265 accuracy= 0.79226 time= 0.37947
+Epoch: 0271 train_loss= 0.71976 accuracy= 0.79226 time= 0.38467
+Epoch: 0281 train_loss= 0.71779 accuracy= 0.79216 time= 0.38275
+Epoch: 0291 train_loss= 0.71324 accuracy= 0.79226 time= 0.39284
+
+accuracy 0.79226
+auc 0.74451
+f1_score 0.31733
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=1, dataset='pubmed', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 806
+no existing ad data found, create new data with anomaly!
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 20.18757 accuracy= 0.69833 time= 0.34615
+Epoch: 0011 train_loss= 3.86497 accuracy= 0.70462 time= 0.34469
+Epoch: 0021 train_loss= 1.84278 accuracy= 0.73596 time= 0.33757
+Epoch: 0031 train_loss= 1.26755 accuracy= 0.73363 time= 0.32432
+Epoch: 0041 train_loss= 1.03902 accuracy= 0.73272 time= 0.33453
+Epoch: 0051 train_loss= 0.74070 accuracy= 0.73627 time= 0.34443
+Epoch: 0061 train_loss= 0.65321 accuracy= 0.73688 time= 0.33531
+Epoch: 0071 train_loss= 0.65673 accuracy= 0.73738 time= 0.33495
+Epoch: 0081 train_loss= 0.63244 accuracy= 0.73749 time= 0.33632
+Epoch: 0091 train_loss= 0.63044 accuracy= 0.73698 time= 0.33927
+Epoch: 0101 train_loss= 0.62753 accuracy= 0.73678 time= 0.32930
+Epoch: 0111 train_loss= 0.62701 accuracy= 0.73637 time= 0.34302
+Epoch: 0121 train_loss= 0.62336 accuracy= 0.73708 time= 0.33394
+Epoch: 0131 train_loss= 0.62221 accuracy= 0.73718 time= 0.33736
+Epoch: 0141 train_loss= 0.62079 accuracy= 0.73718 time= 0.33964
+Epoch: 0151 train_loss= 0.61940 accuracy= 0.73718 time= 0.33883
+Epoch: 0161 train_loss= 0.61767 accuracy= 0.73769 time= 0.32323
+Epoch: 0171 train_loss= 0.61582 accuracy= 0.73799 time= 0.34881
+Epoch: 0181 train_loss= 0.61832 accuracy= 0.73779 time= 0.34029
+Epoch: 0191 train_loss= 0.61479 accuracy= 0.73840 time= 0.33317
+Epoch: 0201 train_loss= 0.61326 accuracy= 0.73830 time= 0.32155
+Epoch: 0211 train_loss= 0.61142 accuracy= 0.73870 time= 0.33565
+Epoch: 0221 train_loss= 0.60971 accuracy= 0.73860 time= 0.34271
+Epoch: 0231 train_loss= 0.60788 accuracy= 0.73891 time= 0.32272
+Epoch: 0241 train_loss= 0.60586 accuracy= 0.73901 time= 0.33585
+Epoch: 0251 train_loss= 0.60621 accuracy= 0.73880 time= 0.34013
+Epoch: 0261 train_loss= 0.60021 accuracy= 0.73901 time= 0.33027
+Epoch: 0271 train_loss= 0.60291 accuracy= 0.73769 time= 0.34051
+Epoch: 0281 train_loss= 0.59898 accuracy= 0.73749 time= 0.34513
+Epoch: 0291 train_loss= 0.59119 accuracy= 0.73688 time= 0.34049
+
+accuracy 0.73738
+auc 0.49997
+f1_score 0.13700
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=2, dataset='pubmed', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 84
+no existing ad data found, create new data with anomaly!
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 20.23941 accuracy= 0.63422 time= 0.40300
+Epoch: 0011 train_loss= 3.78266 accuracy= 0.69275 time= 0.38726
+Epoch: 0021 train_loss= 1.12421 accuracy= 0.70675 time= 0.39775
+Epoch: 0031 train_loss= 1.02901 accuracy= 0.72410 time= 0.38227
+Epoch: 0041 train_loss= 0.90364 accuracy= 0.72470 time= 0.38797
+Epoch: 0051 train_loss= 0.84837 accuracy= 0.72399 time= 0.39189
+Epoch: 0061 train_loss= 0.77949 accuracy= 0.72470 time= 0.39199
+Epoch: 0071 train_loss= 0.76315 accuracy= 0.72379 time= 0.38783
+Epoch: 0081 train_loss= 0.68638 accuracy= 0.71568 time= 0.37053
+Epoch: 0091 train_loss= 0.58734 accuracy= 0.72440 time= 0.38494
+Epoch: 0101 train_loss= 0.58741 accuracy= 0.71852 time= 0.37356
+Epoch: 0111 train_loss= 0.56933 accuracy= 0.72481 time= 0.38781
+Epoch: 0121 train_loss= 0.56157 accuracy= 0.72491 time= 0.37429
+Epoch: 0131 train_loss= 0.58310 accuracy= 0.72308 time= 0.38909
+Epoch: 0141 train_loss= 0.55973 accuracy= 0.72521 time= 0.39288
+Epoch: 0151 train_loss= 0.55261 accuracy= 0.72491 time= 0.39198
+Epoch: 0161 train_loss= 0.54498 accuracy= 0.72460 time= 0.39608
+Epoch: 0171 train_loss= 0.54152 accuracy= 0.72450 time= 0.39785
+Epoch: 0181 train_loss= 0.54298 accuracy= 0.72450 time= 0.38784
+Epoch: 0191 train_loss= 0.86063 accuracy= 0.72349 time= 0.38727
+Epoch: 0201 train_loss= 0.84095 accuracy= 0.72481 time= 0.39135
+Epoch: 0211 train_loss= 0.78214 accuracy= 0.72420 time= 0.38256
+Epoch: 0221 train_loss= 0.77062 accuracy= 0.72399 time= 0.38910
+Epoch: 0231 train_loss= 0.76264 accuracy= 0.72470 time= 0.38461
+Epoch: 0241 train_loss= 0.75860 accuracy= 0.72541 time= 0.38888
+Epoch: 0251 train_loss= 0.75543 accuracy= 0.72521 time= 0.38015
+Epoch: 0261 train_loss= 0.74864 accuracy= 0.72562 time= 0.39283
+Epoch: 0271 train_loss= 0.74500 accuracy= 0.72552 time= 0.39740
+Epoch: 0281 train_loss= 0.73983 accuracy= 0.72633 time= 0.38361
+Epoch: 0291 train_loss= 0.73421 accuracy= 0.72582 time= 0.38445
+
+accuracy 0.72592
+auc 0.62172
+f1_score 0.32450
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=3, dataset='pubmed', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 92
+no existing ad data found, create new data with anomaly!
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+
+Reconstruction job finished!
+structure decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=0, dataset='pubmed', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 475
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 4870.17383 accuracy= 0.73211 time= 0.32565
+Epoch: 0011 train_loss= 3173.44629 accuracy= 0.73312 time= 0.33108
+Epoch: 0021 train_loss= 2715.30225 accuracy= 0.73272 time= 0.36392
+Epoch: 0031 train_loss= 2336.86914 accuracy= 0.73444 time= 0.37228
+Epoch: 0041 train_loss= 1520.97131 accuracy= 0.74063 time= 0.36868
+Epoch: 0051 train_loss= 470.27789 accuracy= 0.73617 time= 0.35797
+Epoch: 0061 train_loss= 176.66017 accuracy= 0.73769 time= 0.33174
+Epoch: 0071 train_loss= 63.21381 accuracy= 0.73769 time= 0.37572
+Epoch: 0081 train_loss= 22.61284 accuracy= 0.73363 time= 0.30512
+Epoch: 0091 train_loss= 2.24833 accuracy= 0.73221 time= 0.32406
+Epoch: 0101 train_loss= 1.30876 accuracy= 0.73667 time= 0.37481
+Epoch: 0111 train_loss= 0.79534 accuracy= 0.73627 time= 0.37282
+Epoch: 0121 train_loss= 0.57629 accuracy= 0.73678 time= 0.37407
+Epoch: 0131 train_loss= 0.50237 accuracy= 0.73708 time= 0.36362
+Epoch: 0141 train_loss= 0.47662 accuracy= 0.73708 time= 0.33035
+Epoch: 0151 train_loss= 0.46967 accuracy= 0.73718 time= 0.36030
+Epoch: 0161 train_loss= 0.46627 accuracy= 0.73708 time= 0.31504
+Epoch: 0171 train_loss= 0.46242 accuracy= 0.73769 time= 0.35214
+Epoch: 0181 train_loss= 0.45775 accuracy= 0.73738 time= 0.36021
+Epoch: 0191 train_loss= 0.45838 accuracy= 0.73738 time= 0.36945
+Epoch: 0201 train_loss= 0.45658 accuracy= 0.73789 time= 0.37675
+Epoch: 0211 train_loss= 0.45685 accuracy= 0.73759 time= 0.35970
+Epoch: 0221 train_loss= 0.45583 accuracy= 0.73759 time= 0.31814
+Epoch: 0231 train_loss= 0.45477 accuracy= 0.73738 time= 0.35748
+Epoch: 0241 train_loss= 0.45451 accuracy= 0.73718 time= 0.31023
+Epoch: 0251 train_loss= 0.45465 accuracy= 0.73769 time= 0.34016
+Epoch: 0261 train_loss= 0.45544 accuracy= 0.73759 time= 0.37692
+Epoch: 0271 train_loss= 0.45397 accuracy= 0.73708 time= 0.36315
+Epoch: 0281 train_loss= 0.45386 accuracy= 0.73769 time= 0.36390
+Epoch: 0291 train_loss= 0.45374 accuracy= 0.73718 time= 0.36377
+
+accuracy 0.73728
+auc 0.49213
+f1_score 0.13667
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=1, dataset='pubmed', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 992
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 5315.75586 accuracy= 0.70056 time= 0.38474
+Epoch: 0011 train_loss= 3185.78320 accuracy= 0.70330 time= 0.38059
+Epoch: 0021 train_loss= 2700.87329 accuracy= 0.70016 time= 0.37771
+Epoch: 0031 train_loss= 2265.44971 accuracy= 0.69732 time= 0.37815
+Epoch: 0041 train_loss= 1140.40552 accuracy= 0.69661 time= 0.33353
+Epoch: 0051 train_loss= 467.71268 accuracy= 0.85789 time= 0.33022
+Epoch: 0061 train_loss= 202.18466 accuracy= 0.73546 time= 0.35118
+Epoch: 0071 train_loss= 64.69045 accuracy= 0.73191 time= 0.31239
+Epoch: 0081 train_loss= 6.32212 accuracy= 0.69640 time= 0.36822
+Epoch: 0091 train_loss= 2.30884 accuracy= 0.69569 time= 0.36717
+Epoch: 0101 train_loss= 1.57128 accuracy= 0.69569 time= 0.37395
+Epoch: 0111 train_loss= 1.04179 accuracy= 0.69569 time= 0.37346
+Epoch: 0121 train_loss= 0.73287 accuracy= 0.69569 time= 0.37369
+Epoch: 0131 train_loss= 0.57195 accuracy= 0.69569 time= 0.33244
+Epoch: 0141 train_loss= 0.49485 accuracy= 0.69569 time= 0.37452
+Epoch: 0151 train_loss= 0.46120 accuracy= 0.69569 time= 0.30720
+Epoch: 0161 train_loss= 0.44205 accuracy= 0.69569 time= 0.33775
+Epoch: 0171 train_loss= 0.43323 accuracy= 0.69569 time= 0.37553
+Epoch: 0181 train_loss= 0.42827 accuracy= 0.69569 time= 0.37934
+Epoch: 0191 train_loss= 0.42539 accuracy= 0.69569 time= 0.37928
+Epoch: 0201 train_loss= 0.42585 accuracy= 0.69569 time= 0.37422
+Epoch: 0211 train_loss= 0.42218 accuracy= 0.69569 time= 0.32972
+Epoch: 0221 train_loss= 0.42085 accuracy= 0.69569 time= 0.35325
+Epoch: 0231 train_loss= 0.42018 accuracy= 0.69569 time= 0.35058
+Epoch: 0241 train_loss= 0.41950 accuracy= 0.69569 time= 0.31759
+Epoch: 0251 train_loss= 0.41936 accuracy= 0.69569 time= 0.37424
+Epoch: 0261 train_loss= 0.41880 accuracy= 0.69569 time= 0.37275
+Epoch: 0271 train_loss= 0.41917 accuracy= 0.69569 time= 0.37878
+Epoch: 0281 train_loss= 0.41814 accuracy= 0.69569 time= 0.36999
+Epoch: 0291 train_loss= 0.41794 accuracy= 0.69569 time= 0.34639
+
+accuracy 0.69569
+auc 0.00649
+f1_score 0.00000
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=2, dataset='pubmed', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 955
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 4787.56104 accuracy= 0.64193 time= 0.32436
+Epoch: 0011 train_loss= 3113.01562 accuracy= 0.63930 time= 0.36849
+Epoch: 0021 train_loss= 2631.99976 accuracy= 0.63625 time= 0.32114
+Epoch: 0031 train_loss= 2134.17896 accuracy= 0.63828 time= 0.34379
+Epoch: 0041 train_loss= 721.62543 accuracy= 0.64619 time= 0.37851
+Epoch: 0051 train_loss= 347.79953 accuracy= 0.65076 time= 0.37021
+Epoch: 0061 train_loss= 156.29076 accuracy= 0.67399 time= 0.37069
+Epoch: 0071 train_loss= 56.65343 accuracy= 0.66090 time= 0.37850
+Epoch: 0081 train_loss= 32.41674 accuracy= 0.65005 time= 0.36349
+Epoch: 0091 train_loss= 15.98327 accuracy= 0.65390 time= 0.32765
+Epoch: 0101 train_loss= 1.47858 accuracy= 0.63788 time= 0.34573
+Epoch: 0111 train_loss= 0.91932 accuracy= 0.63717 time= 0.33758
+Epoch: 0121 train_loss= 0.63160 accuracy= 0.63838 time= 0.33251
+Epoch: 0131 train_loss= 0.50524 accuracy= 0.63788 time= 0.34978
+Epoch: 0141 train_loss= 0.54755 accuracy= 0.63757 time= 0.36996
+Epoch: 0151 train_loss= 0.43706 accuracy= 0.63798 time= 0.37426
+Epoch: 0161 train_loss= 0.42891 accuracy= 0.63777 time= 0.37018
+Epoch: 0171 train_loss= 0.42497 accuracy= 0.63767 time= 0.37556
+Epoch: 0181 train_loss= 0.42276 accuracy= 0.63788 time= 0.37498
+Epoch: 0191 train_loss= 0.42139 accuracy= 0.63767 time= 0.32744
+Epoch: 0201 train_loss= 0.42046 accuracy= 0.63777 time= 0.35561
+Epoch: 0211 train_loss= 0.41981 accuracy= 0.63808 time= 0.36496
+Epoch: 0221 train_loss= 0.41932 accuracy= 0.63767 time= 0.32269
+Epoch: 0231 train_loss= 0.41895 accuracy= 0.63798 time= 0.33895
+Epoch: 0241 train_loss= 0.41865 accuracy= 0.63767 time= 0.37503
+Epoch: 0251 train_loss= 0.41841 accuracy= 0.63777 time= 0.36554
+Epoch: 0261 train_loss= 0.41841 accuracy= 0.63798 time= 0.37693
+Epoch: 0271 train_loss= 0.41806 accuracy= 0.63798 time= 0.37577
+Epoch: 0281 train_loss= 0.41937 accuracy= 0.63777 time= 0.37867
+Epoch: 0291 train_loss= 0.41847 accuracy= 0.63788 time= 0.33296
+
+accuracy 0.63757
+auc 0.25031
+f1_score 0.10675
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=3, dataset='pubmed', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 645
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+
+Reconstruction job finished!
+scat feature decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 732
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.22968 accuracy= 0.73596 time= 0.27300
+Epoch: 0011 train_loss= 16.48594 accuracy= 0.73353 time= 0.27628
+
+accuracy 0.73607
+auc 0.51653
+f1_score 0.13267
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 602
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.31196 accuracy= 0.84541 time= 0.28002
+Epoch: 0011 train_loss= 17.19788 accuracy= 0.86682 time= 0.27190
+
+accuracy 0.83801
+auc 0.85313
+f1_score 0.46767
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 139
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.31713 accuracy= 0.73738 time= 0.28138
+Epoch: 0011 train_loss= 16.82603 accuracy= 0.68971 time= 0.27244
+
+accuracy 0.68707
+auc 0.53293
+f1_score 0.22875
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 295
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 499
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 9 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.04414 accuracy= 0.73424 time= 0.23286
+Epoch: 0011 train_loss= 16.70547 accuracy= 0.73475 time= 0.26672
+
+accuracy 0.73596
+auc 0.51630
+f1_score 0.13233
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 794
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 70 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.05114 accuracy= 0.88091 time= 0.28614
+Epoch: 0011 train_loss= 15.76325 accuracy= 0.89846 time= 0.27000
+
+accuracy 0.88578
+auc 0.94987
+f1_score 0.62467
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 544
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 53 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.14985 accuracy= 0.78404 time= 0.26819
+Epoch: 0011 train_loss= 15.83163 accuracy= 0.78557 time= 0.28189
+
+accuracy 0.75422
+auc 0.67147
+f1_score 0.39425
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 883
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 23 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+scat structure decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 812
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.25547 accuracy= 0.73353 time= 0.28091
+Epoch: 0011 train_loss= 16.42805 accuracy= 0.73546 time= 0.23193
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/pubmed_output/scat_onedecoder_FeatureAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 746
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.26613 accuracy= 0.81732 time= 0.29651
+Epoch: 0011 train_loss= 16.05635 accuracy= 0.75869 time= 0.28145
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/pubmed_output/scat_onedecoder_StructureAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 880
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 21.34144 accuracy= 0.72460 time= 0.26537
+Epoch: 0011 train_loss= 17.12399 accuracy= 0.70685 time= 0.28169
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/pubmed_output/scat_onedecoder_BothAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='pubmed', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 530
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([19717, 125]) <class 'torch.Tensor'>
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/pubmed_output/scat_onedecoder_NoAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='pubmed', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 522
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 9 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 5922.73047 accuracy= 0.73525 time= 0.26127
+Epoch: 0011 train_loss= 4019.07959 accuracy= 0.73546 time= 0.20340
+
+accuracy 0.73282
+auc 0.47158
+f1_score 0.12200
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='pubmed', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 538
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 70 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 6354.55371 accuracy= 0.83182 time= 0.20594
+Epoch: 0011 train_loss= 4202.05273 accuracy= 0.87057 time= 0.23119
+
+accuracy 0.85485
+auc 0.89079
+f1_score 0.52300
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='pubmed', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 685
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 54 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 5972.65186 accuracy= 0.76000 time= 0.26821
+Epoch: 0011 train_loss= 4044.90991 accuracy= 0.79358 time= 0.25496
+
+accuracy 0.75777
+auc 0.67407
+f1_score 0.40300
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='pubmed', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 443
+Found existing ad data, loading...
+feature_dim: 500 hidden1_dim: 250 hidden2_dim: 125 nodes_num: 19717 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (19717, 6500) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 25 steps!
+
+y_features shape after FMS torch.Size([19717, 125]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+pubmed finished!
+amazon_electronics_photo!
+feature decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=0, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 563
+no existing ad data found, create new data with anomaly!
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 25.15092 accuracy= 0.72235 time= 0.10868
+Epoch: 0011 train_loss= 16.17117 accuracy= 0.72706 time= 0.10442
+Epoch: 0021 train_loss= 15.24012 accuracy= 0.72758 time= 0.10081
+Epoch: 0031 train_loss= 14.72722 accuracy= 0.72863 time= 0.10663
+Epoch: 0041 train_loss= 14.31770 accuracy= 0.72941 time= 0.10198
+Epoch: 0051 train_loss= 13.98973 accuracy= 0.72993 time= 0.11009
+Epoch: 0061 train_loss= 13.69350 accuracy= 0.73150 time= 0.10162
+Epoch: 0071 train_loss= 13.43392 accuracy= 0.73203 time= 0.09182
+Epoch: 0081 train_loss= 13.21265 accuracy= 0.73307 time= 0.10379
+Epoch: 0091 train_loss= 13.00831 accuracy= 0.73542 time= 0.10669
+Epoch: 0101 train_loss= 12.83188 accuracy= 0.73673 time= 0.10195
+Epoch: 0111 train_loss= 12.67558 accuracy= 0.73778 time= 0.09504
+Epoch: 0121 train_loss= 12.57056 accuracy= 0.73935 time= 0.10607
+Epoch: 0131 train_loss= 12.42106 accuracy= 0.73987 time= 0.10668
+Epoch: 0141 train_loss= 12.30327 accuracy= 0.74248 time= 0.09168
+Epoch: 0151 train_loss= 12.22236 accuracy= 0.74170 time= 0.11005
+Epoch: 0161 train_loss= 12.11497 accuracy= 0.74275 time= 0.10511
+Epoch: 0171 train_loss= 12.03474 accuracy= 0.74667 time= 0.11005
+Epoch: 0181 train_loss= 11.97335 accuracy= 0.74641 time= 0.07680
+Epoch: 0191 train_loss= 11.89226 accuracy= 0.74850 time= 0.10653
+Epoch: 0201 train_loss= 11.83956 accuracy= 0.74980 time= 0.10437
+Epoch: 0211 train_loss= 11.83551 accuracy= 0.74954 time= 0.06238
+Epoch: 0221 train_loss= 11.72987 accuracy= 0.75007 time= 0.10417
+Epoch: 0231 train_loss= 11.67019 accuracy= 0.75216 time= 0.10987
+Epoch: 0241 train_loss= 11.60392 accuracy= 0.75320 time= 0.10575
+Epoch: 0251 train_loss= 11.59116 accuracy= 0.75268 time= 0.08993
+Epoch: 0261 train_loss= 11.57141 accuracy= 0.75190 time= 0.10645
+Epoch: 0271 train_loss= 11.55906 accuracy= 0.75529 time= 0.10503
+Epoch: 0281 train_loss= 11.54632 accuracy= 0.75660 time= 0.07667
+Epoch: 0291 train_loss= 11.49044 accuracy= 0.75451 time= 0.10629
+
+accuracy 0.75608
+auc 0.64247
+f1_score 0.30889
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=1, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 146
+no existing ad data found, create new data with anomaly!
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 24.77881 accuracy= 0.69307 time= 0.09000
+Epoch: 0011 train_loss= 15.71896 accuracy= 0.70458 time= 0.10649
+Epoch: 0021 train_loss= 14.75732 accuracy= 0.70379 time= 0.10467
+Epoch: 0031 train_loss= 14.32349 accuracy= 0.70222 time= 0.08537
+Epoch: 0041 train_loss= 13.98199 accuracy= 0.69987 time= 0.10458
+Epoch: 0051 train_loss= 13.67947 accuracy= 0.69856 time= 0.10590
+Epoch: 0061 train_loss= 13.40925 accuracy= 0.69830 time= 0.10565
+Epoch: 0071 train_loss= 13.15493 accuracy= 0.69752 time= 0.07586
+Epoch: 0081 train_loss= 12.93272 accuracy= 0.69699 time= 0.10506
+Epoch: 0091 train_loss= 12.74735 accuracy= 0.69699 time= 0.10492
+Epoch: 0101 train_loss= 12.56518 accuracy= 0.69804 time= 0.06294
+Epoch: 0111 train_loss= 12.40591 accuracy= 0.69621 time= 0.10967
+Epoch: 0121 train_loss= 12.25451 accuracy= 0.69699 time= 0.10053
+Epoch: 0131 train_loss= 12.12063 accuracy= 0.69778 time= 0.10649
+Epoch: 0141 train_loss= 12.01420 accuracy= 0.69752 time= 0.10002
+Epoch: 0151 train_loss= 11.91626 accuracy= 0.69804 time= 0.10663
+Epoch: 0161 train_loss= 11.82390 accuracy= 0.70013 time= 0.10727
+Epoch: 0171 train_loss= 11.78193 accuracy= 0.69804 time= 0.10410
+Epoch: 0181 train_loss= 11.70083 accuracy= 0.69804 time= 0.10532
+Epoch: 0191 train_loss= 11.62368 accuracy= 0.70065 time= 0.09755
+Epoch: 0201 train_loss= 11.55904 accuracy= 0.70118 time= 0.10180
+Epoch: 0211 train_loss= 11.50272 accuracy= 0.70248 time= 0.10457
+Epoch: 0221 train_loss= 11.44647 accuracy= 0.70301 time= 0.10194
+Epoch: 0231 train_loss= 11.43100 accuracy= 0.70248 time= 0.10076
+Epoch: 0241 train_loss= 11.36548 accuracy= 0.70614 time= 0.10621
+Epoch: 0251 train_loss= 11.36546 accuracy= 0.70745 time= 0.10977
+Epoch: 0261 train_loss= 11.29386 accuracy= 0.70771 time= 0.09152
+Epoch: 0271 train_loss= 11.28496 accuracy= 0.70536 time= 0.10543
+Epoch: 0281 train_loss= 11.23423 accuracy= 0.70614 time= 0.10083
+Epoch: 0291 train_loss= 11.24339 accuracy= 0.70667 time= 0.10173
+
+accuracy 0.70667
+auc 0.52087
+f1_score 0.16889
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=2, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 38
+no existing ad data found, create new data with anomaly!
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 24.56379 accuracy= 0.65621 time= 0.11542
+Epoch: 0011 train_loss= 16.13281 accuracy= 0.67085 time= 0.08847
+Epoch: 0021 train_loss= 15.26449 accuracy= 0.67007 time= 0.10678
+Epoch: 0031 train_loss= 14.77151 accuracy= 0.66771 time= 0.10119
+Epoch: 0041 train_loss= 14.36627 accuracy= 0.66667 time= 0.10632
+Epoch: 0051 train_loss= 14.03150 accuracy= 0.66562 time= 0.07635
+Epoch: 0061 train_loss= 13.75612 accuracy= 0.66562 time= 0.10527
+Epoch: 0071 train_loss= 13.49785 accuracy= 0.66484 time= 0.10189
+Epoch: 0081 train_loss= 13.26964 accuracy= 0.66667 time= 0.07121
+Epoch: 0091 train_loss= 13.07828 accuracy= 0.66850 time= 0.10457
+Epoch: 0101 train_loss= 12.89539 accuracy= 0.67163 time= 0.10684
+Epoch: 0111 train_loss= 12.75405 accuracy= 0.66980 time= 0.10583
+Epoch: 0121 train_loss= 12.60783 accuracy= 0.67399 time= 0.07276
+Epoch: 0131 train_loss= 12.48713 accuracy= 0.67477 time= 0.10652
+Epoch: 0141 train_loss= 12.37695 accuracy= 0.67477 time= 0.10454
+Epoch: 0151 train_loss= 12.26607 accuracy= 0.67817 time= 0.06737
+Epoch: 0161 train_loss= 12.15653 accuracy= 0.67948 time= 0.10441
+Epoch: 0171 train_loss= 12.08041 accuracy= 0.67817 time= 0.10131
+Epoch: 0181 train_loss= 12.00675 accuracy= 0.67974 time= 0.10441
+Epoch: 0191 train_loss= 11.94277 accuracy= 0.68418 time= 0.07667
+Epoch: 0201 train_loss= 11.90596 accuracy= 0.68444 time= 0.10905
+Epoch: 0211 train_loss= 11.82663 accuracy= 0.68654 time= 0.10601
+Epoch: 0221 train_loss= 11.81589 accuracy= 0.68288 time= 0.06413
+Epoch: 0231 train_loss= 11.79989 accuracy= 0.68340 time= 0.10105
+Epoch: 0241 train_loss= 11.76984 accuracy= 0.68340 time= 0.10138
+Epoch: 0251 train_loss= 11.72323 accuracy= 0.69281 time= 0.10584
+Epoch: 0261 train_loss= 11.66281 accuracy= 0.69516 time= 0.07968
+Epoch: 0271 train_loss= 11.61837 accuracy= 0.69752 time= 0.10563
+Epoch: 0281 train_loss= 11.64500 accuracy= 0.69386 time= 0.10110
+Epoch: 0291 train_loss= 11.58763 accuracy= 0.69490 time= 0.06852
+
+accuracy 0.69908
+auc 0.59740
+f1_score 0.36056
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=3, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 286
+no existing ad data found, create new data with anomaly!
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+
+Reconstruction job finished!
+structure decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=0, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 827
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 5368.82080 accuracy= 0.69124 time= 0.06989
+Epoch: 0011 train_loss= 1021.12518 accuracy= 0.70248 time= 0.09252
+Epoch: 0021 train_loss= 611.09448 accuracy= 0.69595 time= 0.08438
+Epoch: 0031 train_loss= 497.83334 accuracy= 0.69908 time= 0.09757
+Epoch: 0041 train_loss= 406.59601 accuracy= 0.69830 time= 0.08648
+Epoch: 0051 train_loss= 379.78989 accuracy= 0.69699 time= 0.09302
+Epoch: 0061 train_loss= 363.55975 accuracy= 0.70065 time= 0.09201
+Epoch: 0071 train_loss= 351.04910 accuracy= 0.69490 time= 0.09593
+Epoch: 0081 train_loss= 342.45816 accuracy= 0.69961 time= 0.09647
+Epoch: 0091 train_loss= 330.26410 accuracy= 0.70092 time= 0.09674
+Epoch: 0101 train_loss= 322.33929 accuracy= 0.70144 time= 0.09727
+Epoch: 0111 train_loss= 314.78940 accuracy= 0.69830 time= 0.09559
+Epoch: 0121 train_loss= 305.83109 accuracy= 0.69908 time= 0.07135
+Epoch: 0131 train_loss= 303.91141 accuracy= 0.69882 time= 0.09604
+Epoch: 0141 train_loss= 295.95853 accuracy= 0.70405 time= 0.08190
+Epoch: 0151 train_loss= 292.35425 accuracy= 0.70065 time= 0.09644
+Epoch: 0161 train_loss= 283.65744 accuracy= 0.70353 time= 0.09540
+Epoch: 0171 train_loss= 276.99167 accuracy= 0.70196 time= 0.09311
+Epoch: 0181 train_loss= 272.27240 accuracy= 0.70327 time= 0.09656
+Epoch: 0191 train_loss= 265.66693 accuracy= 0.70196 time= 0.09747
+Epoch: 0201 train_loss= 259.63098 accuracy= 0.70092 time= 0.09600
+Epoch: 0211 train_loss= 251.21082 accuracy= 0.70405 time= 0.07215
+Epoch: 0221 train_loss= 244.25470 accuracy= 0.70092 time= 0.09651
+Epoch: 0231 train_loss= 244.35503 accuracy= 0.70144 time= 0.07988
+Epoch: 0241 train_loss= 235.35156 accuracy= 0.70039 time= 0.09632
+Epoch: 0251 train_loss= 233.59961 accuracy= 0.69804 time= 0.08850
+Epoch: 0261 train_loss= 225.79503 accuracy= 0.70248 time= 0.09288
+Epoch: 0271 train_loss= 217.20410 accuracy= 0.69804 time= 0.09300
+Epoch: 0281 train_loss= 213.31117 accuracy= 0.70353 time= 0.09581
+Epoch: 0291 train_loss= 209.77141 accuracy= 0.70667 time= 0.09802
+
+accuracy 0.70327
+auc 0.50457
+f1_score 0.15926
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=1, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 316
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 5269.72217 accuracy= 0.67895 time= 0.10250
+Epoch: 0011 train_loss= 1059.75208 accuracy= 0.69621 time= 0.09572
+Epoch: 0021 train_loss= 622.17291 accuracy= 0.67111 time= 0.05605
+Epoch: 0031 train_loss= 504.10825 accuracy= 0.65987 time= 0.09303
+Epoch: 0041 train_loss= 408.26456 accuracy= 0.67137 time= 0.08654
+Epoch: 0051 train_loss= 377.62628 accuracy= 0.65647 time= 0.09292
+Epoch: 0061 train_loss= 363.38184 accuracy= 0.69020 time= 0.08822
+Epoch: 0071 train_loss= 352.91687 accuracy= 0.68471 time= 0.09285
+Epoch: 0081 train_loss= 343.92725 accuracy= 0.69542 time= 0.09632
+Epoch: 0091 train_loss= 333.91504 accuracy= 0.69255 time= 0.09184
+Epoch: 0101 train_loss= 326.93719 accuracy= 0.69490 time= 0.09178
+Epoch: 0111 train_loss= 317.79190 accuracy= 0.69647 time= 0.09660
+Epoch: 0121 train_loss= 311.97235 accuracy= 0.69438 time= 0.09347
+Epoch: 0131 train_loss= 307.41641 accuracy= 0.69176 time= 0.09450
+Epoch: 0141 train_loss= 297.21719 accuracy= 0.69595 time= 0.09293
+Epoch: 0151 train_loss= 291.12378 accuracy= 0.68837 time= 0.09660
+Epoch: 0161 train_loss= 284.15952 accuracy= 0.69281 time= 0.07648
+Epoch: 0171 train_loss= 278.22745 accuracy= 0.69229 time= 0.09571
+Epoch: 0181 train_loss= 269.88605 accuracy= 0.69020 time= 0.08732
+Epoch: 0191 train_loss= 267.39459 accuracy= 0.69255 time= 0.09242
+Epoch: 0201 train_loss= 258.34595 accuracy= 0.69150 time= 0.09049
+Epoch: 0211 train_loss= 251.71573 accuracy= 0.68601 time= 0.09594
+Epoch: 0221 train_loss= 246.50290 accuracy= 0.68654 time= 0.09563
+Epoch: 0231 train_loss= 241.67938 accuracy= 0.68863 time= 0.09564
+Epoch: 0241 train_loss= 239.48732 accuracy= 0.69569 time= 0.09761
+Epoch: 0251 train_loss= 232.80997 accuracy= 0.68575 time= 0.08990
+Epoch: 0261 train_loss= 226.37291 accuracy= 0.68810 time= 0.09387
+Epoch: 0271 train_loss= 221.74203 accuracy= 0.69386 time= 0.05978
+Epoch: 0281 train_loss= 216.21669 accuracy= 0.68863 time= 0.09568
+Epoch: 0291 train_loss= 208.32669 accuracy= 0.68157 time= 0.08352
+
+accuracy 0.68523
+auc 0.43115
+f1_score 0.10815
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=2, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 573
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+Epoch: 0001 train_loss= 4918.82129 accuracy= 0.60523 time= 0.10602
+Epoch: 0011 train_loss= 1004.36749 accuracy= 0.63242 time= 0.09301
+Epoch: 0021 train_loss= 621.72852 accuracy= 0.60209 time= 0.10019
+Epoch: 0031 train_loss= 501.18607 accuracy= 0.59974 time= 0.06689
+Epoch: 0041 train_loss= 412.45840 accuracy= 0.62301 time= 0.09305
+Epoch: 0051 train_loss= 379.19934 accuracy= 0.62562 time= 0.09291
+Epoch: 0061 train_loss= 361.78586 accuracy= 0.59425 time= 0.09265
+Epoch: 0071 train_loss= 351.54349 accuracy= 0.62275 time= 0.09257
+Epoch: 0081 train_loss= 341.33005 accuracy= 0.62824 time= 0.09551
+Epoch: 0091 train_loss= 334.14471 accuracy= 0.62797 time= 0.09247
+Epoch: 0101 train_loss= 321.59653 accuracy= 0.62667 time= 0.09189
+Epoch: 0111 train_loss= 315.49652 accuracy= 0.63242 time= 0.09554
+Epoch: 0121 train_loss= 307.84613 accuracy= 0.62745 time= 0.05066
+Epoch: 0131 train_loss= 301.58810 accuracy= 0.63346 time= 0.09577
+Epoch: 0141 train_loss= 298.34784 accuracy= 0.63556 time= 0.08977
+Epoch: 0151 train_loss= 285.09601 accuracy= 0.63216 time= 0.09670
+Epoch: 0161 train_loss= 284.01718 accuracy= 0.62301 time= 0.08795
+Epoch: 0171 train_loss= 275.66492 accuracy= 0.63242 time= 0.09307
+Epoch: 0181 train_loss= 270.17294 accuracy= 0.63346 time= 0.09704
+Epoch: 0191 train_loss= 261.73108 accuracy= 0.63190 time= 0.09707
+Epoch: 0201 train_loss= 257.39529 accuracy= 0.63399 time= 0.09679
+Epoch: 0211 train_loss= 247.52336 accuracy= 0.62876 time= 0.09635
+Epoch: 0221 train_loss= 243.71486 accuracy= 0.63137 time= 0.09293
+Epoch: 0231 train_loss= 233.87852 accuracy= 0.62484 time= 0.09699
+Epoch: 0241 train_loss= 231.69479 accuracy= 0.63634 time= 0.07605
+Epoch: 0251 train_loss= 224.88136 accuracy= 0.63765 time= 0.09716
+Epoch: 0261 train_loss= 220.96606 accuracy= 0.63033 time= 0.09541
+Epoch: 0271 train_loss= 213.99176 accuracy= 0.63529 time= 0.09585
+Epoch: 0281 train_loss= 212.00232 accuracy= 0.63451 time= 0.09577
+Epoch: 0291 train_loss= 204.83647 accuracy= 0.62876 time= 0.10050
+
+accuracy 0.62614
+auc 0.46713
+f1_score 0.20556
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=30, cuda=False, data_type=3, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 246
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+
+Reconstruction job finished!
+scat feature decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=0, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 539
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.69543 accuracy= 0.71242 time= 0.07533
+Epoch: 0011 train_loss= 25.30033 accuracy= 0.72235 time= 0.07436
+
+accuracy 0.72261
+auc 0.55654
+f1_score 0.21407
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=1, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 820
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 28.69033 accuracy= 0.68444 time= 0.07981
+Epoch: 0011 train_loss= 22.16306 accuracy= 0.69908 time= 0.07054
+
+accuracy 0.70248
+auc 0.50248
+f1_score 0.15704
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=2, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 196
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.26159 accuracy= 0.62458 time= 0.08006
+Epoch: 0011 train_loss= 22.59718 accuracy= 0.65490 time= 0.06766
+
+accuracy 0.65856
+auc 0.50845
+f1_score 0.27444
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=3, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 989
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=0, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 39
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 69 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.67513 accuracy= 0.71163 time= 0.07350
+Epoch: 0011 train_loss= 25.17442 accuracy= 0.71974 time= 0.07794
+
+accuracy 0.72261
+auc 0.55444
+f1_score 0.21407
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=1, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 819
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 31 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 28.93592 accuracy= 0.68549 time= 0.07962
+Epoch: 0011 train_loss= 22.43316 accuracy= 0.69987 time= 0.07328
+
+accuracy 0.70248
+auc 0.50033
+f1_score 0.15704
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=2, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 180
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 66 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.12286 accuracy= 0.62562 time= 0.08059
+Epoch: 0011 train_loss= 22.68552 accuracy= 0.65647 time= 0.07073
+
+accuracy 0.66039
+auc 0.51378
+f1_score 0.27833
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=3, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 295
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 56 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+scat structure decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=0, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 394
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.81396 accuracy= 0.71216 time= 0.07901
+Epoch: 0011 train_loss= 25.69730 accuracy= 0.72026 time= 0.07009
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_photo_output/scat_onedecoder_FeatureAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=1, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 482
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 28.68741 accuracy= 0.68575 time= 0.07638
+Epoch: 0011 train_loss= 21.88248 accuracy= 0.70013 time= 0.07374
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_photo_output/scat_onedecoder_StructureAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=2, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 554
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.08612 accuracy= 0.62667 time= 0.08073
+Epoch: 0011 train_loss= 22.53050 accuracy= 0.65333 time= 0.05870
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_photo_output/scat_onedecoder_BothAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=3, dataset='amazon_electronics_photo', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 451
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([7650, 186]) <class 'torch.Tensor'>
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_photo_output/scat_onedecoder_NoAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=0, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 455
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 144 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 11851.64355 accuracy= 0.70248 time= 0.07248
+Epoch: 0011 train_loss= 7374.99365 accuracy= 0.70536 time= 0.05842
+
+accuracy 0.70196
+auc 0.50817
+f1_score 0.15556
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=1, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 885
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 68 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 10070.86719 accuracy= 0.67033 time= 0.07096
+Epoch: 0011 train_loss= 6719.95898 accuracy= 0.67712 time= 0.05857
+
+accuracy 0.67974
+auc 0.43637
+f1_score 0.09259
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=2, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 851
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 67 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 9372.42090 accuracy= 0.61229 time= 0.04841
+Epoch: 0011 train_loss= 6495.58643 accuracy= 0.61359 time= 0.06554
+
+accuracy 0.61124
+auc 0.48383
+f1_score 0.17389
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=30, cuda=False, data_type=3, dataset='amazon_electronics_photo', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 73
+Found existing ad data, loading...
+feature_dim: 745 hidden1_dim: 372 hidden2_dim: 186 nodes_num: 7650 anomaly_num: 1800
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (7650, 9685) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 51 steps!
+
+y_features shape after FMS torch.Size([7650, 186]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+amazon_electronics_photo finished!
+amazon_electronics_computers!
+feature decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=0, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 979
+no existing ad data found, create new data with anomaly!
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+Epoch: 0001 train_loss= 24.71258 accuracy= 0.74389 time= 0.29763
+Epoch: 0011 train_loss= 15.79908 accuracy= 0.74389 time= 0.28563
+Epoch: 0021 train_loss= 15.08771 accuracy= 0.74506 time= 0.23632
+Epoch: 0031 train_loss= 14.67860 accuracy= 0.74520 time= 0.28725
+Epoch: 0041 train_loss= 14.36718 accuracy= 0.74578 time= 0.26416
+Epoch: 0051 train_loss= 14.08199 accuracy= 0.74709 time= 0.29118
+Epoch: 0061 train_loss= 13.82929 accuracy= 0.74724 time= 0.29079
+Epoch: 0071 train_loss= 13.60387 accuracy= 0.74753 time= 0.24916
+Epoch: 0081 train_loss= 13.40007 accuracy= 0.74767 time= 0.29112
+Epoch: 0091 train_loss= 13.21866 accuracy= 0.74855 time= 0.27659
+Epoch: 0101 train_loss= 13.04973 accuracy= 0.74898 time= 0.28719
+Epoch: 0111 train_loss= 12.90104 accuracy= 0.74985 time= 0.26361
+Epoch: 0121 train_loss= 12.76063 accuracy= 0.75044 time= 0.29071
+Epoch: 0131 train_loss= 12.63392 accuracy= 0.75204 time= 0.24486
+Epoch: 0141 train_loss= 12.51151 accuracy= 0.75247 time= 0.29035
+Epoch: 0151 train_loss= 12.40558 accuracy= 0.75334 time= 0.28194
+Epoch: 0161 train_loss= 12.31500 accuracy= 0.75713 time= 0.23823
+Epoch: 0171 train_loss= 12.22963 accuracy= 0.75727 time= 0.29466
+Epoch: 0181 train_loss= 12.14540 accuracy= 0.75669 time= 0.29059
+Epoch: 0191 train_loss= 12.12938 accuracy= 0.75524 time= 0.29070
+Epoch: 0201 train_loss= 12.03874 accuracy= 0.75974 time= 0.27102
+Epoch: 0211 train_loss= 11.97848 accuracy= 0.76236 time= 0.28953
+Epoch: 0221 train_loss= 11.92180 accuracy= 0.76265 time= 0.24516
+Epoch: 0231 train_loss= 11.87496 accuracy= 0.76396 time= 0.27737
+Epoch: 0241 train_loss= 11.85041 accuracy= 0.76440 time= 0.29175
+Epoch: 0251 train_loss= 11.83174 accuracy= 0.76527 time= 0.23852
+Epoch: 0261 train_loss= 11.77672 accuracy= 0.76716 time= 0.29526
+Epoch: 0271 train_loss= 11.76033 accuracy= 0.76672 time= 0.28373
+Epoch: 0281 train_loss= 11.73061 accuracy= 0.76702 time= 0.28958
+Epoch: 0291 train_loss= 11.71062 accuracy= 0.76745 time= 0.27137
+
+accuracy 0.76832
+auc 0.62988
+f1_score 0.29200
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=1, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 357
+no existing ad data found, create new data with anomaly!
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+Epoch: 0001 train_loss= 24.63214 accuracy= 0.71277 time= 0.29211
+Epoch: 0011 train_loss= 16.01342 accuracy= 0.71946 time= 0.29154
+Epoch: 0021 train_loss= 15.21911 accuracy= 0.71422 time= 0.24869
+Epoch: 0031 train_loss= 14.70113 accuracy= 0.71190 time= 0.28493
+Epoch: 0041 train_loss= 14.32038 accuracy= 0.71059 time= 0.27759
+Epoch: 0051 train_loss= 14.00731 accuracy= 0.71175 time= 0.29014
+Epoch: 0061 train_loss= 13.71381 accuracy= 0.71393 time= 0.25272
+Epoch: 0071 train_loss= 13.45555 accuracy= 0.71771 time= 0.28136
+Epoch: 0081 train_loss= 13.23115 accuracy= 0.71975 time= 0.24260
+Epoch: 0091 train_loss= 13.04533 accuracy= 0.71990 time= 0.28217
+Epoch: 0101 train_loss= 12.88740 accuracy= 0.72019 time= 0.29473
+Epoch: 0111 train_loss= 12.70759 accuracy= 0.72179 time= 0.24997
+Epoch: 0121 train_loss= 12.55842 accuracy= 0.72339 time= 0.28761
+Epoch: 0131 train_loss= 12.41725 accuracy= 0.72411 time= 0.28119
+Epoch: 0141 train_loss= 12.30218 accuracy= 0.72804 time= 0.29107
+Epoch: 0151 train_loss= 12.21015 accuracy= 0.72339 time= 0.26485
+Epoch: 0161 train_loss= 12.09649 accuracy= 0.72818 time= 0.29033
+Epoch: 0171 train_loss= 12.01213 accuracy= 0.73037 time= 0.25394
+Epoch: 0181 train_loss= 11.94088 accuracy= 0.73051 time= 0.28634
+Epoch: 0191 train_loss= 11.87421 accuracy= 0.72920 time= 0.28980
+Epoch: 0201 train_loss= 11.86441 accuracy= 0.72339 time= 0.23968
+Epoch: 0211 train_loss= 11.81056 accuracy= 0.72818 time= 0.28691
+Epoch: 0221 train_loss= 11.73082 accuracy= 0.72920 time= 0.28182
+Epoch: 0231 train_loss= 11.72791 accuracy= 0.73269 time= 0.28989
+Epoch: 0241 train_loss= 11.64390 accuracy= 0.72993 time= 0.25070
+Epoch: 0251 train_loss= 11.61215 accuracy= 0.73037 time= 0.28650
+Epoch: 0261 train_loss= 11.57338 accuracy= 0.72877 time= 0.24981
+Epoch: 0271 train_loss= 11.55082 accuracy= 0.73037 time= 0.27536
+Epoch: 0281 train_loss= 11.50773 accuracy= 0.73037 time= 0.28580
+Epoch: 0291 train_loss= 11.52112 accuracy= 0.73037 time= 0.23947
+
+accuracy 0.73080
+auc 0.52583
+f1_score 0.17733
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=2, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 668
+no existing ad data found, create new data with anomaly!
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+Epoch: 0001 train_loss= 24.26639 accuracy= 0.66739 time= 0.25566
+Epoch: 0011 train_loss= 15.95477 accuracy= 0.67714 time= 0.28275
+Epoch: 0021 train_loss= 15.09549 accuracy= 0.67510 time= 0.28674
+Epoch: 0031 train_loss= 14.65745 accuracy= 0.67321 time= 0.24353
+Epoch: 0041 train_loss= 14.35009 accuracy= 0.67234 time= 0.28734
+Epoch: 0051 train_loss= 14.07698 accuracy= 0.67205 time= 0.27736
+Epoch: 0061 train_loss= 13.82799 accuracy= 0.67365 time= 0.28578
+Epoch: 0071 train_loss= 13.60584 accuracy= 0.67627 time= 0.24283
+Epoch: 0081 train_loss= 13.39503 accuracy= 0.67845 time= 0.28704
+Epoch: 0091 train_loss= 13.22107 accuracy= 0.67874 time= 0.24832
+Epoch: 0101 train_loss= 13.04678 accuracy= 0.68150 time= 0.28247
+Epoch: 0111 train_loss= 12.89491 accuracy= 0.68397 time= 0.28684
+Epoch: 0121 train_loss= 12.75963 accuracy= 0.68426 time= 0.24445
+Epoch: 0131 train_loss= 12.64251 accuracy= 0.68775 time= 0.29196
+Epoch: 0141 train_loss= 12.55280 accuracy= 0.68426 time= 0.28588
+Epoch: 0151 train_loss= 12.44460 accuracy= 0.68790 time= 0.29015
+Epoch: 0161 train_loss= 12.35082 accuracy= 0.69415 time= 0.26173
+Epoch: 0171 train_loss= 12.26261 accuracy= 0.69561 time= 0.28647
+Epoch: 0181 train_loss= 12.19001 accuracy= 0.69575 time= 0.24025
+Epoch: 0191 train_loss= 12.13232 accuracy= 0.69444 time= 0.28891
+Epoch: 0201 train_loss= 12.07370 accuracy= 0.69808 time= 0.28276
+Epoch: 0211 train_loss= 12.06211 accuracy= 0.69299 time= 0.24782
+Epoch: 0221 train_loss= 11.99350 accuracy= 0.69983 time= 0.28196
+Epoch: 0231 train_loss= 11.94597 accuracy= 0.70172 time= 0.27856
+Epoch: 0241 train_loss= 11.93674 accuracy= 0.69881 time= 0.28585
+Epoch: 0251 train_loss= 11.87827 accuracy= 0.70303 time= 0.25339
+Epoch: 0261 train_loss= 11.84451 accuracy= 0.70579 time= 0.29057
+Epoch: 0271 train_loss= 11.81340 accuracy= 0.70593 time= 0.25988
+Epoch: 0281 train_loss= 11.85529 accuracy= 0.70579 time= 0.28074
+Epoch: 0291 train_loss= 11.81178 accuracy= 0.70913 time= 0.28576
+
+accuracy 0.70739
+auc 0.56648
+f1_score 0.32933
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=3, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 755
+no existing ad data found, create new data with anomaly!
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+
+Reconstruction job finished!
+structure decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=0, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 206
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+Epoch: 0001 train_loss= 6622.70068 accuracy= 0.71742 time= 0.27357
+Epoch: 0011 train_loss= 1405.94592 accuracy= 0.72062 time= 0.12575
+Epoch: 0021 train_loss= 747.00940 accuracy= 0.71597 time= 0.26470
+Epoch: 0031 train_loss= 554.73993 accuracy= 0.71960 time= 0.25987
+Epoch: 0041 train_loss= 427.66238 accuracy= 0.72033 time= 0.26362
+Epoch: 0051 train_loss= 392.60834 accuracy= 0.71742 time= 0.25848
+Epoch: 0061 train_loss= 367.91006 accuracy= 0.71946 time= 0.25876
+Epoch: 0071 train_loss= 358.63898 accuracy= 0.72295 time= 0.26387
+Epoch: 0081 train_loss= 351.84723 accuracy= 0.72222 time= 0.26001
+Epoch: 0091 train_loss= 344.72971 accuracy= 0.72150 time= 0.25546
+Epoch: 0101 train_loss= 339.83276 accuracy= 0.72106 time= 0.25939
+Epoch: 0111 train_loss= 331.90369 accuracy= 0.71931 time= 0.25919
+Epoch: 0121 train_loss= 326.23337 accuracy= 0.72295 time= 0.26376
+Epoch: 0131 train_loss= 323.15662 accuracy= 0.72150 time= 0.25886
+Epoch: 0141 train_loss= 314.17053 accuracy= 0.72091 time= 0.26379
+Epoch: 0151 train_loss= 306.71515 accuracy= 0.72382 time= 0.25452
+Epoch: 0161 train_loss= 301.36017 accuracy= 0.72309 time= 0.26008
+Epoch: 0171 train_loss= 295.61057 accuracy= 0.72251 time= 0.25502
+Epoch: 0181 train_loss= 291.17056 accuracy= 0.72208 time= 0.26851
+Epoch: 0191 train_loss= 285.12878 accuracy= 0.72019 time= 0.25951
+Epoch: 0201 train_loss= 283.74884 accuracy= 0.72266 time= 0.26004
+Epoch: 0211 train_loss= 279.13733 accuracy= 0.72600 time= 0.25648
+Epoch: 0221 train_loss= 270.56281 accuracy= 0.72062 time= 0.25973
+Epoch: 0231 train_loss= 266.31152 accuracy= 0.72164 time= 0.26004
+Epoch: 0241 train_loss= 257.24326 accuracy= 0.72557 time= 0.26382
+Epoch: 0251 train_loss= 246.16388 accuracy= 0.72004 time= 0.25387
+Epoch: 0261 train_loss= 241.37646 accuracy= 0.72033 time= 0.25931
+Epoch: 0271 train_loss= 240.14706 accuracy= 0.72033 time= 0.25905
+Epoch: 0281 train_loss= 233.16617 accuracy= 0.72499 time= 0.26223
+Epoch: 0291 train_loss= 227.37259 accuracy= 0.72280 time= 0.26466
+
+accuracy 0.72237
+auc 0.51057
+f1_score 0.15156
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=1, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 718
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+Epoch: 0001 train_loss= 6906.73438 accuracy= 0.69255 time= 0.22140
+Epoch: 0011 train_loss= 1233.07104 accuracy= 0.68252 time= 0.22563
+Epoch: 0021 train_loss= 709.56494 accuracy= 0.68834 time= 0.25968
+Epoch: 0031 train_loss= 511.49338 accuracy= 0.67525 time= 0.21190
+Epoch: 0041 train_loss= 409.76114 accuracy= 0.68615 time= 0.23181
+Epoch: 0051 train_loss= 382.52405 accuracy= 0.70244 time= 0.25781
+Epoch: 0061 train_loss= 368.57593 accuracy= 0.70797 time= 0.20680
+Epoch: 0071 train_loss= 360.22269 accuracy= 0.71161 time= 0.23969
+Epoch: 0081 train_loss= 351.90543 accuracy= 0.71219 time= 0.26362
+Epoch: 0091 train_loss= 347.80420 accuracy= 0.71408 time= 0.21213
+Epoch: 0101 train_loss= 337.42111 accuracy= 0.71291 time= 0.25415
+Epoch: 0111 train_loss= 331.39618 accuracy= 0.71582 time= 0.26333
+Epoch: 0121 train_loss= 323.00690 accuracy= 0.71306 time= 0.20776
+Epoch: 0131 train_loss= 317.29510 accuracy= 0.71233 time= 0.23586
+Epoch: 0141 train_loss= 309.67990 accuracy= 0.70971 time= 0.25955
+Epoch: 0151 train_loss= 306.33975 accuracy= 0.71408 time= 0.22123
+Epoch: 0161 train_loss= 299.13638 accuracy= 0.71291 time= 0.23143
+Epoch: 0171 train_loss= 295.81866 accuracy= 0.70884 time= 0.26453
+Epoch: 0181 train_loss= 291.62039 accuracy= 0.71262 time= 0.21236
+Epoch: 0191 train_loss= 285.48611 accuracy= 0.71466 time= 0.23078
+Epoch: 0201 train_loss= 280.23380 accuracy= 0.71437 time= 0.25908
+Epoch: 0211 train_loss= 274.36560 accuracy= 0.70928 time= 0.20236
+Epoch: 0221 train_loss= 268.37488 accuracy= 0.71481 time= 0.23154
+Epoch: 0231 train_loss= 263.37311 accuracy= 0.71175 time= 0.26354
+Epoch: 0241 train_loss= 258.94223 accuracy= 0.71451 time= 0.21488
+Epoch: 0251 train_loss= 252.59349 accuracy= 0.70971 time= 0.22544
+Epoch: 0261 train_loss= 245.85631 accuracy= 0.70942 time= 0.26427
+Epoch: 0271 train_loss= 242.20682 accuracy= 0.71175 time= 0.20875
+Epoch: 0281 train_loss= 237.96658 accuracy= 0.71175 time= 0.22047
+Epoch: 0291 train_loss= 231.06311 accuracy= 0.71277 time= 0.26359
+
+accuracy 0.70753
+auc 0.44047
+f1_score 0.10622
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=2, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 373
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+Epoch: 0001 train_loss= 6797.19629 accuracy= 0.63002 time= 0.27070
+Epoch: 0011 train_loss= 1178.88928 accuracy= 0.62929 time= 0.21520
+Epoch: 0021 train_loss= 724.19128 accuracy= 0.62565 time= 0.21600
+Epoch: 0031 train_loss= 529.37402 accuracy= 0.62013 time= 0.26375
+Epoch: 0041 train_loss= 411.06125 accuracy= 0.62304 time= 0.21520
+Epoch: 0051 train_loss= 390.44189 accuracy= 0.62900 time= 0.23025
+Epoch: 0061 train_loss= 369.89487 accuracy= 0.64471 time= 0.26409
+Epoch: 0071 train_loss= 363.04843 accuracy= 0.64325 time= 0.20750
+Epoch: 0081 train_loss= 353.31351 accuracy= 0.65023 time= 0.23099
+Epoch: 0091 train_loss= 346.38913 accuracy= 0.65285 time= 0.26713
+Epoch: 0101 train_loss= 341.57236 accuracy= 0.65590 time= 0.20747
+Epoch: 0111 train_loss= 332.13217 accuracy= 0.65838 time= 0.23953
+Epoch: 0121 train_loss= 327.12021 accuracy= 0.65969 time= 0.26317
+Epoch: 0131 train_loss= 315.66470 accuracy= 0.65300 time= 0.21694
+Epoch: 0141 train_loss= 312.87985 accuracy= 0.65285 time= 0.22628
+Epoch: 0151 train_loss= 306.82574 accuracy= 0.65503 time= 0.26016
+Epoch: 0161 train_loss= 302.63580 accuracy= 0.64965 time= 0.21042
+Epoch: 0171 train_loss= 297.44083 accuracy= 0.65154 time= 0.22140
+Epoch: 0181 train_loss= 293.30710 accuracy= 0.65081 time= 0.26422
+Epoch: 0191 train_loss= 283.99655 accuracy= 0.65300 time= 0.21624
+Epoch: 0201 train_loss= 282.31082 accuracy= 0.65707 time= 0.22243
+Epoch: 0211 train_loss= 274.79016 accuracy= 0.65489 time= 0.25527
+Epoch: 0221 train_loss= 265.67468 accuracy= 0.64849 time= 0.20776
+Epoch: 0231 train_loss= 263.79388 accuracy= 0.65590 time= 0.22716
+Epoch: 0241 train_loss= 258.85855 accuracy= 0.65401 time= 0.26458
+Epoch: 0251 train_loss= 256.49115 accuracy= 0.65503 time= 0.21343
+Epoch: 0261 train_loss= 247.91385 accuracy= 0.65241 time= 0.21189
+Epoch: 0271 train_loss= 243.88567 accuracy= 0.64631 time= 0.26388
+Epoch: 0281 train_loss= 241.21776 accuracy= 0.65009 time= 0.21655
+Epoch: 0291 train_loss= 234.62007 accuracy= 0.64776 time= 0.22647
+
+accuracy 0.64485
+auc 0.46442
+f1_score 0.18600
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=3, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 934
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+
+Reconstruction job finished!
+scat feature decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 339
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.48039 accuracy= 0.72906 time= 0.20422
+Epoch: 0011 train_loss= 23.81775 accuracy= 0.74273 time= 0.19317
+
+accuracy 0.74593
+auc 0.51986
+f1_score 0.22356
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 612
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 27.57091 accuracy= 0.69037 time= 0.20922
+Epoch: 0011 train_loss= 21.45001 accuracy= 0.71524 time= 0.19742
+
+accuracy 0.71626
+auc 0.47287
+f1_score 0.13289
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 479
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 27.20790 accuracy= 0.64616 time= 0.18577
+Epoch: 0011 train_loss= 21.35849 accuracy= 0.67132 time= 0.18764
+
+accuracy 0.67510
+auc 0.47749
+f1_score 0.25533
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 419
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 152
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 126 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.62747 accuracy= 0.72673 time= 0.19509
+Epoch: 0011 train_loss= 24.56332 accuracy= 0.73298 time= 0.19162
+
+accuracy 0.74346
+auc 0.53757
+f1_score 0.21600
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 50
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 66 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 28.05136 accuracy= 0.69095 time= 0.20140
+Epoch: 0011 train_loss= 21.86204 accuracy= 0.71451 time= 0.20135
+
+accuracy 0.71466
+auc 0.46471
+f1_score 0.12800
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 961
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 73 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 27.87000 accuracy= 0.64442 time= 0.20990
+Epoch: 0011 train_loss= 21.83626 accuracy= 0.66943 time= 0.19347
+
+accuracy 0.67234
+auc 0.47462
+f1_score 0.24900
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 597
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 95 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+scat structure decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 574
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 29.50316 accuracy= 0.72877 time= 0.15594
+Epoch: 0011 train_loss= 24.36522 accuracy= 0.74084 time= 0.16272
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_computers_output/scat_onedecoder_FeatureAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 636
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 27.36353 accuracy= 0.69110 time= 0.20826
+Epoch: 0011 train_loss= 21.44244 accuracy= 0.71481 time= 0.19127
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_computers_output/scat_onedecoder_StructureAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 751
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 27.40838 accuracy= 0.64354 time= 0.20214
+Epoch: 0011 train_loss= 21.47265 accuracy= 0.67103 time= 0.19365
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_computers_output/scat_onedecoder_BothAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='amazon_electronics_computers', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 425
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([13752, 191]) <class 'torch.Tensor'>
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/amazon_electronics_computers_output/scat_onedecoder_NoAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 619
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 127 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 14720.04297 accuracy= 0.71844 time= 0.17609
+Epoch: 0011 train_loss= 8878.20605 accuracy= 0.72106 time= 0.16560
+
+accuracy 0.72150
+auc 0.50530
+f1_score 0.14889
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 699
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 66 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 12417.18262 accuracy= 0.72528 time= 0.12156
+Epoch: 0011 train_loss= 7317.25000 accuracy= 0.70186 time= 0.17487
+
+accuracy 0.69459
+auc 0.39709
+f1_score 0.06667
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 252
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 90 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 11666.93750 accuracy= 0.65998 time= 0.17975
+Epoch: 0011 train_loss= 6910.46875 accuracy= 0.64165 time= 0.17274
+
+accuracy 0.63758
+auc 0.41972
+f1_score 0.16933
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='amazon_electronics_computers', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=30, weight_decay=0.0005)
+random seed: 77
+Found existing ad data, loading...
+feature_dim: 767 hidden1_dim: 383 hidden2_dim: 191 nodes_num: 13752 anomaly_num: 3000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (13752, 9971) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 133 steps!
+
+y_features shape after FMS torch.Size([13752, 191]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+amazon_electronics_computers finished!
+ms_academic_cs!
+feature decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=0, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 210
+no existing ad data found, create new data with anomaly!
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 77.69032 accuracy= 0.72334 time= 4.49663
+Epoch: 0011 train_loss= 15.93736 accuracy= 0.78432 time= 4.49236
+Epoch: 0021 train_loss= 15.52174 accuracy= 0.78901 time= 4.43089
+Epoch: 0031 train_loss= 15.31876 accuracy= 0.79109 time= 4.49978
+Epoch: 0041 train_loss= 15.14859 accuracy= 0.79251 time= 4.44457
+Epoch: 0051 train_loss= 15.01582 accuracy= 0.79392 time= 4.49547
+Epoch: 0061 train_loss= 14.89944 accuracy= 0.79523 time= 4.49700
+Epoch: 0071 train_loss= 14.79089 accuracy= 0.79643 time= 4.46561
+Epoch: 0081 train_loss= 14.70222 accuracy= 0.79796 time= 4.49633
+Epoch: 0091 train_loss= 14.60190 accuracy= 0.79971 time= 4.50020
+Epoch: 0101 train_loss= 14.52044 accuracy= 0.80014 time= 4.49769
+Epoch: 0111 train_loss= 14.42407 accuracy= 0.80058 time= 4.50803
+Epoch: 0121 train_loss= 14.34741 accuracy= 0.79971 time= 4.51988
+Epoch: 0131 train_loss= 14.22782 accuracy= 0.80265 time= 4.54010
+Epoch: 0141 train_loss= 14.54688 accuracy= 0.79883 time= 4.52827
+Epoch: 0151 train_loss= 14.36657 accuracy= 0.80145 time= 4.49135
+Epoch: 0161 train_loss= 14.22032 accuracy= 0.80472 time= 4.48708
+Epoch: 0171 train_loss= 14.05731 accuracy= 0.80429 time= 4.42710
+Epoch: 0181 train_loss= 14.30063 accuracy= 0.80385 time= 4.49708
+Epoch: 0191 train_loss= 14.45533 accuracy= 0.80254 time= 4.53197
+Epoch: 0201 train_loss= 14.73535 accuracy= 0.79971 time= 4.47743
+Epoch: 0211 train_loss= 14.31254 accuracy= 0.80080 time= 4.52271
+Epoch: 0221 train_loss= 13.91931 accuracy= 0.80123 time= 4.53702
+Epoch: 0231 train_loss= 13.77085 accuracy= 0.80265 time= 4.45711
+Epoch: 0241 train_loss= 13.55127 accuracy= 0.80461 time= 4.52847
+Epoch: 0251 train_loss= 13.43715 accuracy= 0.80494 time= 4.53562
+Epoch: 0261 train_loss= 13.36701 accuracy= 0.80571 time= 4.46129
+Epoch: 0271 train_loss= 13.27612 accuracy= 0.80701 time= 4.44960
+Epoch: 0281 train_loss= 13.20342 accuracy= 0.80701 time= 4.41748
+Epoch: 0291 train_loss= 13.08409 accuracy= 0.80636 time= 4.38301
+
+accuracy 0.80571
+auc 0.81896
+f1_score 0.40633
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=1, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 469
+no existing ad data found, create new data with anomaly!
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 76.09145 accuracy= 0.67872 time= 4.40185
+Epoch: 0011 train_loss= 15.23120 accuracy= 0.72552 time= 4.47120
+Epoch: 0021 train_loss= 14.44069 accuracy= 0.72618 time= 4.40530
+Epoch: 0031 train_loss= 14.14622 accuracy= 0.72705 time= 4.32088
+Epoch: 0041 train_loss= 13.91909 accuracy= 0.72781 time= 4.47786
+Epoch: 0051 train_loss= 13.72768 accuracy= 0.72792 time= 4.38516
+Epoch: 0061 train_loss= 13.72921 accuracy= 0.72858 time= 4.39321
+Epoch: 0071 train_loss= 13.52421 accuracy= 0.72858 time= 4.38732
+Epoch: 0081 train_loss= 13.35846 accuracy= 0.72890 time= 4.35787
+Epoch: 0091 train_loss= 13.19968 accuracy= 0.72923 time= 4.35331
+Epoch: 0101 train_loss= 14.67921 accuracy= 0.72018 time= 4.39385
+Epoch: 0111 train_loss= 13.71303 accuracy= 0.72694 time= 4.36650
+Epoch: 0121 train_loss= 13.48373 accuracy= 0.72749 time= 4.40824
+Epoch: 0131 train_loss= 13.33146 accuracy= 0.72781 time= 4.36552
+Epoch: 0141 train_loss= 13.31034 accuracy= 0.72770 time= 4.38261
+Epoch: 0151 train_loss= 13.13989 accuracy= 0.72770 time= 4.41121
+Epoch: 0161 train_loss= 13.52088 accuracy= 0.72814 time= 4.50958
+Epoch: 0171 train_loss= 13.64809 accuracy= 0.72585 time= 4.40490
+Epoch: 0181 train_loss= 12.83436 accuracy= 0.72792 time= 4.44071
+Epoch: 0191 train_loss= 12.63966 accuracy= 0.72760 time= 4.45606
+Epoch: 0201 train_loss= 12.49308 accuracy= 0.72814 time= 4.43784
+Epoch: 0211 train_loss= 12.34398 accuracy= 0.72825 time= 4.49323
+Epoch: 0221 train_loss= 12.34818 accuracy= 0.72803 time= 4.50136
+Epoch: 0231 train_loss= 12.38876 accuracy= 0.72847 time= 4.50590
+Epoch: 0241 train_loss= 12.23638 accuracy= 0.72858 time= 4.46361
+Epoch: 0251 train_loss= 12.14109 accuracy= 0.72825 time= 4.47656
+Epoch: 0261 train_loss= 12.09851 accuracy= 0.72901 time= 4.45296
+Epoch: 0271 train_loss= 11.99952 accuracy= 0.72912 time= 4.48498
+Epoch: 0281 train_loss= 12.00222 accuracy= 0.72901 time= 4.51732
+Epoch: 0291 train_loss= 12.02171 accuracy= 0.72869 time= 4.50527
+
+accuracy 0.72912
+auc 0.53258
+f1_score 0.17233
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=2, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 101
+no existing ad data found, create new data with anomaly!
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 75.95312 accuracy= 0.62417 time= 4.49519
+Epoch: 0011 train_loss= 15.60861 accuracy= 0.71712 time= 4.59951
+Epoch: 0021 train_loss= 15.11513 accuracy= 0.72007 time= 4.58354
+Epoch: 0031 train_loss= 14.89905 accuracy= 0.72269 time= 4.57322
+Epoch: 0041 train_loss= 14.73521 accuracy= 0.72530 time= 4.51567
+Epoch: 0051 train_loss= 14.59267 accuracy= 0.72836 time= 4.53753
+Epoch: 0061 train_loss= 14.44492 accuracy= 0.73109 time= 4.50078
+Epoch: 0071 train_loss= 14.33856 accuracy= 0.73327 time= 4.42151
+Epoch: 0081 train_loss= 14.37530 accuracy= 0.73109 time= 4.39248
+Epoch: 0091 train_loss= 14.22289 accuracy= 0.73305 time= 4.43474
+Epoch: 0101 train_loss= 14.09487 accuracy= 0.73447 time= 4.46841
+Epoch: 0111 train_loss= 14.00088 accuracy= 0.73490 time= 4.46842
+Epoch: 0121 train_loss= 13.92234 accuracy= 0.73654 time= 4.43958
+Epoch: 0131 train_loss= 13.92814 accuracy= 0.73730 time= 4.37689
+Epoch: 0141 train_loss= 13.88522 accuracy= 0.73927 time= 4.42739
+Epoch: 0151 train_loss= 14.11553 accuracy= 0.73447 time= 4.45414
+Epoch: 0161 train_loss= 13.86837 accuracy= 0.73741 time= 4.48647
+Epoch: 0171 train_loss= 14.01058 accuracy= 0.73523 time= 4.45359
+Epoch: 0181 train_loss= 14.00516 accuracy= 0.73730 time= 4.46226
+Epoch: 0191 train_loss= 13.70401 accuracy= 0.73938 time= 4.39822
+Epoch: 0201 train_loss= 13.70525 accuracy= 0.73665 time= 4.44356
+Epoch: 0211 train_loss= 13.62704 accuracy= 0.74047 time= 4.45755
+Epoch: 0221 train_loss= 13.42374 accuracy= 0.73992 time= 4.47785
+Epoch: 0231 train_loss= 13.23982 accuracy= 0.74254 time= 4.44592
+Epoch: 0241 train_loss= 13.14261 accuracy= 0.74178 time= 4.46272
+Epoch: 0251 train_loss= 13.03636 accuracy= 0.74254 time= 4.44143
+Epoch: 0261 train_loss= 13.08849 accuracy= 0.74025 time= 4.44916
+Epoch: 0271 train_loss= 12.89123 accuracy= 0.74560 time= 4.45397
+Epoch: 0281 train_loss= 12.89133 accuracy= 0.74658 time= 4.54248
+Epoch: 0291 train_loss= 12.83184 accuracy= 0.74330 time= 4.51483
+
+accuracy 0.74450
+auc 0.69016
+f1_score 0.41450
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=3, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 155
+no existing ad data found, create new data with anomaly!
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+
+Reconstruction job finished!
+structure decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=0, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 608
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 72411.50000 accuracy= 0.72083 time= 3.66152
+Epoch: 0011 train_loss= 23147.01562 accuracy= 0.72050 time= 3.71239
+Epoch: 0021 train_loss= 9723.77930 accuracy= 0.72312 time= 3.73844
+Epoch: 0031 train_loss= 7762.90283 accuracy= 0.72203 time= 3.63914
+Epoch: 0041 train_loss= 6780.45215 accuracy= 0.72159 time= 3.66991
+Epoch: 0051 train_loss= 6219.40430 accuracy= 0.72061 time= 3.67250
+Epoch: 0061 train_loss= 5417.33594 accuracy= 0.72705 time= 3.69566
+Epoch: 0071 train_loss= 4929.27002 accuracy= 0.72596 time= 3.60819
+Epoch: 0081 train_loss= 4399.90771 accuracy= 0.72792 time= 3.60156
+Epoch: 0091 train_loss= 3965.30371 accuracy= 0.72705 time= 3.67244
+Epoch: 0101 train_loss= 3017.81372 accuracy= 0.72399 time= 3.64389
+Epoch: 0111 train_loss= 2023.41833 accuracy= 0.72039 time= 3.57954
+Epoch: 0121 train_loss= 850.39392 accuracy= 0.72149 time= 3.63474
+Epoch: 0131 train_loss= 97.81076 accuracy= 0.72269 time= 3.64060
+Epoch: 0141 train_loss= 78.11336 accuracy= 0.72563 time= 3.60109
+Epoch: 0151 train_loss= 28.40307 accuracy= 0.71799 time= 3.61858
+Epoch: 0161 train_loss= 17.00479 accuracy= 0.71930 time= 3.62461
+Epoch: 0171 train_loss= 13.44657 accuracy= 0.71985 time= 3.58271
+Epoch: 0181 train_loss= 9.46884 accuracy= 0.71985 time= 3.57298
+Epoch: 0191 train_loss= 6.83317 accuracy= 0.71876 time= 3.61244
+Epoch: 0201 train_loss= 11.99695 accuracy= 0.71919 time= 3.58388
+Epoch: 0211 train_loss= 4.60340 accuracy= 0.71919 time= 3.59081
+Epoch: 0221 train_loss= 4.43157 accuracy= 0.71941 time= 3.57586
+Epoch: 0231 train_loss= 21.68229 accuracy= 0.71941 time= 3.56719
+Epoch: 0241 train_loss= 35.39311 accuracy= 0.72454 time= 3.61369
+Epoch: 0251 train_loss= 1.79102 accuracy= 0.71919 time= 3.56952
+Epoch: 0261 train_loss= 1.75866 accuracy= 0.71898 time= 3.57754
+Epoch: 0271 train_loss= 0.57939 accuracy= 0.71887 time= 3.61003
+Epoch: 0281 train_loss= 0.55748 accuracy= 0.71909 time= 3.56046
+Epoch: 0291 train_loss= 0.41097 accuracy= 0.71887 time= 3.58044
+
+accuracy 0.71930
+auc 0.48913
+f1_score 0.14233
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=1, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 29
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 72973.96094 accuracy= 0.67839 time= 2.19200
+Epoch: 0011 train_loss= 24368.03516 accuracy= 0.67970 time= 3.67124
+Epoch: 0021 train_loss= 10426.51172 accuracy= 0.69018 time= 3.69785
+Epoch: 0031 train_loss= 7758.96240 accuracy= 0.69618 time= 3.65546
+Epoch: 0041 train_loss= 6364.85352 accuracy= 0.68614 time= 3.67338
+Epoch: 0051 train_loss= 5813.47949 accuracy= 0.72301 time= 3.68187
+Epoch: 0061 train_loss= 5367.03174 accuracy= 0.69334 time= 3.63161
+Epoch: 0071 train_loss= 4870.57275 accuracy= 0.70087 time= 3.61411
+Epoch: 0081 train_loss= 4281.84180 accuracy= 0.71003 time= 3.67293
+Epoch: 0091 train_loss= 2824.31543 accuracy= 0.68265 time= 3.71049
+Epoch: 0101 train_loss= 1406.87537 accuracy= 0.68930 time= 3.64065
+Epoch: 0111 train_loss= 645.81927 accuracy= 0.69519 time= 3.65990
+Epoch: 0121 train_loss= 34.82646 accuracy= 0.71363 time= 3.66686
+Epoch: 0131 train_loss= 21.26396 accuracy= 0.71047 time= 3.66644
+Epoch: 0141 train_loss= 10.92990 accuracy= 0.70130 time= 3.65838
+Epoch: 0151 train_loss= 7.03046 accuracy= 0.68243 time= 3.64855
+Epoch: 0161 train_loss= 5.13188 accuracy= 0.67272 time= 3.68747
+Epoch: 0171 train_loss= 3.33165 accuracy= 0.67272 time= 3.58582
+Epoch: 0181 train_loss= 0.99107 accuracy= 0.67272 time= 3.59775
+Epoch: 0191 train_loss= 0.62665 accuracy= 0.67272 time= 3.62603
+Epoch: 0201 train_loss= 0.43479 accuracy= 0.67272 time= 3.64148
+Epoch: 0211 train_loss= 0.38333 accuracy= 0.67272 time= 3.59733
+Epoch: 0221 train_loss= 0.34744 accuracy= 0.67272 time= 3.64133
+Epoch: 0231 train_loss= 0.34457 accuracy= 0.67272 time= 3.60498
+Epoch: 0241 train_loss= 0.32794 accuracy= 0.67272 time= 3.58530
+Epoch: 0251 train_loss= 0.32532 accuracy= 0.67272 time= 3.62229
+Epoch: 0261 train_loss= 0.32588 accuracy= 0.67272 time= 3.58396
+Epoch: 0271 train_loss= 0.32363 accuracy= 0.67272 time= 3.52170
+Epoch: 0281 train_loss= 0.32573 accuracy= 0.67272 time= 3.59704
+Epoch: 0291 train_loss= 0.32215 accuracy= 0.67272 time= 3.53129
+
+accuracy 0.67272
+auc 0.00159
+f1_score 0.00000
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=2, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 184
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+Epoch: 0001 train_loss= 69783.53906 accuracy= 0.62156 time= 3.62132
+Epoch: 0011 train_loss= 21360.03320 accuracy= 0.62407 time= 3.67330
+Epoch: 0021 train_loss= 9618.24707 accuracy= 0.63858 time= 3.58972
+Epoch: 0031 train_loss= 7611.46777 accuracy= 0.62756 time= 3.61681
+Epoch: 0041 train_loss= 6392.78418 accuracy= 0.63923 time= 3.64006
+Epoch: 0051 train_loss= 5724.36279 accuracy= 0.63574 time= 3.56082
+Epoch: 0061 train_loss= 5344.37158 accuracy= 0.63705 time= 3.60194
+Epoch: 0071 train_loss= 4908.07275 accuracy= 0.63007 time= 3.62879
+Epoch: 0081 train_loss= 4442.02588 accuracy= 0.65548 time= 3.55594
+Epoch: 0091 train_loss= 3961.36182 accuracy= 0.65636 time= 3.62702
+Epoch: 0101 train_loss= 3509.61304 accuracy= 0.65996 time= 3.65921
+Epoch: 0111 train_loss= 2230.45386 accuracy= 0.65428 time= 3.57190
+Epoch: 0121 train_loss= 1857.20020 accuracy= 0.65123 time= 3.61371
+Epoch: 0131 train_loss= 1561.75159 accuracy= 0.65701 time= 3.62313
+Epoch: 0141 train_loss= 1193.04968 accuracy= 0.65887 time= 3.59624
+Epoch: 0151 train_loss= 1168.46851 accuracy= 0.65799 time= 3.60485
+Epoch: 0161 train_loss= 1117.86511 accuracy= 0.65996 time= 3.62362
+Epoch: 0171 train_loss= 946.12750 accuracy= 0.66323 time= 3.66924
+Epoch: 0181 train_loss= 661.70294 accuracy= 0.65210 time= 3.59460
+Epoch: 0191 train_loss= 645.54089 accuracy= 0.65658 time= 3.63400
+Epoch: 0201 train_loss= 605.12445 accuracy= 0.65941 time= 3.68667
+Epoch: 0211 train_loss= 559.02698 accuracy= 0.66018 time= 3.59222
+Epoch: 0221 train_loss= 465.75256 accuracy= 0.65472 time= 3.63280
+Epoch: 0231 train_loss= 223.31129 accuracy= 0.65679 time= 3.66707
+Epoch: 0241 train_loss= 64.72002 accuracy= 0.63683 time= 3.70113
+Epoch: 0251 train_loss= 55.92683 accuracy= 0.62330 time= 3.64649
+Epoch: 0261 train_loss= 16.22045 accuracy= 0.61774 time= 3.68698
+Epoch: 0271 train_loss= 15.05158 accuracy= 0.61785 time= 3.71355
+Epoch: 0281 train_loss= 6.31496 accuracy= 0.61785 time= 3.57829
+Epoch: 0291 train_loss= 3.93393 accuracy= 0.61545 time= 3.57644
+
+accuracy 0.61577
+auc 0.28463
+f1_score 0.11950
+Job finished!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=3, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 979
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+
+Reconstruction job finished!
+scat feature decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 278
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 81.40312 accuracy= 0.72781 time= 2.79920
+Epoch: 0011 train_loss= 40.47856 accuracy= 0.76360 time= 2.83711
+
+accuracy 0.77745
+auc 0.74198
+f1_score 0.32000
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 750
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 80.20232 accuracy= 0.70927 time= 2.85716
+Epoch: 0011 train_loss= 27.65445 accuracy= 0.70872 time= 2.87806
+
+accuracy 0.71865
+auc 0.47117
+f1_score 0.14033
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 91
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 80.79514 accuracy= 0.65188 time= 2.90532
+Epoch: 0011 train_loss= 25.92715 accuracy= 0.70490 time= 2.87704
+
+accuracy 0.71963
+auc 0.62317
+f1_score 0.35750
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 875
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 363
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 81.44539 accuracy= 0.72803 time= 2.88639
+Epoch: 0011 train_loss= 43.08153 accuracy= 0.75727 time= 2.91763
+
+accuracy 0.78214
+auc 0.75322
+f1_score 0.33433
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 554
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 80.34168 accuracy= 0.71025 time= 2.84630
+Epoch: 0011 train_loss= 28.88157 accuracy= 0.71483 time= 2.87199
+
+accuracy 0.72290
+auc 0.51384
+f1_score 0.15333
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 674
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 80.90300 accuracy= 0.65276 time= 2.89281
+Epoch: 0011 train_loss= 30.67728 accuracy= 0.70447 time= 2.81347
+
+accuracy 0.72007
+auc 0.63931
+f1_score 0.35850
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 688
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+scat structure decoder on 4 anomaly settings!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 350
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 81.38760 accuracy= 0.72781 time= 2.93459
+Epoch: 0011 train_loss= 43.04900 accuracy= 0.75967 time= 2.96764
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/ms_academic_cs_output/scat_onedecoder_FeatureAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 584
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 80.21867 accuracy= 0.70687 time= 2.87952
+Epoch: 0011 train_loss= 26.43859 accuracy= 0.70796 time= 2.90446
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/ms_academic_cs_output/scat_onedecoder_StructureAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 609
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 80.85957 accuracy= 0.65101 time= 2.90166
+Epoch: 0011 train_loss= 26.45410 accuracy= 0.70338 time= 2.95222
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/ms_academic_cs_output/scat_onedecoder_BothAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='ms_academic_cs', decoder=0, device=device(type='cuda'), dim_reduce=0, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 130
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using PCA to reduce dim
+
+y_features shape after PCA torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Traceback (most recent call last):
+  File "train_scat_onedecoder.py", line 323, in <module>
+    gae_ad(args)
+  File "train_scat_onedecoder.py", line 304, in gae_ad
+    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+  File "/home/augus/.conda/envs/augus/lib/python3.8/shutil.py", line 786, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path '/home/augus/ad/gae_pytorch/ms_academic_cs_output/scat_onedecoder_NoAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv' already exists
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=0, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 350
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 112755.55469 accuracy= 0.71909 time= 2.05483
+Epoch: 0011 train_loss= 38623.98047 accuracy= 0.71887 time= 2.06571
+
+accuracy 0.72421
+auc 0.51150
+f1_score 0.15733
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=1, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 973
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 126496.61719 accuracy= 0.70807 time= 1.99586
+Epoch: 0011 train_loss= 41315.54688 accuracy= 0.68516 time= 2.04375
+
+accuracy 0.68679
+auc 0.40199
+f1_score 0.04300
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=2, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 314
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+Epoch: 0001 train_loss= 121778.46875 accuracy= 0.65494 time= 2.03217
+Epoch: 0011 train_loss= 38581.47656 accuracy= 0.62701 time= 2.04048
+
+accuracy 0.63061
+auc 0.49027
+f1_score 0.15350
+Job finished!
+
+
+
+Initializing scat onedecoder
+Namespace(alpha=1, att=0, beta=1, clique_size=50, cuda=False, data_type=3, dataset='ms_academic_cs', decoder=1, device=device(type='cuda'), dim_reduce=1, dropout=0.01, epochs=20, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=40, weight_decay=0.0005)
+random seed: 485
+Found existing ad data, loading...
+feature_dim: 6805 hidden1_dim: 3402 hidden2_dim: 1701 nodes_num: 18333 anomaly_num: 4000
+
+Start modeling
+using wavelet scattering transform
+y_features shape after scatting (18333, 88465) <class 'numpy.ndarray'>
+using FMS to reduce dim
+FMS fitted with 2 steps!
+
+y_features shape after FMS torch.Size([18333, 1701]) <class 'torch.Tensor'>
+
+Reconstruction job finished!
+ms_academic_cs finished!
+cora_full!
+feature decoder on 4 anomaly settings!
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=0, dataset='cora_full', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=45, weight_decay=0.0005)
+random seed: 275
+no existing ad data found, create new data with anomaly!
+Traceback (most recent call last):
+  File "train_normal_onedecoder.py", line 264, in <module>
+    gae_ad(args)
+  File "train_normal_onedecoder.py", line 76, in gae_ad
+    np.save(ad_data_name, ad_data_list)
+  File "<__array_function__ internals>", line 5, in save
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/npyio.py", line 552, in save
+    format.write_array(fid, arr, allow_pickle=allow_pickle,
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/format.py", line 676, in write_array
+    pickle.dump(array, fp, protocol=3, **pickle_kwargs)
+OSError: [Errno 28] No space left on device
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=1, dataset='cora_full', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=45, weight_decay=0.0005)
+random seed: 537
+no existing ad data found, create new data with anomaly!
+Traceback (most recent call last):
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/npyio.py", line 552, in save
+    format.write_array(fid, arr, allow_pickle=allow_pickle,
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/format.py", line 676, in write_array
+    pickle.dump(array, fp, protocol=3, **pickle_kwargs)
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train_normal_onedecoder.py", line 264, in <module>
+    gae_ad(args)
+  File "train_normal_onedecoder.py", line 82, in gae_ad
+    np.save(ad_data_name, ad_data_list)
+  File "<__array_function__ internals>", line 5, in save
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/npyio.py", line 556, in save
+    fid.close()
+OSError: [Errno 28] No space left on device
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=2, dataset='cora_full', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=45, weight_decay=0.0005)
+random seed: 100
+no existing ad data found, create new data with anomaly!
+Traceback (most recent call last):
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/npyio.py", line 552, in save
+    format.write_array(fid, arr, allow_pickle=allow_pickle,
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/format.py", line 676, in write_array
+    pickle.dump(array, fp, protocol=3, **pickle_kwargs)
+OSError: [Errno 28] No space left on device
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train_normal_onedecoder.py", line 264, in <module>
+    gae_ad(args)
+  File "train_normal_onedecoder.py", line 88, in gae_ad
+    np.save(ad_data_name, ad_data_list)
+  File "<__array_function__ internals>", line 5, in save
+  File "/home/augus/.conda/envs/augus/lib/python3.8/site-packages/numpy/lib/npyio.py", line 556, in save
+    fid.close()
+OSError: [Errno 28] No space left on device
+
+
+
+Initializing normal onedecoder
+Namespace(alpha=1, beta=1, clique_size=50, cuda=False, data_type=3, dataset='cora_full', decoder=0, device=device(type='cuda'), dropout=0.01, epochs=300, gamma=0.2, hidden1=0.5, hidden2=0.25, k=10, lr=0.002, num_clique=45, weight_decay=0.0005)
+random seed: 492
+no existing ad data found, create new data with anomaly!
+Traceback (most recent call las

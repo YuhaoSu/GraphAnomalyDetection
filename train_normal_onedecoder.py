@@ -66,7 +66,7 @@ def gae_ad(args):
 
 
     # obtain basic info
-    ad_data_name = "{}_".format(anomaly_type[args.data_type])+"{}_".format(args.dataset) + "clique_size_{}_".format(args.clique_size) + "num_clique_{}".format(
+    ad_data_name = "dataset_{}_".format(anomaly_type[args.data_type])+"{}_".format(args.dataset) + "clique_size_{}_".format(args.clique_size) + "num_clique_{}".format(
         args.num_clique)+".npy"
     if not os.path.exists(ad_data_name):
         print("no existing ad data found, create new data with anomaly!")
@@ -240,13 +240,16 @@ def gae_ad(args):
     shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
 
     # save the last encoder output
-    encoder_layer_output = "normal_onedecoder"+\
+    encoder_layer_output = "normal_onedecoder_"+\
                            "{}_".format(anomaly_type[args.data_type])+\
                            "{}_".format(args.dataset)+\
                            "clique_size_{}_".format(args.clique_size) + \
-                           '_' + '{}'.format(decoder_name[args.decoder]) + \
+                           '{}_'.format(decoder_name[args.decoder]) + \
                             "num_clique_{}".format(args.num_clique)+".npy"
     np.save(encoder_layer_output, encoder_layer_2)
+
+    shutil.move(encoder_layer_output,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+
 
     # save the last encoder output
     if args.data_type != 3:

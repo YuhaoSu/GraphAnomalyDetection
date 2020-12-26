@@ -3,8 +3,37 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d58f567e-64c4-4ceb-b07c-a5348b615dbb" name="Default Changelist" comment="" />
+    <list default="true" id="d58f567e-64c4-4ceb-b07c-a5348b615dbb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_0.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_1.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_2.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_3.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_cuda_3_only.sh" beforeDir="false" afterPath="$PROJECT_DIR$/12_20_cuda_3_only.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/temp.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_normal_onedecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_normal_onedecoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_scat_onedecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_scat_onedecoder.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,17 +57,24 @@
       </map>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/backup/train.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JupyterTrust" id="20369648-d4e4-43c5-a5aa-5a527e895721" />
   <component name="ProjectId" id="1hVRtl7I5wrzca0pKz72F6DjqpT" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="configurable.group.project" />
@@ -54,6 +90,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/12_20_training" />
       <recent name="$PROJECT_DIR$/backup" />
     </key>
   </component>
@@ -212,11 +249,23 @@
       <workItem from="1606710053592" duration="24000" />
       <workItem from="1606722471295" duration="21000" />
       <workItem from="1608207931205" duration="28211000" />
+      <workItem from="1608531870617" duration="8202000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="354" y="147" key="#Inspections" timestamp="1600096702237">
