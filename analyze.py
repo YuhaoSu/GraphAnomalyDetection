@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 
-file_dir = "/Users/suyuhao/Documents/AD/11_11_&_12_18_summarized_results/ms_academic_cs_output/"  # file directory
+file_dir = "/Users/suyuhao/Documents/AD/12_26_summarized/ms_aca_cs/"  # file directory
 
 all_csv_list = os.listdir(file_dir)
 count = 0
@@ -25,5 +25,5 @@ for single_csv in all_csv_list:
         all_data_frame = single_data_frame
     else:
         all_data_frame = pd.concat([all_data_frame, single_data_frame])
-all_data_frame.csv_path = file_dir + "ms_academic_cs_output_all.csv"
+all_data_frame.csv_path = file_dir + "ms_aca_cs_output_all.csv"
 all_data_frame.to_csv(all_data_frame.csv_path)

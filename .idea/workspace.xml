@@ -23,16 +23,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d58f567e-64c4-4ceb-b07c-a5348b615dbb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_0.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_1.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_2.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12_26_training_cuda_3.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/analyze_encoder_v2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inference_normal_onedecoder.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inference_normal_twodecoders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_inference.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_20_cuda_3_only.sh" beforeDir="false" afterPath="$PROJECT_DIR$/12_20_cuda_3_only.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp.sh" beforeDir="false" afterPath="$PROJECT_DIR$/temp.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_11.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_11_continued.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_11_continued_2.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_cuda_3_only.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/12_20_cuda_3_only.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/12_20_output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_BothAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_BothAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_BothAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_BothAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_BothAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_BothAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_FeatureAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_FeatureAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_FeatureAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_FeatureAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_FeatureAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_FeatureAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_NoAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_NoAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_NoAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_NoAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_NoAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_NoAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_StructureAnomaly_amazon_electronics_computers_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_3000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_StructureAnomaly_amazon_electronics_photo_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_1800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_StructureAnomaly_citeseer_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_800.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_StructureAnomaly_cora_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_600.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_StructureAnomaly_ms_academic_cs_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_20_training/scat_onedecoder_StructureAnomaly_pubmed_hidden1_0.5_hidden2_0.25_FeatureDecoder_NoAtt_PCA_anomaly_4000.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_26_training_cuda_0.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_26_training_cuda_1.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_26_training_cuda_2.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_26_training_cuda_3.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/train_normal_onedecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_normal_onedecoder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/train_scat_onedecoder.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_scat_onedecoder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_normal_twodecoders.py" beforeDir="false" afterPath="$PROJECT_DIR$/train_normal_twodecoders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_rsr_onedecoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_rsr_scat_onedecoder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_rsr_scat_twodecoders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/train_rsr_twodecoders.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +131,7 @@
       <recent name="$PROJECT_DIR$/backup" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.analyze">
+  <component name="RunManager" selected="Python.model_inference">
     <configuration name="analyze" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gae_pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +146,50 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="analyze_encoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gae_pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze_encoder.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="model_inference" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="gae_pytorch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_inference.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,28 +220,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train_scat" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="gae_pytorch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_scat.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="train_scat_onedecoder" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="gae_pytorch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,35 +242,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train_scat_twodecoders" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="gae_pytorch" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_scat_twodecoders.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model_inference" />
         <item itemvalue="Python.analyze" />
+        <item itemvalue="Python.analyze_encoder" />
         <item itemvalue="Python.train_scat_onedecoder" />
         <item itemvalue="Python.train_normal_onedecoder" />
-        <item itemvalue="Python.train_scat_twodecoders" />
-        <item itemvalue="Python.train_scat" />
       </list>
     </recent_temporary>
   </component>
@@ -249,7 +286,7 @@
       <workItem from="1606710053592" duration="24000" />
       <workItem from="1606722471295" duration="21000" />
       <workItem from="1608207931205" duration="28211000" />
-      <workItem from="1608531870617" duration="8202000" />
+      <workItem from="1608531870617" duration="37426000" />
     </task>
     <servers />
   </component>
@@ -268,14 +305,9 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="354" y="147" key="#Inspections" timestamp="1600096702237">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="354" y="147" key="#Inspections/0.23.1440.877@0.23.1440.877" timestamp="1600096702237" />
     <state x="229" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604159824258">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1600098368526" />
     <state x="229" y="148" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1604159824258" />
     <state x="628" y="374" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605094403636">
       <screen x="0" y="23" width="1792" height="1097" />
@@ -285,60 +317,51 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="547" y="359" key="#com.jetbrains.python.refactoring.move.PyMoveModuleMembersDialog/0.23.1440.877@0.23.1440.877" timestamp="1601214739497" />
-    <state x="507" y="223" key="FileChooserDialogImpl" timestamp="1600096524935">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="507" y="223" key="FileChooserDialogImpl/0.23.1440.877@0.23.1440.877" timestamp="1600096524935" />
-    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1608476287990">
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom" timestamp="1609226449746">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1608476287990" />
-    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1608476287990">
+    <state width="1750" height="279" key="GridCell.Tab.0.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1609226449746" />
+    <state width="1750" height="279" key="GridCell.Tab.0.center" timestamp="1609226449746">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1608476287990" />
-    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1608476287989">
+    <state width="1750" height="279" key="GridCell.Tab.0.center/0.23.1792.1097@0.23.1792.1097" timestamp="1609226449746" />
+    <state width="1750" height="279" key="GridCell.Tab.0.left" timestamp="1609226449745">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1608476287989" />
-    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1608476287990">
+    <state width="1750" height="279" key="GridCell.Tab.0.left/0.23.1792.1097@0.23.1792.1097" timestamp="1609226449745" />
+    <state width="1750" height="279" key="GridCell.Tab.0.right" timestamp="1609226449746">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1608476287990" />
-    <state width="1429" height="368" key="GridCell.Tab.1.bottom" timestamp="1604159731693">
+    <state width="1750" height="279" key="GridCell.Tab.0.right/0.23.1792.1097@0.23.1792.1097" timestamp="1609226449746" />
+    <state width="1750" height="368" key="GridCell.Tab.1.bottom" timestamp="1609061463385">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1429" height="368" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
-    <state width="1429" height="368" key="GridCell.Tab.1.center" timestamp="1604159731693">
+    <state width="1750" height="368" key="GridCell.Tab.1.bottom/0.23.1792.1097@0.23.1792.1097" timestamp="1609061463385" />
+    <state width="1750" height="368" key="GridCell.Tab.1.center" timestamp="1609061463385">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1429" height="368" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
-    <state width="1429" height="368" key="GridCell.Tab.1.left" timestamp="1604159731693">
+    <state width="1750" height="368" key="GridCell.Tab.1.center/0.23.1792.1097@0.23.1792.1097" timestamp="1609061463385" />
+    <state width="1750" height="368" key="GridCell.Tab.1.left" timestamp="1609061463384">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1429" height="368" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
-    <state width="1429" height="368" key="GridCell.Tab.1.right" timestamp="1604159731693">
+    <state width="1750" height="368" key="GridCell.Tab.1.left/0.23.1792.1097@0.23.1792.1097" timestamp="1609061463384" />
+    <state width="1750" height="368" key="GridCell.Tab.1.right" timestamp="1609061463385">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state width="1429" height="368" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1604159731693" />
+    <state width="1750" height="368" key="GridCell.Tab.1.right/0.23.1792.1097@0.23.1792.1097" timestamp="1609061463385" />
     <state x="275" y="119" key="SettingsEditor" timestamp="1608468004980">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
-    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1600105138200" />
     <state x="275" y="119" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1608468004980" />
     <state x="214" y="173" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1601190312723">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="214" y="173" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.23.1440.877@0.23.1440.877" timestamp="1601190312723" />
-    <state x="418" y="94" width="604" height="735" key="find.popup" timestamp="1600098151470">
-      <screen x="0" y="23" width="1440" height="877" />
-    </state>
-    <state x="418" y="94" width="604" height="735" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1600098151470" />
-    <state x="479" y="273" width="834" height="846" key="search.everywhere.popup" timestamp="1608281995563">
+    <state x="479" y="273" width="834" height="846" key="search.everywhere.popup" timestamp="1608977237025">
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="385" y="223" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1601125721333" />
-    <state x="479" y="273" width="834" height="846" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1608281995563" />
+    <state x="479" y="273" width="834" height="846" key="search.everywhere.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1608977237025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -351,9 +374,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/gae_pytorch$analyze.coverage" NAME="analyze Coverage Results" MODIFIED="1608349299516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gae_pytorch$analyze.coverage" NAME="analyze Coverage Results" MODIFIED="1609162756328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gae_pytorch$train.coverage" NAME="train Coverage Results" MODIFIED="1604159722749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gae_pytorch$train_normal_onedecoder.coverage" NAME="train_normal_onedecoder Coverage Results" MODIFIED="1604752419253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gae_pytorch$analyze_encoder.coverage" NAME="analyze_encoder Coverage Results" MODIFIED="1609060897726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gae_pytorch$train_scat_onedecoder.coverage" NAME="train_scat_onedecoder Coverage Results" MODIFIED="1605094062149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/gae_pytorch$model_inference.coverage" NAME="model_inference Coverage Results" MODIFIED="1609226449740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

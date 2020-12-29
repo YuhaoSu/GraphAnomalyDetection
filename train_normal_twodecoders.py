@@ -25,7 +25,7 @@ from optimizer import TwoDecodersVAELoss
 parser = argparse.ArgumentParser()
 parser.add_argument('--data_type', type=int, default=3, help='0 for feature anomaly only, \
                                                     1 for structure only, 2 for all anomaly, 3 for no anomaly')
-parser.add_argument('--epochs', type=int, default=20, help='Number of epochs to train.')
+parser.add_argument('--epochs', type=int, default=300, help='Number of epochs to train.')
 parser.add_argument('--hidden1', type=float, default=0.5, help='Number of units in hidden layer 1.')
 parser.add_argument('--hidden2', type=float, default=0.25, help='Number of units in hidden layer 2.')
 parser.add_argument('--lr', type=float, default=0.002, help='Initial learning rate.')
@@ -71,7 +71,7 @@ def gae_ad(args):
     structure_reconstruction_loss_plot = []
 
     # obtain basic info
-    ad_data_name = "{}_".format(anomaly_type[args.data_type])+"{}_".format(args.dataset) + "clique_size_{}_".format(args.clique_size) + "num_clique_{}".format(
+    ad_data_name = "dataset_{}_".format(anomaly_type[args.data_type])+"{}_".format(args.dataset) + "clique_size_{}_".format(args.clique_size) + "num_clique_{}".format(
         args.num_clique)+".npy"
     if not os.path.exists(ad_data_name):
         print("no existing ad data found, create new data with anomaly!")
@@ -144,6 +144,8 @@ def gae_ad(args):
     model = GCNModelTwoDecodersVAE(feat_dim, hidden1, hidden2, args.dropout).to(args.device)
     lossFunction = TwoDecodersVAELoss(args.alpha, args.beta)
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
+    PATH = "/home/augus/ad/gae_pytorch/normal_twodecoders_{}".format(args.dataset)
+
     if torch.cuda.is_available() is True:
         # If using cuda, then need to transfer data from GPU to CPU to save the results.
         for epoch in range(args.epochs):
@@ -161,36 +163,36 @@ def gae_ad(args):
             feature_reconstruction_loss = feature_reconstruction_loss.item()
             structure_reconstruction_loss = structure_reconstruction_loss.item()
             optimizer.step()
-            loss_plot.append(cur_loss)
-            feature_reconstruction_loss_plot.append(feature_reconstruction_loss)
-            structure_reconstruction_loss_plot.append(structure_reconstruction_loss)
-
-            if args.data_type == 2:
-                auc = roc_auc_score(gnd.cpu().detach().numpy(), error.cpu().detach().numpy())
-
-                pred_gnd = pred_anomaly(error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=0)
-                pred_gnd_s = pred_anomaly(s_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
-                pred_gnd_f = pred_anomaly(f_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
-                accuracy = precision(pred_gnd, gnd.cpu().detach().numpy())
-                accuracy_f = precision(pred_gnd_f, gnd_f.cpu().detach().numpy())
-                accuracy_s = precision(pred_gnd_s, gnd_s.cpu().detach().numpy())
-
-                f1 = f1_score(gnd.cpu().detach().numpy(), pred_gnd)
-                accuracy_plot.append(accuracy)
-                accuracy_f_plot.append(accuracy_f)
-                accuracy_s_plot.append(accuracy_s)
-                auc_plot.append(auc)
-                f1_plot.append(f1)
-                if epoch % 10 == 0:
-                    print("Epoch:", '%04d' % (epoch + 1),
-                          "train_loss=", "{:.5f}".format(cur_loss),
-                          "feature_loss=", "{:.5f}".format(feature_reconstruction_loss),
-                          "structure_loss=", "{:.5f}".format(structure_reconstruction_loss),
-                          "accuracy=", "{:.5f}".format(accuracy),
-                          "accuracy_s=", "{:.5f}".format(accuracy_s),
-                          "accuracy_f=", "{:.5f}".format(accuracy_f),
-                          "time=", "{:.5f}".format(time.time() - t))
-        encoder_layer_2 = encoder_layer_2.cpu().detach().numpy()
+        #     loss_plot.append(cur_loss)
+        #     feature_reconstruction_loss_plot.append(feature_reconstruction_loss)
+        #     structure_reconstruction_loss_plot.append(structure_reconstruction_loss)
+        #
+        #     if args.data_type == 2:
+        #         auc = roc_auc_score(gnd.cpu().detach().numpy(), error.cpu().detach().numpy())
+        #
+        #         pred_gnd = pred_anomaly(error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=0)
+        #         pred_gnd_s = pred_anomaly(s_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
+        #         pred_gnd_f = pred_anomaly(f_error.cpu().detach().numpy(), args.clique_size, args.num_clique, mode=1)
+        #         accuracy = precision(pred_gnd, gnd.cpu().detach().numpy())
+        #         accuracy_f = precision(pred_gnd_f, gnd_f.cpu().detach().numpy())
+        #         accuracy_s = precision(pred_gnd_s, gnd_s.cpu().detach().numpy())
+        #
+        #         f1 = f1_score(gnd.cpu().detach().numpy(), pred_gnd)
+        #         accuracy_plot.append(accuracy)
+        #         accuracy_f_plot.append(accuracy_f)
+        #         accuracy_s_plot.append(accuracy_s)
+        #         auc_plot.append(auc)
+        #         f1_plot.append(f1)
+        #         if epoch % 10 == 0:
+        #             print("Epoch:", '%04d' % (epoch + 1),
+        #                   "train_loss=", "{:.5f}".format(cur_loss),
+        #                   "feature_loss=", "{:.5f}".format(feature_reconstruction_loss),
+        #                   "structure_loss=", "{:.5f}".format(structure_reconstruction_loss),
+        #                   "accuracy=", "{:.5f}".format(accuracy),
+        #                   "accuracy_s=", "{:.5f}".format(accuracy_s),
+        #                   "accuracy_f=", "{:.5f}".format(accuracy_f),
+        #                   "time=", "{:.5f}".format(time.time() - t))
+        # encoder_layer_2 = encoder_layer_2.cpu().detach().numpy()
 
     else:
         # CPU case
@@ -209,87 +211,91 @@ def gae_ad(args):
             feature_reconstruction_loss = feature_reconstruction_loss.item()
             structure_reconstruction_loss = structure_reconstruction_loss.item()
             optimizer.step()
-            loss_plot.append(cur_loss)
-            feature_reconstruction_loss_plot.append(feature_reconstruction_loss)
-            structure_reconstruction_loss_plot.append(structure_reconstruction_loss)
-
-            if args.data_type == 2:
-
-                auc = roc_auc_score(gnd.detach().numpy(), error.detach().numpy())
-                pred_gnd = pred_anomaly(error.detach().numpy(), args.clique_size, args.num_clique, mode=0)
-                pred_gnd_s = pred_anomaly(s_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
-                pred_gnd_f = pred_anomaly(f_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
-                accuracy = precision(pred_gnd, gnd.detach().numpy())
-                accuracy_f = precision(pred_gnd_f, gnd_f.detach().numpy())
-                accuracy_s = precision(pred_gnd_s, gnd_s.detach().numpy())
-
-                f1 = f1_score(gnd.detach().numpy(), pred_gnd)
-
-                accuracy_plot.append(accuracy)
-                accuracy_f_plot.append(accuracy_f)
-                accuracy_s_plot.append(accuracy_s)
-                auc_plot.append(auc)
-                f1_plot.append(f1)
-                if epoch % 10 == 0:
-                    print("Epoch:", '%04d' % (epoch + 1),
-                      "train_loss=", "{:.5f}".format(cur_loss),
-                      "feature_loss=", "{:.5f}".format(feature_reconstruction_loss),
-                      "structure_loss=", "{:.5f}".format(structure_reconstruction_loss),
-                      "accuracy=", "{:.5f}".format(accuracy),
-                      "accuracy_s=", "{:.5f}".format(accuracy_s),
-                      "accuracy_f=", "{:.5f}".format(accuracy_f),
-                      "time=", "{:.5f}".format(time.time() - t))
-        encoder_layer_2 = encoder_layer_2.detach().numpy()
-        print(type(encoder_layer_2))
-        print(encoder_layer_2.shape)
+        #     loss_plot.append(cur_loss)
+        #     feature_reconstruction_loss_plot.append(feature_reconstruction_loss)
+        #     structure_reconstruction_loss_plot.append(structure_reconstruction_loss)
+        #
+        #     if args.data_type == 2:
+        #
+        #         auc = roc_auc_score(gnd.detach().numpy(), error.detach().numpy())
+        #         pred_gnd = pred_anomaly(error.detach().numpy(), args.clique_size, args.num_clique, mode=0)
+        #         pred_gnd_s = pred_anomaly(s_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
+        #         pred_gnd_f = pred_anomaly(f_error.detach().numpy(), args.clique_size, args.num_clique, mode=1)
+        #         accuracy = precision(pred_gnd, gnd.detach().numpy())
+        #         accuracy_f = precision(pred_gnd_f, gnd_f.detach().numpy())
+        #         accuracy_s = precision(pred_gnd_s, gnd_s.detach().numpy())
+        #
+        #         f1 = f1_score(gnd.detach().numpy(), pred_gnd)
+        #
+        #         accuracy_plot.append(accuracy)
+        #         accuracy_f_plot.append(accuracy_f)
+        #         accuracy_s_plot.append(accuracy_s)
+        #         auc_plot.append(auc)
+        #         f1_plot.append(f1)
+        #         if epoch % 10 == 0:
+        #             print("Epoch:", '%04d' % (epoch + 1),
+        #               "train_loss=", "{:.5f}".format(cur_loss),
+        #               "feature_loss=", "{:.5f}".format(feature_reconstruction_loss),
+        #               "structure_loss=", "{:.5f}".format(structure_reconstruction_loss),
+        #               "accuracy=", "{:.5f}".format(accuracy),
+        #               "accuracy_s=", "{:.5f}".format(accuracy_s),
+        #               "accuracy_f=", "{:.5f}".format(accuracy_f),
+        #               "time=", "{:.5f}".format(time.time() - t))
+        # encoder_layer_2 = encoder_layer_2.detach().numpy()
+        # print(type(encoder_layer_2))
+        # print(encoder_layer_2.shape)
 
     # save the last encoder output
-    encoder_layer_output = "normal_twodecoders"+\
-                           "{}_".format(anomaly_type[args.data_type])+\
-                           "{}_".format(args.dataset)+\
-                           "clique_size_{}_".format(args.clique_size) +\
-                           "num_clique_{}".format(args.num_clique)+".npy"
-    np.save(encoder_layer_output, encoder_layer_2)
+    # encoder_layer_output = "normal_twodecoders"+\
+    #                        "{}_".format(anomaly_type[args.data_type])+\
+    #                        "{}_".format(args.dataset)+\
+    #                        "clique_size_{}_".format(args.clique_size) +\
+    #                        "num_clique_{}".format(args.num_clique)+".npy"
+    # np.save(encoder_layer_output, encoder_layer_2)
 
 
     # save the results
-    if args.data_type == 2:
-        result = {'total_loss': loss_plot,
-              'feature_reconstruction_loss': feature_reconstruction_loss_plot,
-              'structure_reconstruction_loss': structure_reconstruction_loss_plot,
-              'accuracy': accuracy_plot,
-              'accuracy_s':accuracy_s_plot,
-              'accuracy_f': accuracy_f_plot,
-              'auc score': auc_plot,
-              'f1 score': f1_plot}
+    # if args.data_type == 2:
+    #     result = {'total_loss': loss_plot,
+    #           'feature_reconstruction_loss': feature_reconstruction_loss_plot,
+    #           'structure_reconstruction_loss': structure_reconstruction_loss_plot,
+    #           'accuracy': accuracy_plot,
+    #           'accuracy_s':accuracy_s_plot,
+    #           'accuracy_f': accuracy_f_plot,
+    #           'auc score': auc_plot,
+    #           'f1 score': f1_plot}
+    #
+    # elif args.data_type != 2:
+    #     result = {'total_loss': loss_plot,
+    #           'feature_reconstruction_loss': feature_reconstruction_loss_plot,
+    #           'structure_reconstruction_loss': structure_reconstruction_loss_plot}
+    # result_df = pd.DataFrame(data=result)
+    # result_df.csv_path = 'normal_twodecoders' + \
+    #                      '_{}'.format(anomaly_type[args.data_type]) + \
+    #                      '_{}'.format(args.dataset) + \
+    #                      '_hidden1_' + '{}'.format(args.hidden1) + \
+    #                      '_hidden2_' + '{}'.format(args.hidden2) + \
+    #                      '_anomaly_{}'.format(2 * args.clique_size * args.num_clique)+'.csv'
+    # result_df.to_csv(result_df.csv_path)
+    # if not os.path.exists("/home/augus/ad/gae_pytorch/{}_output".format(args.dataset)):
+    #     os.makedirs('{}_output'.format(args.dataset))
+    # shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+    # shutil.move(encoder_layer_output,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
+    print("saving... model")
+    torch.save(model.state_dict(), PATH)
+    print("model saved!")
 
-    elif args.data_type != 2:
-        result = {'total_loss': loss_plot,
-              'feature_reconstruction_loss': feature_reconstruction_loss_plot,
-              'structure_reconstruction_loss': structure_reconstruction_loss_plot}
-    result_df = pd.DataFrame(data=result)
-    result_df.csv_path = 'normal_twodecoders' + \
-                         '_{}'.format(anomaly_type[args.data_type]) + \
-                         '_{}'.format(args.dataset) + \
-                         '_hidden1_' + '{}'.format(args.hidden1) + \
-                         '_hidden2_' + '{}'.format(args.hidden2) + \
-                         '_anomaly_{}'.format(2 * args.clique_size * args.num_clique)+'.csv'
-    result_df.to_csv(result_df.csv_path)
-    if not os.path.exists("/home/augus/ad/gae_pytorch/{}_output".format(args.dataset)):
-        os.makedirs('{}_output'.format(args.dataset))
-    shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
-    shutil.move(encoder_layer_output,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
 
-    if args.data_type == 2:
-        print()
-        print("accuracy", "{:.5f}".format(accuracy))
-        print("accuracy_s", "{:.5f}".format(accuracy_s))
-        print("accuracy_f", "{:.5f}".format(accuracy_f))
-        print("auc", "{:.5f}".format(auc))
-        print("f1_score", "{:.5f}".format(f1))
-        print("Job finished!")
-    elif args.data_type != 2:
-        print("Non all anomaly job finished!")
+    # if args.data_type == 2:
+    #     print()
+    #     print("accuracy", "{:.5f}".format(accuracy))
+    #     print("accuracy_s", "{:.5f}".format(accuracy_s))
+    #     print("accuracy_f", "{:.5f}".format(accuracy_f))
+    #     print("auc", "{:.5f}".format(auc))
+    #     print("f1_score", "{:.5f}".format(f1))
+    #     print("Job finished!")
+    # elif args.data_type != 2:
+    #     print("Non all anomaly job finished!")
 
 if __name__ == '__main__':
     gae_ad(args)

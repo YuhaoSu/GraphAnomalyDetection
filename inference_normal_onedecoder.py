@@ -32,7 +32,7 @@ parser.add_argument('--dropout', type=float, default=0.01, help='Dropout rate (1
 parser.add_argument('--clique_size', type=int, default=20, help='create anomaly')
 parser.add_argument('--num_clique', type=int, default=15, help='create anomaly')
 parser.add_argument('--k', type=int, default=10, help='compare for feature anomaly')
-parser.add_argument('--dataset', type=str, default='cora', help='type of dataset.')
+parser.add_argument('--dataset', type=str, default='amazon_electronics_computers', help='type of dataset.')
 parser.add_argument('--alpha', type=float, default=1, help='weight parameter for feature error')
 parser.add_argument('--beta', type=float, default=1, help='weight parameter for structure error')
 parser.add_argument('--gamma', type=float, default=0.2, help='Gamma for the leaky_relu.')
@@ -64,26 +64,29 @@ def gae_ad(args):
     f1_plot = []
     accuracy_plot = []
 
-
     # obtain basic info
-    ad_data_name = "dataset_{}_".format(anomaly_type[args.data_type])+"{}_".format(args.dataset) + "clique_size_{}_".format(args.clique_size) + "num_clique_{}".format(
-        args.num_clique)+".npy"
+    ad_data_name = "dataset_{}_".format(anomaly_type[args.data_type]) + "{}_".format(
+        args.dataset) + "clique_size_{}_".format(args.clique_size) + "num_clique_{}".format(
+        args.num_clique) + ".npy"
     if not os.path.exists(ad_data_name):
         print("no existing ad data found, create new data with anomaly!")
         if args.data_type == 0:
-            adj, features, gnd = make_ad_dataset_feature_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
+            adj, features, gnd = make_ad_dataset_feature_anomaly(args.dataset, args.clique_size, args.num_clique,
+                                                                 args.k)
             ad_data_list = [adj, features, gnd]
             np.save(ad_data_name, ad_data_list)
             features = torch.FloatTensor(features).to(args.device)
             gnd = torch.Tensor(gnd).to(args.device)
         elif args.data_type == 1:
-            adj, features, gnd = make_ad_dataset_structure_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
+            adj, features, gnd = make_ad_dataset_structure_anomaly(args.dataset, args.clique_size, args.num_clique,
+                                                                   args.k)
             ad_data_list = [adj, features, gnd]
             np.save(ad_data_name, ad_data_list)
             features = torch.FloatTensor(features).to(args.device)
             gnd = torch.Tensor(gnd).to(args.device)
         elif args.data_type == 2:
-            adj, features, gnd, gnd_f, gnd_s = make_ad_dataset_both_anomaly(args.dataset, args.clique_size, args.num_clique, args.k)
+            adj, features, gnd, gnd_f, gnd_s = make_ad_dataset_both_anomaly(args.dataset, args.clique_size,
+                                                                            args.num_clique, args.k)
             ad_data_list = [adj, features, gnd, gnd_f, gnd_s]
             np.save(ad_data_name, ad_data_list)
             features = torch.FloatTensor(features).to(args.device)
@@ -124,14 +127,11 @@ def gae_ad(args):
         else:
             raise Exception("No valid data! Try to load another different data type!")
 
-
-
-
     # print(type(adj), adj.shape)
     # print(type(features),features.shape)
     # print(type(gnd), gnd.shape)
     # print(np.count_nonzero(gnd.numpy()))
-    
+
     # print(type(gnd_f), gnd_f.shape)
     # print(type(gnd_s), gnd_s.shape)
 
@@ -140,7 +140,6 @@ def gae_ad(args):
     # gnd_f = torch.Tensor(gnd_f).to(args.device)
     # gnd_s = torch.Tensor(gnd_s).to(args.device)
 
-    
     feat_dim = features.shape[1]
     hidden1 = int(feat_dim * args.hidden1)
     hidden2 = int(feat_dim * args.hidden2)
@@ -152,30 +151,33 @@ def gae_ad(args):
           "anomaly_num:", 2 * args.clique_size * args.num_clique)
     print()
     print("Start modeling")
+    print("start inference")
+
 
     # Start training
     if args.decoder == 0:
         model = GCNModelFeatureOnlyVAE(feat_dim, hidden1, hidden2, args.dropout).to(args.device)
         lossFunction = FeatureOnlyVAELoss(args.alpha, args.beta)
-    elif args.decoder ==1:
+    elif args.decoder == 1:
         model = GCNModelStructureOnlyVAE(feat_dim, hidden1, hidden2, args.dropout).to(args.device)
         lossFunction = StructureOnlyVAELoss(args.alpha, args.beta)
     optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)
-    PATH = "/home/augus/ad/gae_pytorch/normal_onedecoder_{}".format(args.dataset)+"_{}".format(decoder_name[args.decoder])
+    PATH = "/Users/suyuhao/Documents/AD/12_27/models/normal_onedecoder_{}".format(args.dataset) + "_{}".format(
+        decoder_name[args.decoder])
+    model.load_state_dict(torch.load(PATH, map_location=args.device))
 
     if torch.cuda.is_available() is True:
-        # model.load_state_dict(torch.load(PATH))
-        # encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
+        encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
         # If using cuda, then need to transfer data from GPU to CPU to save the results.
-        for epoch in range(args.epochs):
-            t = time.time()
-            model.train()
-            optimizer.zero_grad()
-            encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
-            error, total_loss = lossFunction.loss(decoder_layer_2, features, adj_norm)
-            total_loss.backward()
-            cur_loss = total_loss.item()
-            optimizer.step()
+        # for epoch in range(args.epochs):
+        #     t = time.time()
+        #     model.train()
+        #     optimizer.zero_grad()
+        #     encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
+        #     error, total_loss = lossFunction.loss(decoder_layer_2, features, adj_norm)
+        #     total_loss.backward()
+        #     cur_loss = total_loss.item()
+        #     optimizer.step()
         #     loss_plot.append(cur_loss)
         #
         #     if args.data_type != 3:
@@ -191,19 +193,22 @@ def gae_ad(args):
         #                   "train_loss=", "{:.5f}".format(cur_loss),
         #                   "accuracy=", "{:.5f}".format(accuracy),
         #                   "time=", "{:.5f}".format(time.time() - t))
-        # encoder_layer_2 = encoder_layer_2.cpu().detach().numpy()
+        print("saving encoder")
+
+        encoder_layer_2 = encoder_layer_2.cpu().detach().numpy()
 
     else:
         # CPU case
-        for epoch in range(args.epochs):
-            t = time.time()
-            model.train()
-            optimizer.zero_grad()
-            encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
-            error, total_loss = lossFunction.loss(decoder_layer_2, features, adj_norm)
-            total_loss.backward()
-            cur_loss = total_loss.item()
-            optimizer.step()
+        encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
+        # for epoch in range(args.epochs):
+            # t = time.time()
+            # model.train()
+            # optimizer.zero_grad()
+            # encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
+            # error, total_loss = lossFunction.loss(decoder_layer_2, features, adj_norm)
+            # total_loss.backward()
+            # cur_loss = total_loss.item()
+            # optimizer.step()
         #     loss_plot.append(cur_loss)
         #     if args.data_type != 3:
         #         auc = roc_auc_score(gnd.detach().numpy(), error.detach().numpy())
@@ -221,8 +226,9 @@ def gae_ad(args):
         # model.load_state_dict(torch.load(PATH))
         # encoder_layer_2, decoder_layer_2 = model(features, adj_norm)
         #
-        # encoder_layer_2 = encoder_layer_2.detach().numpy()
+        print("saving encoder")
 
+        encoder_layer_2 = encoder_layer_2.detach().numpy()
 
     # save the results
     # if args.data_type != 3:
@@ -246,18 +252,18 @@ def gae_ad(args):
     # shutil.move(result_df.csv_path,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
 
     # save the last encoder output
-    # encoder_layer_output = "normal_onedecoder_"+\
-    #                        "{}_".format(anomaly_type[args.data_type])+\
-    #                        "{}_".format(args.dataset)+\
-    #                        "clique_size_{}_".format(args.clique_size) + \
-    #                        '{}_'.format(decoder_name[args.decoder]) + \
-    #                         "num_clique_{}".format(args.num_clique)+".npy"
-    # np.save(encoder_layer_output, encoder_layer_2)
+    encoder_layer_output = "normal_onedecoder_"+\
+                           "{}_".format(anomaly_type[args.data_type])+\
+                           "{}_".format(args.dataset)+\
+                           "clique_size_{}_".format(args.clique_size) + \
+                           '{}_'.format(decoder_name[args.decoder]) + \
+                            "num_clique_{}".format(args.num_clique)+".npy"
+    np.save(encoder_layer_output, encoder_layer_2)
+    print("encoder saved!")
+
 
     # shutil.move(encoder_layer_output,"/home/augus/ad/gae_pytorch/{}_output".format(args.dataset))
-    print("saving... model")
-    torch.save(model.state_dict(), PATH)
-    print("model saved!")
+
 
     # save the last encoder output
     # if args.data_type != 3:
@@ -269,8 +275,6 @@ def gae_ad(args):
     # elif args.data_type == 3:
     #     print()
     #     print("Reconstruction job finished!")
-
-
 
 
 if __name__ == '__main__':
